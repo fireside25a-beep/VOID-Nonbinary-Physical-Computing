@@ -60,10 +60,15 @@ int main(int argc,char**argv){
         if(length>4096){good=0;break;}
         while(length>0&&(line[length-1]=='\n'||line[length-1]=='\r'))line[--length]='\0';
         if(!length){good=0;break;}
-        char*parts[11]={0};size_t fields=0;char*save=NULL;
-        for(char*t=strtok_r(line,",",&save);t;t=strtok_r(NULL,",",&save)){
+        char*parts[11]={0};size_t fields=0;char*next=line;
+        /* Preserve empty fields: strtok_r would silently skip them and accept
+         * extra CSV columns. This schema has exactly 11 unquoted fields. */
+        for(;;){
             if(fields>=11){fields=12;break;}
-            parts[fields++]=t;
+            parts[fields++]=next;
+            char*comma=strchr(next,',');
+            if(!comma)break;
+            *comma='\0';next=comma+1;
         }
         if(fields!=11){good=0;break;}
         uint64_t idx,time;double volts[7];
