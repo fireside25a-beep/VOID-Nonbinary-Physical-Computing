@@ -1,0 +1,8 @@
+{
+  "created_from_original": "/mnt/data/VOID_HX89_K06_CAUSAL_BRIDGE_20261031/02_ORIGINAL_K06_NETLIST/VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir",
+  "original_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+  "new_stimulus_inserted": true,
+  "original_unchanged": true,
+  "physical_board_capture": false,
+  "note": "full circuit SPICE deck, separate from LIMITED R/C bridge solver; ngspice not run unless explicitly requested and found"
+}

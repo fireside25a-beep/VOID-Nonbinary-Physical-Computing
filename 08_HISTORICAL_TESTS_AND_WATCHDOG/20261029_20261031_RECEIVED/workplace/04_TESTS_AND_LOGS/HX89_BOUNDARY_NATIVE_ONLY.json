@@ -1,0 +1,24 @@
+{
+  "classification": "DIGITAL_HOST_BOUNDARY_ONLY",
+  "host_hx89": {
+    "binary_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+    "code_bytes_hash": "af374a72fff3f561",
+    "exit_status": 0,
+    "native_code_bytes": 24,
+    "native_epoch": 1,
+    "native_ir": 4,
+    "native_result": 122,
+    "program_sha256": "b36da817048710718cd3e43534f2da4ce423158106068d56975cb3d1789c641a",
+    "semantic_hash": "ae44199b3d2d2043",
+    "semantic_ir_hash": "1953b258274b2db0",
+    "stdout": "HEXWORLD_ENTER semantic=HX87SEM3 dims=5 q2=25 epoch=0\nHX89 seed=1 cells=8\nNATIVE_ACCEL epoch=1 ir=4 bytes=24 result=122 src=1953b258274b2db0 code=af374a72fff3f561\n122\nHEXWORLD epoch=2 cells=8 heads=1 surreal=1 entropy=0000000000000001\nHX89 halt steps=4 heads=1 nodes=1 stack=0 hash=ae44199b3d2d2043\n"
+  },
+  "k06": {
+    "netlist_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+    "pads": "WRITE_A -> CHARGE_A",
+    "port_map_sha256": "62faf978af8f5b8f046d0dc883906c73aac7c7f6d0bcbedc4dfd6868311dc054"
+  },
+  "physical_substrate_verified": false,
+  "schema": "VOID_HX89_K06_BOUNDARY_V1",
+  "status": "NATIVE_HX89_ONLY_NO_PHYSICAL_OUTPUT"
+}

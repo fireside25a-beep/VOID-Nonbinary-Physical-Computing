@@ -1,0 +1,56 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+{
+  "status": "NATIVE_CPU_AND_HX89_EXECUTED",
+  "rounds": 64,
+  "native_trials": 256,
+  "hx89_feedback_cycles": 64,
+  "summary": {
+    "scalar": {
+      "n": 64,
+      "median_pre_ticks": 27247.0,
+      "median_post_ticks": 30796.0,
+      "median_stimulus_ticks": 193380.0,
+      "median_post_minus_pre_ticks": 3635.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "avx2": {
+      "n": 64,
+      "median_pre_ticks": 27227.0,
+      "median_post_ticks": 30789.0,
+      "median_stimulus_ticks": 377506.0,
+      "median_post_minus_pre_ticks": 3631.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "avx512": {
+      "n": 64,
+      "median_pre_ticks": 27232.0,
+      "median_post_ticks": 30815.0,
+      "median_stimulus_ticks": 189696.0,
+      "median_post_minus_pre_ticks": 3622.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "large_cache": {
+      "n": 64,
+      "median_pre_ticks": 27152.0,
+      "median_post_ticks": 54326.0,
+      "median_stimulus_ticks": 17613483.0,
+      "median_post_minus_pre_ticks": 27142.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    }
+  },
+  "evidence": "/mnt/data/VOID_HX89_SINGLE_TREE_CANONICAL_20261029/workplace/04_TESTS_AND_LOGS/20261029_RESUMED/VOID_CPU_HX89_BATCH_EXECUTION.json",
+  "physical_nonbinary_substrate_verified": false
+}

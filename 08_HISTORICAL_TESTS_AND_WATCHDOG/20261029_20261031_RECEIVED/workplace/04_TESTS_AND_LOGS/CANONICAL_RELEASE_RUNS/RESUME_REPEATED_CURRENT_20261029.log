@@ -1,0 +1,8 @@
+{"run": 1, "status": "NATIVE_FULL_STACK_PASS_PHYSICAL_GATE_UNVERIFIED", "pass": 24, "fail": 0}
+{"run": 2, "status": "NATIVE_FULL_STACK_PASS_PHYSICAL_GATE_UNVERIFIED", "pass": 24, "fail": 0}
+{
+  "summary": "/mnt/data/VOID_HX89_SINGLE_TREE_CANONICAL_20261029/workplace/04_TESTS_AND_LOGS/CANONICAL_RELEASE_RUNS/canonical_1793297149910189732/REPEATED_MACHINE_RESULT.json",
+  "native_pass": true,
+  "originals_unchanged": true,
+  "physical_nonbinary_gate": "NOT_ESTABLISHED"
+}

@@ -1,0 +1,56 @@
+VOID R07: ONE spatially coupled primitive material field for machine contact/force/motion.
+* 8 geometrically distinct electrodes have IDENTICAL passive materials and series guards.
+* Information enters as physical node potentials, gradients and currents, NOT bit/character codes.
+* Differential location is physical topology; no ASCII table, numerical rank or lookup signatures.
+* Force-sensitive R_ACT_nnn are nominal RELEASED states; real resistances measured as-built.
+* 2 physical potentiometer tracks provide separate continuously movable wiper voltages.
+.SUBCKT VOID_MATERIAL_INPUT VREF RET CORE_A CORE_B STATE_A STATE_B FIELD_A FIELD_B AXIS_A AXIS_B
+R_ACT_11 VREF PAD_11 10meg
+R_ACT_GUARD_11 PAD_11 F_11 1k
+R_NODE_RET_11 F_11 RET 220k
+R_SHEET_H_11 F_11 F_12 22k
+R_SHEET_V_11 F_11 F_21 22k
+R_ACT_12 VREF PAD_12 10meg
+R_ACT_GUARD_12 PAD_12 F_12 1k
+R_NODE_RET_12 F_12 RET 220k
+R_SHEET_H_12 F_12 F_13 22k
+R_SHEET_V_12 F_12 F_22 22k
+R_ACT_13 VREF PAD_13 10meg
+R_ACT_GUARD_13 PAD_13 F_13 1k
+R_NODE_RET_13 F_13 RET 220k
+R_SHEET_H_13 F_13 F_14 22k
+R_SHEET_V_13 F_13 F_23 22k
+R_ACT_14 VREF PAD_14 10meg
+R_ACT_GUARD_14 PAD_14 F_14 1k
+R_NODE_RET_14 F_14 RET 220k
+R_SHEET_V_14 F_14 F_24 22k
+R_ACT_21 VREF PAD_21 10meg
+R_ACT_GUARD_21 PAD_21 F_21 1k
+R_NODE_RET_21 F_21 RET 220k
+R_SHEET_H_21 F_21 F_22 22k
+R_ACT_22 VREF PAD_22 10meg
+R_ACT_GUARD_22 PAD_22 F_22 1k
+R_NODE_RET_22 F_22 RET 220k
+R_SHEET_H_22 F_22 F_23 22k
+R_ACT_23 VREF PAD_23 10meg
+R_ACT_GUARD_23 PAD_23 F_23 1k
+R_NODE_RET_23 F_23 RET 220k
+R_SHEET_H_23 F_23 F_24 22k
+R_ACT_24 VREF PAD_24 10meg
+R_ACT_GUARD_24 PAD_24 F_24 1k
+R_NODE_RET_24 F_24 RET 220k
+R_FIELD_A F_11 FIELD_A 4.7k
+R_FIELD_B F_24 FIELD_B 4.7k
+R_AXIS_A_UP VREF AXIS_A 5k
+R_AXIS_A_DOWN AXIS_A RET 5k
+R_AXIS_B_UP VREF AXIS_B 5k
+R_AXIS_B_DOWN AXIS_B RET 5k
+R_FIELD_TO_MESH_A FIELD_A CORE_A 220k
+R_FIELD_TO_MESH_B FIELD_B CORE_B 220k
+R_FIELD_TO_CHARGE_A FIELD_A STATE_A 1meg
+R_FIELD_TO_CHARGE_B FIELD_B STATE_B 1meg
+R_AXIS_TO_MESH_A AXIS_A CORE_A 220k
+R_AXIS_TO_MESH_B AXIS_B CORE_B 220k
+R_AXIS_TO_CHARGE_A AXIS_A STATE_A 470k
+R_AXIS_TO_CHARGE_B AXIS_B STATE_B 470k
+.ENDS VOID_MATERIAL_INPUT

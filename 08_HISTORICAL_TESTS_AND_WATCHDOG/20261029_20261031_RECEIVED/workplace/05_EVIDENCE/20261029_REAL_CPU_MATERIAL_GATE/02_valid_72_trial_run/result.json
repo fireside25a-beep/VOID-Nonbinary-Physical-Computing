@@ -1,0 +1,123 @@
+{
+  "actual_hx89_stdout_sha256": "f173282eca64408a2a565d917b78c631851f5b0bc2ce9cd05eb2bd3a11438395",
+  "actual_initial_cpu_sha256": "d5b53d5dd6fc99f5129f7faa152b3213aa4077b4f3c27d7c74c3a0e35dfba231",
+  "actual_next_cpu_command": {
+    "rotate": 1,
+    "work": 6
+  },
+  "actual_next_cpu_sha256": "0d36643764ce3f9a363a394ae3fe2dbf05de35d42cdc7462e457622111331e99",
+  "binary_sha256": "7f3132ffdcd426dc007aa5e3f46052d1db6c82d44b1c8a9f26a5f68a5442f3cb",
+  "blocks": 2,
+  "executed_hx89_state": {
+    "fitness": 2,
+    "head": 0,
+    "q": 9,
+    "step": 1,
+    "target": 24
+  },
+  "executed_hx89_target": 24,
+  "experiments": [
+    {
+      "analog_current_or_temperature_measured": false,
+      "csv": "hold_5ms.csv",
+      "csv_sha256": "ccb2d383ad47bb7dedff7ecc8f98330a95c45e9f977c81493feeb65f9f92f751",
+      "heat_ms": 20,
+      "heater_cpu": 0,
+      "high_minus_idle_median_ns": -2243424.0,
+      "hold_ms": 5,
+      "intensities": {
+        "0": 12,
+        "1": 12,
+        "2": 12
+      },
+      "interpretation": "REAL_CROSS_CPU_TIMING_NOT_DIRECT_ANALOG_STATE",
+      "physical_multilevel_memory_verified": false,
+      "read_ns_median_by_level": [
+        90991336.0,
+        89932392.5,
+        88747912.0
+      ],
+      "reader_cpu": 4,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3e2c3b385ad3cce1c0cf394c9726ed2b99e754e150316612b75cdbc4fdade574",
+      "trials": 36,
+      "triplet_negative": 8,
+      "triplet_positive": 4,
+      "triplet_zero": 0,
+      "within_triplet_high_minus_idle_ns": [
+        -7726548,
+        -60560445,
+        -11930881,
+        7518438,
+        10375374,
+        -15207065,
+        7201817,
+        -15637800,
+        5228723,
+        -4365540,
+        -4535821,
+        -21283064
+      ]
+    },
+    {
+      "analog_current_or_temperature_measured": false,
+      "csv": "hold_50ms.csv",
+      "csv_sha256": "6b81b29717a936643a98d09f4844e1eba658eec1dae2049f90a8e7aec02c1a8d",
+      "heat_ms": 20,
+      "heater_cpu": 0,
+      "high_minus_idle_median_ns": -3808575.5,
+      "hold_ms": 50,
+      "intensities": {
+        "0": 12,
+        "1": 12,
+        "2": 12
+      },
+      "interpretation": "REAL_CROSS_CPU_TIMING_NOT_DIRECT_ANALOG_STATE",
+      "physical_multilevel_memory_verified": false,
+      "read_ns_median_by_level": [
+        87839483.0,
+        85062257.0,
+        84030907.5
+      ],
+      "reader_cpu": 4,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1e7159aef2202adfef1f1a0b6fa4687d0a36cfebfbe64397bb7d37df126dfa34",
+      "trials": 36,
+      "triplet_negative": 7,
+      "triplet_positive": 5,
+      "triplet_zero": 0,
+      "within_triplet_high_minus_idle_ns": [
+        -17460520,
+        15484683,
+        5305074,
+        -10849437,
+        -11702741,
+        4271244,
+        -6400419,
+        -3075491,
+        -8453986,
+        1288915,
+        -8206218,
+        7421821
+      ]
+    }
+  ],
+  "heat_ms": 20,
+  "heater": 0,
+  "independently_measured_cpu_thermodynamic_calculation": false,
+  "original_cpu_binary_sha256": "d5fa8b355fd8d905094440af12efee545073643cbf069f80ecb02d741d4228cc",
+  "original_hx89_binary_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+  "original_master_integrity": {
+    "canonical_ledger_sha256": "407ca9c039720891560abe384c453b898d35edbaef49c45cfa1c4ab27e661ba2",
+    "master_sha256": "1751f34c05919d90025bb1d4525245bc0f55605bc9e0de93c2a77286645643c1",
+    "milestone_ids": 116,
+    "original_crosswalk_sha256": "64ca8c80e91d7c5aeef11f8ef2ae4331bd3b1ae612b20a09d98c0ad5768616cd"
+  },
+  "q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+  "reader": 4,
+  "schema": "VOID_CPU_CROSS_CORE_HISTORY_HX89_FEEDBACK_V1",
+  "seed": 2443993070,
+  "source_sha256": "3481d71835c1a20e70ce2d85d6f2d0ae190ab6d8132cdc936e55bb932eb32a39",
+  "verified_cpu_subthreshold_gate_control": false,
+  "verified_material_multilevel_memory": false
+}

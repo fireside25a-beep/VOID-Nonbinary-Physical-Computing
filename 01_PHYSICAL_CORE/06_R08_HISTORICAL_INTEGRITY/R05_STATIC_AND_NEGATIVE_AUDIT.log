@@ -1,0 +1,15 @@
+VOID R05 — actual source-backed static verification output
+Original R04 archive SHA-256: f47c1e551fe649ecd570d37786c1d25ec9b4a4d6aff1a46e51c89f9f3b56b881
+Original R04 archive ZIP members verified: 39
+Historical source M00–M115 recovered: exactly 116 unique IDs
+Original M00–M65 statuses read from canonical MILESTONE_MATRIX.tsv
+Crosswalk rows: 116
+K05 source connectivity: 5 active voltage rails, no orphan — PASS
+K05 two meter loads 10MOhm: each present once — PASS
+K01 diode reverse-biased orientation: PASS
+K mesh two-node resistor/capacitor wiring: PASS
+Raw telemetry registers: four header-only, no fabricated entries — PASS
+Controlled negative test K05 missing fifth source coupling: REJECTED_AS_EXPECTED
+Controlled negative test K05 double meter load missing y0: REJECTED_AS_EXPECTED
+All unchanged R04 files except explicitly reported release/control append: SHA-256 byte match — PASS
+No physical bench traces, meter readings or operating physical hardware present: NOT CLAIMED

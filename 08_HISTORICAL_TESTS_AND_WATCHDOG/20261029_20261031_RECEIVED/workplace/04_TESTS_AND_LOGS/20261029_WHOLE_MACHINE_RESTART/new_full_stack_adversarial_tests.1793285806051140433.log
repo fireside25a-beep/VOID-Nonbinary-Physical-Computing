@@ -1,0 +1,3 @@
+test_actual_full_stack_passes (test_full_stack.RealFullStackChecks.test_actual_full_stack_passes) ... ok
+test_actual_lattice_reverse_and_emitted_output (test_full_stack.RealFullStackChecks.test_actual_lattice_reverse_and_emitted_output) ... ok
+test_cli_relative_output_executes_and_resumes_real_hx89 (test_full_stack.RealFullStackChecks.test_cli_relative_output_executes_and_resumes_real_hx89) ... 

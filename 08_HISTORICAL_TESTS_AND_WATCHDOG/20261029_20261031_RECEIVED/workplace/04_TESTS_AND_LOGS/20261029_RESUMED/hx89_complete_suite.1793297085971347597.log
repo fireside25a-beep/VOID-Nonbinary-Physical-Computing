@@ -1,0 +1,11 @@
+sh tests/test.sh
+PASS: HX0 ETCH fixed point
+PASS: memory echo and one-bit HX0 machine reconstruction
+PASS: PCM waveform to one-bit HX0 to live semantic image
+PASS: independent Bell 202 waveform, 1200 baud UART, start sync, CRC and noisy channel
+PASS: level, 125-baud FSK, Bell 202 and memory echo converge on canonical HX0 images
+PASS: independent hex-gas conservation/reverse and image Polyform through Bell, HX0 and HX89
+PASS: semantic right inverse for byte alphabet, Bell/HX0 transport, determinism and arena boundaries
+Terminated
+FAIL: chiral reciprocity theorem
+make: *** [Makefile:85: check] Error 1

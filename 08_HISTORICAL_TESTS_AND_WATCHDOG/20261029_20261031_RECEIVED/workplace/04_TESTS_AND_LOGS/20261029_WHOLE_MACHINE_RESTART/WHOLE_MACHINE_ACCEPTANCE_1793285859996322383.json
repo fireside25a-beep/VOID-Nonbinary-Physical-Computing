@@ -1,0 +1,175 @@
+{
+  "K06_physical_injection_measurement_verified": false,
+  "actual_hardware_weak_inversion_control_verified": false,
+  "actual_physical_collective_charge_network_verified": false,
+  "failed": 0,
+  "native_architecture_execution_verified": true,
+  "original_upload_sha256": {
+    "AC_DC_Passive_AI_Proof(2)(1).zip": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+    "EntropyAVXEngine-source-trace-and-bootstrap(3).zip": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+    "VOID_COMPLETE_VOLUME_PART_01_OF_02.zip.001": "9fac288a28d626c6da8e459fa88aae45d5a5ef5ee62bee95f13c75154b546c98",
+    "VOID_COMPLETE_VOLUME_PART_02_OF_02.zip.002": "886062734193bbda1afa7668bc250bbb7bc1ff7a1c3335866afc9836865900f0",
+    "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad"
+  },
+  "passed": 12,
+  "physical_nonbinary_cpu_substrate_verified": false,
+  "run_id": "1793285859996322383",
+  "schema": "VOID_HX89_CUMULATIVE_WHOLE_MACHINE_ACCEPTANCE_V1",
+  "scope": "REAL CPU instruction execution, real HX89, real EntropyAVX; physical analog substrate NOT demonstrated",
+  "stages": [
+    {
+      "detail": {
+        "canonical_ledger_sha256": "407ca9c039720891560abe384c453b898d35edbaef49c45cfa1c4ab27e661ba2",
+        "master_sha256": "1751f34c05919d90025bb1d4525245bc0f55605bc9e0de93c2a77286645643c1",
+        "milestone_ids": 116,
+        "original_crosswalk_sha256": "64ca8c80e91d7c5aeef11f8ef2ae4331bd3b1ae612b20a09d98c0ad5768616cd"
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 0,
+      "stage": "historical_116_and_current_physical_claims",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "archive_count": 3,
+        "crc": "PASS",
+        "split_parts": 2
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 1,
+      "stage": "original_archive_crc_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "K06_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+        "active_sources": 9,
+        "includes": {
+          "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K05_DC_ADMITTANCE_WITNESS.cir": [
+            "VOID_K05_WEIGHTED_NETWORK.lib"
+          ],
+          "VOID_K05_WEIGHTED_NETWORK.lib": [],
+          "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir": [
+            "VOID_K_MESH_V1.lib",
+            "VOID_K05_WEIGHTED_NETWORK.lib",
+            "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib"
+          ],
+          "VOID_K_MESH_V1.lib": [],
+          "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib": []
+        }
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 2,
+      "stage": "K01_K06_real_netlist_source_integrity",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/existing_full_watchdog_11_gates.1793285859996322383.log",
+        "sha256": "3f87ae747aa15df9a95611b1e69f04f0f12e7b43ea0e79df227794c9b4ea89fa"
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 3,
+      "stage": "existing_full_watchdog_11_gates",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/native_negative_and_real_tests.1793285859996322383.log",
+        "sha256": "38cd6a1981369fdb85ceb2d9421d4ab38ec05ef35557cf34c61fc0801beaa974"
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 4,
+      "stage": "native_negative_and_real_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/native_cpu_hx89_cpu_closed_cycle.1793285859996322383.log",
+        "sha256": "a95701af534dfff951c2af348cdb0db56468fb3b0330a773beb2cf5b1763a317"
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 5,
+      "stage": "native_cpu_hx89_cpu_closed_cycle",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "changing_cpu_commands": 15,
+        "cycles": 16,
+        "feedback_sha256": "ce5b342dc451e567d1d5665eed1db8ef3454a55e380810c10d98f5d184316b3f",
+        "hx89_search_transitions": 16,
+        "real_native_interventions": 64
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 6,
+      "stage": "closed_cycle_bytewise_trace_and_causality",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/new_full_stack_adversarial_tests.1793285859996322383.log",
+        "sha256": "69d9946d4513868bfabfa9e05c62f660cfa5edfed2067a3112a3419152ba1633"
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 7,
+      "stage": "new_full_stack_adversarial_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/full_stack_native_hx89_gas_native.1793285859996322383.log",
+        "sha256": "170119a75b2488e22730794172a3908ca19bd7ce1f70835f2dcf6a41eda04b30"
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 8,
+      "stage": "full_stack_native_hx89_gas_native",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "command_changed_cycles": 16,
+        "physical_nonbinary_material_computation_verified": false,
+        "verified_cpu_interventions": 64,
+        "verified_cycles": 16,
+        "verified_hx89_gas_reversals": 16
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 9,
+      "stage": "full_stack_trace_validation",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/entropyavx_real_native_frames.1793285859996322383.log",
+        "sha256": "1c5b95bcd2e678d19aaa96f4998b14343fae9f7cf5c7a3265aec0d83a3ea634c"
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 10,
+      "stage": "entropyavx_real_native_frames",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "five_original_hashes_unchanged": true
+      },
+      "run_id": "1793285859996322383",
+      "sequence": 11,
+      "stage": "all_original_uploads_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "tested_stages": 12
+}

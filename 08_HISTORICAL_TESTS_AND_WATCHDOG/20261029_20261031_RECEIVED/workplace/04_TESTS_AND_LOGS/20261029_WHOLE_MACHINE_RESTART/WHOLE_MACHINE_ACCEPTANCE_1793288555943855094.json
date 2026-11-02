@@ -1,0 +1,278 @@
+{
+  "K06_physical_injection_measurement_verified": false,
+  "actual_hardware_weak_inversion_control_verified": false,
+  "actual_physical_collective_charge_network_verified": false,
+  "cache_causality_live_integration_attempted": true,
+  "failed": 0,
+  "native_architecture_execution_verified": true,
+  "original_upload_sha256": {
+    "AC_DC_Passive_AI_Proof(2)(1).zip": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+    "EntropyAVXEngine-source-trace-and-bootstrap(3).zip": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+    "VOID_COMPLETE_VOLUME_PART_01_OF_02.zip.001": "9fac288a28d626c6da8e459fa88aae45d5a5ef5ee62bee95f13c75154b546c98",
+    "VOID_COMPLETE_VOLUME_PART_02_OF_02.zip.002": "886062734193bbda1afa7668bc250bbb7bc1ff7a1c3335866afc9836865900f0",
+    "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad"
+  },
+  "passed": 21,
+  "physical_nonbinary_cpu_substrate_verified": false,
+  "run_id": "1793288555943855094",
+  "schema": "VOID_HX89_CUMULATIVE_WHOLE_MACHINE_ACCEPTANCE_V1",
+  "scope": "REAL CPU instruction execution, real HX89, real EntropyAVX; physical analog substrate NOT demonstrated",
+  "stages": [
+    {
+      "detail": {
+        "canonical_ledger_sha256": "407ca9c039720891560abe384c453b898d35edbaef49c45cfa1c4ab27e661ba2",
+        "master_sha256": "1751f34c05919d90025bb1d4525245bc0f55605bc9e0de93c2a77286645643c1",
+        "milestone_ids": 116,
+        "original_crosswalk_sha256": "64ca8c80e91d7c5aeef11f8ef2ae4331bd3b1ae612b20a09d98c0ad5768616cd"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 0,
+      "stage": "historical_116_and_current_physical_claims",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "archive_count": 3,
+        "crc": "PASS",
+        "split_parts": 2
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 1,
+      "stage": "original_archive_crc_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "K06_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+        "active_sources": 9,
+        "includes": {
+          "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K05_DC_ADMITTANCE_WITNESS.cir": [
+            "VOID_K05_WEIGHTED_NETWORK.lib"
+          ],
+          "VOID_K05_WEIGHTED_NETWORK.lib": [],
+          "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir": [
+            "VOID_K_MESH_V1.lib",
+            "VOID_K05_WEIGHTED_NETWORK.lib",
+            "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib"
+          ],
+          "VOID_K_MESH_V1.lib": [],
+          "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib": []
+        }
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 2,
+      "stage": "K01_K06_real_netlist_source_integrity",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/existing_full_watchdog_11_gates.1793288555943855094.log",
+        "sha256": "3f87ae747aa15df9a95611b1e69f04f0f12e7b43ea0e79df227794c9b4ea89fa"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 3,
+      "stage": "existing_full_watchdog_11_gates",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/native_negative_and_real_tests.1793288555943855094.log",
+        "sha256": "ae6682181a7bdc803fdb9ca6b93b4b5be761e617aedad8b35b2e67f74f2e05d6"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 4,
+      "stage": "native_negative_and_real_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/native_cpu_hx89_cpu_closed_cycle.1793288555943855094.log",
+        "sha256": "e266f7f9822c622e891e6f5eaeb75e04a40d40a44722288252d37f3eb6cbde29"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 5,
+      "stage": "native_cpu_hx89_cpu_closed_cycle",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "changing_cpu_commands": 10,
+        "cycles": 12,
+        "feedback_sha256": "9e163cb73567af6728fa1258b36a62640355c05fe788c634414927d15a244dc2",
+        "hx89_search_transitions": 12,
+        "real_native_interventions": 48
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 6,
+      "stage": "closed_cycle_bytewise_trace_and_causality",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/new_full_stack_adversarial_tests.1793288555943855094.log",
+        "sha256": "299c3d2777097d32a61620430ee19c0921a57731a61ecb2f1d43e4d1f43655dd"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 7,
+      "stage": "new_full_stack_adversarial_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/full_stack_native_hx89_gas_native.1793288555943855094.log",
+        "sha256": "3a4d8d11e1d2f661ef2d0839ed0878bd26c937a8e6da47dbfb56f69d5e47804c"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 8,
+      "stage": "full_stack_native_hx89_gas_native",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "command_changed_cycles": 9,
+        "native_three_intensity_trials": 0,
+        "physical_nonbinary_material_computation_verified": false,
+        "verified_cpu_interventions": 48,
+        "verified_cycles": 12,
+        "verified_hx89_gas_reversals": 12
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 9,
+      "stage": "full_stack_trace_validation",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/material_cache_real_native_adversarial_tests.1793288555943855094.log",
+        "sha256": "15c9b20f7bd468b5fae69a22c404fc23d4f767559535da52cf4268445e753186"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 10,
+      "stage": "material_cache_real_native_adversarial_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/material_cache_inside_full_hx89_cycle.1793288555943855094.log",
+        "sha256": "df8116675d32f49e0b3bf5333a0f1cd5f2ea538a7abeae109a0976844169a84f"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 11,
+      "stage": "material_cache_inside_full_hx89_cycle",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "command_changed_cycles": 10,
+        "native_three_intensity_trials": 0,
+        "physical_nonbinary_material_computation_verified": false,
+        "verified_cpu_interventions": 48,
+        "verified_cycles": 12,
+        "verified_hx89_gas_reversals": 12
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 12,
+      "stage": "material_cache_independent_causal_trace_validation",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/power_timing_adversarial_real_HX89_tests.1793288555943855094.log",
+        "sha256": "a6c207691eddbb5580109c36410eaa93164faafe03bf4bb7921af884c1f939d1"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 13,
+      "stage": "power_timing_adversarial_real_HX89_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/real_CPU_power_candidate_into_HX89_into_CPU.1793288555943855094.log",
+        "sha256": "370e3c8445738c092bac5a7fbf1d65b8ae42f42e53fff78a679a3921eaf22fdb"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 14,
+      "stage": "real_CPU_power_candidate_into_HX89_into_CPU",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "HX89_feedback_to_next_CPU": "VERIFIED_NATIVE_DIGITAL_FEEDBACK",
+        "median_busy_minus_idle_tsc": 2.0,
+        "power_crossover_trials_verified": 80,
+        "thermal_computation": "NOT_VERIFIED"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 15,
+      "stage": "independent_real_power_timing_chain_verification",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/three_intensity_real_hx89_adversarial_tests.1793288555943855094.log",
+        "sha256": "003097e6be420e26ec314fe154549d17f6ac23a9538ffecc955f76d510fce9b9"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 16,
+      "stage": "three_intensity_real_hx89_adversarial_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/real_three_intensity_inside_full_hx89_machine.1793288555943855094.log",
+        "sha256": "ba9dc6a167ac360389931ea311c745b6be5bef785b97de08a5b994698851a254"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 17,
+      "stage": "real_three_intensity_inside_full_hx89_machine",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "command_changed_cycles": 11,
+        "native_three_intensity_trials": 216,
+        "physical_nonbinary_material_computation_verified": false,
+        "verified_cpu_interventions": 48,
+        "verified_cycles": 12,
+        "verified_hx89_gas_reversals": 12
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 18,
+      "stage": "independent_three_intensity_live_feedback_verification",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/entropyavx_real_native_frames.1793288555943855094.log",
+        "sha256": "9d33ec2a068b182f41d9044e7bcab76025505fdbfcafeac5052b00b74be5364f"
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 19,
+      "stage": "entropyavx_real_native_frames",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "five_original_hashes_unchanged": true
+      },
+      "run_id": "1793288555943855094",
+      "sequence": 20,
+      "stage": "all_original_uploads_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "tested_stages": 21,
+  "three_intensity_real_history_inside_full_machine": true
+}

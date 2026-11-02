@@ -1,0 +1,6 @@
+{
+  "files_scanned": 49,
+  "zero_size_sources": [],
+  "placeholder_term_hits": {},
+  "note": "Lexical scan is not proof that every function is fully implemented. Source tests are needed."
+}

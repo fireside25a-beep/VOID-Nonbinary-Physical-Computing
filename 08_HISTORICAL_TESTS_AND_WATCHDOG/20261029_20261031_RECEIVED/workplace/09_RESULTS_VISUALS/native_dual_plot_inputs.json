@@ -1,0 +1,33 @@
+{
+  "27_gate_acceptance_receipts": [
+    "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793300480089536534.json",
+    "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793300634445589892.json",
+    "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793300734907978502.json"
+  ],
+  "factorial_interactions": [
+    [
+      1,
+      2,
+      -30751.0,
+      0.454498291015625
+    ],
+    [
+      1,
+      20,
+      -27632.0,
+      0.803619384765625
+    ],
+    [
+      2,
+      2,
+      70081.0,
+      0.210113525390625
+    ],
+    [
+      2,
+      20,
+      -28458.0,
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+primitive_site	input_material_site	terminal_rail	terminal_sensor	shared_analog_field_A	shared_analog_field_B	meaning	real_component_state
+ACT_11	X_MATERIAL/R_ACT_11	UI_1V8	X_MATERIAL/PAD_11	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture
+ACT_12	X_MATERIAL/R_ACT_12	UI_1V8	X_MATERIAL/PAD_12	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture
+ACT_13	X_MATERIAL/R_ACT_13	UI_1V8	X_MATERIAL/PAD_13	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture
+ACT_14	X_MATERIAL/R_ACT_14	UI_1V8	X_MATERIAL/PAD_14	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture
+ACT_21	X_MATERIAL/R_ACT_21	UI_1V8	X_MATERIAL/PAD_21	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture
+ACT_22	X_MATERIAL/R_ACT_22	UI_1V8	X_MATERIAL/PAD_22	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture
+ACT_23	X_MATERIAL/R_ACT_23	UI_1V8	X_MATERIAL/PAD_23	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture
+ACT_24	X_MATERIAL/R_ACT_24	UI_1V8	X_MATERIAL/PAD_24	FIELD_A	FIELD_B	unencoded continuous physical actuation	nominal unactuated resistor card; physically variable material in actual fixture

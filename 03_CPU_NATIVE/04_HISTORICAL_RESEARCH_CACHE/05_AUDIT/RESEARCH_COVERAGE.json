@@ -1,0 +1,20 @@
+{
+  "source_count": 31,
+  "by_type": {
+    "paper": 21,
+    "report": 1,
+    "book": 5,
+    "book_chapter": 1,
+    "review": 2,
+    "perspective": 1
+  },
+  "years": [
+    1990,
+    2026
+  ],
+  "source_to_milestone_links": 160,
+  "R08_milestones": 116,
+  "full_books_read": 0,
+  "latest_HX89_attached": false,
+  "internet_refresh_executed": false
+}

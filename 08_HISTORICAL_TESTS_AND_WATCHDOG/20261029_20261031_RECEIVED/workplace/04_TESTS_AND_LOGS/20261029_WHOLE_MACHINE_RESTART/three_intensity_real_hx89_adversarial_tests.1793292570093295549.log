@@ -1,0 +1,22 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_hx89_whole_cycle_and_native_history (test_history_causal.NativeThreeIntensityHistory.test_hx89_whole_cycle_and_native_history) ... ok
+test_real_native_all_intensities_observed (test_history_causal.NativeThreeIntensityHistory.test_real_native_all_intensities_observed) ... ok
+test_reject_cpu_migration (test_history_causal.NativeThreeIntensityHistory.test_reject_cpu_migration) ... ok
+test_reject_missing_real_measurement (test_history_causal.NativeThreeIntensityHistory.test_reject_missing_real_measurement) ... ok
+test_reject_predetermined_hardware_claim (test_history_causal.NativeThreeIntensityHistory.test_reject_predetermined_hardware_claim) ... ok
+test_reject_reordered_real_measurement (test_history_causal.NativeThreeIntensityHistory.test_reject_reordered_real_measurement) ... ok
+test_reject_tampered_physical_timestamp (test_history_causal.NativeThreeIntensityHistory.test_reject_tampered_physical_timestamp) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.594s
+
+OK

@@ -1,0 +1,4 @@
+    8f45:	c5 fd ef c2          	vpxor  %ymm2,%ymm0,%ymm0
+    8f52:	c5 fd d4 c1          	vpaddq %ymm1,%ymm0,%ymm0
+    8f56:	c5 f5 73 f0 0d       	vpsllq $0xd,%ymm0,%ymm1
+    8f5b:	c5 f5 ef c8          	vpxor  %ymm0,%ymm1,%ymm1

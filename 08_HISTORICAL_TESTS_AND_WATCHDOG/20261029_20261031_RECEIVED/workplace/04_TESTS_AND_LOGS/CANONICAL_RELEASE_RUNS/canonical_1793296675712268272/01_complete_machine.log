@@ -1,0 +1,1 @@
+FAIL-CLOSED NATIVE RUN: A VOID native verification run owns the shared build lock; refusing concurrent execution

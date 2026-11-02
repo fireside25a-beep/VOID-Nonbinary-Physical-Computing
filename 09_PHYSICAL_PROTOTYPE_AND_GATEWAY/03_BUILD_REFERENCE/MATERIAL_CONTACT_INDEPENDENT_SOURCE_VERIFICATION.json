@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_file": "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib",
+  "source_sha256": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839",
+  "k06_flat_bom_sha256": "75e492d9729ce2faa3142a76feca33b4a5307f420fb406b1bcdbade28ab7527d",
+  "grid": "2x4",
+  "contact_count": 8,
+  "fixed_1k_series_resistor_count": 8,
+  "sheet_horizontal_links": 6,
+  "sheet_vertical_links": 4,
+  "sheet_link_ohms": "22k",
+  "node_to_return_resistors": 8,
+  "physical_wiring_references": 34,
+  "no_grounded_1k_perimeter_guard": true,
+  "conditions": [
+    "contact resistance is nominal 10meg in source, measure actual parts",
+    "1k series resistors connect PAD_xy to F_xy and never directly to ground",
+    "external power and metering loads are not extra material-carrier components",
+    "physical continuity and source orientation require independent bench validation"
+  ]
+}

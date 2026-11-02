@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "verifier": "independent_reader_spice_and_kicad_ast_v1",
+  "total_devices": 216,
+  "total_pin_net_connections": 459,
+  "files": [
+    {
+      "source": "VOID_K01_BIASED_BREAKDOWN_WITH_MESH",
+      "devices": 10,
+      "tested_pin_net_connections": 21,
+      "source_sha256": "3e5a5fbb9979b6a43166e115eaad90b363bdea947b36377eb78602efdd207c7d",
+      "schematic_sha256": "9773c9153ff36bfb1713bb438d963def0042e913359de7c9c1d80fefc948e477"
+    },
+    {
+      "source": "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH",
+      "devices": 10,
+      "tested_pin_net_connections": 21,
+      "source_sha256": "ce872411e6e58cb305901ba73e26627a7effb996cd433c418a62577be41b7b58",
+      "schematic_sha256": "ea42a8fb20ad9be455e24ba56aa8d4195cca3b2f3f5d8234767c43ce066a4678"
+    },
+    {
+      "source": "VOID_K03_PASSIVE_JOHNSON_WITH_MESH",
+      "devices": 5,
+      "tested_pin_net_connections": 11,
+      "source_sha256": "9fc1729dc309c7afb0c4c9900724153675f73938f22d97623c9a8d9e93d4385a",
+      "schematic_sha256": "a3f4fc592386171354cd6ea543d10fb23816a03c364f6a8116056478cf085191"
+    },
+    {
+      "source": "VOID_K04_TERMINATED_RECEIVER_WITH_MESH",
+      "devices": 5,
+      "tested_pin_net_connections": 11,
+      "source_sha256": "b2763f162d159c25bae244e51293ca33583ce86a73462d3473836f6dc9e1584d",
+      "schematic_sha256": "2f389415ddf1f45c30fdeda1ddd9b5804c2d41d0a2f879b44d116ea57461cdcc"
+    },
+    {
+      "source": "VOID_K05_DC_ADMITTANCE_WITNESS",
+      "devices": 8,
+      "tested_pin_net_connections": 21,
+      "source_sha256": "71ef06bded569e22836c9bf669b25c076feb80249b53be215f50868405729e7b",
+      "schematic_sha256": "f499a5acc861263a19366316b0f80f0d4d62a1dde29ed9a91b90c09782eac68b"
+    },
+    {
+      "source": "VOID_K05_WEIGHTED_NETWORK",
+      "devices": 12,
+      "tested_pin_net_connections": 24,
+      "source_sha256": "9a39456a494cef446610149d88faad6e62bcf772094587ad523a37dc30d01ef6",
+      "schematic_sha256": "da344e7f34852126f343d815d0be0adae35e2a4d3d79e33e61ab74362dcb9b11"
+    },
+    {
+      "source": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM",
+      "devices": 106,
+      "tested_pin_net_connections": 230,
+      "source_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+      "schematic_sha256": "22a09f220804886265468663b32ff8147038db995ffa44075c17624aadeff8cb"
+    },
+    {
+      "source": "VOID_K_MESH_V1",
+      "devices": 12,
+      "tested_pin_net_connections": 24,
+      "source_sha256": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+      "schematic_sha256": "894bd1fa7226ff4b7efab6d6673319423e7de9e7f04345b26fbde9606a5473b4"
+    },
+    {
+      "source": "VOID_PRIMITIVE_MATERIAL_INTERFACE",
+      "devices": 48,
+      "tested_pin_net_connections": 96,
+      "source_sha256": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839",
+      "schematic_sha256": "45fab256e6b2f94c3f72194280e4ad9a1bf3be0f925d4701643a27fbe9bc0902"
+    }
+  ],
+  "scope": "source capture connectivity; not ERC/DRC nor fabrication"
+}

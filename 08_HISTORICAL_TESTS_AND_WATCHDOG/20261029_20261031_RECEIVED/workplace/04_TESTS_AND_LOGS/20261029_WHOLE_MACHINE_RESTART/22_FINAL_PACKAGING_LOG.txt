@@ -1,0 +1,18 @@
+PASS: 2 parts, 351230578 bytes, SHA256 7fd1cae867d49daff8ba4fb9cb4c8e982589d2b021833ee55c1bb1629e1a152c
+{
+  "archive_bytes": 351230578,
+  "archive_sha256": "7fd1cae867d49daff8ba4fb9cb4c8e982589d2b021833ee55c1bb1629e1a152c",
+  "parts": [
+    {
+      "name": "VOID_HX89_WORKPLACE_COMPLETE_VERIFIED_20261029.tar.zst.part-001",
+      "bytes": 190000000,
+      "sha256": "8e4c7183be03539026ee04bbbaf1c52d9b3710b471ee83d6198670dd32f9bd04"
+    },
+    {
+      "name": "VOID_HX89_WORKPLACE_COMPLETE_VERIFIED_20261029.tar.zst.part-002",
+      "bytes": 161230578,
+      "sha256": "6faa15464274c41527dc8b3883178b7f8b93b9e94e4610ca473ca3782ff81797"
+    }
+  ],
+  "archive_member_entries": 4553
+}

@@ -1,0 +1,22 @@
+terminal	connector_class	physical_primitive	connection_direction	physical_hardware_required
+JCT	isolated high impedance	reverse breakdown source	measurement	current-limited junction probe
+PROBE_A	isolated high impedance	shared current field	measurement	scope or current probe
+PROBE_B	isolated high impedance	shared current field	measurement	scope or current probe
+CHARGE_A	isolated high impedance	capacitance state 1	measurement	probe and capacitor
+CHARGE_B	isolated high impedance	capacitance state 2	measurement	probe and capacitor
+CHARGE_C	isolated high impedance	capacitance state 3	measurement	probe and capacitor
+FIELD_A	material contact field	physical conductance	input	force-dependent material contacts
+FIELD_B	material contact field	physical conductance	input	force-dependent material contacts
+AXIS_A	potentiometer wiper	physical motion position	input	mechanical rotary or linear track
+AXIS_B	potentiometer wiper	physical motion position	input	mechanical rotary or linear track
+BOUNDARY_A	guarded analog terminal	generic voltage/current input	input	bounded analog sensor
+BOUNDARY_B	guarded analog terminal	generic voltage/current input	input	bounded analog sensor
+DISPLAY_X	analog monitor connector	continuous optical/electrical view X	output	high-Z display amplifier/monitor
+DISPLAY_Y	analog monitor connector	continuous optical/electrical view Y	output	high-Z display amplifier/monitor
+LED_A_AN	physical LED branch	analog light-emission current A	output	physical LED and transistor
+LED_B_AN	physical LED branch	analog light-emission current B	output	physical LED and transistor
+LED_C_AN	physical LED branch	analog light-emission current C	output	physical LED and transistor
+LED_D_AN	physical LED branch	analog light-emission current D	output	physical LED and transistor
+DISPLAY_3V3	powered separate supply	optical physical energy	supply	3.3V current-budgeted rail
+UI_1V8	powered separate supply	material physical input energy	supply	1.8V current-budgeted rail
+SUPPLY	current-limited separate supply	breakdown physical junction energy	supply	24V current-budgeted rail

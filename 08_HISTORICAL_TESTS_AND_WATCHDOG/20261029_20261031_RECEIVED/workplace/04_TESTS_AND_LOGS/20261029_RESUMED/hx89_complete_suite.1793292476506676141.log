@@ -1,0 +1,95 @@
+mkdir -p bin
+ld -o bin/hx0-x86_64 build/hx0-x86_64.o
+mkdir -p bin
+cc -std=c11 -O2 -Wall -Wextra -Werror -o bin/pulse-pcm src/pulse_pcm.c
+mkdir -p build
+as -o build/hx0_bitstream.o boot/hx0_bitstream.S
+objcopy -O binary -j .rodata build/hx0_bitstream.o build/hx0_bitstream.hx0
+cmp build/hx0_bitstream.hx0 seeds/hx0_bitstream.hx0
+mkdir -p build
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < seeds/hx89_seed.bits > build/hx87_seed.stageA
+cmp build/hx87_seed.stageA seeds/hx87_seed.hx
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < seeds/hx89_semantics.bits > build/hx87_semantics.seed
+cmp build/hx87_semantics.seed seeds/hx87_semantics.seed
+./bin/hx0-x86_64 seeds/hx0_etch.hx0 < seeds/hx87_seed.etch > build/hx87_seed.etchdecoded
+cmp build/hx87_seed.etchdecoded build/hx87_seed.stageA
+./bin/hx0-x86_64 seeds/hx0_etch.hx0 < seeds/hx87_semantics.etch > build/hx87_semantics.etchdecoded
+cmp build/hx87_semantics.etchdecoded build/hx87_semantics.seed
+./bin/pulse-pcm encode-fsk seeds/hx89_seed.bits build/hx89_seed.fsk.wav
+./bin/pulse-pcm decode-fsk build/hx89_seed.fsk.wav build/hx89_seed.fsk.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_seed.fsk.bits > build/hx87_seed.fskdecoded
+cmp build/hx87_seed.fskdecoded build/hx87_seed.stageA
+./bin/pulse-pcm encode-fsk seeds/hx89_semantics.bits build/hx89_semantics.fsk.wav
+./bin/pulse-pcm decode-fsk build/hx89_semantics.fsk.wav build/hx89_semantics.fsk.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_semantics.fsk.bits > build/hx87_semantics.fskdecoded
+cmp build/hx87_semantics.fskdecoded build/hx87_semantics.seed
+./bin/pulse-pcm encode-bell202 seeds/hx89_seed.bits build/hx89_seed.bell.wav
+./bin/pulse-pcm decode-bell202 build/hx89_seed.bell.wav build/hx89_seed.bell.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_seed.bell.bits > build/hx87_seed.belldecoded
+cmp build/hx87_seed.belldecoded build/hx87_seed.stageA
+./bin/pulse-pcm encode-bell202 seeds/hx89_semantics.bits build/hx89_semantics.bell.wav
+./bin/pulse-pcm decode-bell202 build/hx89_semantics.bell.wav build/hx89_semantics.bell.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_semantics.bell.bits > build/hx87_semantics.belldecoded
+cmp build/hx87_semantics.belldecoded build/hx87_semantics.seed
+printf 'HX89_BOOTSTRAP_VERIFIED\n' > build/bootstrap.stamp
+mkdir -p build
+cc -c -o build/hx89_x86_64.o src/hx89_x86_64.S
+mkdir -p bin
+cc -O2 -Wall -Wextra -Wl,-z,relro,-z,now,-z,noexecstack -no-pie -o bin/hx89 build/hx89_x86_64.o
+mkdir -p bin
+cc -std=c11 -O2 -Wall -Wextra -Werror -o bin/hx89-gas src/hex_gas.c
+mkdir -p bin
+cc -std=c11 -O2 -Wall -Wextra -Werror -o bin/byte-polyform src/byte_polyform.c
+mkdir -p bin
+cc -std=c11 -O3 -Wall -Wextra -Werror -o bin/hx89-chiral-proof src/chiral_law.c
+sh tests/test.sh
+PASS: HX0 ETCH fixed point
+PASS: memory echo and one-bit HX0 machine reconstruction
+PASS: PCM waveform to one-bit HX0 to live semantic image
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+PASS: independent Bell 202 waveform, 1200 baud UART, start sync, CRC and noisy channel
+PASS: level, 125-baud FSK, Bell 202 and memory echo converge on canonical HX0 images
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+PASS: independent hex-gas conservation/reverse and image Polyform through Bell, HX0 and HX89
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+PASS: semantic right inverse for byte alphabet, Bell/HX0 transport, determinism and arena boundaries
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+PASS: chiral reciprocity, dressed PT reversor, exact echo/correlation law, only 3 one-body linear invariants, independent larger-torus oracle
+FAIL: chiral reciprocity theorem
+make: *** [Makefile:85: check] Error 1

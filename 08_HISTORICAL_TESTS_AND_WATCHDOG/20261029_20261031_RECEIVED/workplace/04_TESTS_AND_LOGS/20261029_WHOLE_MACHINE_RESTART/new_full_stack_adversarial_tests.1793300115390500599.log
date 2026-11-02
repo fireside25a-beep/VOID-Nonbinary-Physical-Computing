@@ -1,0 +1,16 @@
+test_actual_full_stack_passes (test_full_stack.RealFullStackChecks.test_actual_full_stack_passes) ... ok
+test_actual_lattice_reverse_and_emitted_output (test_full_stack.RealFullStackChecks.test_actual_lattice_reverse_and_emitted_output) ... ok
+test_cli_relative_output_executes_and_resumes_real_hx89 (test_full_stack.RealFullStackChecks.test_cli_relative_output_executes_and_resumes_real_hx89) ... ok
+test_corrupted_hx89_output_rejected (test_full_stack.RealFullStackChecks.test_corrupted_hx89_output_rejected) ... ok
+test_corrupted_lattice_image_rejected (test_full_stack.RealFullStackChecks.test_corrupted_lattice_image_rejected) ... ok
+test_incorrect_next_cpu_control_rejected (test_full_stack.RealFullStackChecks.test_incorrect_next_cpu_control_rejected) ... ok
+test_invalid_analog_claim_rejected (test_full_stack.RealFullStackChecks.test_invalid_analog_claim_rejected) ... ok
+test_real_crosscycle_causality (test_full_stack.RealFullStackChecks.test_real_crosscycle_causality) ... ok
+test_real_hx89_native_plus_5d_phase_and_persistence (test_full_stack.RealFullStackChecks.test_real_hx89_native_plus_5d_phase_and_persistence) ... ok
+test_refuse_unbounded_process (test_full_stack.RealFullStackChecks.test_refuse_unbounded_process) ... ok
+test_truncated_real_cpu_trace_rejected (test_full_stack.RealFullStackChecks.test_truncated_real_cpu_trace_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.213s
+
+OK

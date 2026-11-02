@@ -1,0 +1,26 @@
+graph VOID_SOURCE {
+  graph [overlap=false,splines=true,rankdir=LR,fontsize=18,labelloc=t,label="VOID_K04_TERMINATED_RECEIVER_WITH_MESH — literal electrical connection graph"];
+  node [fontname="Arial",fontsize=9];
+  "comp_8" [shape=box,style=rounded,label="R_TERMINATED\\n50"];
+  "comp_8" -- "net_TOP_JCT" [label="1",fontsize=8];
+  "comp_8" -- "net_TOP_0" [label="2",fontsize=8];
+  "comp_11" [shape=box,style=rounded,label="C_ACBLOCK\\n10n"];
+  "comp_11" -- "net_TOP_JCT" [label="1",fontsize=8];
+  "comp_11" -- "net_TOP_AC_IN" [label="2",fontsize=8];
+  "comp_12" [shape=box,style=rounded,label="R_ACSER\\n1k"];
+  "comp_12" -- "net_TOP_AC_IN" [label="1",fontsize=8];
+  "comp_12" -- "net_TOP_INPUT" [label="2",fontsize=8];
+  "comp_13" [shape=box,style=rounded,label="R_ACREF\\n1meg"];
+  "comp_13" -- "net_TOP_INPUT" [label="1",fontsize=8];
+  "comp_13" -- "net_TOP_0" [label="2",fontsize=8];
+  "comp_14" [shape=box,style=rounded,label="X_MESH\\nVOID_MESH_V1"];
+  "comp_14" -- "net_TOP_INPUT" [label="1",fontsize=8];
+  "comp_14" -- "net_TOP_PROBE_A" [label="2",fontsize=8];
+  "comp_14" -- "net_TOP_PROBE_B" [label="3",fontsize=8];
+  "net_TOP_JCT" [shape=ellipse,style=filled,fillcolor="#e5f5fc",label="JCT"];
+  "net_TOP_PROBE_A" [shape=ellipse,style=filled,fillcolor="#e5f5fc",label="PROBE_A"];
+  "net_TOP_AC_IN" [shape=ellipse,style=filled,fillcolor="#e5f5fc",label="AC_IN"];
+  "net_TOP_0" [shape=ellipse,style=filled,fillcolor="#e5f5fc",label="0"];
+  "net_TOP_PROBE_B" [shape=ellipse,style=filled,fillcolor="#e5f5fc",label="PROBE_B"];
+  "net_TOP_INPUT" [shape=ellipse,style=filled,fillcolor="#e5f5fc",label="INPUT"];
+}

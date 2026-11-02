@@ -1,0 +1,14 @@
+VOID R04 live static circuit audit, generated on 2026-10-29
+R03 seal: 32 files, all exactly matched active pre-change worktree, ZIP CRC pass
+Preserved historical/input archives: 9 CRC PASS, byte-identical to originals
+K01–K04 exactly four source netlists and common mesh: byte-identical to R03 PASS
+K05 R03 unused sixth source Vxm3: DETECTED and REMOVED
+K05 actual five source terminals: each connected to y0/y1 by resistor PASS
+K05 four ideal-only repeated-decimal component values replaced with nominal 2-resistor parallel branches PASS
+K05 exact rational KCL y0=6500/20001 = +0.324983750812459 V PASS (calculated, not measured)
+K05 exact rational KCL y1=-4000/20001 = -0.199990000499975 V PASS (calculated, not measured)
+Component matrix fully regenerated: 67 active cards including meter equivalent loads PASS
+Four existing raw physical evidence records: exactly one header row and BYTE-UNCHANGED PASS
+Actual electrical bench assembly/device data: NONE IN FILES; no physical evidence inferred
+No synthetic noise waveform or software computation substrate introduced
+Original K01–K04 and historical R01–R03 are retained, not replaced

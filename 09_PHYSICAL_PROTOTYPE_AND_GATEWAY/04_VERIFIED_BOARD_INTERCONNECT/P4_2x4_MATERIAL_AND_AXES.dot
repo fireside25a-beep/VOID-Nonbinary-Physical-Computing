@@ -1,0 +1,15 @@
+graph G {
+graph [rankdir=LR,fontname="DejaVu Sans",bgcolor="white",pad="0.3",ranksep="0.6",nodesep="0.35",label="VOID / R08  P4_2x4_MATERIAL_AND_AXES\nSOURCE-MAPPED INTERCONNECT ONLY",labelloc=t,fontsize=22];
+node [fontname="DejaVu Sans",fontsize=10,shape=record,style="filled",fillcolor="#f2f7f9",color="#355065"];
+edge [color="#7a8c9c",penwidth=1];
+j0 [label="{AXIS_POT_A|1: UI_1V8 | 2: 0 | 3: AXIS_A}"];
+j1 [label="{AXIS_POT_B|1: UI_1V8 | 2: 0 | 3: AXIS_B}"];
+j2 [label="{MAT_11|1: UI_1V8 | 2: X_MATERIAL/PAD_11}"];
+j3 [label="{MAT_12|1: UI_1V8 | 2: X_MATERIAL/PAD_12}"];
+j4 [label="{MAT_13|1: UI_1V8 | 2: X_MATERIAL/PAD_13}"];
+j5 [label="{MAT_14|1: UI_1V8 | 2: X_MATERIAL/PAD_14}"];
+j6 [label="{MAT_21|1: UI_1V8 | 2: X_MATERIAL/PAD_21}"];
+j7 [label="{MAT_22|1: UI_1V8 | 2: X_MATERIAL/PAD_22}"];
+j8 [label="{MAT_23|1: UI_1V8 | 2: X_MATERIAL/PAD_23}"];
+j9 [label="{MAT_24|1: UI_1V8 | 2: X_MATERIAL/PAD_24}"];
+}

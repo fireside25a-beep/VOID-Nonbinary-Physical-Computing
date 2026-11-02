@@ -1,0 +1,1 @@
+These diagnostic outputs used a sign-reversed capacitor boundary RHS in first version of passive solver and are INVALID as physical-model evidence. Kept strictly for complete audit trail. Source sign was corrected before final reruns.

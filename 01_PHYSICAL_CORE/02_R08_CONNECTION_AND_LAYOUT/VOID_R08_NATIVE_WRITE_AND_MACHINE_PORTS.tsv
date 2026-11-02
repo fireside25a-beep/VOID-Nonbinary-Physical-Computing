@@ -1,0 +1,15 @@
+connector	electrical_node	physical_port	domain	compatible_function	evidence_note
+WRITE_A	WRITE_A	physical insulated electrode pad A	unpowered passive C/R/clamp	existing machine analog output via physically qualified interface, contact or sensor	none until measured
+WRITE_B	WRITE_B	physical insulated electrode pad B	unpowered passive C/R/clamp	second independently qualified analogue signal	none until measured
+OBS_A	CHARGE_A	high impedance analogue observation	passive charge storage	real high-Z scope channel	10 meg nominal included as instrument load
+OBS_B	CHARGE_B	high impedance analogue observation	passive charge storage	real high-Z scope channel	10 meg nominal included as instrument load
+SHEET_A	FIELD_A	conductance of shared material sheet	1.8 V physical excitation	physical tactile or photoresistive modulation	R_ACT released value a nominal placeholder
+SHEET_B	FIELD_B	conductance of shared material sheet	1.8 V physical excitation	material field output	not a character code
+WIPER_A	AXIS_A	10 kohm 3-terminal physical potentiometer wiper A	1.8 V rail	mechanical x motion	two 5kohm SPICE cards describe nominal midpoint only
+WIPER_B	AXIS_B	10 kohm 3-terminal physical potentiometer wiper B	1.8 V rail	mechanical y motion	two 5kohm SPICE cards describe nominal midpoint only
+HOST_A	BOUNDARY_A	passive protected physical input	1.8 V clamp	independently assessed existing host analogue port	no MMIO assumed
+HOST_B	BOUNDARY_B	passive protected physical input	1.8 V clamp	independently assessed existing host analogue port	no MMIO assumed
+OUT_L0	LED_A_COL	current through physical luminous element	3.3 V physical powered stage	direct optical output	not a graphical display
+OUT_L1	LED_B_COL	current through physical luminous element	3.3 V physical powered stage	direct optical output	not a graphical display
+OUT_L2	LED_C_COL	current through physical luminous element	3.3 V physical powered stage	direct optical output	not a graphical display
+OUT_L3	LED_D_COL	current through physical luminous element	3.3 V physical powered stage	direct optical output	not a graphical display

@@ -1,0 +1,17 @@
+{
+  "schema": "VOID_SOURCE_LOAD_BUDGET_V1",
+  "status": "PASS",
+  "source_sha256": {
+    "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+    "VOID_K_MESH_V1.lib": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+    "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839"
+  },
+  "verified_source_cards": 32,
+  "local_scenarios": 9,
+  "charge_node_loads": 3,
+  "original_mesh_probe_model": "1 Mohm in parallel with 30 pF for each PROBE_A and PROBE_B",
+  "accidental_second_DMM_effect": "10 Mohm source shunt plus 10 Mohm real DMM = 5 Mohm, not 10 Mohm",
+  "direct_ADC_warning": "AD7606 family analog input 1 Mohm; must NOT directly substitute for electrometer buffer",
+  "R_CURRENT_LIMIT_worst_case_W_at_24V": 0.17454545454545456,
+  "strict_scope": "local shunt calculations; NOT full K06 AC/DC transient, no physically measured signal"
+}

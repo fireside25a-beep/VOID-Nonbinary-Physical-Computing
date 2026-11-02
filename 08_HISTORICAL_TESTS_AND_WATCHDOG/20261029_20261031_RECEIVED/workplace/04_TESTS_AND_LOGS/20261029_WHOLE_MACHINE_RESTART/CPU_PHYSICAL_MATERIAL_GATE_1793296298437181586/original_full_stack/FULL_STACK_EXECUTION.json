@@ -1,0 +1,476 @@
+{
+  "actual_hardware_weak_inversion_control_verified": false,
+  "cache_probe_integrated_and_causally_used": true,
+  "changed_cpu_commands": 4,
+  "classification": "ACTUAL_CPU_INSTRUCTIONS_AND_HX89_EXECUTION_WITH_DIGITAL_GAS_MODEL",
+  "cycles": 4,
+  "digital_lattice_model_not_material_gas": true,
+  "feedback": [
+    {
+      "cpu_instruction_tsc_total": 5954042,
+      "cycle": 0,
+      "executed_gas_model_and_hx89": {
+        "collisions": 118,
+        "executed_hx89_gas_stdout_sha256": "ec1651116d846ab4784c83c263da7494e0d67201c1c5e5a6b033600084b2332e",
+        "gas_stdout_sha256": "47eeac69f35b7c91def9f242621bc9778de06a5f8f849060e3bb0a51d0434afd",
+        "hexworld_profile": "1212222212222122",
+        "image_sha256": "22fd0ebaaca875f00479faa5a3ffccd33b149b3a5d4306e236d95a374ada4056",
+        "mass": 438,
+        "model_state_final_hash": "10bccf6517dbfab6",
+        "polyform_sha256": "63740706c596fe510179c91b843a6b23e00624d2c4001729e252e84f6d61364c",
+        "reverse_verified_by_c_model": true,
+        "seed": 8797306935803,
+        "steps": 6
+      },
+      "executed_hx89_q2": {
+        "fitness": 4,
+        "head": 0,
+        "q": 9,
+        "step": 1,
+        "target": 17
+      },
+      "hx89_q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "hx89_q2_stdout_sha256": "2267883fa8d5f17c321c73cca5acf6f5d880e0fd1cb96d72d559314c7c56897d",
+      "native_trial_sha256": "4b00e7359d8ebf50851c964a3d7f861705402f513e8e62f4aaef6cdaebcd9f94",
+      "next_cpu_control": {
+        "rotate": 0,
+        "work": 5
+      },
+      "observed_cpu_cache_causality": {
+        "cache_latency_causal_gate": true,
+        "cache_probe_executable_sha256": "7f775685891a3188d45c0b31da2b02a82cbcb604a68e63672a8edd08dfe2ae29",
+        "cache_probe_source_sha256": "6f7aae87443416f2c8e5c894afdd425a89bd3f69d04d0fd7e2950832e8e47a20",
+        "cache_provenance": "REAL_RDTSCP_LOADS_AND_CLFLUSH_COHERENCE",
+        "counterbalanced_orders": [
+          124,
+          132
+        ],
+        "evicted_minus_cached_median_tsc": 239.0,
+        "evicted_slower_fraction": 1.0,
+        "not_analog_voltage_or_temperature_measurement": true,
+        "pinned_cpu": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "342b27cf5bdfee994618ae1b5ee418337d3a722ed6be18b61ee60957c2e2a6b7",
+        "trace_sha256": "bf70dcdaa19dc38021408c9f5d3de374083ec155d3157d155544679a345e8bf1",
+        "trials": 256,
+        "warm_minus_warm_control_median_tsc": 0.0
+      },
+      "observed_cpu_modes_in_order": [
+        "scalar",
+        "avx2",
+        "avx512",
+        "large_cache"
+      ],
+      "observed_cpu_three_intensity_history": {
+        "active_duration_median_ns_by_intensity": [
+          0.0,
+          1044287.5,
+          5002256.5
+        ],
+        "binary_sha256": "5233f9635a897eca7aec4d2d84a30930aab3dadfc44c96e60ba1f5de34da534c",
+        "blocks": 1,
+        "direct_temperature_or_current_observed": false,
+        "high_minus_idle_median_delta_tsc": 11.0,
+        "intensity_counts": [
+          6,
+          6,
+          6
+        ],
+        "median_post_minus_pre_tsc_by_intensity": [
+          54.0,
+          -3263.0,
+          65.0
+        ],
+        "physical_nonbinary_thermodynamic_operator_verified": false,
+        "pinned_cpu": 0,
+        "raw_csv_sha256": "ae6606c308db0f01183c48a9b0f2fd5776b121cd62223975ff8b2a3268de363d",
+        "schema": "VOID_REAL_CPU_THREE_INTENSITY_HISTORY_V1",
+        "seed": 11400714269504873967,
+        "source_sha256": "259d64a8b61c25e6dd5f67a784ec4e05d9feee61dca521b8674135ccb81797c4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "03891bf21cb8cfd473f822a96843e5c61f948ae4d94f4e215bc3e1b90899b4e1",
+        "transition_counts": [
+          [
+            0,
+            4,
+            2
+          ],
+          [
+            2,
+            0,
+            3
+          ],
+          [
+            4,
+            2,
+            0
+          ]
+        ],
+        "trials": 18
+      },
+      "processor_id": 0,
+      "requested_cpu_control": {
+        "rotate": 0,
+        "work": 4
+      }
+    },
+    {
+      "cpu_instruction_tsc_total": 5620320,
+      "cycle": 1,
+      "executed_gas_model_and_hx89": {
+        "collisions": 154,
+        "executed_hx89_gas_stdout_sha256": "9ab5418db2009485af24d7889fe2291f79c14ddf5b7857047e5f029a303b8d50",
+        "gas_stdout_sha256": "d93ad3c19e12c659cef0099f42825ef7154bd08e4727e89535731e496649cdd0",
+        "hexworld_profile": "2221212221212222",
+        "image_sha256": "63e0dcde1c903eb5d20d9919eb6e14ba47a69c2b5fec9090ff04a2ac3de2d5d4",
+        "mass": 416,
+        "model_state_final_hash": "15c6df5cf166e048",
+        "polyform_sha256": "40c8656c45d3fab52b3178d0bee18c8b79eea85f39bdcd94241340fe906381a5",
+        "reverse_verified_by_c_model": true,
+        "seed": 4398723220066,
+        "steps": 9
+      },
+      "executed_hx89_q2": {
+        "fitness": 2,
+        "head": 0,
+        "q": 5,
+        "step": 2,
+        "target": 20
+      },
+      "hx89_q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "hx89_q2_stdout_sha256": "463d0205b907033b6ad66740f2c3a81e87a5757b6e4539410f180c1846ed3c73",
+      "native_trial_sha256": "c81e11e1a3a993e1e8902e16bbf25f80e6c8a6b926b98a86a816aae59a790335",
+      "next_cpu_control": {
+        "rotate": 3,
+        "work": 6
+      },
+      "observed_cpu_cache_causality": {
+        "cache_latency_causal_gate": true,
+        "cache_probe_executable_sha256": "7f775685891a3188d45c0b31da2b02a82cbcb604a68e63672a8edd08dfe2ae29",
+        "cache_probe_source_sha256": "6f7aae87443416f2c8e5c894afdd425a89bd3f69d04d0fd7e2950832e8e47a20",
+        "cache_provenance": "REAL_RDTSCP_LOADS_AND_CLFLUSH_COHERENCE",
+        "counterbalanced_orders": [
+          124,
+          132
+        ],
+        "evicted_minus_cached_median_tsc": 272.0,
+        "evicted_slower_fraction": 1.0,
+        "not_analog_voltage_or_temperature_measurement": true,
+        "pinned_cpu": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "342b27cf5bdfee994618ae1b5ee418337d3a722ed6be18b61ee60957c2e2a6b7",
+        "trace_sha256": "87155fc8b30e5384f80c8e66c80ab00654a8475adc2f4e877e0b4e4db34272fa",
+        "trials": 256,
+        "warm_minus_warm_control_median_tsc": 0.0
+      },
+      "observed_cpu_modes_in_order": [
+        "scalar",
+        "avx2",
+        "avx512",
+        "large_cache"
+      ],
+      "observed_cpu_three_intensity_history": {
+        "active_duration_median_ns_by_intensity": [
+          0.0,
+          1014700.5,
+          5002432.0
+        ],
+        "binary_sha256": "5233f9635a897eca7aec4d2d84a30930aab3dadfc44c96e60ba1f5de34da534c",
+        "blocks": 1,
+        "direct_temperature_or_current_observed": false,
+        "high_minus_idle_median_delta_tsc": 2046.0,
+        "intensity_counts": [
+          6,
+          6,
+          6
+        ],
+        "median_post_minus_pre_tsc_by_intensity": [
+          1.0,
+          -20.0,
+          2047.0
+        ],
+        "physical_nonbinary_thermodynamic_operator_verified": false,
+        "pinned_cpu": 0,
+        "raw_csv_sha256": "ad4ec7590c6cc515da29e543423748f435499bd78632f7654a1c3564274322ed",
+        "schema": "VOID_REAL_CPU_THREE_INTENSITY_HISTORY_V1",
+        "seed": 4354685290019895882,
+        "source_sha256": "259d64a8b61c25e6dd5f67a784ec4e05d9feee61dca521b8674135ccb81797c4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "7a586fc00580fd60a1945ae654905158faf46dc607054c4c94f73f7bb8a80bc7",
+        "transition_counts": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        "trials": 18
+      },
+      "processor_id": 0,
+      "requested_cpu_control": {
+        "rotate": 0,
+        "work": 5
+      }
+    },
+    {
+      "cpu_instruction_tsc_total": 8754998,
+      "cycle": 2,
+      "executed_gas_model_and_hx89": {
+        "collisions": 114,
+        "executed_hx89_gas_stdout_sha256": "e3133ba3ed88c35589c5751051793a27cb44db94a2a8c1aefa09893f86f90fab",
+        "gas_stdout_sha256": "5b1016146b74c16bfcf8026687e9f36a2df5d6194016e02baecf7f2f3d1a5c84",
+        "hexworld_profile": "2212122211222222",
+        "image_sha256": "a20125858bdf5fe99263aef9a339f6692bf9e0b33e72b88e955565c89f96ee3d",
+        "mass": 430,
+        "model_state_final_hash": "c58e819bd7b2c670",
+        "polyform_sha256": "f0c841eb4c612f66bfee8e392f80b902d9c1a59f2eb0165a673c123d5e1630ea",
+        "reverse_verified_by_c_model": true,
+        "seed": 6598286481205,
+        "steps": 6
+      },
+      "executed_hx89_q2": {
+        "fitness": 3,
+        "head": 0,
+        "q": 9,
+        "step": 1,
+        "target": 23
+      },
+      "hx89_q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "hx89_q2_stdout_sha256": "bff16b87c438e86f6a2b1899836e4d89089e3ce912ef0d44a2880a65b7b1505d",
+      "native_trial_sha256": "32d141d96e03fbcf609c11780f220c8c6d95cf3c670ce82ed253b6d1672e0096",
+      "next_cpu_control": {
+        "rotate": 3,
+        "work": 4
+      },
+      "observed_cpu_cache_causality": {
+        "cache_latency_causal_gate": true,
+        "cache_probe_executable_sha256": "7f775685891a3188d45c0b31da2b02a82cbcb604a68e63672a8edd08dfe2ae29",
+        "cache_probe_source_sha256": "6f7aae87443416f2c8e5c894afdd425a89bd3f69d04d0fd7e2950832e8e47a20",
+        "cache_provenance": "REAL_RDTSCP_LOADS_AND_CLFLUSH_COHERENCE",
+        "counterbalanced_orders": [
+          124,
+          132
+        ],
+        "evicted_minus_cached_median_tsc": 238.0,
+        "evicted_slower_fraction": 1.0,
+        "not_analog_voltage_or_temperature_measurement": true,
+        "pinned_cpu": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "342b27cf5bdfee994618ae1b5ee418337d3a722ed6be18b61ee60957c2e2a6b7",
+        "trace_sha256": "49b919b4e142af522d78cef7f60890f4fac67f91327aed7ce45baade2a87cbf7",
+        "trials": 256,
+        "warm_minus_warm_control_median_tsc": 0.0
+      },
+      "observed_cpu_modes_in_order": [
+        "large_cache",
+        "scalar",
+        "avx2",
+        "avx512"
+      ],
+      "observed_cpu_three_intensity_history": {
+        "active_duration_median_ns_by_intensity": [
+          0.0,
+          1002407.0,
+          5001429.0
+        ],
+        "binary_sha256": "5233f9635a897eca7aec4d2d84a30930aab3dadfc44c96e60ba1f5de34da534c",
+        "blocks": 1,
+        "direct_temperature_or_current_observed": false,
+        "high_minus_idle_median_delta_tsc": 8147.0,
+        "intensity_counts": [
+          6,
+          6,
+          6
+        ],
+        "median_post_minus_pre_tsc_by_intensity": [
+          -8160.0,
+          23.0,
+          -13.0
+        ],
+        "physical_nonbinary_thermodynamic_operator_verified": false,
+        "pinned_cpu": 0,
+        "raw_csv_sha256": "d3f2e4bdab08b752fbf026d58cf811c7f5fcb2f33fc69673d305253d09e34ebf",
+        "schema": "VOID_REAL_CPU_THREE_INTENSITY_HISTORY_V1",
+        "seed": 15755400521631589129,
+        "source_sha256": "259d64a8b61c25e6dd5f67a784ec4e05d9feee61dca521b8674135ccb81797c4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "93c1fedbb32dae2edb22c4af74b6b709852eb6e943f85bb038c5aac55e101928",
+        "transition_counts": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            4,
+            0,
+            2
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "trials": 18
+      },
+      "processor_id": 0,
+      "requested_cpu_control": {
+        "rotate": 3,
+        "work": 6
+      }
+    },
+    {
+      "cpu_instruction_tsc_total": 4743434,
+      "cycle": 3,
+      "executed_gas_model_and_hx89": {
+        "collisions": 125,
+        "executed_hx89_gas_stdout_sha256": "ee3a40b153e28bf8d00f69c9e25b3ebfab5d49ec99fab348a3ebc4430a778cfb",
+        "gas_stdout_sha256": "a7886a8341db60612115233a7079783e0db2b8c0b40ca497bec133251c01ac24",
+        "hexworld_profile": "2212222222221222",
+        "image_sha256": "feb66433d3c038f681642e8df73e76e916ef7bbcc1a4ab16e870a8b3ed854e25",
+        "mass": 464,
+        "model_state_final_hash": "743bf07f345f0dbb",
+        "polyform_sha256": "2b075c1edff19e89658d6decd83db3dec458639dde975e6e16550d6830756a1c",
+        "reverse_verified_by_c_model": true,
+        "seed": 1212702990,
+        "steps": 6
+      },
+      "executed_hx89_q2": {
+        "fitness": 0,
+        "head": 0,
+        "q": 9,
+        "step": 1,
+        "target": 9
+      },
+      "hx89_q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "hx89_q2_stdout_sha256": "7d79b02a39c05666a07a817fce422253ab9af5fc1cf38aa83361d705834958ef",
+      "native_trial_sha256": "d37950df2500dc6fdab0e32a175eb810e2d7706440c970ab77549846e92f72c2",
+      "next_cpu_control": {
+        "rotate": 2,
+        "work": 6
+      },
+      "observed_cpu_cache_causality": {
+        "cache_latency_causal_gate": true,
+        "cache_probe_executable_sha256": "7f775685891a3188d45c0b31da2b02a82cbcb604a68e63672a8edd08dfe2ae29",
+        "cache_probe_source_sha256": "6f7aae87443416f2c8e5c894afdd425a89bd3f69d04d0fd7e2950832e8e47a20",
+        "cache_provenance": "REAL_RDTSCP_LOADS_AND_CLFLUSH_COHERENCE",
+        "counterbalanced_orders": [
+          124,
+          132
+        ],
+        "evicted_minus_cached_median_tsc": 253.0,
+        "evicted_slower_fraction": 1.0,
+        "not_analog_voltage_or_temperature_measurement": true,
+        "pinned_cpu": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "342b27cf5bdfee994618ae1b5ee418337d3a722ed6be18b61ee60957c2e2a6b7",
+        "trace_sha256": "db7b39298c47fd88e0c00b37b7996dd61a47b365a0a97feb552f7d636d4a4e44",
+        "trials": 256,
+        "warm_minus_warm_control_median_tsc": 0.0
+      },
+      "observed_cpu_modes_in_order": [
+        "large_cache",
+        "scalar",
+        "avx2",
+        "avx512"
+      ],
+      "observed_cpu_three_intensity_history": {
+        "active_duration_median_ns_by_intensity": [
+          0.0,
+          1001756.5,
+          5001751.5
+        ],
+        "binary_sha256": "5233f9635a897eca7aec4d2d84a30930aab3dadfc44c96e60ba1f5de34da534c",
+        "blocks": 1,
+        "direct_temperature_or_current_observed": false,
+        "high_minus_idle_median_delta_tsc": -1315.0,
+        "intensity_counts": [
+          6,
+          6,
+          6
+        ],
+        "median_post_minus_pre_tsc_by_intensity": [
+          -3.0,
+          46.0,
+          -1318.0
+        ],
+        "physical_nonbinary_thermodynamic_operator_verified": false,
+        "pinned_cpu": 0,
+        "raw_csv_sha256": "a3dbc39bc4491206f5aae823c81aff57385dde8804a8da649f502eecd45768cc",
+        "schema": "VOID_REAL_CPU_THREE_INTENSITY_HISTORY_V1",
+        "seed": 8709371129818616158,
+        "source_sha256": "259d64a8b61c25e6dd5f67a784ec4e05d9feee61dca521b8674135ccb81797c4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "8abb8a784613a410b3acd1cd5c968f8313cf403e97b4082e9f9fb72ec066977d",
+        "transition_counts": [
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        "trials": 18
+      },
+      "processor_id": 0,
+      "requested_cpu_control": {
+        "rotate": 3,
+        "work": 4
+      }
+    }
+  ],
+  "gas_executable_sha256": "8e64aee4516b6e8dadea8ce62de00d475de45f67594a1572278f587939476b26",
+  "historical_116": {
+    "canonical_ledger_sha256": "407ca9c039720891560abe384c453b898d35edbaef49c45cfa1c4ab27e661ba2",
+    "master_sha256": "1751f34c05919d90025bb1d4525245bc0f55605bc9e0de93c2a77286645643c1",
+    "milestone_ids": 116,
+    "original_crosswalk_sha256": "64ca8c80e91d7c5aeef11f8ef2ae4331bd3b1ae612b20a09d98c0ad5768616cd"
+  },
+  "history_executable_sha256": "5233f9635a897eca7aec4d2d84a30930aab3dadfc44c96e60ba1f5de34da534c",
+  "history_source_sha256": "259d64a8b61c25e6dd5f67a784ec4e05d9feee61dca521b8674135ccb81797c4",
+  "hx89_executable_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+  "hx89_lateral_executions": {
+    "five_dimensional_hash": "f080d6b0c215417d77cab5aca6a5604377f2c6c09436356c2e9d622d5052f7be",
+    "native_code_hash": "af374a72fff3f561",
+    "native_ir": 4,
+    "native_result": 122,
+    "phase_hash": "1389bdb4ae9daa9c6d50c9ec2e0c530cbc725b3d33e624db8329ad6253b03820",
+    "resumed_stdout_sha256": "77c6f8797af45e597f65de334b0e7754caaf998a6297fbf419683bd9c685b5f4",
+    "saved_snapshot_sha256": "513adef2ad64c5f42586ad11069ee236cf9792f2b283074156f50a40b85e2721",
+    "saved_stdout_sha256": "13bdd2a95b9b2b7fd4dce57b7324af9dc93a2c2e63707199aa0fa32dffc30f4b"
+  },
+  "k06_specification_not_physical_attachment": {
+    "netlist_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+    "pads": "WRITE_A -> CHARGE_A",
+    "port_map_sha256": "62faf978af8f5b8f046d0dc883906c73aac7c7f6d0bcbedc4dfd6868311dc054"
+  },
+  "measured_cache_state_effect_not_nonbinary_analog": true,
+  "native_executable_sha256": "d5fa8b355fd8d905094440af12efee545073643cbf069f80ecb02d741d4228cc",
+  "native_trials": 16,
+  "physical_nonbinary_material_computation_verified": false,
+  "schema": "VOID_HX89_CPU_Q2_GAS_HX89_CACHE_CLOSED_V3",
+  "source_sha256": "e3b4ece46264e86442ece561bf2eef9972f1136fd387b7c6b60048e1bdcbb8b0",
+  "three_intensity_history_integrated_and_causally_used": true,
+  "unverified_analog_or_thermodynamic_claim": false,
+  "utc": "2026-10-29T17:55:43.389135+00:00"
+}

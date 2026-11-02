@@ -1,0 +1,21 @@
+Passive AC weighted sums with finite 1-megohm readout loads
+* Same ideal sources and capacitive matrix as analog_ac.cir
+Vxp1 xp1 0 AC 0.8 0
+Vxm1 xm1 0 AC 0.8 180
+Vxp2 xp2 0 AC 0.4 180
+Vxm2 xm2 0 AC 0.4 0
+Vxp3 xp3 0 AC 0.2 0
+Vxm3 xm3 0 AC 0.2 180
+C01 xp1 y0 50p
+C02 xm2 y0 25p
+C03 xp3 y0 75p
+Cg0 y0 0 50p
+C11 xm1 y1 30p
+C12 xp2 y1 60p
+C13 xp3 y1 40p
+Cg1 y1 0 70p
+Rread0 y0 0 1meg
+Rread1 y1 0 1meg
+.ac dec 10 50 1meg
+.print ac vr(y0) vi(y0) vr(y1) vi(y1)
+.end

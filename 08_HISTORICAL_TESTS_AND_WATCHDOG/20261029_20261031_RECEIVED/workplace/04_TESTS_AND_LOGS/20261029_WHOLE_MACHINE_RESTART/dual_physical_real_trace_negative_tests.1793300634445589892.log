@@ -1,0 +1,13 @@
+test_absent_parallel_activity_rejected (test_dual_reservoir_hx89.AcquiredEvidence.test_absent_parallel_activity_rejected) ... ok
+test_acquired_complete_existing_machine (test_dual_reservoir_hx89.AcquiredEvidence.test_acquired_complete_existing_machine) ... ok
+test_impossible_overlap_rejected (test_dual_reservoir_hx89.AcquiredEvidence.test_impossible_overlap_rejected) ... ok
+test_missing_real_sample_is_refused (test_dual_reservoir_hx89.AcquiredEvidence.test_missing_real_sample_is_refused) ... ok
+test_no_unmeasured_nonbinary_physical_promotion (test_dual_reservoir_hx89.AcquiredEvidence.test_no_unmeasured_nonbinary_physical_promotion) ... ok
+test_raw_experiment_contains_all_four_conditions (test_dual_reservoir_hx89.AcquiredEvidence.test_raw_experiment_contains_all_four_conditions) ... ok
+test_swapped_randomized_order_refused (test_dual_reservoir_hx89.AcquiredEvidence.test_swapped_randomized_order_refused) ... ok
+test_zero_native_tsc_rejected (test_dual_reservoir_hx89.AcquiredEvidence.test_zero_native_tsc_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.029s
+
+OK

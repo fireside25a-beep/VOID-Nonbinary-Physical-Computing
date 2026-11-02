@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1400" width="1560" height="1400">
+<style>svg{background:#fff} .node{fill:#fff;stroke:#202d40;stroke-width:2} .wire{fill:none;stroke:#263747;stroke-width:2.5;stroke-linecap:round} .res{fill:#fff;stroke:#1b344d;stroke-width:2.5} .ref{fill:#1e293b;font:13px system-ui,Arial,sans-serif} .val{fill:#475569;font:13px system-ui,Arial,sans-serif} .net{fill:#0f365c;font:bold 14px system-ui,Arial,sans-serif} .header{fill:#0f172a;font:bold 25px system-ui,Arial,sans-serif} .foot{fill:#475569;font:13px system-ui,Arial,sans-serif} .chip{fill:#ebf1f6;stroke:#577188;stroke-width:1.5} .junction{fill:#1b344d}</style>
+<rect width="1560" height="1400" fill="#ffffff"/>
+<text class="header" x="60" y="52">VOID R08 • 2×4 material contacts + 22k sheet links</text>
+<text class="foot" x="60" y="85">Electrical connections parsed from the active .lib; VREF labels are ONE COMMON NET. Not a PCB layout.</text>
+<path class="wire" d="M205,465 L351.5,465"/>
+<path class="wire" d="M423.5,465 L570,465"/>
+<rect class="res" x="351.5" y="452" width="72" height="26" rx="2"/>
+<text class="ref" x="387.5" y="436" text-anchor="middle">R_SHEET_H_11</text>
+<text class="val" x="387.5" y="470" text-anchor="middle">22k</text>
+<path class="wire" d="M570,465 L716.5,465"/>
+<path class="wire" d="M788.5,465 L935,465"/>
+<rect class="res" x="716.5" y="452" width="72" height="26" rx="2"/>
+<text class="ref" x="752.5" y="436" text-anchor="middle">R_SHEET_H_12</text>
+<text class="val" x="752.5" y="470" text-anchor="middle">22k</text>
+<path class="wire" d="M935,465 L1081.5,465"/>
+<path class="wire" d="M1153.5,465 L1300,465"/>
+<rect class="res" x="1081.5" y="452" width="72" height="26" rx="2"/>
+<text class="ref" x="1117.5" y="436" text-anchor="middle">R_SHEET_H_13</text>
+<text class="val" x="1117.5" y="470" text-anchor="middle">22k</text>
+<path class="wire" d="M205,910 L351.5,910"/>
+<path class="wire" d="M423.5,910 L570,910"/>
+<rect class="res" x="351.5" y="897" width="72" height="26" rx="2"/>
+<text class="ref" x="387.5" y="881" text-anchor="middle">R_SHEET_H_21</text>
+<text class="val" x="387.5" y="915" text-anchor="middle">22k</text>
+<path class="wire" d="M570,910 L716.5,910"/>
+<path class="wire" d="M788.5,910 L935,910"/>
+<rect class="res" x="716.5" y="897" width="72" height="26" rx="2"/>
+<text class="ref" x="752.5" y="881" text-anchor="middle">R_SHEET_H_22</text>
+<text class="val" x="752.5" y="915" text-anchor="middle">22k</text>
+<path class="wire" d="M935,910 L1081.5,910"/>
+<path class="wire" d="M1153.5,910 L1300,910"/>
+<rect class="res" x="1081.5" y="897" width="72" height="26" rx="2"/>
+<text class="ref" x="1117.5" y="881" text-anchor="middle">R_SHEET_H_23</text>
+<text class="val" x="1117.5" y="915" text-anchor="middle">22k</text>
+<path class="wire" d="M205,465 L205,664.5"/>
+<path class="wire" d="M205,710.5 L205,910"/>
+<rect class="res" x="192" y="664.5" width="26" height="46" rx="2"/>
+<text class="ref" x="224" y="682.5" text-anchor="start">R_SHEET_V_11</text>
+<text class="val" x="224" y="700.5" text-anchor="start">22k</text>
+<path class="wire" d="M570,465 L570,664.5"/>
+<path class="wire" d="M570,710.5 L570,910"/>
+<rect class="res" x="557" y="664.5" width="26" height="46" rx="2"/>
+<text class="ref" x="589" y="682.5" text-anchor="start">R_SHEET_V_12</text>
+<text class="val" x="589" y="700.5" text-anchor="start">22k</text>
+<path class="wire" d="M935,465 L935,664.5"/>
+<path class="wire" d="M935,710.5 L935,910"/>
+<rect class="res" x="922" y="664.5" width="26" height="46" rx="2"/>
+<text class="ref" x="954" y="682.5" text-anchor="start">R_SHEET_V_13</text>
+<text class="val" x="954" y="700.5" text-anchor="start">22k</text>
+<path class="wire" d="M1300,465 L1300,664.5"/>
+<path class="wire" d="M1300,710.5 L1300,910"/>
+<rect class="res" x="1287" y="664.5" width="26" height="46" rx="2"/>
+<text class="ref" x="1281" y="682.5" text-anchor="end">R_SHEET_V_14</text>
+<text class="val" x="1281" y="700.5" text-anchor="end">22k</text>
+<text class="net" x="205" y="123" text-anchor="middle">VREF</text>
+<path class="wire" d="M205,133 L205,172.5"/>
+<path class="wire" d="M205,218.5 L205,258"/>
+<rect class="res" x="192" y="172.5" width="26" height="46" rx="2"/>
+<text class="ref" x="224" y="190.5" text-anchor="start">R_ACT_11</text>
+<text class="val" x="224" y="208.5" text-anchor="start">10meg</text>
+<circle class="junction" cx="205" cy="258" r="4"/>
+<text class="net" x="205" y="278" text-anchor="middle">PAD_11</text>
+<path class="wire" d="M205,295 L205,357.0"/>
+<path class="wire" d="M205,403.0 L205,465"/>
+<rect class="res" x="192" y="357.0" width="26" height="46" rx="2"/>
+<text class="ref" x="224" y="375.0" text-anchor="start">R_ACT_GUARD_11</text>
+<text class="val" x="224" y="393.0" text-anchor="start">1k</text>
+<circle class="node" cx="205" cy="465" r="6"/>
+<text class="net" x="218" y="485">F_11</text>
+<text class="net" x="570" y="123" text-anchor="middle">VREF</text>
+<path class="wire" d="M570,133 L570,172.5"/>
+<path class="wire" d="M570,218.5 L570,258"/>
+<rect class="res" x="557" y="172.5" width="26" height="46" rx="2"/>
+<text class="ref" x="589" y="190.5" text-anchor="start">R_ACT_12</text>
+<text class="val" x="589" y="208.5" text-anchor="start">10meg</text>
+<circle class="junction" cx="570" cy="258" r="4"/>
+<text class="net" x="570" y="278" text-anchor="middle">PAD_12</text>
+<path class="wire" d="M570,295 L570,357.0"/>
+<path class="wire" d="M570,403.0 L570,465"/>
+<rect class="res" x="557" y="357.0" width="26" height="46" rx="2"/>
+<text class="ref" x="589" y="375.0" text-anchor="start">R_ACT_GUARD_12</text>
+<text class="val" x="589" y="393.0" text-anchor="start">1k</text>
+<circle class="node" cx="570" cy="465" r="6"/>
+<text class="net" x="583" y="485">F_12</text>
+<text class="net" x="935" y="123" text-anchor="middle">VREF</text>
+<path class="wire" d="M935,133 L935,172.5"/>
+<path class="wire" d="M935,218.5 L935,258"/>
+<rect class="res" x="922" y="172.5" width="26" height="46" rx="2"/>
+<text class="ref" x="954" y="190.5" text-anchor="start">R_ACT_13</text>
+<text class="val" x="954" y="208.5" text-anchor="start">10meg</text>
+<circle class="junction" cx="935" cy="258" r="4"/>
+<text class="net" x="935" y="278" text-anchor="middle">PAD_13</text>
+<path class="wire" d="M935,295 L935,357.0"/>
+<path class="wire" d="M935,403.0 L935,465"/>
+<rect class="res" x="922" y="357.0" width="26" height="46" rx="2"/>
+<text class="ref" x="954" y="375.0" text-anchor="start">R_ACT_GUARD_13</text>
+<text class="val" x="954" y="393.0" text-anchor="start">1k</text>
+<circle class="node" cx="935" cy="465" r="6"/>
+<text class="net" x="948" y="485">F_13</text>
+<text class="net" x="1300" y="123" text-anchor="middle">VREF</text>
+<path class="wire" d="M1300,133 L1300,172.5"/>
+<path class="wire" d="M1300,218.5 L1300,258"/>
+<rect class="res" x="1287" y="172.5" width="26" height="46" rx="2"/>
+<text class="ref" x="1281" y="190.5" text-anchor="end">R_ACT_14</text>
+<text class="val" x="1281" y="208.5" text-anchor="end">10meg</text>
+<circle class="junction" cx="1300" cy="258" r="4"/>
+<text class="net" x="1300" y="278" text-anchor="middle">PAD_14</text>
+<path class="wire" d="M1300,295 L1300,357.0"/>
+<path class="wire" d="M1300,403.0 L1300,465"/>
+<rect class="res" x="1287" y="357.0" width="26" height="46" rx="2"/>
+<text class="ref" x="1281" y="375.0" text-anchor="end">R_ACT_GUARD_14</text>
+<text class="val" x="1281" y="393.0" text-anchor="end">1k</text>
+<circle class="node" cx="1300" cy="465" r="6"/>
+<text class="net" x="1313" y="485">F_14</text>
+<path class="wire" d="M205,910 L205,972.0"/>
+<path class="wire" d="M205,1018.0 L205,1080"/>
+<rect class="res" x="192" y="972.0" width="26" height="46" rx="2"/>
+<text class="ref" x="224" y="990.0" text-anchor="start">R_ACT_GUARD_21</text>
+<text class="val" x="224" y="1008.0" text-anchor="start">1k</text>
+<circle class="junction" cx="205" cy="1080" r="4"/>
+<text class="net" x="205" y="1104" text-anchor="middle">PAD_21</text>
+<path class="wire" d="M205,1115 L205,1154.5"/>
+<path class="wire" d="M205,1200.5 L205,1240"/>
+<rect class="res" x="192" y="1154.5" width="26" height="46" rx="2"/>
+<text class="ref" x="224" y="1172.5" text-anchor="start">R_ACT_21</text>
+<text class="val" x="224" y="1190.5" text-anchor="start">10meg</text>
+<text class="net" x="205" y="1265" text-anchor="middle">VREF</text>
+<circle class="node" cx="205" cy="910" r="6"/>
+<text class="net" x="218" y="930">F_21</text>
+<path class="wire" d="M570,910 L570,972.0"/>
+<path class="wire" d="M570,1018.0 L570,1080"/>
+<rect class="res" x="557" y="972.0" width="26" height="46" rx="2"/>
+<text class="ref" x="589" y="990.0" text-anchor="start">R_ACT_GUARD_22</text>
+<text class="val" x="589" y="1008.0" text-anchor="start">1k</text>
+<circle class="junction" cx="570" cy="1080" r="4"/>
+<text class="net" x="570" y="1104" text-anchor="middle">PAD_22</text>
+<path class="wire" d="M570,1115 L570,1154.5"/>
+<path class="wire" d="M570,1200.5 L570,1240"/>
+<rect class="res" x="557" y="1154.5" width="26" height="46" rx="2"/>
+<text class="ref" x="589" y="1172.5" text-anchor="start">R_ACT_22</text>
+<text class="val" x="589" y="1190.5" text-anchor="start">10meg</text>
+<text class="net" x="570" y="1265" text-anchor="middle">VREF</text>
+<circle class="node" cx="570" cy="910" r="6"/>
+<text class="net" x="583" y="930">F_22</text>
+<path class="wire" d="M935,910 L935,972.0"/>
+<path class="wire" d="M935,1018.0 L935,1080"/>
+<rect class="res" x="922" y="972.0" width="26" height="46" rx="2"/>
+<text class="ref" x="954" y="990.0" text-anchor="start">R_ACT_GUARD_23</text>
+<text class="val" x="954" y="1008.0" text-anchor="start">1k</text>
+<circle class="junction" cx="935" cy="1080" r="4"/>
+<text class="net" x="935" y="1104" text-anchor="middle">PAD_23</text>
+<path class="wire" d="M935,1115 L935,1154.5"/>
+<path class="wire" d="M935,1200.5 L935,1240"/>
+<rect class="res" x="922" y="1154.5" width="26" height="46" rx="2"/>
+<text class="ref" x="954" y="1172.5" text-anchor="start">R_ACT_23</text>
+<text class="val" x="954" y="1190.5" text-anchor="start">10meg</text>
+<text class="net" x="935" y="1265" text-anchor="middle">VREF</text>
+<circle class="node" cx="935" cy="910" r="6"/>
+<text class="net" x="948" y="930">F_23</text>
+<path class="wire" d="M1300,910 L1300,972.0"/>
+<path class="wire" d="M1300,1018.0 L1300,1080"/>
+<rect class="res" x="1287" y="972.0" width="26" height="46" rx="2"/>
+<text class="ref" x="1281" y="990.0" text-anchor="end">R_ACT_GUARD_24</text>
+<text class="val" x="1281" y="1008.0" text-anchor="end">1k</text>
+<circle class="junction" cx="1300" cy="1080" r="4"/>
+<text class="net" x="1300" y="1104" text-anchor="middle">PAD_24</text>
+<path class="wire" d="M1300,1115 L1300,1154.5"/>
+<path class="wire" d="M1300,1200.5 L1300,1240"/>
+<rect class="res" x="1287" y="1154.5" width="26" height="46" rx="2"/>
+<text class="ref" x="1281" y="1172.5" text-anchor="end">R_ACT_24</text>
+<text class="val" x="1281" y="1190.5" text-anchor="end">10meg</text>
+<text class="net" x="1300" y="1265" text-anchor="middle">VREF</text>
+<circle class="node" cx="1300" cy="910" r="6"/>
+<text class="net" x="1313" y="930">F_24</text>
+<text class="foot" x="60" y="1330">8 replaceable nominal 10M contact branches + 8 fixed 1k SERIES resistors + 10 spatial 22k links.</text>
+<text class="foot" x="60" y="1362">Additional 220k node returns are on the companion sheet. No grounded 1k guard ring exists in source.</text>
+</svg>

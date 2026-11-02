@@ -1,0 +1,5 @@
+PASS all 6 real R08 circuit decks
+PASS missing_primitive_library: rejected source damage
+PASS wrong_subckt_pin_count: rejected source damage
+PASS undefined_transistor_model: rejected source damage
+PASS all 4 structure checks (1 positive + 3 independent negative controls)

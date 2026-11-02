@@ -1,0 +1,14 @@
+# Remaining real HX89 ↔ VOID K06 hardware bridge — not a simulated proof
+
+**Physical status: UNVERIFIED.** This archive is a verified native-code plus passive RC **co-simulation**. An actual HX89 VM on a host processor cannot directly supply analog WRITE pad voltages merely by executing an x86-64 instruction. A physically characterized DAC or external safe instrument must perform that conversion and a calibrated ADC or scope must supply the reverse physical voltage measurement. Do not claim the internal CPU's RDRAND/RDSEED analog noise waveform is a physical exported pin: the source contains no such mechanism.
+
+Required real chain:
+
+1. Confirm a manufactured and unpowered continuity-tested K06 PCB corresponding to the exact source schematic and connected reference ground/isolated supplies. R08 K06 .cir currently describes a nominal designed electrical network, not proof of manufactured hardware.
+2. Establish a documented computer-to-DAC/I/O device protocol, device identifiers and physical instrument calibration. A host-side instruction/byte stream must be converted to external **bounded** `WRITE_A`/`WRITE_B` voltages through physically verified impedance/current protections. Source R08 uses 1M bleed, 10n film capacitor, 100k series resistor and clamp diodes to UI_1V8; confirm actual component values and current/voltage headroom, do not simply connect arbitrary CPU pins to rails.
+3. Time-align a real scope/ADC capture of WRITE_A, WRITE_B, CHARGE_A, CHARGE_B and CHARGE_C with each host-issued output command. Preserve original ADC samples and instrument metadata, timestamp, calibration and error readings; keep nonzero current/temperature measurements and a real uncertainty budget.
+4. Supply those **measured real** voltages (not the `k06_rc.py` simulator output) to a source-hashed native HX89 Polyform compiler. HX89 should choose the next command after receiving actual physical data. Preserve generated programs, hx89 stdout/stderr, UART/USB instrument readbacks, event ledger and the physical instrument's raw scope acquisition.
+5. Repeat positive controls, zero-drive, unplugged WRITE path, disconnected measurement, altered/controller-override, power-off and temperature/hysteresis controls; verify that HX89's subsequent choice physically changes the material node state rather than only a software simulation. Operator must sign off electrical safety; use a real current-limited bench and safely isolated connections.
+6. Validate complete K06 nonlinear/inductor/BJT model first using a genuine SPICE simulator or independent modeling, then compare to measured hardware. The attached generated full K06 ngspice netlist has **not** been executed here.
+
+No arbitrary device register writes, guessed DAC pins, undisclosed hardware access, uncontrolled voltages, or synthetic entries in R08's physical acquisition ledgers are included. This folder is a checklist, not evidence of an operating physical machine.

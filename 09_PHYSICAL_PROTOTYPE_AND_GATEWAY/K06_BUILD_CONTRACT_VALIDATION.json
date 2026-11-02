@@ -1,0 +1,24 @@
+{
+  "schema": "VOID_R08_K06_CONNECTOR_AND_ASSEMBLY_V1",
+  "active_source_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+  "primitive_count": 175,
+  "distinct_net_count": 74,
+  "proposed_connector_count": 15,
+  "proposed_connector_pins": 78,
+  "source_contact_count": 8,
+  "fixed_material_series_resistor_count": 8,
+  "axis_potentiometer_source_resistor_halves": 4,
+  "grouped_source_roles": {
+    "CORE_LED_OUTPUT": 28,
+    "CORE_PASSIVE_AND_JUNCTION": 65,
+    "CORE_PROTECTED_STIMULUS": 18,
+    "EXTERNAL_SUPPLY_OR_BIAS_NO_PART": 8,
+    "ONE_10K_POT_TRACK_FOR_EACH_AXIS": 4,
+    "ONE_INSTRUMENT_LOAD_OR_SOURCE_EQUIVALENT_NOT_BOTH": 13,
+    "P1_POWER_MONITOR": 3,
+    "P4_CONTACT_CARRIER_PASSIVE": 26,
+    "PIEZO_CERAMIC_OR_ELECTRICAL_15N_TEST_LOAD": 2,
+    "SWAPPABLE_MATERIAL_CONTACT_8": 8
+  },
+  "statement": "Physical connectors and board assignment derived from source nets; footprints, ratings, datasheets, actual power/bench measurements and fabrication not claimed"
+}

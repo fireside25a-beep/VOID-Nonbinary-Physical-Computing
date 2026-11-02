@@ -1,0 +1,856 @@
+{
+  "bridge_source_sha256": "ebaf7484d9c57e062520afee80526e612114e3218a553400944bb1f2e3b3ac83",
+  "classification": "REAL_NATIVE_CPU_INTERVENTION_AND_HX89_DIGITAL_FEEDBACK",
+  "cpu": {
+    "affinity_succeeded": true,
+    "avx2": true,
+    "avx512f": true,
+    "classification": "NATIVE_INSTRUCTION_TIMING_NOT_RAW_ANALOG",
+    "controller_rotate": 0,
+    "cpu": 0,
+    "hypervisor": true,
+    "pin_requested": true,
+    "rounds": 64,
+    "schema": "VOID_CPU_BATCH_V1",
+    "type": "header",
+    "work": 16
+  },
+  "historical": {
+    "canonical_ledger_sha256": "407ca9c039720891560abe384c453b898d35edbaef49c45cfa1c4ab27e661ba2",
+    "master_sha256": "1751f34c05919d90025bb1d4525245bc0f55605bc9e0de93c2a77286645643c1",
+    "milestone_ids": 116,
+    "original_crosswalk_sha256": "64ca8c80e91d7c5aeef11f8ef2ae4331bd3b1ae612b20a09d98c0ad5768616cd"
+  },
+  "hx89_feedback": [
+    {
+      "hx89_halt_semantic_hash": "fcd194f589165b29",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 0,
+      "source_trial_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "target_q": 13
+    },
+    {
+      "hx89_halt_semantic_hash": "1a21010621e1d99f",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 1,
+      "source_trial_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "target_q": 11
+    },
+    {
+      "hx89_halt_semantic_hash": "9a0bb1277ab8cbe3",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 2,
+      "source_trial_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "target_q": 7
+    },
+    {
+      "hx89_halt_semantic_hash": "a54b1c4095e1faed",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 3,
+      "source_trial_indices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "target_q": 2
+    },
+    {
+      "hx89_halt_semantic_hash": "42da77ed2428a297",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 4,
+      "source_trial_indices": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "target_q": 12
+    },
+    {
+      "hx89_halt_semantic_hash": "9a0bb1277ab8cbe3",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 5,
+      "source_trial_indices": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "target_q": 7
+    },
+    {
+      "hx89_halt_semantic_hash": "9422c5fdda64190f",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 6,
+      "source_trial_indices": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "target_q": 10
+    },
+    {
+      "hx89_halt_semantic_hash": "b9c66d93db735f40",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 7,
+      "source_trial_indices": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "target_q": 24
+    },
+    {
+      "hx89_halt_semantic_hash": "19f66148d38fbe27",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 8,
+      "source_trial_indices": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "target_q": 3
+    },
+    {
+      "hx89_halt_semantic_hash": "42da77ed2428a297",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 9,
+      "source_trial_indices": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "target_q": 12
+    },
+    {
+      "hx89_halt_semantic_hash": "c24548d692094273",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 10,
+      "source_trial_indices": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "target_q": 16
+    },
+    {
+      "hx89_halt_semantic_hash": "7c91a559939b31f5",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 11,
+      "source_trial_indices": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "target_q": 1
+    },
+    {
+      "hx89_halt_semantic_hash": "c24548d692094273",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 12,
+      "source_trial_indices": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "target_q": 16
+    },
+    {
+      "hx89_halt_semantic_hash": "5402ce2fdfa68475",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 13,
+      "source_trial_indices": [
+        52,
+        53,
+        54,
+        55
+      ],
+      "target_q": 4
+    },
+    {
+      "hx89_halt_semantic_hash": "42da77ed2428a297",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 14,
+      "source_trial_indices": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "target_q": 12
+    },
+    {
+      "hx89_halt_semantic_hash": "910cf6acd92c9648",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 15,
+      "source_trial_indices": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "target_q": 23
+    },
+    {
+      "hx89_halt_semantic_hash": "9a3650e4c90ae75b",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 16,
+      "source_trial_indices": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "target_q": 15
+    },
+    {
+      "hx89_halt_semantic_hash": "a54b1c4095e1faed",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 17,
+      "source_trial_indices": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "target_q": 2
+    },
+    {
+      "hx89_halt_semantic_hash": "7c91a559939b31f5",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 18,
+      "source_trial_indices": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "target_q": 1
+    },
+    {
+      "hx89_halt_semantic_hash": "d3ed7e51387d76b9",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 19,
+      "source_trial_indices": [
+        76,
+        77,
+        78,
+        79
+      ],
+      "target_q": 0
+    },
+    {
+      "hx89_halt_semantic_hash": "f3a83abd99380a16",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 20,
+      "source_trial_indices": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "target_q": 21
+    },
+    {
+      "hx89_halt_semantic_hash": "140d761f333b0b53",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 21,
+      "source_trial_indices": [
+        84,
+        85,
+        86,
+        87
+      ],
+      "target_q": 6
+    },
+    {
+      "hx89_halt_semantic_hash": "1a21010621e1d99f",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 22,
+      "source_trial_indices": [
+        88,
+        89,
+        90,
+        91
+      ],
+      "target_q": 11
+    },
+    {
+      "hx89_halt_semantic_hash": "d4181e0e86cf9231",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 23,
+      "source_trial_indices": [
+        92,
+        93,
+        94,
+        95
+      ],
+      "target_q": 8
+    },
+    {
+      "hx89_halt_semantic_hash": "9422c5fdda64190f",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 24,
+      "source_trial_indices": [
+        96,
+        97,
+        98,
+        99
+      ],
+      "target_q": 10
+    },
+    {
+      "hx89_halt_semantic_hash": "d4181e0e86cf9231",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 25,
+      "source_trial_indices": [
+        100,
+        101,
+        102,
+        103
+      ],
+      "target_q": 8
+    },
+    {
+      "hx89_halt_semantic_hash": "140d761f333b0b53",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 26,
+      "source_trial_indices": [
+        104,
+        105,
+        106,
+        107
+      ],
+      "target_q": 6
+    },
+    {
+      "hx89_halt_semantic_hash": "2db4a7a4a54ed064",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 27,
+      "source_trial_indices": [
+        108,
+        109,
+        110,
+        111
+      ],
+      "target_q": 22
+    },
+    {
+      "hx89_halt_semantic_hash": "b9c66d93db735f40",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 28,
+      "source_trial_indices": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "target_q": 24
+    },
+    {
+      "hx89_halt_semantic_hash": "a5d41c70022cebec",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 29,
+      "source_trial_indices": [
+        116,
+        117,
+        118,
+        119
+      ],
+      "target_q": 9
+    },
+    {
+      "hx89_halt_semantic_hash": "484383ded9870303",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 30,
+      "source_trial_indices": [
+        120,
+        121,
+        122,
+        123
+      ],
+      "target_q": 17
+    },
+    {
+      "hx89_halt_semantic_hash": "f3a83abd99380a16",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 31,
+      "source_trial_indices": [
+        124,
+        125,
+        126,
+        127
+      ],
+      "target_q": 21
+    },
+    {
+      "hx89_halt_semantic_hash": "7c91a559939b31f5",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 32,
+      "source_trial_indices": [
+        128,
+        129,
+        130,
+        131
+      ],
+      "target_q": 1
+    },
+    {
+      "hx89_halt_semantic_hash": "b9c66d93db735f40",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 33,
+      "source_trial_indices": [
+        132,
+        133,
+        134,
+        135
+      ],
+      "target_q": 24
+    },
+    {
+      "hx89_halt_semantic_hash": "fcd194f589165b29",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 34,
+      "source_trial_indices": [
+        136,
+        137,
+        138,
+        139
+      ],
+      "target_q": 13
+    },
+    {
+      "hx89_halt_semantic_hash": "143815dc818d26cb",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 35,
+      "source_trial_indices": [
+        140,
+        141,
+        142,
+        143
+      ],
+      "target_q": 14
+    },
+    {
+      "hx89_halt_semantic_hash": "2db4a7a4a54ed064",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 36,
+      "source_trial_indices": [
+        144,
+        145,
+        146,
+        147
+      ],
+      "target_q": 22
+    },
+    {
+      "hx89_halt_semantic_hash": "39b11db5344a5184",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 37,
+      "source_trial_indices": [
+        148,
+        149,
+        150,
+        151
+      ],
+      "target_q": 20
+    },
+    {
+      "hx89_halt_semantic_hash": "140d761f333b0b53",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 38,
+      "source_trial_indices": [
+        152,
+        153,
+        154,
+        155
+      ],
+      "target_q": 6
+    },
+    {
+      "hx89_halt_semantic_hash": "b9c66d93db735f40",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 39,
+      "source_trial_indices": [
+        156,
+        157,
+        158,
+        159
+      ],
+      "target_q": 24
+    },
+    {
+      "hx89_halt_semantic_hash": "2db4a7a4a54ed064",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 40,
+      "source_trial_indices": [
+        160,
+        161,
+        162,
+        163
+      ],
+      "target_q": 22
+    },
+    {
+      "hx89_halt_semantic_hash": "b9c66d93db735f40",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 41,
+      "source_trial_indices": [
+        164,
+        165,
+        166,
+        167
+      ],
+      "target_q": 24
+    },
+    {
+      "hx89_halt_semantic_hash": "fcd194f589165b29",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 42,
+      "source_trial_indices": [
+        168,
+        169,
+        170,
+        171
+      ],
+      "target_q": 13
+    },
+    {
+      "hx89_halt_semantic_hash": "42da77ed2428a297",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 43,
+      "source_trial_indices": [
+        172,
+        173,
+        174,
+        175
+      ],
+      "target_q": 12
+    },
+    {
+      "hx89_halt_semantic_hash": "f3a83abd99380a16",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 44,
+      "source_trial_indices": [
+        176,
+        177,
+        178,
+        179
+      ],
+      "target_q": 21
+    },
+    {
+      "hx89_halt_semantic_hash": "484383ded9870303",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 45,
+      "source_trial_indices": [
+        180,
+        181,
+        182,
+        183
+      ],
+      "target_q": 17
+    },
+    {
+      "hx89_halt_semantic_hash": "39b11db5344a5184",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 46,
+      "source_trial_indices": [
+        184,
+        185,
+        186,
+        187
+      ],
+      "target_q": 20
+    },
+    {
+      "hx89_halt_semantic_hash": "910cf6acd92c9648",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 47,
+      "source_trial_indices": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "target_q": 23
+    },
+    {
+      "hx89_halt_semantic_hash": "9a0bb1277ab8cbe3",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 48,
+      "source_trial_indices": [
+        192,
+        193,
+        194,
+        195
+      ],
+      "target_q": 7
+    },
+    {
+      "hx89_halt_semantic_hash": "19a121ce36eb8737",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 49,
+      "source_trial_indices": [
+        196,
+        197,
+        198,
+        199
+      ],
+      "target_q": 19
+    },
+    {
+      "hx89_halt_semantic_hash": "d3ed7e51387d76b9",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 50,
+      "source_trial_indices": [
+        200,
+        201,
+        202,
+        203
+      ],
+      "target_q": 0
+    },
+    {
+      "hx89_halt_semantic_hash": "910cf6acd92c9648",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 51,
+      "source_trial_indices": [
+        204,
+        205,
+        206,
+        207
+      ],
+      "target_q": 23
+    },
+    {
+      "hx89_halt_semantic_hash": "42da77ed2428a297",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 52,
+      "source_trial_indices": [
+        208,
+        209,
+        210,
+        211
+      ],
+      "target_q": 12
+    },
+    {
+      "hx89_halt_semantic_hash": "484383ded9870303",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 53,
+      "source_trial_indices": [
+        212,
+        213,
+        214,
+        215
+      ],
+      "target_q": 17
+    },
+    {
+      "hx89_halt_semantic_hash": "a5d41c70022cebec",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 54,
+      "source_trial_indices": [
+        216,
+        217,
+        218,
+        219
+      ],
+      "target_q": 9
+    },
+    {
+      "hx89_halt_semantic_hash": "5402ce2fdfa68475",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 55,
+      "source_trial_indices": [
+        220,
+        221,
+        222,
+        223
+      ],
+      "target_q": 4
+    },
+    {
+      "hx89_halt_semantic_hash": "9a0bb1277ab8cbe3",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 56,
+      "source_trial_indices": [
+        224,
+        225,
+        226,
+        227
+      ],
+      "target_q": 7
+    },
+    {
+      "hx89_halt_semantic_hash": "b9c66d93db735f40",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 57,
+      "source_trial_indices": [
+        228,
+        229,
+        230,
+        231
+      ],
+      "target_q": 24
+    },
+    {
+      "hx89_halt_semantic_hash": "d4181e0e86cf9231",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 58,
+      "source_trial_indices": [
+        232,
+        233,
+        234,
+        235
+      ],
+      "target_q": 8
+    },
+    {
+      "hx89_halt_semantic_hash": "d3ed7e51387d76b9",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 59,
+      "source_trial_indices": [
+        236,
+        237,
+        238,
+        239
+      ],
+      "target_q": 0
+    },
+    {
+      "hx89_halt_semantic_hash": "a54b1c4095e1faed",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 60,
+      "source_trial_indices": [
+        240,
+        241,
+        242,
+        243
+      ],
+      "target_q": 2
+    },
+    {
+      "hx89_halt_semantic_hash": "42da77ed2428a297",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 61,
+      "source_trial_indices": [
+        244,
+        245,
+        246,
+        247
+      ],
+      "target_q": 12
+    },
+    {
+      "hx89_halt_semantic_hash": "42da77ed2428a297",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 62,
+      "source_trial_indices": [
+        248,
+        249,
+        250,
+        251
+      ],
+      "target_q": 12
+    },
+    {
+      "hx89_halt_semantic_hash": "484383ded9870303",
+      "hx89_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+      "round": 63,
+      "source_trial_indices": [
+        252,
+        253,
+        254,
+        255
+      ],
+      "target_q": 17
+    }
+  ],
+  "hx89_native": {
+    "binary_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+    "code_bytes_hash": "af374a72fff3f561",
+    "exit_status": 0,
+    "native_code_bytes": 24,
+    "native_epoch": 1,
+    "native_ir": 4,
+    "native_result": 122,
+    "program_sha256": "b36da817048710718cd3e43534f2da4ce423158106068d56975cb3d1789c641a",
+    "semantic_hash": "ae44199b3d2d2043",
+    "semantic_ir_hash": "1953b258274b2db0"
+  },
+  "limits_of_evidence": "TSC is digital elapsed-counter evidence with scheduler/VM/power confounders; no raw charge, on-die thermodynamic or K06 board readout",
+  "native_executable_sha256": "d5fa8b355fd8d905094440af12efee545073643cbf069f80ecb02d741d4228cc",
+  "original_k06": {
+    "netlist_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+    "pads": "WRITE_A -> CHARGE_A",
+    "port_map_sha256": "62faf978af8f5b8f046d0dc883906c73aac7c7f6d0bcbedc4dfd6868311dc054"
+  },
+  "physical_nonbinary_substrate_verified": false,
+  "probe_source_sha256": "875a6d911e6ed5f8477b2fa8bf860470bf9a6e8df914e791675ce3ee31f88df5",
+  "schema": "VOID_HX89_CPU_NATIVE_BATCH_EXECUTION_V1",
+  "status": "NATIVE_CPU_AND_HX89_EXECUTED",
+  "summary": {
+    "avx2": {
+      "median_post_minus_pre_ticks": 3802.0,
+      "median_post_ticks": 31074.0,
+      "median_pre_ticks": 27176.0,
+      "median_stimulus_ticks": 389290.0,
+      "n": 64,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "avx512": {
+      "median_post_minus_pre_ticks": 3581.0,
+      "median_post_ticks": 30773.0,
+      "median_pre_ticks": 27217.0,
+      "median_stimulus_ticks": 184707.0,
+      "n": 64,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "large_cache": {
+      "median_post_minus_pre_ticks": 16975.0,
+      "median_post_ticks": 44221.0,
+      "median_pre_ticks": 27154.0,
+      "median_stimulus_ticks": 13976154.0,
+      "n": 64,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "scalar": {
+      "median_post_minus_pre_ticks": 3628.0,
+      "median_post_ticks": 30776.0,
+      "median_pre_ticks": 27229.0,
+      "median_stimulus_ticks": 184959.0,
+      "n": 64,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    }
+  },
+  "trace_sha256": "c710f4ea56f08c993dc43153d9f7cdc351cb3bfce2aa5050ed8d3c7921767969"
+}

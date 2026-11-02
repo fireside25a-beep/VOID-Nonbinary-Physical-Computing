@@ -1,0 +1,38 @@
+# VOID R08 hardware interconnects: four real, source-linked electrical sheets
+
+## Files and electrical verification
+
+The four `P1_...` through `P4_...` `.kicad_sch` documents are editable KiCad 9 **electrical interconnect sheets**, not decorative images. Each numbered connector symbol is wired to a global label representing the exact source net that will terminate on the corresponding module. The companion SVG and DOT pages are rendered views generated from the same source-indexed pin assignments. The source of connector truth is `../K06_PROTOTYPE_CONNECTOR_PINOUT.csv`; its 15 named connectors and 78 pins are individually mapped to the original K06 flattened 175-element/74-net hardware contract. The source deck is `../../01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE/VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir` plus its three included `.lib` sources. R06 source history remains archived.
+
+`../../06_ENGINEERING_VALIDATORS/verify_board_interconnect_independent.py` checks the *electrical wire endpoints* and global labels inside the KiCad file, independently of the generator, and performs actual corrupt-label, corrupt-wire and corrupt-input-contract negative tests. This is a verified interconnect capture, not an ERC-certified regulator, active analog buffer, ADC/DAC board, PCB footprint or Gerber. The existing nine KiCad source captures represent the internal circuit. Taken together the editable source capture suite now contains **nine internal `.kicad_sch` decks plus four external electrical interconnect sheets**, with different declared levels of verification.
+
+## P1: bench supplies and K05 real bias sources
+
+`P1_BENCH_POWER_AND_K05_BIAS.kicad_sch` shows the existing 24 V K01 input, the 1.8 V material rail source, the independent 3.3 V display source and the signed K05 voltage terminals. The K01 model's current-limit resistor is *already in the core* (`R_CURRENT_LIMIT = 3.3 kΩ`) and must not be duplicated. Its worst-case resistor-only dissipation under 24 V across that resistor is **0.174545 W**; choose a suitable part with margin, validate real device dissipation, and use a current-limited isolated supply. K05 source bias voltages include negative values and must not be tied to a unipolar DAC output. Source net `0` is the circuit reference; USB chassis ground may not be silently assumed equivalent.
+
+## P2: high-impedance measurement
+
+`P2_MEASUREMENT_AND_CORE_TEST.kicad_sch` exposes exact `PROBE_A`, `PROBE_B`, `CHARGE_A/B/C`, `FIELD_A/B`, `AXIS_A/B`, `JCT` and display/test nets through numbered connectors. Use calibrated instruments, actual input impedance, and independent power for early physical trials. Do **not** populate the netlist's simulated meter resistor and connect an equivalent meter in parallel without reflecting that double load in the electrical model.
+
+`K06_SOURCE_DERIVED_PROBE_LOAD_BUDGET.csv` lists the **local shunt** resistance/capacitance from actual named netlist cards, including double-meter and direct-ADC cases. It does not pretend a scalar local RC constant is the complete coupled K06 transient. `K06_LOAD_CONTRIBUTION_SOURCE_LINES.csv` maps each validated source card back to its actual file and line. Original mesh `R_PA/B` and `C_PA/B` describe 1 MΩ in parallel with 30 pF. A manufacturer's ADA4530-1 buffer is one possible higher-grade solution: its official datasheet specifies a 4.5–16 V supply and approximately 8 pF typical input capacitance, **not less than 2 pF**. Verify common-mode, leakage, compensation, layout guard and accuracy on a chosen physical board before connecting it. Vendor source: https://www.analog.com/en/products/ada4530-1.html
+
+## P3: actual protected host stimulus terminals
+
+`P3_PROTECTED_STIMULUS_PORTS.kicad_sch` maps `WRITE_A/B` and `BOUNDARY_A/B` plus return. The existing K06 source includes write bleed, series film coupling, 100 kΩ charge-injection resistance and nominal diode rail clamps. Those protective elements are source components, not a verified DAC front end. An AD5676 is a potential 16-bit unipolar SPI stimulus component with a 2.7–5.5 V supply, **not a source of 24 V or negative K05 bias**. The analog output must be independently current-limited and read back at the actual electrode. Its datasheet and Linux/no-OS driver references are available at https://www.analog.com/en/products/ad5676.html.
+
+An AD7606 provides synchronized 16-bit acquisition but has 1 MΩ analog input impedance: *direct attachment is not equivalent to an electrometer input*. Its official details are at https://www.analog.com/en/products/ad7606.html. For early low-cost implementation use a calibrated high-Z meter with a real file export and native signed/provenanced C ingestion. The later automated DAC/ADC driver is approved for attachment only once its physical hardware, electrical limit paths, device identity, output-disable and recorded voltage readback have been actually tested. No fictitious USB/SPI driver or arbitrary machine registers are included.
+
+## P4: precise 2×4 material carrier
+
+`P4_2x4_MATERIAL_AND_AXES.kicad_sch` has all eight unique `PAD_11..PAD_24` contact connectors and two independently measured analog-axis potentiometer interfaces. The source material cards represent *eight swappable 10 MΩ contacts*, eight separate fixed *1 kΩ series resistors*, ten 22 kΩ sheet links and eight 220 kΩ returns. The 1 kΩ parts go **between `PAD_nn` and `F_nn`**, never into a grounded perimeter guard. The material geometry and individual measured resistance must be documented on the as-built carrier, not inferred from an ideal source nominal value.
+
+## Full build and test sequence: two paths, one evidence schema
+
+1. **Digital native reference:** Build and test the actual HX89 binary, GNU compiled native controller, C11 AC/DC, EntropyAVX, feature-gated AVX and CPU batch/feedback. Rerun `python3 00_CONTROL/run_canonical_unified_acceptance.py` from the `VOID/` root; causal-ablation and corruption-negative evidence are included.
+2. **Physical passive baseline:** Assemble K05/mesh/charge nodes first on a small clean carrier; independently power and measure with real high-Z instruments. Measure each resistor, capacitor, contact, supply voltage, probe impedance and settling time and record the actual device serial/calibration.
+3. **Physical nonlinear/material stage:** Progress to K06 nonlinear diode pair, WRITE/BOUNDARY inputs and actual 2×4 contact interventions. For the optional 24 V junction segment, measure current and power limits independently before enabling. Preserve a real host-unplugged physical observation run.
+4. **Physical acquisition and eventual automated HIL:** Ingest only original instrument files through `native_bench_ingestion/void_bench_ingest`; then, after real ADC/DAC driver and hardware watchdog validation, route authenticated measured input to the shared native controller and protected actual stimulus back to K06. Maintain model vs measured sample IDs and causal A/B controls. Never promote simulation CSVs to acquired waveform data.
+
+## Manufacturing gate
+
+These four sheets deliver checkable pin-level wiring but deliberately do **not** impersonate a complete high-Z analog buffer schematic, a real ADC/DAC circuit, a routed PCB or manufacturer-approved footprint. To issue fabrication documents, finish the selected device's **verified** circuit including regulators, guards, all active components, decoupling, clamps, footprint/pin mappings, real safety ratings, mechanical stackup, KiCad ERC, PCB layout/DRC and DFM. Only then generate drill/Gerber and assembly maps. An IPC-A-610 Class 3 designation or CE/FCC mark cannot be generated from a design drawing and is not asserted. The zero-measurement placeholders in archived test TSVs remain untouched.

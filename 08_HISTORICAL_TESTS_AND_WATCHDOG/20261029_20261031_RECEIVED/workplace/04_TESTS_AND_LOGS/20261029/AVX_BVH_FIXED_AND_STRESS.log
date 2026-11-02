@@ -1,0 +1,3 @@
+expected bounds [0,7]; built [0,7] => PASS
+after refit: [0,7] => PASS
+PASS BVH extended: 1001 sizes x 3 passes, 3003 builds and refits, negative null test

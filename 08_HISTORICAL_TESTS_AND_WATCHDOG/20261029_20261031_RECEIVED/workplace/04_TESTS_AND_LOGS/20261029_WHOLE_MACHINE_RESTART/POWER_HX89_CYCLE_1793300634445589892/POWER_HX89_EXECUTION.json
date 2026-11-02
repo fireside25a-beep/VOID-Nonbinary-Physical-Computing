@@ -1,0 +1,44 @@
+{
+  "actual_native_crossover": {
+    "busy_minus_idle_median_tsc": -11.0,
+    "busy_slower_fraction": 0.4625,
+    "native_executable_sha256": "c55e8ea72bce0c74f49694cb9b1c585f16e4785d1bd7b051b746c0afdc973744",
+    "orders": [
+      43,
+      37
+    ],
+    "pinned_cpu": 0,
+    "probe_kind": "REAL_X86_AVX2_BUSY_VS_IDLE_WITH_IDENTICAL_NEXT_READOUT",
+    "source_sha256": "389439468bde7a5a76164b53e8313d6fdc64bfed10906a6472cffbd2719ca2eb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "f603222766c67f5f558a725c22684e6b159407fcdbec1ac2d4fbefbfe3ddb466",
+    "stimulus_duration_imbalance_median_ns": -422577.5,
+    "thermal_or_power_causal_analog_physics_verified": false,
+    "timing_result_not_independent_thermometer": true,
+    "trace_sha256": "7d162424a3ffaccfa9e71be6ce30c3535b2636b8200aff47680f935c6c948eee",
+    "trials": 80
+  },
+  "existing_hx89_binary_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+  "existing_native_binary_sha256": "d5fa8b355fd8d905094440af12efee545073643cbf069f80ecb02d741d4228cc",
+  "hx89_q2_execution": {
+    "fitness": 2,
+    "head": 0,
+    "q": 5,
+    "step": 2,
+    "target": 11
+  },
+  "hx89_q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+  "hx89_stdout_sha256": "b345946180a6c813b3db783dd2b0b6c44f73f0af69ca21f9dea468b1807b9458",
+  "initial_cpu_sha256": "64bdea11d127e354ca71721e183d2c1e169db210b33c2d6854d009daf0b11978",
+  "native_power_binary_sha256": "c55e8ea72bce0c74f49694cb9b1c585f16e4785d1bd7b051b746c0afdc973744",
+  "next_cpu_sha256": "cb1dcea814319ac517362ffcf7b247c141d15e624abc073569723099068c1df2",
+  "not_an_independent_temperature_or_power_measurement": true,
+  "physical_thermodynamic_response_verified": false,
+  "resulting_next_cpu_command": {
+    "rotate": 1,
+    "work": 5
+  },
+  "schema": "VOID_POWER_TIMING_TO_HX89_TO_CPU_ACTUAL_V1",
+  "source_power_sha256": "389439468bde7a5a76164b53e8313d6fdc64bfed10906a6472cffbd2719ca2eb",
+  "source_sha256": "37af67dbd7b98439eadf6ea9f5de1e76349475c97088e29aa919464f27f65144"
+}

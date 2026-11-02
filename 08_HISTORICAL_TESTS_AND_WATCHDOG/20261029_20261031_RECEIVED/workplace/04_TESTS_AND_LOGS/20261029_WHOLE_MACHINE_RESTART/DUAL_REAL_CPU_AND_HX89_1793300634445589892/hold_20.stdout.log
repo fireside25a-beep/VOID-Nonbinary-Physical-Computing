@@ -1,0 +1,1 @@
+DUAL_REAL_CPU trials=64 observer_cpu=2 drive_A=0 drive_B=1 sink=0

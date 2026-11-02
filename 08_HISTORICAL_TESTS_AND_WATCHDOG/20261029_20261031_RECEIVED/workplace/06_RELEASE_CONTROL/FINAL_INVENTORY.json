@@ -1,0 +1,14 @@
+{
+  "bytes_excluding_self_manifests": 1175358151,
+  "date": "2026-10-29",
+  "manifest_sha256": "866d6f00b5d33bfb4d07381668858be9612a561f2c8d852294509d65517290fa",
+  "original_archives": {
+    "AC_DC_Passive_AI_Proof(2)(1).zip": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+    "EntropyAVXEngine-source-trace-and-bootstrap(3).zip": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+    "VOID_COMPLETE_VOLUME_PART_01_OF_02.zip.001": "9fac288a28d626c6da8e459fa88aae45d5a5ef5ee62bee95f13c75154b546c98",
+    "VOID_COMPLETE_VOLUME_PART_02_OF_02.zip.002": "886062734193bbda1afa7668bc250bbb7bc1ff7a1c3335866afc9836865900f0",
+    "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad"
+  },
+  "regular_files_excluding_self_manifests": 2979,
+  "schema": "VOID_HX89_WORKPLACE_V2_RELEASE_INVENTORY"
+}

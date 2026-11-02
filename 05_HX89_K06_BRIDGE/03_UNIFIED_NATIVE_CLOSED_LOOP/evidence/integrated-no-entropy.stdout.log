@@ -1,0 +1,7 @@
+NATIVE_PASS_integrated-no-entropy closed_loop 56  -2.140174E-02  -1.903246E-02  -1.851311E-04
+NATIVE_PASS_integrated-no-entropy closed_loop_repeat 56  -2.140174E-02  -1.903246E-02  -1.851311E-04
+NATIVE_PASS_integrated-no-entropy open_write_a 52   5.913180E-03  -7.044059E-03   1.234732E-03
+NATIVE_PASS_integrated-no-entropy no_excitation 38   0.000000E+00   0.000000E+00   0.000000E+00
+NATIVE_PASS_integrated-no-entropy forced_a 49  -3.987289E-02  -1.754022E-04  -4.041524E-05
+NATIVE_PASS_integrated-no-entropy inverted_action 47  -4.817707E-03  -3.499109E-02   7.286763E-05
+NATIVE_PASS_integrated-no-entropy open_write_b 49  -3.682881E-02   1.939609E-03   2.191710E-03

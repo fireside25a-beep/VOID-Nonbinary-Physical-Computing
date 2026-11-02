@@ -1,0 +1,3 @@
+PASS real concurrent verifier blocked
+PASS nested watchdog receives live owner lock
+PASS lock released cleanly for next full-machine invocation

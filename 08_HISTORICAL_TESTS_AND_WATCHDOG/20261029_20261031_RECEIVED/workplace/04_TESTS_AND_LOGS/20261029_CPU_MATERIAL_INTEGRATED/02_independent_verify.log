@@ -1,0 +1,7 @@
+{
+  "verified_cycles": 8,
+  "verified_cpu_interventions": 32,
+  "verified_hx89_gas_reversals": 8,
+  "command_changed_cycles": 8,
+  "physical_nonbinary_material_computation_verified": false
+}

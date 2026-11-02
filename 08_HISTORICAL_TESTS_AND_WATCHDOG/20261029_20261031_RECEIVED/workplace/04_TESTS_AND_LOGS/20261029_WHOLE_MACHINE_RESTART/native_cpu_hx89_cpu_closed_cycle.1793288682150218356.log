@@ -1,0 +1,8 @@
+{
+  "result": "EXECUTED_NATIVE_CPU_HX89_CPU_FEEDBACK",
+  "cycles": 12,
+  "native_trials": 48,
+  "changed_cpu_commands": 11,
+  "evidence": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/FULL_MACHINE_CYCLE_1793288682150218356/BIDIRECTIONAL_EXECUTION.json",
+  "physical_nonbinary_material_computation_verified": false
+}

@@ -1,0 +1,18 @@
+{
+  "compiled_gcc_release": true,
+  "native_frames": 60,
+  "unique_native_frame_hashes": 8,
+  "median_reported_frame_processing_ms": 6.292415,
+  "max_reported_frame_processing_ms": 7.73303,
+  "native_elapsed_seconds": 2.4,
+  "bvh_8vertex_expected_maxX": 7.0,
+  "bvh_8vertex_observed_maxX": 3.0,
+  "bvh_bounded_repro": "FAIL",
+  "launcher_exit_status": 0,
+  "launcher_found_binary": false,
+  "asan_ubsan_frames": 60,
+  "asan_ubsan_stderr_bytes": 0,
+  "experimental_bootstrap_emitted_files": 15,
+  "experimental_bootstrap_hash_mismatches": 0,
+  "experimental_bootstrap_native_frames": 60
+}

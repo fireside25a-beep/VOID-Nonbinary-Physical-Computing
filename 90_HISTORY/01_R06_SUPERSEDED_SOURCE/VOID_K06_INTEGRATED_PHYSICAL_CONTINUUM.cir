@@ -1,0 +1,114 @@
+VOID K06 R06: ONE integrated analogue core with mechanical keyboard and pointing field
+* Current-limited breakdown junction -> shared RC mesh -> coupled charge-state nodes.
+* Five independent ANALOGUE DC rails -> same K05 resistor module -> y0,y1.
+* y0/y1 AC-couple into BOTH original mesh nodes; no CPU wave state evolution.
+* Additional series L-C-R is a real potential selective-coupling path, not proved resonance.
+* Two capacitor storage nodes couple bidirectionally to the SAME core, not a fork.
+* Their manual write contacts allow physical analog charge preparation at multiple levels.
+* No software qubits, no pseudo-entropy source, no behavioral random generators.
+* Nominal semiconductor and manual-switch models are design approximations only.
+.INCLUDE "VOID_K_MESH_V1.lib"
+.INCLUDE "VOID_K05_WEIGHTED_NETWORK.lib"
+.INCLUDE "VOID_K06_MECHANICAL_FIELD.lib"
+.INCLUDE "VOID_HUMAN_TRANSDUCER_V1.lib"
+* EXISTING K01 EXTERNAL BREAKDOWN SOURCE (current limited)
+V_ISO SUPPLY 0 DC 24
+R_CURRENT_LIMIT SUPPLY SHUNT_TOP 3.3k
+R_KELVIN SHUNT_TOP JCT 100
+D_REAL 0 JCT D_BZX55C7V5_NOMINAL
+R_DCMON JCT DMM_PORT 100k
+R_DMM DMM_PORT 0 10meg
+.MODEL D_BZX55C7V5_NOMINAL D(BV=7.5 IBV=5m IS=1e-14)
+* PHYSICAL JUNCTION-TO-MESH AC ROUTE (EXISTING K01)
+C_ACBLOCK JCT AC_IN 10n
+R_ACSER AC_IN INPUT 1k
+R_ACREF INPUT 0 1meg
+X_MESH INPUT PROBE_A PROBE_B VOID_MESH_V1
+* EXACT K05 FIVE EXTERNAL VOLTAGE SOURCES AND WEIGHTED CONDUCTANCE NETWORK
+Vxp1 xp1 0 DC 0.8
+Vxm1 xm1 0 DC -0.8
+Vxp2 xp2 0 DC -0.4
+Vxm2 xm2 0 DC 0.4
+Vxp3 xp3 0 DC 0.2
+X_WEIGHTED xp1 xm1 xp2 xm2 xp3 y0 y1 VOID_WEIGHTED_5X2
+R_METER_Y0 y0 0 10meg
+R_METER_Y1 y1 0 10meg
+* DC-BLOCKED TRANSIENT CONNECTIONS BETWEEN K05 AND EXISTING MESH
+C_WEIGHT_A y0 W_AC_A 100n
+R_WEIGHT_A W_AC_A PROBE_A 10k
+C_WEIGHT_B y1 W_AC_B 100n
+R_WEIGHT_B W_AC_B PROBE_B 10k
+* REAL PHYSICAL INDUCTOR / CAPACITOR / DAMPED RESONANT BRANCH
+C_SERIES_L PROBE_A TANK_A 10n
+L_TANK TANK_A TANK_B 10mH
+R_TANK TANK_B PROBE_B 220
+* TWO COUPLED CHARGE-RETENTION NODES, analogue state, not certified RBits
+R_INTEG_A PROBE_A CHARGE_A 100k
+C_CHARGE_A CHARGE_A 0 100n
+R_LEAK_A CHARGE_A 0 10meg
+R_INTEG_B PROBE_B CHARGE_B 100k
+C_CHARGE_B CHARGE_B 0 100n
+R_LEAK_B CHARGE_B 0 10meg
+R_CHARGE_COUPLE CHARGE_A CHARGE_B 470k
+R_FEEDBACK_A CHARGE_A PROBE_B 1meg
+R_FEEDBACK_B CHARGE_B PROBE_A 1meg
+* REAL MANUAL BREAK-BEFORE-MAKE WRITE CONTACTS: the element model is NOMINAL.
+* V_WRITE_A/B represent separately measured physical analogue voltage terminals.
+* CONTACT_A/B are electrode control inputs, not processor clock lines.
+V_WRITE_A WRITE_A 0 DC 0.4
+V_WRITE_B WRITE_B 0 DC -0.4
+V_CONTACT_A CONTACT_A 0 DC 0
+V_CONTACT_B CONTACT_B 0 DC 0
+S_WRITE_A WRITE_A CHARGE_A CONTACT_A 0 VOID_CONTACT_NOMINAL
+S_WRITE_B WRITE_B CHARGE_B CONTACT_B 0 VOID_CONTACT_NOMINAL
+.MODEL VOID_CONTACT_NOMINAL SW(RON=1 ROFF=1e10 VT=2 VH=0.2)
+* Diagnostic analogue memory-voltage readout, if real probes are installed.
+R_MEM_METER_A CHARGE_A 0 10meg
+R_MEM_METER_B CHARGE_B 0 10meg
+* R06 one integrated multimodal physical INPUT stage, not an independent computing fork.
+* +0.9V and -0.9V are externally sourced, independently current-monitored analogue rails.
+* Analogue returns are local to VOID core, never the USB/host chassis by default.
+V_UI_POS UI_POS_SUPPLY 0 DC 0.9
+V_UI_NEG UI_NEG_SUPPLY 0 DC -0.9
+R_UI_POS_CURRENT UI_POS_SUPPLY UI_POS 100
+R_UI_NEG_CURRENT UI_NEG_SUPPLY UI_NEG 100
+* Physical contact-pressure keycaps A,E,I,O,SPACE,ENTER and mechanical XY potentiometers.
+* Every key/pointing electrode is connected to BOTH existing shared mesh/charge networks.
+X_HUMAN_IO UI_POS UI_NEG 0 PROBE_A PROBE_B CHARGE_A CHARGE_B KEY_ELECTRODE_A KEY_ELECTRODE_B POINTER_X POINTER_Y VOID_HUMAN_TRANSDUCER_V1
+* KEY_ELECTRODE_A/B and POINTER_X/Y: raw physical electrodes, optional high-Z probes.
+* FSR and potentiometer card resistances are NOMINAL PHYSICAL REFERENCE POSITIONS.
+* No binary keyboard scan or USB mouse decoding exists inside this material core.
+* Every active source rail and every external instrument is power-accounted.
+* Physical source noise, charge retention and resonant response MUST be measured.
+* R06 GENERAL PHYSICAL INPUT EXTENSION, IN THE SAME AUTHORITATIVE K06 CORE
+* Dedicated isolated 1.8V analog pressure/pointer supply; account for supply current.
+* Real keys use individually actuated pressure-variable resistor materials, NOT binary codes.
+* 26 letter caps, 10 numeral caps, 7 control/punctuation caps and click pressure pad.
+* Keyboard inputs are physical contact/force patterns, NOT implemented language semantics.
+* Two-axis mechanical pointing device is built around physical variable-resistance wipers.
+* The 20meg key resistances and centre-wiper values are unpressed/centred netlist references.
+V_UI_RAIL UI_1V8 0 DC 1.8
+X_MECHANICAL UI_1V8 KEY_FIELD_A KEY_FIELD_B POINTER_X POINTER_Y VOID_MECHANICAL_FIELD
+* Four continuously valued physical ports feed BOTH existing mesh nodes by passive AC coupling.
+C_KEYS_A KEY_FIELD_A KEY_AC_A 100n
+R_KEYS_A KEY_AC_A PROBE_A 22k
+C_KEYS_B KEY_FIELD_B KEY_AC_B 100n
+R_KEYS_B KEY_AC_B PROBE_B 22k
+C_MOUSE_X POINTER_X MOUSE_AC_X 100n
+R_MOUSE_X MOUSE_AC_X PROBE_A 22k
+C_MOUSE_Y POINTER_Y MOUSE_AC_Y 100n
+R_MOUSE_Y MOUSE_AC_Y PROBE_B 22k
+* High impedance 10meg taps stand for four independent real measurement inputs IF attached.
+* For actual bench, record instrument input impedance; NEVER add both physical and model loads.
+R_UI_METER_KEY_A KEY_FIELD_A 0 10meg
+R_UI_METER_KEY_B KEY_FIELD_B 0 10meg
+R_UI_METER_MOUSE_X POINTER_X 0 10meg
+R_UI_METER_MOUSE_Y POINTER_Y 0 10meg
+* SUSTAINED FORCE/POSITION FIELDS also influence the same two charge-storage nodes.
+R_KEY_TO_CHARGE_A KEY_FIELD_A CHARGE_A 1meg
+R_KEY_TO_CHARGE_B KEY_FIELD_B CHARGE_B 1meg
+R_POINTER_TO_CHARGE_A POINTER_X CHARGE_A 2.2meg
+R_POINTER_TO_CHARGE_B POINTER_Y CHARGE_B 2.2meg
+
+.OP
+.END

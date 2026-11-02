@@ -1,0 +1,16 @@
+VOID R06 — completed static and exact-nominal checks (no physical waveform simulation)
+R05 complete archive verified before mutation: 48 ZIP entries (all CRC valid)
+R05 preserved resistor cards exactly once in new shared K05 module: 12 / 12 PASS
+K05 unchanged five-rail source wiring and two instrument input loads: PASS
+K05 exact Fraction/KCL y0 nominal: 0.32498375081245937703114844257787111 V
+K05 exact Fraction/KCL y1 nominal: -0.19999000049997500124993750312484376 V
+K06 flattening of one weighted module and one RC mesh module: 64 components, all unique
+K06 physical K01 breakdown-to-RC path present: PASS
+K06 five-input K05 to both analogue mesh ports by C-R couplers present: PASS
+K06 series capacitor, actual 10mH inductor, damping resistor path present: PASS
+K06 two independent charge caps, bidirectional physically coupled, two contact switches: PASS
+K06 all named analogue sources, state nodes and probe terminals electrically reachable: PASS
+K01-K04 and shared mesh byte-identical to R05: PASS
+Four instrument/acquisition ledgers remain header-only: PASS
+No behavioral noise generator, software qubits, CPU register simulation or digital random core: PASS
+No externally measured RBit levels, raw avalanche noise, memory retention, physical power or resonant response claimed

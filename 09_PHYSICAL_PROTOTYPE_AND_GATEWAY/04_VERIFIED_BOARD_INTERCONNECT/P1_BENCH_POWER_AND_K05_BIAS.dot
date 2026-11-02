@@ -1,0 +1,7 @@
+graph G {
+graph [rankdir=LR,fontname="DejaVu Sans",bgcolor="white",pad="0.3",ranksep="0.6",nodesep="0.35",label="VOID / R08  P1_BENCH_POWER_AND_K05_BIAS\nSOURCE-MAPPED INTERCONNECT ONLY",labelloc=t,fontsize=22];
+node [fontname="DejaVu Sans",fontsize=10,shape=record,style="filled",fillcolor="#f2f7f9",color="#355065"];
+edge [color="#7a8c9c",penwidth=1];
+j0 [label="{K05_BIAS_01|1: xp1 | 2: 0 | 3: xm1 | 4: 0 | 5: xp2 | 6: 0 | 7: xm2 | 8: 0 | 9: xp3 | 10: 0 | 11: y0 | 12: 0 | 13: y1 | 14: 0}"];
+j1 [label="{PWR_01|1: SUPPLY | 2: 0 | 3: UI_SRC | 4: 0 | 5: DISPLAY_3V3 | 6: 0}"];
+}

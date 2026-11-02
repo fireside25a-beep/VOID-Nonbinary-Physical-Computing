@@ -1,0 +1,3 @@
+PASS: missing display port detected by static schema
+PASS: missing material coupling branch detected
+PASS: duplicate physical component rejected

@@ -1,0 +1,50 @@
+VOID R06 native physical human-electrode interface: SIX analog key-pressure sensors and dual-axis mechanical pointer
+* This subcircuit contains ONLY physical resistive conductances and terminals.
+* Each R_PRESS is a TWO-TERMINAL FORCE-SENSITIVE RESISTOR in the as-built board.
+* Nominal 10meg corresponds to an UNPRESSED reference, NOT a fixed sensor in actual hardware.
+* Real force changes resistance continuously; the SPICE card is ONE static reference state.
+* Key labels A/E/I/O/SPACE/ENTER mark six mechanical keycaps, NOT digital character codes.
+* Two independent readout electrodes preserve simultaneous chords as coupled currents.
+* WIPER_X/Y are REAL 100k two-terminal-track potentiometers with wipers.
+* Each 50k/50k pair represents the mechanically centered reference position ONLY.
+* Neither keyboard nor mouse is a software process, bit register, or noise generator.
+.SUBCKT VOID_HUMAN_TRANSDUCER_V1 UI_P UI_N RET OBS_A OBS_B STATE_A STATE_B KEY_A_ELECTRODE KEY_B_ELECTRODE WIPER_X WIPER_Y
+* Physical six-key pressure-sensitive board, two independent current-weighted sums.
+R_PRESS_A UI_P SENSOR_A 10meg
+R_PRESS_E UI_P SENSOR_E 10meg
+R_PRESS_I UI_P SENSOR_I 10meg
+R_PRESS_O UI_P SENSOR_O 10meg
+R_PRESS_SPACE UI_P SENSOR_SPACE 10meg
+R_PRESS_ENTER UI_P SENSOR_ENTER 10meg
+* Pairwise analogue conductances, NOT binary lookup codes.
+R_KEY_AA SENSOR_A KEY_A_ELECTRODE 22k
+R_KEY_AB SENSOR_A KEY_B_ELECTRODE 150k
+R_KEY_EA SENSOR_E KEY_A_ELECTRODE 33k
+R_KEY_EB SENSOR_E KEY_B_ELECTRODE 100k
+R_KEY_IA SENSOR_I KEY_A_ELECTRODE 47k
+R_KEY_IB SENSOR_I KEY_B_ELECTRODE 68k
+R_KEY_OA SENSOR_O KEY_A_ELECTRODE 68k
+R_KEY_OB SENSOR_O KEY_B_ELECTRODE 47k
+R_KEY_SPACEA SENSOR_SPACE KEY_A_ELECTRODE 100k
+R_KEY_SPACEB SENSOR_SPACE KEY_B_ELECTRODE 33k
+R_KEY_ENTERA SENSOR_ENTER KEY_A_ELECTRODE 150k
+R_KEY_ENTERB SENSOR_ENTER KEY_B_ELECTRODE 22k
+R_KEY_RETURN_A KEY_A_ELECTRODE RET 22k
+R_KEY_RETURN_B KEY_B_ELECTRODE RET 22k
+* Causal connection to the existing K06 two-node mesh and coupled charge storage.
+R_KEY_TO_MESH_A KEY_A_ELECTRODE OBS_A 220k
+R_KEY_TO_MESH_B KEY_B_ELECTRODE OBS_B 220k
+R_KEY_TO_STATE_A KEY_A_ELECTRODE STATE_A 1meg
+R_KEY_TO_STATE_B KEY_B_ELECTRODE STATE_B 1meg
+* Mouse-like mechanical 2-axis movement: real potentiometer tracks.
+R_POINTER_X_UP UI_P WIPER_X 50k
+R_POINTER_X_DOWN WIPER_X UI_N 50k
+R_POINTER_Y_UP UI_P WIPER_Y 50k
+R_POINTER_Y_DOWN WIPER_Y UI_N 50k
+R_POINTER_X_OPEN_GUARD WIPER_X RET 1meg
+R_POINTER_Y_OPEN_GUARD WIPER_Y RET 1meg
+R_POINTER_TO_MESH_X WIPER_X OBS_A 220k
+R_POINTER_TO_MESH_Y WIPER_Y OBS_B 220k
+R_POINTER_TO_STATE_X WIPER_X STATE_A 470k
+R_POINTER_TO_STATE_Y WIPER_Y STATE_B 470k
+.ENDS VOID_HUMAN_TRANSDUCER_V1

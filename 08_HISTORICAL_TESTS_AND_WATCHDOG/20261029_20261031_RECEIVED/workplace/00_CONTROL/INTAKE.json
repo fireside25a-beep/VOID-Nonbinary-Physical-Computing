@@ -1,0 +1,55 @@
+{
+  "inputs": [
+    {
+      "name": "VOID_COMPLETE_VOLUME_PART_01_OF_02.zip.001",
+      "bytes": 150727371,
+      "sha256": "9fac288a28d626c6da8e459fa88aae45d5a5ef5ee62bee95f13c75154b546c98",
+      "result": "PASS"
+    },
+    {
+      "name": "VOID_COMPLETE_VOLUME_PART_02_OF_02.zip.002",
+      "bytes": 150727371,
+      "sha256": "886062734193bbda1afa7668bc250bbb7bc1ff7a1c3335866afc9836865900f0",
+      "result": "PASS"
+    }
+  ],
+  "zips": [
+    {
+      "name": "MASTER",
+      "source_name": "VOID_COMPLETE_BUILD_RESEARCH_VOLUME_20261029.zip",
+      "bytes": 301454742,
+      "sha256": "3870dddb2cc7c89a5f0f2da6d7f9cc00770cf5ba3832956e587a42ecbbe801fc",
+      "members": 725,
+      "unpacked_bytes": 336548557,
+      "result": "PASS"
+    },
+    {
+      "name": "R08",
+      "source_name": "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip",
+      "bytes": 62518800,
+      "sha256": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad",
+      "members": 113,
+      "unpacked_bytes": 62893899,
+      "result": "PASS"
+    },
+    {
+      "name": "AVX",
+      "source_name": "EntropyAVXEngine-source-trace-and-bootstrap(3).zip",
+      "bytes": 27660,
+      "sha256": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+      "members": 31,
+      "unpacked_bytes": 284076,
+      "result": "PASS"
+    },
+    {
+      "name": "ACDC",
+      "source_name": "AC_DC_Passive_AI_Proof(2)(1).zip",
+      "bytes": 17618,
+      "sha256": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+      "members": 11,
+      "unpacked_bytes": 43756,
+      "result": "PASS"
+    }
+  ],
+  "timestamp_utc": "2026-10-29T13:51:44Z"
+}

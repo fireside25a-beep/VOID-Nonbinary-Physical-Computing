@@ -1,0 +1,165 @@
+VOID K06 R08 single material computation core: coupled charge, local force field, pointing, light and actuator outputs
+* Canonical K06 integrates original K01 and K05 and shared RC mesh, not a virtual computation engine.
+* Uniform material contacts form a physically connected sheet, not alphabet-mapped sensor signatures.
+* X/V/I are three simultaneously present PHYSICAL QUANTITIES (exchange current, capacitor potential, input current), not numeric digits.
+* K01 reverse breakdown is an EXTERNALLY POWERED physical-junction design with nominal model.
+* RDRAND/RDSEED historical CPU entropy evidence is preserved separately, not wired to this topology.
+.INCLUDE "VOID_K_MESH_V1.lib"
+.INCLUDE "VOID_K05_WEIGHTED_NETWORK.lib"
+.INCLUDE "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib"
+* Original K01 current-limited physical junction input
+V_ISO SUPPLY 0 DC 24
+R_CURRENT_LIMIT SUPPLY SHUNT_TOP 3.3k
+R_KELVIN SHUNT_TOP JCT 100
+D_REAL 0 JCT D_BZX55C7V5_NOMINAL
+R_DCMON JCT DMM_PORT 100k
+R_DMM DMM_PORT 0 10meg
+.MODEL D_BZX55C7V5_NOMINAL D(BV=7.5 IBV=5m IS=1e-14)
+C_ACBLOCK JCT AC_IN 10n
+R_ACSER AC_IN INPUT 1k
+R_ACREF INPUT 0 1meg
+X_MESH INPUT PROBE_A PROBE_B VOID_MESH_V1
+* Historical K05 five physical voltage sources and same reusable conductance module
+Vxp1 xp1 0 DC 0.8
+Vxm1 xm1 0 DC -0.8
+Vxp2 xp2 0 DC -0.4
+Vxm2 xm2 0 DC 0.4
+Vxp3 xp3 0 DC 0.2
+X_WEIGHTED xp1 xm1 xp2 xm2 xp3 y0 y1 VOID_WEIGHTED_5X2
+R_METER_Y0 y0 0 10meg
+R_METER_Y1 y1 0 10meg
+C_WEIGHT_A y0 W_AC_A 100n
+R_WEIGHT_A W_AC_A PROBE_A 10k
+C_WEIGHT_B y1 W_AC_B 100n
+R_WEIGHT_B W_AC_B PROBE_B 10k
+* Actual L/C/R selectable electrical relaxation trajectory
+C_SERIES_L PROBE_A TANK_A 10n
+L_TANK TANK_A TANK_B 10mH
+R_TANK TANK_B PROBE_B 220
+* Physical continuum state primitives: three capacitances, leakage, reciprocal coupling
+R_INTEG_A PROBE_A CHARGE_A 100k
+C_CHARGE_A CHARGE_A 0 100n
+R_LEAK_A CHARGE_A 0 10meg
+R_INTEG_B PROBE_B CHARGE_B 100k
+C_CHARGE_B CHARGE_B 0 100n
+R_LEAK_B CHARGE_B 0 10meg
+R_CHARGE_COUPLE CHARGE_A CHARGE_B 470k
+R_FEEDBACK_A CHARGE_A PROBE_B 1meg
+R_FEEDBACK_B CHARGE_B PROBE_A 1meg
+* Third physical charge primitive with direct interaction and reciprocal material feedback.
+* Deliberately not an RBit or digital third state: this is a real capacitor-network degree.
+R_INTEG_C PROBE_B CHARGE_C 150k
+C_CHARGE_C CHARGE_C 0 220n
+R_LEAK_C CHARGE_C 0 10meg
+R_COUPLE_AC CHARGE_A CHARGE_C 680k
+R_COUPLE_BC CHARGE_B CHARGE_C 820k
+R_FEEDBACK_C CHARGE_C PROBE_A 1.5meg
+R_MEM_METER_C CHARGE_C 0 10meg
+* Analog nonlinear conduction primitive: bidirectional diode threshold between charge nodes.
+* Nominal device physics is a design approximation; no bistable, qubit or RBit claim.
+R_NONLINEAR_SERIES CHARGE_A NL_BRIDGE 47k
+D_NONLINEAR_AB NL_BRIDGE CHARGE_B D_1N4148_NOMINAL
+D_NONLINEAR_BA CHARGE_B NL_BRIDGE D_1N4148_NOMINAL
+.MODEL D_1N4148_NOMINAL D(IS=2.5n RS=0.6 N=1.8 CJO=2p)
+* Physical externally accessible AC-write electrodes: NO internally fabricated
+* 'on' condition, ideal switch or hidden software-defined state transition.
+* Each WRITE pad has a 1M bleed, a real series film capacitor, a 100k
+* current-limiting resistor and physical clamp diodes to the EXISTING UI rail.
+* A change in the externally applied electrode voltage transfers charge by
+* displacement current. The actual voltage/time trajectory must be measured.
+* No waveform source, bit code, synthesized event or clock is inserted here.
+R_WRITE_A_BLEED WRITE_A 0 1meg
+C_WRITE_A_COUPLING WRITE_A WRITE_INJ_A 10n
+R_WRITE_A_LIMIT WRITE_INJ_A CHARGE_A 100k
+D_WRITE_A_HIGH WRITE_A UI_1V8 D_1N4148_NOMINAL
+D_WRITE_A_LOW 0 WRITE_A D_1N4148_NOMINAL
+R_WRITE_B_BLEED WRITE_B 0 1meg
+C_WRITE_B_COUPLING WRITE_B WRITE_INJ_B 10n
+R_WRITE_B_LIMIT WRITE_INJ_B CHARGE_B 100k
+D_WRITE_B_HIGH WRITE_B UI_1V8 D_1N4148_NOMINAL
+D_WRITE_B_LOW 0 WRITE_B D_1N4148_NOMINAL
+R_MEM_METER_A CHARGE_A 0 10meg
+R_MEM_METER_B CHARGE_B 0 10meg
+* ONE independent, current-sensed material input rail and one generic multi-contact module.
+V_UI_RAIL UI_SRC 0 DC 1.8
+R_UI_CURRENT UI_SRC UI_1V8 100
+X_MATERIAL UI_1V8 0 PROBE_A PROBE_B CHARGE_A CHARGE_B FIELD_A FIELD_B AXIS_A AXIS_B VOID_MATERIAL_INPUT
+* Physical external analog stimulus terminals for host DAC, mechanical or sensor sources.
+* Source cards are zero-volt NOMINAL test reference; external rail is a real bench boundary.
+* External isolated analog signal connector pads: no fictitious zero-volt host sources.
+* Actual sensor power and output current must be independently metered by the builder.
+R_BOUNDARY_BLEED_A BOUNDARY_A 0 2.2meg
+R_BOUNDARY_BLEED_B BOUNDARY_B 0 2.2meg
+D_BOUNDARY_A_HIGH BOUNDARY_A UI_1V8 D_1N4148_NOMINAL
+D_BOUNDARY_B_HIGH BOUNDARY_B UI_1V8 D_1N4148_NOMINAL
+D_BOUNDARY_A_LOW 0 BOUNDARY_A D_1N4148_NOMINAL
+D_BOUNDARY_B_LOW 0 BOUNDARY_B D_1N4148_NOMINAL
+R_BOUNDARY_A BOUNDARY_A PROBE_A 470k
+R_BOUNDARY_B BOUNDARY_B PROBE_B 470k
+* Passive 2-channel X-Y analog display electrode outputs; real high-Z X-Y display needed.
+R_XY_BUFFER_A CHARGE_A DISPLAY_X 100k
+R_XY_BUFFER_B CHARGE_B DISPLAY_Y 100k
+R_XY_INSTR_A DISPLAY_X 0 10meg
+R_XY_INSTR_B DISPLAY_Y 0 10meg
+* Third real charge degree of freedom has its own high-Z analog observation header.
+R_XY_BUFFER_C CHARGE_C DISPLAY_Z 100k
+R_XY_INSTR_C DISPLAY_Z 0 10meg
+* Dedicated powered MATERIAL->LIGHT display primitives: BJT analog threshold transfer & LED.
+* Optical brightness comes from the physical states; no display framebuffer or raster engine.
+V_DISPLAY_RAIL DISPLAY_3V3 0 DC 3.3
+R_LED_A DISPLAY_3V3 LED_A_AN 1k
+D_LED_A LED_A_AN LED_A_COL D_EMITTER_NOMINAL
+Q_LIGHT_A LED_A_COL LED_A_BASE LED_A_EMITTER Q_2N3904_NOMINAL
+R_LED_A_EMITTER LED_A_EMITTER 0 470
+R_BIAS_A DISPLAY_3V3 LED_A_BASE 1meg
+R_PULL_A LED_A_BASE 0 330k
+R_SENSE_A CHARGE_A LED_A_BASE 470k
+R_LED_B DISPLAY_3V3 LED_B_AN 1k
+D_LED_B LED_B_AN LED_B_COL D_EMITTER_NOMINAL
+Q_LIGHT_B LED_B_COL LED_B_BASE LED_B_EMITTER Q_2N3904_NOMINAL
+R_LED_B_EMITTER LED_B_EMITTER 0 470
+R_BIAS_B DISPLAY_3V3 LED_B_BASE 1meg
+R_PULL_B LED_B_BASE 0 330k
+R_SENSE_B CHARGE_B LED_B_BASE 470k
+* Two further continuous physical light tiles directly represent local force-sheet field.
+* NO row scan, binary pixels or text decoder: all four luminous tiles can act concurrently.
+R_LED_C DISPLAY_3V3 LED_C_AN 1k
+D_LED_C LED_C_AN LED_C_COL D_EMITTER_NOMINAL
+Q_LIGHT_C LED_C_COL LED_C_BASE LED_C_EMITTER Q_2N3904_NOMINAL
+R_LED_C_EMITTER LED_C_EMITTER 0 470
+R_BIAS_C DISPLAY_3V3 LED_C_BASE 1meg
+R_PULL_C LED_C_BASE 0 330k
+R_SENSE_C FIELD_A LED_C_BASE 470k
+R_LED_D DISPLAY_3V3 LED_D_AN 1k
+D_LED_D LED_D_AN LED_D_COL D_EMITTER_NOMINAL
+Q_LIGHT_D LED_D_COL LED_D_BASE LED_D_EMITTER Q_2N3904_NOMINAL
+R_LED_D_EMITTER LED_D_EMITTER 0 470
+R_BIAS_D DISPLAY_3V3 LED_D_BASE 1meg
+R_PULL_D LED_D_BASE 0 330k
+R_SENSE_D FIELD_B LED_D_BASE 470k
+* Piezo mechanical output: physical ceramic elements at probe voltages; not fake sound decoding.
+R_MECH_ISO_A PROBE_A PIEZO_NODE_A 100k
+C_MECH_PIEZO_A PIEZO_NODE_A 0 15n
+R_MECH_ISO_B PROBE_B PIEZO_NODE_B 100k
+C_MECH_PIEZO_B PIEZO_NODE_B 0 15n
+* The 4 LED and 2 ceramic elements are materially powered/coupled outputs.
+* An analog high-impedance XY display uses DISPLAY_X/Y; no CPU framebuffer exists.
+.MODEL D_EMITTER_NOMINAL D(IS=1e-18 N=2 RS=10)
+.MODEL Q_2N3904_NOMINAL NPN(IS=6.734f BF=255.9 VAF=74.03 CJE=4.493p CJC=3.638p TF=301.2p)
+* K06 exposes 3 concurrently coupled charge nodes, 8 uniform material contacts, 2 motion axes,
+* raw protected analog inputs, a nonlinear barrier, 4 optical currents, and X-Y outputs.
+* All active 1.8V and 3.3V rails have physical power budget and isolation requirements.
+* No synthetic thermal noise, software quantum state, binary alphabet mapping or CPU dynamics.
+
+* EXTERNAL AUTOMATED BENCH FIXTURE ONLY — not part of R08 physical build.
+* 1.2V transient to each protected pad, independently, bounded below UI_1V8.
+V_EXT_A WRITE_A 0 PULSE(0 1.2 1m 1u 1u 3m 8m)
+V_EXT_B WRITE_B 0 PULSE(0 1.2 5m 1u 1u 3m 8m)
+.control
+set wr_singlescale
+set wr_vecnames
+tran 50u 50m
+wrdata FULL_K06_TRANSIENT.dat v(CHARGE_A) v(CHARGE_B) v(CHARGE_C) v(PROBE_A) v(PROBE_B) v(WRITE_A) v(WRITE_B)
+quit
+.endc
+.END

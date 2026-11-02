@@ -1,0 +1,13 @@
+{
+  "closed_vs_repeat_analog_byte_equal": true,
+  "closed_vs_repeat_native_stdout_stderr_byte_equal": true,
+  "closed_vs_no_excitation_max_delta_v": 0.10301505090799999,
+  "closed_vs_open_write_a_max_delta_v": 0.10301505090799999,
+  "closed_vs_forced_a_max_delta_v": 0.15026304539874002,
+  "closed_vs_inverted_action_max_delta_v": 0.20675624608569998,
+  "closed_vs_open_write_b_max_delta_v": 0.12853063661494002,
+  "source_scope": "Strict K06 R/C SUBNETWORK only; not full circuit SPICE or hardware",
+  "hardware_physical_capture": "NONE",
+  "full_k06_non_linear_SPICE_pass": "NOT_RUN; no ngspice installed",
+  "pass": true
+}

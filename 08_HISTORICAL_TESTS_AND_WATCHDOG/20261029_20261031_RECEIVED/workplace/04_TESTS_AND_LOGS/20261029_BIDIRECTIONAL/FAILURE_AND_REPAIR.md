@@ -1,0 +1,1 @@
+First integration failure: HX89 Q² program can execute multiple SEARCH transitions before halt. Prior parser required exactly one; no data falsified. Fixed parser to use final executed transition and reject non-monotone trajectories.

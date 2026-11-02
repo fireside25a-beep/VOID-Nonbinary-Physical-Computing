@@ -1,0 +1,158 @@
+{
+  "blocks": 16,
+  "existing_hx89_executable_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+  "existing_native_cpu_sha256": "d5fa8b355fd8d905094440af12efee545073643cbf069f80ecb02d741d4228cc",
+  "experiment_script_sha256": "dd1f039c504c02a91bebb829a67517cad18287ea36da546f6c58fdeaba954113",
+  "factorial_real_observations": [
+    {
+      "blocks": 16,
+      "both_drives_vs_idle_sign_test": {
+        "n": 16,
+        "negative": 11,
+        "p_two_sided": 0.210113525390625,
+        "positive": 5
+      },
+      "csv_sha256": "5336ae67ca081fa6e29f3a6f579594ee44e7146529023e0afbc78c01e1ae035f",
+      "factorial_synergy_median_ns": 9429.5,
+      "factorial_synergy_per_block_ns": [
+        -86605,
+        24679,
+        -586753,
+        22095,
+        -106516,
+        2013191,
+        -838839,
+        602433,
+        -3236,
+        379491,
+        -18281,
+        -26555,
+        -917540,
+        643168,
+        154314,
+        998828
+      ],
+      "hold_ms": 2,
+      "independent_analog_current_or_temperature_measured": false,
+      "median_observer_ns_by_condition": {
+        "0": 652309.0,
+        "1": 517200.0,
+        "2": 508744.0,
+        "3": 568491.0
+      },
+      "physical_nonbinary_reservoir_proven": false,
+      "readback_source": "REAL_RDTSCP_AND_MONOTONIC_RAW_CPU_OBSERVATION",
+      "samples": 64,
+      "states_counts": {
+        "0": 16,
+        "1": 16,
+        "2": 16,
+        "3": 16
+      },
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "05fb820e7e0711d0d43dd0b09aec73dae99dfd64236e96490dd3d00eed0dfd93",
+      "synergy_sign_test": {
+        "n": 16,
+        "negative": 8,
+        "p_two_sided": 1.0,
+        "positive": 8
+      }
+    },
+    {
+      "blocks": 16,
+      "both_drives_vs_idle_sign_test": {
+        "n": 16,
+        "negative": 9,
+        "p_two_sided": 0.803619384765625,
+        "positive": 7
+      },
+      "csv_sha256": "3381c1f56b936b483a08f4e394fff26de92d4b0d02fa3d5a004915195e8457b6",
+      "factorial_synergy_median_ns": 23028.0,
+      "factorial_synergy_per_block_ns": [
+        1441863,
+        -1771300,
+        4909160,
+        -67831,
+        88919,
+        189110,
+        -2182297,
+        -940242,
+        517701,
+        345160,
+        -2038937,
+        -42863,
+        -355556,
+        -362437,
+        302893,
+        397340
+      ],
+      "hold_ms": 20,
+      "independent_analog_current_or_temperature_measured": false,
+      "median_observer_ns_by_condition": {
+        "0": 606708.0,
+        "1": 470850.0,
+        "2": 470799.5,
+        "3": 469098.0
+      },
+      "physical_nonbinary_reservoir_proven": false,
+      "readback_source": "REAL_RDTSCP_AND_MONOTONIC_RAW_CPU_OBSERVATION",
+      "samples": 64,
+      "states_counts": {
+        "0": 16,
+        "1": 16,
+        "2": 16,
+        "3": 16
+      },
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "05fb820e7e0711d0d43dd0b09aec73dae99dfd64236e96490dd3d00eed0dfd93",
+      "synergy_sign_test": {
+        "n": 16,
+        "negative": 8,
+        "p_two_sided": 1.0,
+        "positive": 8
+      }
+    }
+  ],
+  "feedback_hx89_execution": {
+    "fitness": 1,
+    "head": 0,
+    "q": 9,
+    "step": 1,
+    "target": 4
+  },
+  "feedback_hx89_stdout_sha256": "ec10c48c556d417ec3f9cf8028898453b84a0b9f6f66d1db383d53592fdeab9e",
+  "feedback_hx89_target": 4,
+  "followup_actual_cpu_command": {
+    "rotate": 0,
+    "work": 5
+  },
+  "followup_actual_cpu_sha256": "a126008b4ef122195bae80202069a1fb0d1bb30e07342c634591a3633de3091c",
+  "hx89_q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+  "inherited_executed_cpu_command": {
+    "rotate": 3,
+    "work": 6
+  },
+  "measured_multilevel_analog_state": false,
+  "native_executable_sha256": "2868c38109b94349fc688f923f9d5bf67afc8a06c9e9c594e9f918f6c028e06e",
+  "nonbinary_material_computation_proven": false,
+  "observed_cpu_affinities": [
+    0,
+    1,
+    2
+  ],
+  "original_complete_hx89_machine_sha256": "ef7acafee3766fb3258478f30f061286f96c95a03cb8c3fe4173513c3158654b",
+  "original_complete_hx89_validation": {
+    "command_changed_cycles": 4,
+    "native_three_intensity_trials": 0,
+    "physical_nonbinary_material_computation_verified": false,
+    "verified_cpu_interventions": 16,
+    "verified_cycles": 4,
+    "verified_hx89_gas_reversals": 4
+  },
+  "rotate": 3,
+  "schema": "VOID_HX89_DUAL_INPUT_FACTORIAL_REAL_CPU_V1",
+  "seed": 89304989987,
+  "source_sha256": "aaf23350579d3b14b2dd00c098b17a54b6db7716f93a60d3e3750b86d4b26eb5",
+  "stim_ms": 22,
+  "tested_substrate": "REAL_CPU_WORKLOADS_WITH_DIGITAL_READBACK_AND_EXECUTED_HX89_CONTROL"
+}

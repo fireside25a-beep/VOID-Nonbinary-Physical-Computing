@@ -1,0 +1,76 @@
+{
+  "schema": "VOID_FORTRAN_C_VS_ARCHIVED_PYTHON_RC_V1",
+  "all_pass": true,
+  "scenarios": {
+    "closed_loop": {
+      "pass": true,
+      "native_calls": 96,
+      "state_samples": 1152,
+      "max_abs_difference": 3.33333360913457e-10,
+      "max_relative_difference": 1.000000999962535e-06,
+      "offenders": [],
+      "control_conflicts": [],
+      "charge_conflicts": []
+    },
+    "closed_loop_repeat": {
+      "pass": true,
+      "native_calls": 96,
+      "state_samples": 1152,
+      "max_abs_difference": 3.33333360913457e-10,
+      "max_relative_difference": 1.000000999962535e-06,
+      "offenders": [],
+      "control_conflicts": [],
+      "charge_conflicts": []
+    },
+    "open_write_a": {
+      "pass": true,
+      "native_calls": 96,
+      "state_samples": 1152,
+      "max_abs_difference": 3.33333360913457e-10,
+      "max_relative_difference": 1.000000999962535e-06,
+      "offenders": [],
+      "control_conflicts": [],
+      "charge_conflicts": []
+    },
+    "no_excitation": {
+      "pass": true,
+      "native_calls": 96,
+      "state_samples": 1152,
+      "max_abs_difference": 3.33333360913457e-10,
+      "max_relative_difference": 1.000000999962535e-06,
+      "offenders": [],
+      "control_conflicts": [],
+      "charge_conflicts": []
+    },
+    "forced_a": {
+      "pass": true,
+      "native_calls": 96,
+      "state_samples": 1152,
+      "max_abs_difference": 3.33333360913457e-10,
+      "max_relative_difference": 1.000000999962535e-06,
+      "offenders": [],
+      "control_conflicts": [],
+      "charge_conflicts": []
+    },
+    "inverted_action": {
+      "pass": true,
+      "native_calls": 96,
+      "state_samples": 1152,
+      "max_abs_difference": 3.33333360913457e-10,
+      "max_relative_difference": 1.000000999962535e-06,
+      "offenders": [],
+      "control_conflicts": [],
+      "charge_conflicts": []
+    },
+    "open_write_b": {
+      "pass": true,
+      "native_calls": 96,
+      "state_samples": 1152,
+      "max_abs_difference": 3.33333360913457e-10,
+      "max_relative_difference": 1.000000999962535e-06,
+      "offenders": [],
+      "control_conflicts": [],
+      "charge_conflicts": []
+    }
+  }
+}

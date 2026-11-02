@@ -1,0 +1,22 @@
+VOID DIODE_ZERO_VOLT_WITH_MESH: real-device Gate K electrical connectivity, NOT a measurement
+* All excitation and passive parts represent PHYSICAL external electrical terminals.
+* 24 V isolated CURRENT-LIMITED bench supply required only for biased-junction variant.
+* Real diode BZX55C7V5 (Vishay selected example): verify maker, lot, orientation, actual I-V.
+* Junction model is a nominal DC fit ONLY; does not model avalanche excess noise.
+* The bench and analog instrument are outside the substrate and must be power-accounted.
+.INCLUDE "VOID_K_MESH_V1.lib"
+V_ISO SUPPLY 0 DC 0
+R_CURRENT_LIMIT SUPPLY SHUNT_TOP 3.3k
+R_KELVIN SHUNT_TOP JCT 100
+D_REAL 0 JCT D_BZX55C7V5_NOMINAL
+R_DCMON JCT DMM_PORT 100k
+R_DMM DMM_PORT 0 10meg
+.MODEL D_BZX55C7V5_NOMINAL D(BV=7.5 IBV=5m IS=1e-14)
+
+C_ACBLOCK JCT  AC_IN 10n
+R_ACSER AC_IN INPUT 1k
+R_ACREF INPUT 0 1meg
+X_MESH INPUT PROBE_A PROBE_B VOID_MESH_V1
+* All output ports analogue, high impedance. No direct loudspeaker or unprotected mic.
+.OP
+.END

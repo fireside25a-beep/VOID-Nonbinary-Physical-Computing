@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "decks": [
+    {
+      "deck": "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir",
+      "components": 22,
+      "top_level_components": 10,
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      }
+    },
+    {
+      "deck": "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir",
+      "components": 22,
+      "top_level_components": 10,
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      }
+    },
+    {
+      "deck": "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir",
+      "components": 17,
+      "top_level_components": 5,
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      }
+    },
+    {
+      "deck": "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir",
+      "components": 17,
+      "top_level_components": 5,
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      }
+    },
+    {
+      "deck": "VOID_K05_DC_ADMITTANCE_WITNESS.cir",
+      "components": 20,
+      "top_level_components": 8,
+      "subcircuits": {
+        "VOID_WEIGHTED_5X2": 7
+      }
+    },
+    {
+      "deck": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir",
+      "components": 178,
+      "top_level_components": 106,
+      "subcircuits": {
+        "VOID_MESH_V1": 3,
+        "VOID_WEIGHTED_5X2": 7,
+        "VOID_MATERIAL_INPUT": 10
+      }
+    }
+  ]
+}

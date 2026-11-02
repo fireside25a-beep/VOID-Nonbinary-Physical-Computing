@@ -1,0 +1,46 @@
+PASS prior R05 archive CRC
+PASS protected circuit preserved: VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir
+PASS protected circuit preserved: VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir
+PASS protected circuit preserved: VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir
+PASS protected circuit preserved: VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir
+PASS protected circuit preserved: VOID_K_MESH_V1.lib
+PASS exact pre-R07 R06 snapshot CRC
+PASS pre-R07 snapshot captures only two active changed source members
+PASS include exists: VOID_K_MESH_V1.lib
+PASS include exists: VOID_K05_WEIGHTED_NETWORK.lib
+PASS include exists: VOID_PRIMITIVE_MATERIAL_INTERFACE.lib
+PASS only inherited 2 modules + one generic field primitive
+PASS physical input primitive defined
+PASS subckt defined: VOID_MESH_V1
+PASS port count X_MESH VOID_MESH_V1
+PASS subckt defined: VOID_WEIGHTED_5X2
+PASS port count X_WEIGHTED VOID_WEIGHTED_5X2
+PASS subckt defined: VOID_MATERIAL_INPUT
+PASS port count X_MATERIAL VOID_MATERIAL_INPUT
+PASS all flattened component identifiers unique
+ELEMENT_COUNTS {"C": 15, "D": 11, "L": 1, "Q": 4, "R": 126, "S": 2, "V": 12}
+PASS no electrically isolated components/net islands
+PASS one existing inductor, no duplicated RLC branch
+PASS two existing mechanical write contact equivalents
+PASS four concurrent physically powered light channels
+PASS exactly eight uniform force contacts
+PASS complete 2x4 physical neighboring sheet
+PASS eight identical material primitive values: X_MATERIAL::R_ACT_
+PASS eight identical material primitive values: X_MATERIAL::R_ACT_GUARD_
+PASS eight identical material primitive values: X_MATERIAL::R_NODE_RET_
+PASS no active alphabet/signature/binary machine primitive cards
+PASS material interface/state/output node reachable: DISPLAY_X
+PASS material interface/state/output node reachable: DISPLAY_Y
+PASS material interface/state/output node reachable: DISPLAY_Z
+PASS material interface/state/output node reachable: FIELD_A
+PASS material interface/state/output node reachable: FIELD_B
+PASS material interface/state/output node reachable: CHARGE_A
+PASS material interface/state/output node reachable: CHARGE_B
+PASS material interface/state/output node reachable: PROBE_A
+PASS material interface/state/output node reachable: PROBE_B
+PASS material interface/state/output node reachable: PIEZO_NODE_A
+PASS material interface/state/output node reachable: PIEZO_NODE_B
+PASS one existing breakdown current limit
+PASS K05 loaded exact KCL Y0 = 0.3249837508124594
+PASS K05 loaded exact KCL Y1 = -0.199990000499975
+NO PHYSICAL INSTRUMENT TRACE WAS GENERATED OR REPLACED.

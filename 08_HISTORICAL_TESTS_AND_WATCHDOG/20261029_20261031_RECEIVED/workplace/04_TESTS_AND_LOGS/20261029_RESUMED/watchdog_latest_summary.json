@@ -1,0 +1,15 @@
+{
+  "all_execution_gates_passed": true,
+  "failed": 0,
+  "on_die_physical_nonbinary_operator_verified": false,
+  "original_archives_unmodified_by_design": true,
+  "passed": 11,
+  "run_id": "1793300736828576001",
+  "source_hashes": {
+    "AC_DC_Passive_AI_Proof(2)(1).zip": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+    "EntropyAVXEngine-source-trace-and-bootstrap(3).zip": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+    "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad"
+  },
+  "tasks": 11,
+  "watchdog_source_sha256": "710cea5462aa55392f63bd1eea00a28dfe7f23cc01ca3b48f9f62d42d98708f7"
+}

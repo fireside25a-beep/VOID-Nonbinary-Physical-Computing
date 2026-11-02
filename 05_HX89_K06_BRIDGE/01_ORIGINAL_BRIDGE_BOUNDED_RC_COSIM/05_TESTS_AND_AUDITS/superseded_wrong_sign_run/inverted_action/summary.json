@@ -1,0 +1,20 @@
+{
+  "scenario": "inverted_action",
+  "step_count": 96,
+  "native_executions": 96,
+  "native_ones": 93,
+  "native_zeros": 3,
+  "max_abs_charge_a_v": 0.0824063471321,
+  "max_abs_charge_b_v": 0.0794107747778,
+  "max_abs_charge_c_v": 0.00513666757299,
+  "end_state_v": {
+    "CHARGE_A": 0.039872894997303336,
+    "CHARGE_B": 0.00017540247579412143,
+    "CHARGE_C": 4.0415974288014813e-05
+  },
+  "analog_samples": 1152,
+  "all_native_oracle_correct": true,
+  "waveforms_sha256": "944da8c5e41fa560cb37704cb998fda0b502e298d39f646ffccad053c2809be4",
+  "native_steps_sha256": "9333ec04838c48877927c726be2cabc0c58be591354cfdf5672e5fc683d2ed7e",
+  "start_time_utc": "2026-10-31T00:57:47.582481+00:00"
+}

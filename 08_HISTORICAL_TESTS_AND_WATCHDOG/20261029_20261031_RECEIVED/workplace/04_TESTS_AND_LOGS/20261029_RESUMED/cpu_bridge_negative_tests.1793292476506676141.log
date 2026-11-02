@@ -1,0 +1,37 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_fake_zero_observation_rejected (test_bridge.Tests.test_fake_zero_observation_rejected) ... ok
+test_migration_rejected (test_bridge.Tests.test_migration_rejected) ... ok
+test_missing_mode_rejected (test_bridge.Tests.test_missing_mode_rejected) ... ok
+test_missing_trial_rejected (test_bridge.Tests.test_missing_trial_rejected) ... ok
+test_native_bounds_rejected (test_bridge.Tests.test_native_bounds_rejected) ... ok
+test_netlist_integrity (test_bridge.Tests.test_netlist_integrity) ... ok
+test_original_milestone_fields (test_bridge.Tests.test_original_milestone_fields) ... ok
+test_real_hx89_native (test_bridge.Tests.test_real_hx89_native) ... ERROR
+test_valid_actual_native_traces (test_bridge.Tests.test_valid_actual_native_traces) ... ok
+
+======================================================================
+ERROR: test_real_hx89_native (test_bridge.Tests.test_real_hx89_native)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/VOID_HX89_PHYSICAL_GATE_WORK/RESTORED/workplace/03_NATIVE_TOOLCHAIN/CPU_VOID_BATCH_CYCLE/test_bridge.py", line 37, in test_real_hx89_native
+    z=connector.native_trace();self.assertEqual(z['native_ir'],4);self.assertEqual(z['native_result'],122)
+  File "/mnt/data/VOID_HX89_PHYSICAL_GATE_WORK/RESTORED/workplace/02_ACTIVE_R08/07_HX89_PHYSICAL_CONNECTOR/connector.py", line 64, in native_trace
+    r=hx_execute(PROGRAM,('--native',))
+  File "/mnt/data/VOID_HX89_PHYSICAL_GATE_WORK/RESTORED/workplace/02_ACTIVE_R08/07_HX89_PHYSICAL_CONNECTOR/connector.py", line 52, in hx_execute
+    if not HX89.is_file() or not os.access(HX89,os.X_OK):raise Refusal('Built HX89 executable missing')
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+connector.Refusal: Built HX89 executable missing
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.034s
+
+FAILED (errors=1)

@@ -1,0 +1,1 @@
+CROSS_CORE_NATIVE trials=144 heater=0 observer=4 sink=415162651559827271

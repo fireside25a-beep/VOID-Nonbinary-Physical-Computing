@@ -1,0 +1,226 @@
+{
+  "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "architecture": "x86_64",
+  "python": "3.13.5",
+  "source_data": "2026-11-02 fresh on disposable copy, original ZIPs untouched",
+  "new_checks": [
+    {
+      "label": "AVX_original_source_compile_correct_include",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Ireconstructed_source",
+        "-o",
+        "bvh_original_repro_fresh",
+        "tests/bvh_repro.cpp",
+        "reconstructed_source/bvh_spatial.cpp"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/AVX_OG",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.971,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "AVX_original_BVH_negative_expected",
+      "argv": [
+        "./bvh_original_repro_fresh"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/AVX_OG",
+      "exit_code": 1,
+      "status": "FAIL",
+      "note": "executed",
+      "duration_seconds": 0.003,
+      "stdout_sha256": "accac6a93debbe7f5fde4a4a2df93d5bdd9656888b61da1cd74f22716d1db97a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_negative_test": true,
+      "reproduced_known_bug": true
+    },
+    {
+      "label": "AVX_hardened_source_build",
+      "argv": [
+        "cmake",
+        "--build",
+        "build",
+        "-j2"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/AVX_HARDENED",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.068,
+      "stdout_sha256": "6bf69b80b108cbf1041232949a86d644525df09fb9f943b0f343b6969f3cd291",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "AVX_hardened_BVH_ownership",
+      "argv": [
+        "./test_bvh_ownership"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/AVX_HARDENED",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.002,
+      "stdout_sha256": "9545e28cfffe28cdeca5984bf490dd108044456dce3cf8ed72326f231d97ee55",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "AVX_hardened_BVH_3003_compile",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "test_bvh_extended.cpp",
+        "bvh_spatial.cpp",
+        "-o",
+        "bvh_verified"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/AVX_HARDENED",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.635,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "AVX_hardened_BVH_3003",
+      "argv": [
+        "./bvh_verified"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/AVX_HARDENED",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.083,
+      "stdout_sha256": "f6ab4d27a63b646d51135ed4bad9360b49692b00e7bf04f5b292aed46931a2e2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "AVX_hardened_engine_native",
+      "argv": [
+        "./build/EntropyAVXEngine"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/AVX_HARDENED",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 1.998,
+      "stdout_sha256": "57e4f55140c0b6b29baba0666425c19a0247d9971cc45134d11443fc96a6a200",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "CPU_intrinsic_dispatch_build",
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/06_CPU_BATCH_TARGETED_INTRINSICS/cpu_batch.c",
+        "-o",
+        "/mnt/data/VOID_TEST_WORK/cpu_batch_hardened"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.433,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "CPU_intrinsic_dispatch_native_trials",
+      "argv": [
+        "/mnt/data/VOID_TEST_WORK/cpu_batch_hardened",
+        "--rounds",
+        "4",
+        "--work",
+        "2"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.008,
+      "stdout_sha256": "4c7d2962100791cbfc4cb30ded92dfe4d73cf7af315189c2f7ddfd43bf6e05b3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "schema_check": {
+        "header": true,
+        "trials": 16,
+        "all_trial_fields_present": true,
+        "host_hypervisor_flag": true
+      }
+    },
+    {
+      "label": "BRIDGE_24_source_locked_native_unit_tests",
+      "argv": [
+        "python3",
+        "independent_tests.py"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/BRIDGE/01_BRIDGE_CODE",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.623,
+      "stdout_sha256": "153a98ffe8209da5e65296b465c6bbb727a9ea21d1d5210d6c222fd3290c3fcf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "BRIDGE_saved_672_readback_before_replay",
+      "argv": [
+        "python3",
+        "readback_verify.py"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/BRIDGE/01_BRIDGE_CODE",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.707,
+      "stdout_sha256": "69933c6355d4a29c51af9e24f4f01c293c37ea351ed22cb71009e9b73040f79e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "BRIDGE_7_scenarios_fresh_replay_672_native_calls",
+      "argv": [
+        "python3",
+        "native_bridge.py"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/BRIDGE/01_BRIDGE_CODE",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 1.701,
+      "stdout_sha256": "234992f977f8561dd878b3338fc5f867dcc50e90dd288a33f1801b0317ffd394",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "BRIDGE_672_readback_after_replay",
+      "argv": [
+        "python3",
+        "readback_verify.py"
+      ],
+      "cwd": "/mnt/data/VOID_TEST_WORK/BRIDGE/01_BRIDGE_CODE",
+      "exit_code": 0,
+      "status": "PASS",
+      "note": "executed",
+      "duration_seconds": 0.721,
+      "stdout_sha256": "69933c6355d4a29c51af9e24f4f01c293c37ea351ed22cb71009e9b73040f79e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "overall_software_acceptance": true,
+  "full_k06_spice_transient": "NOT_RUN_ngspice_unavailable",
+  "physical_bench": "NO_MEASUREMENTS",
+  "mac_arm_native_x86_execution": "NOT_SUPPORTED"
+}

@@ -1,0 +1,17 @@
+R06 IN-PLACE PRIMITIVE SOURCE AUDIT: PASS
+Main source: 02_PHYSICAL_CIRCUITS/VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir
+Includes: VOID_K_MESH_V1.lib, VOID_K05_WEIGHTED_NETWORK.lib, VOID_PRIMITIVE_MATERIAL_INTERFACE.lib
+Main unique direct cards: 103
+Subckt/element and model arity/existence: PASS
+No redundant 6+44 letter key modules connected: PASS
+One physical material interface with 8 nominal contacts and 2 variable mechanical axes: PASS
+Exactly three charge capacitors plus resistor coupling and feedback: PASS
+Four BJT/LED current output branches and two analog X/Y outputs: PASS
+Analog sensor pads protected, zero-V source shunts removed: PASS
+Top-level required physical nodes single connected electrical graph: PASS
+Original K01..K04, mesh unchanged against R05 archive: PASS
+R05 archive SHA and ZIP CRC: PASS fd414baea4aa05c273c73a4c693ddd227ec7692639e45bbfa67aaa7979772dcc
+M00..M115 crosswalk exact 116 IDs: PASS
+Physical acquisition ledgers contain header ONLY: PASS
+Controlled negative X_MATERIAL miswire mutation: caught by source signature gate
+NOTE: These are actual source/connectivity checks, not SPICE waveform simulation or physical bench measurements.

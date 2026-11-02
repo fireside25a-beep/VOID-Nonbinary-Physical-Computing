@@ -1,0 +1,7 @@
+VOID R04 deterministic resistor-network reference; mathematical check, NOT a physical measurement
+Original R03 loaded-reference y0=+0.324983750812459 V, y1=-0.199990000499975 V
+R04 exact-rational KCL y0=6500/20001 = +0.324983750812459 V
+R04 exact-rational KCL y1=-4000/20001 = -0.199990000499975 V
+R03 original ideal resistor branches replaced with 2-element parallel realizations; no noise generated.
+R03 original five active source paths conserved; Vxm3 unconnected source removed.
+Calculated analytical values assume nominal resistors, exact source voltages and exactly 10 MOhm meter input resistance.

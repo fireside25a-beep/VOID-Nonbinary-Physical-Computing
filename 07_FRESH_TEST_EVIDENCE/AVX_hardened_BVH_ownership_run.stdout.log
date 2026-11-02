@@ -1,0 +1,1 @@
+PASS BVH ownership is noncopyable, root owns children

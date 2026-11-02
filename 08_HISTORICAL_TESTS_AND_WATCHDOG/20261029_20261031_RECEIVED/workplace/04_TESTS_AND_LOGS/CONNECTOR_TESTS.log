@@ -1,0 +1,10 @@
+PASS: native_replay
+PASS: actual_K06_cards
+PASS: absent_device_refusal
+PASS: device_path_rejection
+PASS: calibration_bounds
+PASS: native_only
+PASS: enable_interlock
+PASS: no_enable_interlock
+PASS: physical_evidence_unchanged
+RESULT 9 / 9

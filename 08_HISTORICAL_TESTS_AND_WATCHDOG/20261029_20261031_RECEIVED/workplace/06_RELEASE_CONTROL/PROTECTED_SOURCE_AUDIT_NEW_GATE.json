@@ -1,0 +1,28 @@
+{
+  "schema": "VOID_PRESERVED_SOURCE_INDEPENDENT_COMPARISON_V1",
+  "protected_groups": [
+    {
+      "directory": "01_SOURCES_VERIFIED",
+      "original_files": 885,
+      "unmodified_file_count": 885
+    },
+    {
+      "directory": "02_ACTIVE_R08",
+      "original_files": 119,
+      "unmodified_file_count": 119
+    },
+    {
+      "directory": "03_NATIVE_TOOLCHAIN/HX89",
+      "original_files": 280,
+      "unmodified_file_count": 280
+    },
+    {
+      "directory": "90_PRESERVED_PROVENANCE",
+      "original_files": 4,
+      "unmodified_file_count": 4
+    }
+  ],
+  "total_protected_files": 1288,
+  "mismatches": [],
+  "status": "PASS"
+}

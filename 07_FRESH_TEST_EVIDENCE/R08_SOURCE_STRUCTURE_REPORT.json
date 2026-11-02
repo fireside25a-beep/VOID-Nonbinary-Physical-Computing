@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "decks": [
+    {
+      "deck": "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir",
+      "files": {
+        "VOID_K_MESH_V1.lib": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+        "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir": "3e5a5fbb9979b6a43166e115eaad90b363bdea947b36377eb78602efdd207c7d"
+      },
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      },
+      "components": 22,
+      "top_level_components": 10,
+      "subcircuit_instances": [
+        {
+          "site": "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir:19",
+          "name": "X_MESH",
+          "subckt": "VOID_MESH_V1",
+          "actual_nodes": [
+            "INPUT",
+            "PROBE_A",
+            "PROBE_B"
+          ]
+        }
+      ],
+      "models": [
+        "D_BZX55C7V5_NOMINAL"
+      ],
+      "source_structure_only": true,
+      "numerical_circuit_simulation": false,
+      "physical_measured": false
+    },
+    {
+      "deck": "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir",
+      "files": {
+        "VOID_K_MESH_V1.lib": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+        "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir": "ce872411e6e58cb305901ba73e26627a7effb996cd433c418a62577be41b7b58"
+      },
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      },
+      "components": 22,
+      "top_level_components": 10,
+      "subcircuit_instances": [
+        {
+          "site": "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:19",
+          "name": "X_MESH",
+          "subckt": "VOID_MESH_V1",
+          "actual_nodes": [
+            "INPUT",
+            "PROBE_A",
+            "PROBE_B"
+          ]
+        }
+      ],
+      "models": [
+        "D_BZX55C7V5_NOMINAL"
+      ],
+      "source_structure_only": true,
+      "numerical_circuit_simulation": false,
+      "physical_measured": false
+    },
+    {
+      "deck": "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir",
+      "files": {
+        "VOID_K_MESH_V1.lib": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+        "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir": "9fc1729dc309c7afb0c4c9900724153675f73938f22d97623c9a8d9e93d4385a"
+      },
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      },
+      "components": 17,
+      "top_level_components": 5,
+      "subcircuit_instances": [
+        {
+          "site": "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir:14",
+          "name": "X_MESH",
+          "subckt": "VOID_MESH_V1",
+          "actual_nodes": [
+            "INPUT",
+            "PROBE_A",
+            "PROBE_B"
+          ]
+        }
+      ],
+      "models": [],
+      "source_structure_only": true,
+      "numerical_circuit_simulation": false,
+      "physical_measured": false
+    },
+    {
+      "deck": "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir",
+      "files": {
+        "VOID_K_MESH_V1.lib": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+        "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir": "b2763f162d159c25bae244e51293ca33583ce86a73462d3473836f6dc9e1584d"
+      },
+      "subcircuits": {
+        "VOID_MESH_V1": 3
+      },
+      "components": 17,
+      "top_level_components": 5,
+      "subcircuit_instances": [
+        {
+          "site": "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir:14",
+          "name": "X_MESH",
+          "subckt": "VOID_MESH_V1",
+          "actual_nodes": [
+            "INPUT",
+            "PROBE_A",
+            "PROBE_B"
+          ]
+        }
+      ],
+      "models": [],
+      "source_structure_only": true,
+      "numerical_circuit_simulation": false,
+      "physical_measured": false
+    },
+    {
+      "deck": "VOID_K05_DC_ADMITTANCE_WITNESS.cir",
+      "files": {
+        "VOID_K05_WEIGHTED_NETWORK.lib": "9a39456a494cef446610149d88faad6e62bcf772094587ad523a37dc30d01ef6",
+        "VOID_K05_DC_ADMITTANCE_WITNESS.cir": "71ef06bded569e22836c9bf669b25c076feb80249b53be215f50868405729e7b"
+      },
+      "subcircuits": {
+        "VOID_WEIGHTED_5X2": 7
+      },
+      "components": 20,
+      "top_level_components": 8,
+      "subcircuit_instances": [
+        {
+          "site": "VOID_K05_DC_ADMITTANCE_WITNESS.cir:12",
+          "name": "X_WEIGHTED",
+          "subckt": "VOID_WEIGHTED_5X2",
+          "actual_nodes": [
+            "xp1",
+            "xm1",
+            "xp2",
+            "xm2",
+            "xp3",
+            "y0",
+            "y1"
+          ]
+        }
+      ],
+      "models": [],
+      "source_structure_only": true,
+      "numerical_circuit_simulation": false,
+      "physical_measured": false
+    },
+    {
+      "deck": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir",
+      "files": {
+        "VOID_K_MESH_V1.lib": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+        "VOID_K05_WEIGHTED_NETWORK.lib": "9a39456a494cef446610149d88faad6e62bcf772094587ad523a37dc30d01ef6",
+        "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839",
+        "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161"
+      },
+      "subcircuits": {
+        "VOID_MESH_V1": 3,
+        "VOID_WEIGHTED_5X2": 7,
+        "VOID_MATERIAL_INPUT": 10
+      },
+      "components": 178,
+      "top_level_components": 106,
+      "subcircuit_instances": [
+        {
+          "site": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:21",
+          "name": "X_MESH",
+          "subckt": "VOID_MESH_V1",
+          "actual_nodes": [
+            "INPUT",
+            "PROBE_A",
+            "PROBE_B"
+          ]
+        },
+        {
+          "site": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:28",
+          "name": "X_WEIGHTED",
+          "subckt": "VOID_WEIGHTED_5X2",
+          "actual_nodes": [
+            "xp1",
+            "xm1",
+            "xp2",
+            "xm2",
+            "xp3",
+            "y0",
+            "y1"
+          ]
+        },
+        {
+          "site": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:86",
+          "name": "X_MATERIAL",
+          "subckt": "VOID_MATERIAL_INPUT",
+          "actual_nodes": [
+            "UI_1V8",
+            "0",
+            "PROBE_A",
+            "PROBE_B",
+            "CHARGE_A",
+            "CHARGE_B",
+            "FIELD_A",
+            "FIELD_B",
+            "AXIS_A",
+            "AXIS_B"
+          ]
+        }
+      ],
+      "models": [
+        "D_1N4148_NOMINAL",
+        "D_BZX55C7V5_NOMINAL",
+        "D_EMITTER_NOMINAL",
+        "Q_2N3904_NOMINAL"
+      ],
+      "source_structure_only": true,
+      "numerical_circuit_simulation": false,
+      "physical_measured": false
+    }
+  ],
+  "warnings": [
+    "Static syntax/ports/defined-model check only. No nodal KCL, transistor convergence, device availability, or physical measurements performed."
+  ]
+}

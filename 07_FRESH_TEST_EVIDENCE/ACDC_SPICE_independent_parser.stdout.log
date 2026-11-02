@@ -1,0 +1,7 @@
+PASS netlist=analog_dc.cir y0=0.325000000000+0.000000000000j |delta|=5.55e-17 V
+PASS netlist=analog_dc.cir y1=-0.200000000000+0.000000000000j |delta|=2.78e-17 V
+PASS netlist=analog_ac.cir y0=0.325000000000+0.000000000000j |delta|=0 V
+PASS netlist=analog_ac.cir y1=-0.200000000000+0.000000000000j |delta|=2.94e-17 V
+PASS netlist=analog_ac_loaded.cir y0=0.324979420438+0.002586104058j |delta|=2.11e-13 V
+PASS netlist=analog_ac_loaded.cir y1=-0.199987335654-0.001591448651j |delta|=2.42e-14 V
+PASS: independent circuit-netlist solution agrees with C11 solver

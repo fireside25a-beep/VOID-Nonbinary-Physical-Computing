@@ -1,0 +1,44 @@
+{
+  "schema": "VOID_K06_R08_FOUR_MODULE_INTERCONNECT_V1",
+  "source_file": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir",
+  "source_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+  "expanded_bom_sha256": "75e492d9729ce2faa3142a76feca33b4a5307f420fb406b1bcdbade28ab7527d",
+  "connector_map_sha256": "4f13b8641e329a92a997cf5c1cb0d6dafbaa0acae46db935fcf4a94af9f36347",
+  "modules": [
+    {
+      "module": "P1_BENCH_POWER_AND_K05_BIAS",
+      "schematic": "P1_BENCH_POWER_AND_K05_BIAS.kicad_sch",
+      "svg": "P1_BENCH_POWER_AND_K05_BIAS.svg",
+      "connectors": 2,
+      "pins": 20,
+      "sha256": "4b8d2896af7770236370e063cdb5e2535fde0df9e3359cda9d7cd0b66d7acffd"
+    },
+    {
+      "module": "P2_MEASUREMENT_AND_CORE_TEST",
+      "schematic": "P2_MEASUREMENT_AND_CORE_TEST.kicad_sch",
+      "svg": "P2_MEASUREMENT_AND_CORE_TEST.svg",
+      "connectors": 2,
+      "pins": 28,
+      "sha256": "d4a74e798c09837c378530e79d659bf48f8b7e0524a9e86d103da3a55c55c6bf"
+    },
+    {
+      "module": "P3_PROTECTED_STIMULUS_PORTS",
+      "schematic": "P3_PROTECTED_STIMULUS_PORTS.kicad_sch",
+      "svg": "P3_PROTECTED_STIMULUS_PORTS.svg",
+      "connectors": 1,
+      "pins": 8,
+      "sha256": "49b5aa9daa39c1b386d601003c72d8c8d5731193d006310741bc032a0f5e1eaf"
+    },
+    {
+      "module": "P4_2x4_MATERIAL_AND_AXES",
+      "schematic": "P4_2x4_MATERIAL_AND_AXES.kicad_sch",
+      "svg": "P4_2x4_MATERIAL_AND_AXES.svg",
+      "connectors": 10,
+      "pins": 22,
+      "sha256": "e1472a9bc9cba4360d429f59b372fa49b37c756947f298198ca96d178ef035c6"
+    }
+  ],
+  "connector_count": 15,
+  "pin_count": 78,
+  "engineering_scope": "Electrical interface/pin-net schematics, not an op-amp/DAC/ADC circuit implementation; no footprint/ERC/DRC/manufacturing acceptance"
+}

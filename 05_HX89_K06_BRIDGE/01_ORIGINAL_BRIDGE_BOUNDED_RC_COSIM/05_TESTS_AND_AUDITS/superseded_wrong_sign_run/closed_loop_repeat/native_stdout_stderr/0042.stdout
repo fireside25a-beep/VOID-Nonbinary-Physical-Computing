@@ -1,0 +1,4 @@
+HEXWORLD_ENTER semantic=HX87SEM3 dims=5 q2=25 epoch=0
+HX89 seed=1 cells=9
+NATIVE_ACCEL epoch=1 ir=3 bytes=18 result=1 src=e2c41266c7d1203e code=178f1a8311fa8e54
+1HX89 halt steps=4 heads=1 nodes=1 stack=0 hash=2babac1a0b3d425d

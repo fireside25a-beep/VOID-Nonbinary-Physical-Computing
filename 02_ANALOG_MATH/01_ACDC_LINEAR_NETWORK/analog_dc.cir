@@ -1,0 +1,20 @@
+Passive linear DC weighted sums - resistor core only
+* Sign inversion occurs in the ideal externally imposed source rails.
+* The weights are conductances; output voltage equals (W*x)/2.
+Vxp1 xp1 0 DC 0.8
+Vxm1 xm1 0 DC -0.8
+Vxp2 xp2 0 DC -0.4
+Vxm2 xm2 0 DC 0.4
+Vxp3 xp3 0 DC 0.2
+Vxm3 xm3 0 DC -0.2
+R01 xp1 y0 2000
+R02 xm2 y0 4000
+R03 xp3 y0 1333.3333333333333
+Rg0 y0 0 2000
+R11 xm1 y1 3333.3333333333333
+R12 xp2 y1 1666.6666666666667
+R13 xp3 y1 2500
+Rg1 y1 0 1428.5714285714287
+.op
+.print op v(y0) v(y1)
+.end

@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /mnt/data/VOID_HX89_PHYSICAL_GATE_WORK/RESTORED/workplace/03_NATIVE_TOOLCHAIN/EntropyAVX/build_workspace_cache/CMakeCache.txt is different than the directory /mnt/data/workplace/03_NATIVE_TOOLCHAIN/EntropyAVX/build_workspace_cache where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/mnt/data/workplace/03_NATIVE_TOOLCHAIN/EntropyAVX" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:314: cmake_check_build_system] Error 1

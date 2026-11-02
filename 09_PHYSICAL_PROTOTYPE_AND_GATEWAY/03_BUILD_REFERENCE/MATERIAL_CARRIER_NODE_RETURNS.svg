@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 960" width="1550" height="960">
+<style>svg{background:#fff} .node{fill:#fff;stroke:#202d40;stroke-width:2} .wire{fill:none;stroke:#263747;stroke-width:2.5;stroke-linecap:round} .res{fill:#fff;stroke:#1b344d;stroke-width:2.5} .ref{fill:#1e293b;font:13px system-ui,Arial,sans-serif} .val{fill:#475569;font:13px system-ui,Arial,sans-serif} .net{fill:#0f365c;font:bold 14px system-ui,Arial,sans-serif} .header{fill:#0f172a;font:bold 25px system-ui,Arial,sans-serif} .foot{fill:#475569;font:13px system-ui,Arial,sans-serif} .chip{fill:#ebf1f6;stroke:#577188;stroke-width:1.5} .junction{fill:#1b344d}</style>
+<rect width="1550" height="960" fill="#ffffff"/>
+<text class="header" x="60" y="52">VOID R08 • 2×4 material-sheet returns to RET</text>
+<text class="foot" x="60" y="85">All 8 R_NODE_RET resistors are verified against the source; repeated RET labels refer to the same net.</text>
+<text class="net" x="110" y="210">F_11</text>
+<path class="wire" d="M180,205 L215,205"/>
+<path class="wire" d="M215,205 L346.5,205"/>
+<path class="wire" d="M418.5,205 L550,205"/>
+<rect class="res" x="346.5" y="192" width="72" height="26" rx="2"/>
+<text class="ref" x="382.5" y="176" text-anchor="middle">R_NODE_RET_11</text>
+<text class="val" x="382.5" y="210" text-anchor="middle">220k</text>
+<path class="wire" d="M550,205 L620,205"/>
+<text class="net" x="625" y="210">RET</text>
+<text class="net" x="850" y="210">F_12</text>
+<path class="wire" d="M920,205 L955,205"/>
+<path class="wire" d="M955,205 L1086.5,205"/>
+<path class="wire" d="M1158.5,205 L1290,205"/>
+<rect class="res" x="1086.5" y="192" width="72" height="26" rx="2"/>
+<text class="ref" x="1122.5" y="176" text-anchor="middle">R_NODE_RET_12</text>
+<text class="val" x="1122.5" y="210" text-anchor="middle">220k</text>
+<path class="wire" d="M1290,205 L1360,205"/>
+<text class="net" x="1365" y="210">RET</text>
+<text class="net" x="110" y="380">F_13</text>
+<path class="wire" d="M180,375 L215,375"/>
+<path class="wire" d="M215,375 L346.5,375"/>
+<path class="wire" d="M418.5,375 L550,375"/>
+<rect class="res" x="346.5" y="362" width="72" height="26" rx="2"/>
+<text class="ref" x="382.5" y="346" text-anchor="middle">R_NODE_RET_13</text>
+<text class="val" x="382.5" y="380" text-anchor="middle">220k</text>
+<path class="wire" d="M550,375 L620,375"/>
+<text class="net" x="625" y="380">RET</text>
+<text class="net" x="850" y="380">F_14</text>
+<path class="wire" d="M920,375 L955,375"/>
+<path class="wire" d="M955,375 L1086.5,375"/>
+<path class="wire" d="M1158.5,375 L1290,375"/>
+<rect class="res" x="1086.5" y="362" width="72" height="26" rx="2"/>
+<text class="ref" x="1122.5" y="346" text-anchor="middle">R_NODE_RET_14</text>
+<text class="val" x="1122.5" y="380" text-anchor="middle">220k</text>
+<path class="wire" d="M1290,375 L1360,375"/>
+<text class="net" x="1365" y="380">RET</text>
+<text class="net" x="110" y="550">F_21</text>
+<path class="wire" d="M180,545 L215,545"/>
+<path class="wire" d="M215,545 L346.5,545"/>
+<path class="wire" d="M418.5,545 L550,545"/>
+<rect class="res" x="346.5" y="532" width="72" height="26" rx="2"/>
+<text class="ref" x="382.5" y="516" text-anchor="middle">R_NODE_RET_21</text>
+<text class="val" x="382.5" y="550" text-anchor="middle">220k</text>
+<path class="wire" d="M550,545 L620,545"/>
+<text class="net" x="625" y="550">RET</text>
+<text class="net" x="850" y="550">F_22</text>
+<path class="wire" d="M920,545 L955,545"/>
+<path class="wire" d="M955,545 L1086.5,545"/>
+<path class="wire" d="M1158.5,545 L1290,545"/>
+<rect class="res" x="1086.5" y="532" width="72" height="26" rx="2"/>
+<text class="ref" x="1122.5" y="516" text-anchor="middle">R_NODE_RET_22</text>
+<text class="val" x="1122.5" y="550" text-anchor="middle">220k</text>
+<path class="wire" d="M1290,545 L1360,545"/>
+<text class="net" x="1365" y="550">RET</text>
+<text class="net" x="110" y="720">F_23</text>
+<path class="wire" d="M180,715 L215,715"/>
+<path class="wire" d="M215,715 L346.5,715"/>
+<path class="wire" d="M418.5,715 L550,715"/>
+<rect class="res" x="346.5" y="702" width="72" height="26" rx="2"/>
+<text class="ref" x="382.5" y="686" text-anchor="middle">R_NODE_RET_23</text>
+<text class="val" x="382.5" y="720" text-anchor="middle">220k</text>
+<path class="wire" d="M550,715 L620,715"/>
+<text class="net" x="625" y="720">RET</text>
+<text class="net" x="850" y="720">F_24</text>
+<path class="wire" d="M920,715 L955,715"/>
+<path class="wire" d="M955,715 L1086.5,715"/>
+<path class="wire" d="M1158.5,715 L1290,715"/>
+<rect class="res" x="1086.5" y="702" width="72" height="26" rx="2"/>
+<text class="ref" x="1122.5" y="686" text-anchor="middle">R_NODE_RET_24</text>
+<text class="val" x="1122.5" y="720" text-anchor="middle">220k</text>
+<path class="wire" d="M1290,715 L1360,715"/>
+<text class="net" x="1365" y="720">RET</text>
+<text class="foot" x="60" y="900">These return resistors are independent of the 1k series contacts. Do not add second probe loads from the SPICE deck.</text>
+</svg>

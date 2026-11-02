@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 925" width="1450" height="925">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="0" y="0" width="100%" height="12" fill="#16405e"/>
+<text x="40" y="56" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#123954" font-weight="bold" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH — source-connected elements</text>
+<text x="40" y="86" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" fill="#54697b" font-weight="normal" text-anchor="start">Source title: VOID DIODE_ZERO_VOLT_WITH_MESH: real-device Gate K electrical connectivity, NOT a measurement</text>
+<text x="40" y="113" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#54697b" font-weight="normal" text-anchor="start">Sheet 1/1 | source SHA-256 ce872411e6e58cb305901ba7… | terminals use exact .cir/.lib node labels</text>
+<text x="40" y="145" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="bold" text-anchor="start">IDENTIFIER / SOURCE LINE</text>
+<text x="320" y="145" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="bold" text-anchor="start">TERMINALS &amp; SYMBOL</text>
+<text x="1000" y="145" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="bold" text-anchor="start">VALUE / MODEL / EXTRA PINS</text>
+<rect x="25" y="155" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="182" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">V_ISO</text>
+<text x="40" y="202" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:8  [TOP]</text>
+<path d="M470 176 L601 176 M691 176 L850 176" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="166" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">SUPPLY</text>
+<text x="858" y="166" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">0</text>
+<circle cx="646" cy="176" r="25" fill="white" stroke="#153c58" stroke-width="2"/>
+<text x="646" y="182" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#153c58" font-weight="bold" text-anchor="middle">V</text>
+<text x="1000" y="182" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">DC 0</text>
+<text x="40" y="250" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_CURRENT_LIMIT</text>
+<text x="40" y="270" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:9  [TOP]</text>
+<path d="M470 244 L601 244 M691 244 L850 244" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="234" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">SUPPLY</text>
+<text x="858" y="234" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">SHUNT_TOP</text>
+<polyline points="603,244 615,233 628,255 641,233 654,255 667,233 680,255 689,244" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="250" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">3.3k</text>
+<rect x="25" y="291" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="318" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_KELVIN</text>
+<text x="40" y="338" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:10  [TOP]</text>
+<path d="M470 312 L601 312 M691 312 L850 312" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="302" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">SHUNT_TOP</text>
+<text x="858" y="302" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">JCT</text>
+<polyline points="603,312 615,301 628,323 641,301 654,323 667,301 680,323 689,312" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="318" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">100</text>
+<text x="40" y="386" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">D_REAL</text>
+<text x="40" y="406" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:11  [TOP]</text>
+<path d="M470 380 L601 380 M691 380 L850 380" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="370" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">0</text>
+<text x="858" y="370" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">JCT</text>
+<polygon points="624,364 624,396 660,380" fill="none" stroke="#153c58" stroke-width="2"/><path d="M660 361v38" stroke="#153c58" stroke-width="3"/>
+<text x="1000" y="386" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">D_BZX55C7V5_NOMINAL</text>
+<rect x="25" y="427" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="454" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_DCMON</text>
+<text x="40" y="474" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:12  [TOP]</text>
+<path d="M470 448 L601 448 M691 448 L850 448" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="438" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">JCT</text>
+<text x="858" y="438" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">DMM_PORT</text>
+<polyline points="603,448 615,437 628,459 641,437 654,459 667,437 680,459 689,448" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="454" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">100k</text>
+<text x="40" y="522" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_DMM</text>
+<text x="40" y="542" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:13  [TOP]</text>
+<path d="M470 516 L601 516 M691 516 L850 516" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="506" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">DMM_PORT</text>
+<text x="858" y="506" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">0</text>
+<polyline points="603,516 615,505 628,527 641,505 654,527 667,505 680,527 689,516" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="522" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">10meg</text>
+<rect x="25" y="563" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="590" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">C_ACBLOCK</text>
+<text x="40" y="610" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:16  [TOP]</text>
+<path d="M470 584 L601 584 M691 584 L850 584" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="574" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">JCT</text>
+<text x="858" y="574" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">AC_IN</text>
+<path d="M639 564v40 M653 564v40" stroke="#153c58" stroke-width="3"/>
+<text x="1000" y="590" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">10n</text>
+<text x="40" y="658" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_ACSER</text>
+<text x="40" y="678" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:17  [TOP]</text>
+<path d="M470 652 L601 652 M691 652 L850 652" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="642" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">AC_IN</text>
+<text x="858" y="642" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">INPUT</text>
+<polyline points="603,652 615,641 628,663 641,641 654,663 667,641 680,663 689,652" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="658" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">1k</text>
+<rect x="25" y="699" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="726" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_ACREF</text>
+<text x="40" y="746" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:18  [TOP]</text>
+<path d="M470 720 L601 720 M691 720 L850 720" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="710" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">INPUT</text>
+<text x="858" y="710" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">0</text>
+<polyline points="603,720 615,709 628,731 641,709 654,731 667,709 680,731 689,720" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="726" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">1meg</text>
+<text x="40" y="794" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">X_MESH</text>
+<text x="40" y="814" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir:19  [TOP]</text>
+<path d="M470 788 L601 788 M691 788 L850 788" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="778" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">INPUT</text>
+<text x="858" y="778" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">PROBE_A</text>
+<rect x="610" y="764" width="72" height="48" rx="3" fill="white" stroke="#153c58" stroke-width="2"/>
+<text x="646" y="794" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#153c58" font-weight="bold" text-anchor="middle">X</text>
+<text x="1000" y="794" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">VOID_MESH_V1</text>
+<text x="1000" y="816" font-family="DejaVu Sans,Arial,sans-serif" font-size="11" fill="#52677b" font-weight="normal" text-anchor="start">pin3=PROBE_B</text>
+<text x="40" y="893" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="normal" text-anchor="start">NET LABELS CONNECT GLOBALLY WITHIN THE SAME SPICE SCOPE. This drawing asserts no PCB pinout or physical measurement.</text>
+</svg>

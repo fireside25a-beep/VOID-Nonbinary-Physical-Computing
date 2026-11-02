@@ -1,0 +1,4 @@
+usage: python3 -m unittest [-h] [-v] [-q] [--locals] [--durations N] [-f] [-c]
+                           [-b] [-k TESTNAMEPATTERNS]
+                           [tests ...]
+python3 -m unittest: error: unrecognized arguments: -s 03_NATIVE_TOOLCHAIN/CPU_VOID_BATCH_CYCLE -p test_full_stack.py

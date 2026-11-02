@@ -1,0 +1,22 @@
+digraph VOID {
+rankdir=TB; graph [fontname="DejaVu Sans",fontsize=18,bgcolor="white",pad=0.22,ranksep=0.7];
+node [shape=box,style="rounded,filled",fillcolor="#f5f7fa",color="#4b5563",fontname="DejaVu Sans",fontsize=11,margin="0.22,0.12"];
+edge [color="#475569",penwidth=1.2,arrowsize=0.7];
+source [label="AUTHORITATIVE R08 K01-K06 (.cir + .lib)\n216 source elements · K06 175 flattened primitives",fillcolor="#d9f1ed"];
+digital [label="DIGITAL REFERENCE\nGNU Fortran selected K06 RC solver\nactual C11 AC/DC source",fillcolor="#e3eefc"];
+physical [label="PHYSICAL VOID TARGET\nindependently powered diode/mesh\nreal CHARGE_A/B/C · material carrier",fillcolor="#fef3db"];
+observed [label="Calibrated, high-impedance measurement\nactual instrument/ADC provenance",fillcolor="#fef3db"];
+controller [label="ONE NATIVE DECISION PIPELINE\nEntropyAVX state observation + AC/DC conditioning\noriginal SHA-256 checked HX89 executable\nCPU scalar / AVX2 / batch / cache work-state",fillcolor="#d9f1ed"];
+modelout [label="Model write A/B (simulation only)",fillcolor="#e3eefc"];
+realout [label="Hardware protected DAC → WRITE_A/B\nactually measured return voltage",fillcolor="#fef3db"];
+source -> digital [label="SPICE source selected RC subset"];
+source -> physical [label="real components & terminals"];
+physical -> observed [label="volts and time"];
+digital -> controller [label="model state"];
+observed -> controller [label="real acquired state (HIL target)"];
+controller -> modelout [label="reproducible reference"];
+controller -> realout [label="only when real driver + safety gate exist"];
+modelout -> digital;
+realout -> physical;
+{rank=same;digital;physical;}
+}

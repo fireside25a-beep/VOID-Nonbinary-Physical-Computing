@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 653" width="1450" height="653">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="0" y="0" width="100%" height="12" fill="#16405e"/>
+<text x="40" y="56" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#123954" font-weight="bold" text-anchor="start">VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM — source-connected elements</text>
+<text x="40" y="86" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" fill="#54697b" font-weight="normal" text-anchor="start">Source title: VOID K06 R08 single material computation core: coupled charge, local force field, pointing, light and actuator outputs</text>
+<text x="40" y="113" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#54697b" font-weight="normal" text-anchor="start">Sheet 6/6 | source SHA-256 ccfd7ab640ecc54fee5a2414… | terminals use exact .cir/.lib node labels</text>
+<text x="40" y="145" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="bold" text-anchor="start">IDENTIFIER / SOURCE LINE</text>
+<text x="320" y="145" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="bold" text-anchor="start">TERMINALS &amp; SYMBOL</text>
+<text x="1000" y="145" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="bold" text-anchor="start">VALUE / MODEL / EXTRA PINS</text>
+<rect x="25" y="155" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="182" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_PULL_D</text>
+<text x="40" y="202" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:138  [TOP]</text>
+<path d="M470 176 L601 176 M691 176 L850 176" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="166" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">LED_D_BASE</text>
+<text x="858" y="166" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">0</text>
+<polyline points="603,176 615,165 628,187 641,165 654,187 667,165 680,187 689,176" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="182" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">330k</text>
+<text x="40" y="250" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_SENSE_D</text>
+<text x="40" y="270" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:139  [TOP]</text>
+<path d="M470 244 L601 244 M691 244 L850 244" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="234" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">FIELD_B</text>
+<text x="858" y="234" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">LED_D_BASE</text>
+<polyline points="603,244 615,233 628,255 641,233 654,255 667,233 680,255 689,244" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="250" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">470k</text>
+<rect x="25" y="291" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="318" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_MECH_ISO_A</text>
+<text x="40" y="338" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:141  [TOP]</text>
+<path d="M470 312 L601 312 M691 312 L850 312" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="302" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">PROBE_A</text>
+<text x="858" y="302" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">PIEZO_NODE_A</text>
+<polyline points="603,312 615,301 628,323 641,301 654,323 667,301 680,323 689,312" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="318" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">100k</text>
+<text x="40" y="386" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">C_MECH_PIEZO_A</text>
+<text x="40" y="406" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:142  [TOP]</text>
+<path d="M470 380 L601 380 M691 380 L850 380" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="370" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">PIEZO_NODE_A</text>
+<text x="858" y="370" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">0</text>
+<path d="M639 360v40 M653 360v40" stroke="#153c58" stroke-width="3"/>
+<text x="1000" y="386" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">15n</text>
+<rect x="25" y="427" width="1400" height="60" fill="#f5f8fb"/>
+<text x="40" y="454" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">R_MECH_ISO_B</text>
+<text x="40" y="474" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:143  [TOP]</text>
+<path d="M470 448 L601 448 M691 448 L850 448" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="438" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">PROBE_B</text>
+<text x="858" y="438" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">PIEZO_NODE_B</text>
+<polyline points="603,448 615,437 628,459 641,437 654,459 667,437 680,459 689,448" fill="none" stroke="#153c58" stroke-width="2.2"/>
+<text x="1000" y="454" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">100k</text>
+<text x="40" y="522" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#0c344e" font-weight="bold" text-anchor="start">C_MECH_PIEZO_B</text>
+<text x="40" y="542" font-family="DejaVu Sans,Arial,sans-serif" font-size="10" fill="#6d7c8d" font-weight="normal" text-anchor="start">VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir:144  [TOP]</text>
+<path d="M470 516 L601 516 M691 516 L850 516" fill="none" stroke="#234e62" stroke-width="2"/>
+<text x="465" y="506" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="end">PIEZO_NODE_B</text>
+<text x="858" y="506" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#0b5270" font-weight="normal" text-anchor="start">0</text>
+<path d="M639 496v40 M653 496v40" stroke="#153c58" stroke-width="3"/>
+<text x="1000" y="522" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#142d47" font-weight="bold" text-anchor="start">15n</text>
+<text x="40" y="621" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#52677b" font-weight="normal" text-anchor="start">NET LABELS CONNECT GLOBALLY WITHIN THE SAME SPICE SCOPE. This drawing asserts no PCB pinout or physical measurement.</text>
+</svg>

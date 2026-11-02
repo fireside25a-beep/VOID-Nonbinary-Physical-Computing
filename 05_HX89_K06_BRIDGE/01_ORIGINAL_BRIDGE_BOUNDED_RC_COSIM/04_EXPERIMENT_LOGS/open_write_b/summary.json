@@ -1,0 +1,20 @@
+{
+  "scenario": "open_write_b",
+  "step_count": 96,
+  "native_executions": 96,
+  "native_ones": 2,
+  "native_zeros": 94,
+  "max_abs_charge_a_v": 0.0789805970847,
+  "max_abs_charge_b_v": 0.00759142119016,
+  "max_abs_charge_c_v": 0.00411805096638,
+  "end_state_v": {
+    "CHARGE_A": -0.03987243778996334,
+    "CHARGE_B": -0.00016278777485922326,
+    "CHARGE_C": -4.0252604701862375e-05
+  },
+  "analog_samples": 1152,
+  "all_native_oracle_correct": true,
+  "waveforms_sha256": "d04fe438659512b6c21db18fd08a431ca3f776e57e830fded434e9aed92ff22a",
+  "native_steps_sha256": "3cab1402ee36501f7951138df8c76ae15a741df2dc0ff527a9ead9eee275cc55",
+  "completed_utc": "2026-10-31T00:58:43.220250+00:00"
+}

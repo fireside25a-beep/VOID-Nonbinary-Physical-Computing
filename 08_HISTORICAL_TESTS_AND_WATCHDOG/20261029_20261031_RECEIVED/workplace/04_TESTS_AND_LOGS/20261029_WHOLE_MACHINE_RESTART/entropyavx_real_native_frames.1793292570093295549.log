@@ -1,0 +1,40 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+Traceback (most recent call last):
+  File [35m"/mnt/data/VOID_HX89_PHYSICAL_GATE_WORK/RESTORED/workplace/03_NATIVE_TOOLCHAIN/EntropyAVX/microkernel.py"[0m, line [35m11[0m, in [35m<module>[0m
+    sys.exit([31msubprocess.run[0m[1;31m([str(exe)], env=env, check=False)[0m.returncode)
+             [31m~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/subprocess.py"[0m, line [35m554[0m, in [35mrun[0m
+    with [31mPopen[0m[1;31m(*popenargs, **kwargs)[0m as process:
+         [31m~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/subprocess.py"[0m, line [35m1039[0m, in [35m__init__[0m
+    [31mself._execute_child[0m[1;31m(args, executable, preexec_fn, close_fds,[0m
+    [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+                        [1;31mpass_fds, cwd, env,[0m
+                        [1;31m^^^^^^^^^^^^^^^^^^^[0m
+    ...<5 lines>...
+                        [1;31mgid, gids, uid, umask,[0m
+                        [1;31m^^^^^^^^^^^^^^^^^^^^^^[0m
+                        [1;31mstart_new_session, process_group)[0m
+                        [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/subprocess.py"[0m, line [35m1857[0m, in [35m_execute_child[0m
+    [31mself._posix_spawn[0m[1;31m(args, executable, env, restore_signals, close_fds,[0m
+    [31m~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+                      [1;31mp2cread, p2cwrite,[0m
+                      [1;31m^^^^^^^^^^^^^^^^^^[0m
+                      [1;31mc2pread, c2pwrite,[0m
+                      [1;31m^^^^^^^^^^^^^^^^^^[0m
+                      [1;31merrread, errwrite)[0m
+                      [1;31m^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/subprocess.py"[0m, line [35m1801[0m, in [35m_posix_spawn[0m
+    self.pid = [31mos.posix_spawn[0m[1;31m(executable, args, env, **kwargs)[0m
+               [31m~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1;35mPermissionError[0m: [35m[Errno 13] Permission denied: '/mnt/data/VOID_HX89_PHYSICAL_GATE_WORK/RESTORED/workplace/03_NATIVE_TOOLCHAIN/EntropyAVX/build_workspace_cache/EntropyAVXEngine'[0m

@@ -1,0 +1,46 @@
+{
+  "status": "NATIVE_CPU_AND_HX89_EXECUTED",
+  "rounds": 64,
+  "native_trials": 256,
+  "hx89_feedback_cycles": 64,
+  "summary": {
+    "scalar": {
+      "n": 64,
+      "median_pre_ticks": 27182.0,
+      "median_post_ticks": 30769.0,
+      "median_stimulus_ticks": 188907.0,
+      "median_post_minus_pre_ticks": 3594.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "avx2": {
+      "n": 64,
+      "median_pre_ticks": 27157.0,
+      "median_post_ticks": 30809.0,
+      "median_stimulus_ticks": 353456.0,
+      "median_post_minus_pre_ticks": 3617.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "avx512": {
+      "n": 64,
+      "median_pre_ticks": 27170.0,
+      "median_post_ticks": 30768.0,
+      "median_stimulus_ticks": 187411.0,
+      "median_post_minus_pre_ticks": 3601.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    },
+    "large_cache": {
+      "n": 64,
+      "median_pre_ticks": 27146.0,
+      "median_post_ticks": 43547.0,
+      "median_stimulus_ticks": 14336135.0,
+      "median_post_minus_pre_ticks": 16370.0,
+      "rdrand_succeeded": 64,
+      "rdseed_succeeded": 64
+    }
+  },
+  "evidence": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_RESUMED/VOID_CPU_HX89_BATCH_EXECUTION.json",
+  "physical_nonbinary_substrate_verified": false
+}

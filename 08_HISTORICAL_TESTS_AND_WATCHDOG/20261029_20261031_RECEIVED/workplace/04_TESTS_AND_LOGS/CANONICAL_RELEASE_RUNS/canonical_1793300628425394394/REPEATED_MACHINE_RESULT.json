@@ -1,0 +1,83 @@
+{
+  "all_native_execution_suites_passed": true,
+  "cycles": 4,
+  "deterministic_software_inputs": true,
+  "dual_factorial_blocks": 16,
+  "executions": [
+    {
+      "acceptance_path": "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793300634445589892.json",
+      "acceptance_sha256": "d5e997d0266405d2d952ef853b763577d75ba960162154b5e3f00485b64cfb20",
+      "classification": "NATIVE_FULL_STACK_DUAL_INPUT_PASS_PHYSICAL_GATE_UNVERIFIED",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-S",
+        "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/00_CONTROL/run_whole_machine.py",
+        "--cycles",
+        "4",
+        "--cache-causal",
+        "--history-causal",
+        "--material-history",
+        "--material-blocks",
+        "2",
+        "--dual-physical",
+        "--dual-blocks",
+        "16"
+      ],
+      "elapsed_s": 101.974,
+      "exit_code": 0,
+      "failed": 0,
+      "index": 1,
+      "log_path": "04_TESTS_AND_LOGS/CANONICAL_RELEASE_RUNS/canonical_1793300628425394394/01_complete_machine.log",
+      "log_sha256": "3c3bc1f5f9b900639831ad547b414c14dd08d7475929bc93359a5296e46cb698",
+      "native_gates_passed": true,
+      "passed": 27,
+      "physical_nonbinary_cpu_substrate_verified": false,
+      "stages": 27
+    },
+    {
+      "acceptance_path": "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793300734907978502.json",
+      "acceptance_sha256": "802b73b701f2773219b45d9a5e459ce4fe6902028383ea2cd942885b46db27b9",
+      "classification": "NATIVE_FULL_STACK_DUAL_INPUT_PASS_PHYSICAL_GATE_UNVERIFIED",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-S",
+        "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/00_CONTROL/run_whole_machine.py",
+        "--cycles",
+        "4",
+        "--cache-causal",
+        "--history-causal",
+        "--material-history",
+        "--material-blocks",
+        "2",
+        "--dual-physical",
+        "--dual-blocks",
+        "16"
+      ],
+      "elapsed_s": 122.138,
+      "exit_code": 0,
+      "failed": 0,
+      "index": 2,
+      "log_path": "04_TESTS_AND_LOGS/CANONICAL_RELEASE_RUNS/canonical_1793300628425394394/02_complete_machine.log",
+      "log_sha256": "0a0c86a9664ba2f6ed57ec5c53c50bdf920e2b08db19bed85c556236866bcaed",
+      "native_gates_passed": true,
+      "passed": 27,
+      "physical_nonbinary_cpu_substrate_verified": false,
+      "stages": 27
+    }
+  ],
+  "independently_verified_physical_nonbinary_material_machine": false,
+  "material_blocks": 2,
+  "original_hashes_unchanged": true,
+  "original_source_archive_hashes": {
+    "AC_DC_Passive_AI_Proof(2)(1).zip": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+    "EntropyAVXEngine-source-trace-and-bootstrap(3).zip": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+    "VOID_COMPLETE_VOLUME_PART_01_OF_02.zip.001": "9fac288a28d626c6da8e459fa88aae45d5a5ef5ee62bee95f13c75154b546c98",
+    "VOID_COMPLETE_VOLUME_PART_02_OF_02.zip.002": "886062734193bbda1afa7668bc250bbb7bc1ff7a1c3335866afc9836865900f0",
+    "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad"
+  },
+  "physical_measurement_bitwise_determinism_claimed": false,
+  "repeat": 2,
+  "schema": "VOID_HX89_CANONICAL_REPEATED_FULL_NATIVE_V2",
+  "simultaneous_dual_cpu_gate_requested": true,
+  "suite_session": "canonical_1793300628425394394"
+}

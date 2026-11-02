@@ -1,0 +1,129 @@
+{
+  "tests": 24,
+  "passed": 24,
+  "failed": 0,
+  "results": [
+    {
+      "test": "native_binary_sha256",
+      "pass": true,
+      "detail": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451"
+    },
+    {
+      "test": "parse_10meg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "parse_100n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "parse_10mH_scalar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "invalid_spice_units_rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "source_components_exact_count",
+      "pass": true,
+      "detail": "40"
+    },
+    {
+      "test": "write_A_source_path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "write_B_source_path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "charge_reciprocal_coupling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "three_distinct_stored_states",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "open_switch_is_real_component_removal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "implicit_KCL_residual_small",
+      "pass": true,
+      "detail": "3.3881317890172014e-21"
+    },
+    {
+      "test": "charge_A_responds_to_electrode",
+      "pass": true,
+      "detail": "0.03167575448923382"
+    },
+    {
+      "test": "capacitor_energy_nonnegative",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "passive_zero_input_energy_decays",
+      "pass": true,
+      "detail": "3.359913198983323e-17"
+    },
+    {
+      "test": "electrode_intervention_changes_A",
+      "pass": true,
+      "detail": "(0.049145753825435304, 0.009928085354180624)"
+    },
+    {
+      "test": "electrode_intervention_changes_B",
+      "pass": true,
+      "detail": "(0.00992808535418062, 0.05009121189095551)"
+    },
+    {
+      "test": "broken_write_A_has_no_charge_A_or_B",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "time_refinement_convergence",
+      "pass": true,
+      "detail": "0.0002397500424407284"
+    },
+    {
+      "test": "HX89_NATIVE_ADC_TRUTH_00",
+      "pass": true,
+      "detail": "{'native_sum': 0, 'native_bit': 0, 'exit_code': 0, 'stdout_sha256': '9a35763a70d56603f0ea685470a89d269481987bdb9e5e52483c036e5ed72b6e', 'stderr_sha256': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'program_sha256': 'd807e9fa1308e832f52a023420d2cca6e0e3a5c70398ec83248ce9ba09ab293f', 'duration_ns': 1283958, 'stdout_bytes': 226, 'stderr_bytes': 0, 'native_trace_steps': 4}"
+    },
+    {
+      "test": "HX89_NATIVE_ADC_TRUTH_01",
+      "pass": true,
+      "detail": "{'native_sum': 1, 'native_bit': 1, 'exit_code': 0, 'stdout_sha256': 'f527085aaa76ae7bb857cf706bb578ba758f1631f537149a7d27cb8e0af4ddac', 'stderr_sha256': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'program_sha256': 'ec1c2742b479514d604ad1cb4fa4ff8914e94ac8239e758f35270c23c4aa6955', 'duration_ns': 1211802, 'stdout_bytes': 226, 'stderr_bytes': 0, 'native_trace_steps': 4}"
+    },
+    {
+      "test": "HX89_NATIVE_ADC_TRUTH_10",
+      "pass": true,
+      "detail": "{'native_sum': 1, 'native_bit': 1, 'exit_code': 0, 'stdout_sha256': '76a877bc373e828a19dd9e889c3530b1a7d050dea1648fcaf7d305a6be0cf886', 'stderr_sha256': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'program_sha256': '3817fb62ce90def470eb90d82eccbc92368f2293578d75a586db5d6ab831790c', 'duration_ns': 914685, 'stdout_bytes': 226, 'stderr_bytes': 0, 'native_trace_steps': 4}"
+    },
+    {
+      "test": "HX89_NATIVE_ADC_TRUTH_11",
+      "pass": true,
+      "detail": "{'native_sum': 2, 'native_bit': 1, 'exit_code': 0, 'stdout_sha256': '8fadba63b8a73d0adbe488ec82c35011b8b30bc01b027c43a76f79a4826e0a23', 'stderr_sha256': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'program_sha256': '2c5f5ff49d105311ad99a0d280faf6dc8d2a1e1eed3d10ce28fe466d69d2e60e', 'duration_ns': 854426, 'stdout_bytes': 226, 'stderr_bytes': 0, 'native_trace_steps': 4}"
+    },
+    {
+      "test": "native_execution_gate_rejects",
+      "pass": true,
+      "detail": "{'returncode': 0, 'stdout': 'HEXWORLD_ENTER semantic=HX87SEM3 dims=5 q2=25 epoch=0\\nHX89 seed=1 cells=9\\nHX89: native execution requires --native; head stopped\\nHX89 halt steps=1 heads=1 nodes=0 stack=0 hash=34e4843349bd6534\\n'}"
+    }
+  ],
+  "physical_device_proof": false,
+  "full_ngspice_proof": false
+}

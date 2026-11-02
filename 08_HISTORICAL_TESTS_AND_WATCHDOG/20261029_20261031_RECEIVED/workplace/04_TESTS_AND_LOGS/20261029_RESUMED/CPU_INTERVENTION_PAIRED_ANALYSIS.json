@@ -1,0 +1,58 @@
+{
+  "confounders": [
+    "workload size and instructions differ",
+    "host virtualization",
+    "turbo/power management",
+    "scheduler and unobserved co-tenants",
+    "TSC ticks are not thermometry",
+    "round-level carryover"
+  ],
+  "contrasts_vs_scalar": {
+    "avx2": {
+      "mean_delta_ticks": -8976.34375,
+      "median_delta_ticks": 15.0,
+      "negative_differences": 28,
+      "observed_range_ticks": [
+        -192486,
+        399964
+      ],
+      "paired_rounds": 64,
+      "positive_differences": 36,
+      "two_sided_exact_sign_p_descriptive_only": 0.38173279479333766,
+      "zero_differences": 0
+    },
+    "avx512": {
+      "mean_delta_ticks": -7502.25,
+      "median_delta_ticks": -9.0,
+      "negative_differences": 34,
+      "observed_range_ticks": [
+        -176268,
+        188682
+      ],
+      "paired_rounds": 64,
+      "positive_differences": 29,
+      "two_sided_exact_sign_p_descriptive_only": 0.6146550157654618,
+      "zero_differences": 1
+    },
+    "large_cache": {
+      "mean_delta_ticks": 417.40625,
+      "median_delta_ticks": 12997.0,
+      "negative_differences": 9,
+      "observed_range_ticks": [
+        -206306,
+        108910
+      ],
+      "paired_rounds": 64,
+      "positive_differences": 55,
+      "two_sided_exact_sign_p_descriptive_only": 3.542223380175076e-09,
+      "zero_differences": 0
+    }
+  },
+  "interpretation": "Native processor instruction and cache-intervention timing response; NOT raw continuous substrate readout",
+  "physical_nonbinary_operator_proven": false,
+  "pin_success": true,
+  "raw_trials": 256,
+  "schema": "VOID_NATIVE_CPU_PHYSICAL_EFFECT_ANALYSIS_V1",
+  "source_trace_sha256": "1de479d8c285db2c4bdf117579b8d49015979f04f8053251083c91bdb8aae0b3",
+  "virtualized_cpu": true
+}

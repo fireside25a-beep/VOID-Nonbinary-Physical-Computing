@@ -1,0 +1,6 @@
+{
+  "physical_substrate_verified": false,
+  "reason": "Physical run requires --enable-physical-output and --config",
+  "schema": "VOID_HX89_K06_BOUNDARY_V1",
+  "status": "REFUSED"
+}

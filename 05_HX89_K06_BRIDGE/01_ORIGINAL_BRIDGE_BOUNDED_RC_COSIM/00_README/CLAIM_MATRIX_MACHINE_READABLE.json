@@ -1,0 +1,66 @@
+{
+  "title": "VOID R08 K06 passive-subgraph to native HX89 bidirectional software co-simulation evidence",
+  "date_utc": "2026-10-31",
+  "scope": "SOURCE-LOCKED SOFTWARE CO-SIMULATION, NOT PHYSICAL HARDWARE",
+  "separate_systems": {
+    "hx89": "unchanged Linux x86-64 VM executable, native Polyform JIT and branch",
+    "void_k06": "full source schematic with AC-coupled externally accessible write pads, three charge nodes and other nonlinear/multimodal subsystems; only a limited original R/C passive subgraph was simulated here"
+  },
+  "implemented_path": [
+    "SOURCE VERIFIED K06 40-device passive R/C subgraph transient solver",
+    "CHARGE_A + CHARGE_B simulated voltages",
+    "host threshold ADC at 0.006 V",
+    "NEW HX87P1 Polyform generated with native NIMM/NADD/NADD",
+    "RECOVERED HX89 executable with --native: NATIVE_ACCEL JIT",
+    "IFZERO_DIR branch emits 0/1",
+    "host chooses external 1.2 V electrode stimulus",
+    "R/C network evolves and is read again"
+  ],
+  "tests": {
+    "unit_passed": 24,
+    "unit_total": 24,
+    "unit_failed": 0,
+    "captured_native_executions": 672,
+    "sampled_analog_states": 8064,
+    "literal_repeat_native_match": true,
+    "causal_comparison": {
+      "closed_vs_repeat_analog_byte_equal": true,
+      "closed_vs_repeat_native_stdout_stderr_byte_equal": true,
+      "closed_vs_no_excitation_max_delta_v": 0.10301505090799999,
+      "closed_vs_open_write_a_max_delta_v": 0.10301505090799999,
+      "closed_vs_forced_a_max_delta_v": 0.15026304539874002,
+      "closed_vs_inverted_action_max_delta_v": 0.20675624608569998,
+      "closed_vs_open_write_b_max_delta_v": 0.12853063661494002,
+      "source_scope": "Strict K06 R/C SUBNETWORK only; not full circuit SPICE or hardware",
+      "hardware_physical_capture": "NONE",
+      "full_k06_non_linear_SPICE_pass": "NOT_RUN; no ngspice installed",
+      "pass": true
+    }
+  },
+  "hardware_proof": {
+    "real_ADC": false,
+    "real_DAC": false,
+    "manufactured_K06_board": false,
+    "physical_scope_traces": false,
+    "full_k06_nonlinear_spice": false,
+    "claim_of_hardware_co_processor": false
+  },
+  "important_exclusions": [
+    "Original HX89 source tree NOT included",
+    "No full physical or full nonlinear K06 operation claimed",
+    "7,992-run prior SAT archive NOT duplicated",
+    "Prior failed sign-reversed solver diagnostic is INVALID and isolated"
+  ],
+  "source_provenance": {
+    "VOID_R08_original": "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip",
+    "HX89_original": "HX89_GITHUB_READY.zip",
+    "HX89_binary_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+    "source_hashes_automatic": "See 01_BRIDGE_CODE/k06_rc.py SOURCE_HASHES"
+  },
+  "gaps_to_real_bridge": [
+    "Calibrated real DAC + ADC hardware",
+    "Actual manufactured board and safe control connections",
+    "Full nonlinear K06 ngspice transient running with external stimulus",
+    "Actual trace-grounded HX89 feedback with physical measurements"
+  ]
+}

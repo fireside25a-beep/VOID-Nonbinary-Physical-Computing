@@ -1,0 +1,10 @@
+HOST=Linux 6.18.55 x86_64
+CC=cc (Debian 14.2.0-19) 14.2.0
+AS=GNU assembler (GNU Binutils for Debian) 2.44
+LD=GNU ld (GNU Binutils for Debian) 2.44
+CLANG=clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)
+NODE=v22.16.0
+PYTHON=Python 3.13.5
+RUBY=ruby 3.3.8 (2025-04-09 revision b200bad6cd) [x86_64-linux-gnu]
+LUA=tests/release_evidence.sh: 151: lua: not found
+NOT_AVAILABLE

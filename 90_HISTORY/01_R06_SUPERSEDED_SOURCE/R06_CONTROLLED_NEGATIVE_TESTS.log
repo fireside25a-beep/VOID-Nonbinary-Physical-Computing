@@ -1,0 +1,4 @@
+remove_inductor	REJECTED_AS_EXPECTED
+remove_bidirectional_charge_feedback	REJECTED_AS_EXPECTED
+duplicate_weighted_component	REJECTED_AS_EXPECTED
+missing_last_manual_measurement_load	REJECTED_AS_EXPECTED

@@ -1,0 +1,2 @@
+LOCAL 64/64 bijective mass/momentum conserved, C6 rotationally covariant
+GAS size=16x16 steps=9 mass=454 px=26 py=-18 collisions=177 final=7e6c1c81947d6bd2 reverse=PASS

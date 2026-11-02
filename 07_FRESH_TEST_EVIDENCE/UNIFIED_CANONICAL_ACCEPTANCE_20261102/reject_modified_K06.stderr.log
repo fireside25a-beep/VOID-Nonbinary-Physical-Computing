@@ -1,0 +1,10 @@
+VOID_FORTRAN_FAIL: K06 sha256 mismatch
+ERROR STOP 3
+
+Error termination. Backtrace:
+#0  0x7fcd0f62b2ba in ???
+#1  0x7fcd0f62bdb9 in ???
+#2  0x563fe8bbeea7 in __void_rc_MOD_require.part.0
+#3  0x563fe8bc2334 in __void_rc_MOD_read_circuit
+#4  0x563fe8bc2a4a in MAIN__
+#5  0x563fe8bbd7be in main

@@ -1,0 +1,20 @@
+{
+  "schema": "VOID_HX89_COHERENT_NATIVE_RELEASE_STATUS_V1",
+  "repeated_result_path": "04_TESTS_AND_LOGS/CANONICAL_RELEASE_RUNS/canonical_1793297149910189732/REPEATED_MACHINE_RESULT.json",
+  "repeated_result_sha256": "1c16cd68461067da62d2c831e33c18a5fd931ce808f59c42fb8cedd13e4fa6b4",
+  "all_native_execution_suites_passed": true,
+  "number_of_sequential_native_runs": 2,
+  "native_gate_counts": [
+    {
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "passed": 24,
+      "failed": 0
+    }
+  ],
+  "physical_nonbinary_material_operator_verified": false,
+  "one_active_entrypoint": "00_CONTROL/run_canonical_release.py",
+  "original_source_archive_hashes_preserved": true
+}

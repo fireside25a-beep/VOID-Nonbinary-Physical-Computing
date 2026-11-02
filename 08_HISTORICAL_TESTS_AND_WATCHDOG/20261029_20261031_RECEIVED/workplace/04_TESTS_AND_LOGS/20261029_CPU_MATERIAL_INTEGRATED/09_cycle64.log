@@ -1,0 +1,8 @@
+{
+  "status": "EXECUTED",
+  "cycles": 64,
+  "native_trials": 256,
+  "changed_cpu_commands": 61,
+  "physical_nonbinary_material_computation_verified": false,
+  "record": "04_TESTS_AND_LOGS/20261029_CPU_MATERIAL_INTEGRATED/CYCLE_64/FULL_STACK_EXECUTION.json"
+}

@@ -1,0 +1,693 @@
+{
+  "schema": "VOID_UNIFIED_NATIVE_ACCEPTANCE_V1",
+  "tested_source": "05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP",
+  "passed": 72,
+  "failed": 0,
+  "results": [
+    {
+      "name": "original_hx89_binary_sha256",
+      "pass": true,
+      "details": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451"
+    },
+    {
+      "name": "build_canonical_unified_native",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": null,
+        "expected_failure": false,
+        "argv": [
+          "make",
+          "-B",
+          "all"
+        ]
+      }
+    },
+    {
+      "name": "contract_native_driver_compile",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": null,
+        "expected_failure": false,
+        "argv": [
+          "make",
+          "build/native_driver_contract"
+        ]
+      }
+    },
+    {
+      "name": "contract_native_driver",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": null,
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/native_driver_contract",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89"
+        ]
+      }
+    },
+    {
+      "name": "contract_cpu_state_compile",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": null,
+        "expected_failure": false,
+        "argv": [
+          "make",
+          "build/native_cpu_state_contract"
+        ]
+      }
+    },
+    {
+      "name": "contract_cpu_state",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": null,
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/native_cpu_state_contract"
+        ]
+      }
+    },
+    {
+      "name": "source_structure_all_R08_circuits",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": null,
+        "expected_failure": false,
+        "argv": [
+          "/opt/pyvenv/bin/python3",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/06_ENGINEERING_VALIDATORS/validate_r08_source.py"
+        ]
+      }
+    },
+    {
+      "name": "native_run_integrated",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": "NATIVE_PASS_integrated closed_loop",
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/UNIFIED_CANONICAL_ACCEPTANCE_20261102/integrated",
+          "integrated"
+        ]
+      }
+    },
+    {
+      "name": "native_scenarios_integrated",
+      "pass": true,
+      "details": {
+        "scenarios": 7,
+        "decisions": 672
+      }
+    },
+    {
+      "name": "row_counts_integrated_closed_loop",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated_closed_loop_repeat",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated_open_write_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated_no_excitation",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated_forced_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated_inverted_action",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated_open_write_b",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "native_run_integrated-control",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": "NATIVE_PASS_integrated-control closed_loop",
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/UNIFIED_CANONICAL_ACCEPTANCE_20261102/integrated-control",
+          "integrated-control"
+        ]
+      }
+    },
+    {
+      "name": "native_scenarios_integrated-control",
+      "pass": true,
+      "details": {
+        "scenarios": 7,
+        "decisions": 672
+      }
+    },
+    {
+      "name": "row_counts_integrated-control_closed_loop",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-control_closed_loop_repeat",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-control_open_write_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-control_no_excitation",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-control_forced_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-control_inverted_action",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-control_open_write_b",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "native_run_integrated-no-cpu",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": "NATIVE_PASS_integrated-no-cpu closed_loop",
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/UNIFIED_CANONICAL_ACCEPTANCE_20261102/integrated-no-cpu",
+          "integrated-no-cpu"
+        ]
+      }
+    },
+    {
+      "name": "native_scenarios_integrated-no-cpu",
+      "pass": true,
+      "details": {
+        "scenarios": 7,
+        "decisions": 672
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-cpu_closed_loop",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-cpu_closed_loop_repeat",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-cpu_open_write_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-cpu_no_excitation",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-cpu_forced_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-cpu_inverted_action",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-cpu_open_write_b",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "native_run_integrated-no-acdc",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": "NATIVE_PASS_integrated-no-acdc closed_loop",
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/UNIFIED_CANONICAL_ACCEPTANCE_20261102/integrated-no-acdc",
+          "integrated-no-acdc"
+        ]
+      }
+    },
+    {
+      "name": "native_scenarios_integrated-no-acdc",
+      "pass": true,
+      "details": {
+        "scenarios": 7,
+        "decisions": 672
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-acdc_closed_loop",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-acdc_closed_loop_repeat",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-acdc_open_write_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-acdc_no_excitation",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-acdc_forced_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-acdc_inverted_action",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-acdc_open_write_b",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "native_run_integrated-no-entropy",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": "NATIVE_PASS_integrated-no-entropy closed_loop",
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/UNIFIED_CANONICAL_ACCEPTANCE_20261102/integrated-no-entropy",
+          "integrated-no-entropy"
+        ]
+      }
+    },
+    {
+      "name": "native_scenarios_integrated-no-entropy",
+      "pass": true,
+      "details": {
+        "scenarios": 7,
+        "decisions": 672
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-entropy_closed_loop",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-entropy_closed_loop_repeat",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-entropy_open_write_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-entropy_no_excitation",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-entropy_forced_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-entropy_inverted_action",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_integrated-no-entropy_open_write_b",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "native_run_legacy",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "needle": "NATIVE_PASS_legacy closed_loop",
+        "expected_failure": false,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/UNIFIED_CANONICAL_ACCEPTANCE_20261102/legacy",
+          "legacy"
+        ]
+      }
+    },
+    {
+      "name": "native_scenarios_legacy",
+      "pass": true,
+      "details": {
+        "scenarios": 7,
+        "decisions": 672
+      }
+    },
+    {
+      "name": "row_counts_legacy_closed_loop",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_legacy_closed_loop_repeat",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_legacy_open_write_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_legacy_no_excitation",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_legacy_forced_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_legacy_inverted_action",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "row_counts_legacy_open_write_b",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "closed_loop_deterministic_native_work_state",
+      "pass": true,
+      "details": {
+        "compared_rows": 96,
+        "excluded_only_nondeterministic_instruction_telemetry": [
+          "cpu_batch_cache_ticks",
+          "cpu_batch_work_ticks",
+          "cpu_cycle_tsc_ticks",
+          "cpu_feedback_tsc_ticks",
+          "cpu_migrated",
+          "rdrand_ok",
+          "rdseed_ok"
+        ]
+      }
+    },
+    {
+      "name": "closed_loop_deterministic_voltage_trajectory",
+      "pass": true,
+      "details": {
+        "samples": 1152
+      }
+    },
+    {
+      "name": "causal_ablation_integrated-control",
+      "pass": true,
+      "details": {
+        "different_hx_inputs": 51,
+        "different_hx_decisions": 50
+      }
+    },
+    {
+      "name": "causal_ablation_integrated-no-cpu",
+      "pass": true,
+      "details": {
+        "different_hx_inputs": 54,
+        "different_hx_decisions": 53
+      }
+    },
+    {
+      "name": "causal_ablation_integrated-no-acdc",
+      "pass": true,
+      "details": {
+        "different_hx_inputs": 48,
+        "different_hx_decisions": 47
+      }
+    },
+    {
+      "name": "causal_ablation_integrated-no-entropy",
+      "pass": true,
+      "details": {
+        "different_hx_inputs": 47,
+        "different_hx_decisions": 43
+      }
+    },
+    {
+      "name": "native_previous_cpu_and_batch_digest_to_next_hx89",
+      "pass": true,
+      "details": {
+        "checked": 96,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "reject_modified_K06",
+      "pass": true,
+      "details": {
+        "exit_code": 3,
+        "needle": "K06 sha256 mismatch",
+        "expected_failure": true,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/tmp/void_unified_negative_yvf4v4aj/source",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/tmp/void_unified_negative_yvf4v4aj/negative_source",
+          "integrated"
+        ]
+      }
+    },
+    {
+      "name": "reject_modified_HX89",
+      "pass": true,
+      "details": {
+        "exit_code": 3,
+        "needle": "native HX89 execution failed",
+        "expected_failure": true,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/tmp/void_unified_negative_yvf4v4aj/hx89",
+          "/tmp/void_unified_negative_yvf4v4aj/negative_binary",
+          "integrated"
+        ]
+      }
+    },
+    {
+      "name": "reject_invalid_mode",
+      "pass": true,
+      "details": {
+        "exit_code": 1,
+        "needle": "invalid integration mode",
+        "expected_failure": true,
+        "argv": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/03_UNIFIED_NATIVE_CLOSED_LOOP/build/void_unified",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/tmp/void_unified_negative_yvf4v4aj/negative_binary",
+          "unsupported"
+        ]
+      }
+    },
+    {
+      "name": "unified_native_gate_complete",
+      "pass": true,
+      "details": {
+        "modes": 6,
+        "scenarios_per_mode": 7,
+        "native_hx89_invocations": 4032
+      }
+    }
+  ],
+  "physics_note": "Native RC subgraph and native source-derived algorithmic calculations. No bench telemetry supplied.",
+  "timestamp_utc": "2026-11-02T05:10:59.255686+00:00"
+}

@@ -1,0 +1,7 @@
+sh tests/sanitize.sh
+BYTE_POLYFORM payload=256 cells=257 status=PASS
+BYTE_POLYFORM payload=4095 cells=4096 status=PASS
+CHIRAL_LAW_PASS local_states=64 global_states=262144 mirror_chirality=PASS theta_involution=PASS dressed_PT_reversor=PASS echo=PASS correlation_reciprocity=NOT_CHECKED_NONINVARIANT_SAMPLE both_chiralities=PASS
+LOCAL 64/64 bijective mass/momentum conserved, C6 rotationally covariant
+GAS size=128x128 steps=100 mass=27580 px=118 py=100 collisions=116405 final=21bb06d5533c86de reverse=PASS
+PASS: ASan/UBSan byte compiler, 2^18-state chiral prover sample, 128x128x100 gas and canonical Bell codec

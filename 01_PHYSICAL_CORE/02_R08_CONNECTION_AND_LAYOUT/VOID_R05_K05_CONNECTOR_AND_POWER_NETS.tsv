@@ -1,0 +1,9 @@
+terminal_id	electrical_node	connection_in_existing_K05	physical_measurement	note
+J05-01	xp1	Vxp1 +0.8 V ref	source voltage	reference relative to node 0
+J05-02	xm1	Vxm1 -0.8 V ref	source voltage	bipolar-capable independently controlled
+J05-03	xp2	Vxp2 -0.4 V ref	source voltage	negative sign deliberate
+J05-04	xm2	Vxm2 +0.4 V ref	source voltage	positive sign deliberate
+J05-05	xp3	Vxp3 +0.2 V ref	source voltage	fans out to y0 and y1
+J05-06	0	K05 analog reference	meter source return	one declared ground reference, no host implicit return
+J05-07	y0	first physical weighted output	10 MOhm external instrument	do not solder a second 10 MOhm load
+J05-08	y1	second physical weighted output	10 MOhm external instrument	do not solder a second 10 MOhm load

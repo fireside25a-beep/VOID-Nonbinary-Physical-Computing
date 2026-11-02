@@ -1,0 +1,13 @@
+test_database_integrity (__main__.VerifyCache.test_database_integrity) ... ok
+test_duplicate_source_negative (__main__.VerifyCache.test_duplicate_source_negative) ... ok
+test_missing_milestone_negative (__main__.VerifyCache.test_missing_milestone_negative) ... ok
+test_no_bogus_hx89 (__main__.VerifyCache.test_no_bogus_hx89) ... ok
+test_offline_crossref_fails_closed (__main__.VerifyCache.test_offline_crossref_fails_closed) ... ok
+test_r08_anchored (__main__.VerifyCache.test_r08_anchored) ... ok
+test_stable_rebuild (__main__.VerifyCache.test_stable_rebuild) ... ok
+test_watchdog_all_pass (__main__.VerifyCache.test_watchdog_all_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.168s
+
+OK

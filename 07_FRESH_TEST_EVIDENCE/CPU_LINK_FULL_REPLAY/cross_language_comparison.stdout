@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "scenario_summary": {
+    "closed_loop": {
+      "pass": true,
+      "max_abs_difference": 3.33333360913457e-10
+    },
+    "closed_loop_repeat": {
+      "pass": true,
+      "max_abs_difference": 3.33333360913457e-10
+    },
+    "open_write_a": {
+      "pass": true,
+      "max_abs_difference": 3.33333360913457e-10
+    },
+    "no_excitation": {
+      "pass": true,
+      "max_abs_difference": 3.33333360913457e-10
+    },
+    "forced_a": {
+      "pass": true,
+      "max_abs_difference": 3.33333360913457e-10
+    },
+    "inverted_action": {
+      "pass": true,
+      "max_abs_difference": 3.33333360913457e-10
+    },
+    "open_write_b": {
+      "pass": true,
+      "max_abs_difference": 3.33333360913457e-10
+    }
+  }
+}

@@ -1,0 +1,7 @@
+graph G {
+graph [rankdir=LR,fontname="DejaVu Sans",bgcolor="white",pad="0.3",ranksep="0.6",nodesep="0.35",label="VOID / R08  P2_MEASUREMENT_AND_CORE_TEST\nSOURCE-MAPPED INTERCONNECT ONLY",labelloc=t,fontsize=22];
+node [fontname="DejaVu Sans",fontsize=10,shape=record,style="filled",fillcolor="#f2f7f9",color="#355065"];
+edge [color="#7a8c9c",penwidth=1];
+j0 [label="{CORE_TEST_01|1: SHUNT_TOP | 2: 0 | 3: JCT | 4: 0 | 5: PROBE_A | 6: 0 | 7: PROBE_B | 8: 0 | 9: CHARGE_A | 10: 0 | 11: CHARGE_B | 12: 0 | 13: CHARGE_C | 14: 0}"];
+j1 [label="{OBS_01|1: FIELD_A | 2: 0 | 3: FIELD_B | 4: 0 | 5: AXIS_A | 6: 0 | 7: AXIS_B | 8: 0 | 9: DISPLAY_X | 10: 0 | 11: DISPLAY_Y | 12: 0 | 13: DISPLAY_Z | 14: 0}"];
+}

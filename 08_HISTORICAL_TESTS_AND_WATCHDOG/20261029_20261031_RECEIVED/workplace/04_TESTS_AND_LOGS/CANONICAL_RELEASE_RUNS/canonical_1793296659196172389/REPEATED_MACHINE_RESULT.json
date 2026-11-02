@@ -1,0 +1,73 @@
+{
+  "all_native_execution_suites_passed": false,
+  "cycles": 4,
+  "deterministic_software_inputs": true,
+  "executions": [
+    {
+      "acceptance_path": "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793296661934872142.json",
+      "acceptance_sha256": "ca73072d8fa6b6d032c88906c56cdcbea775c0f995a519d3e3a7f4706f608532",
+      "classification": "EXECUTION_FAILURE_OR_INCOMPLETE",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-S",
+        "/mnt/data/VOID_HX89_SINGLE_TREE_CANONICAL_20261029/workplace/00_CONTROL/run_whole_machine.py",
+        "--cycles",
+        "4",
+        "--cache-causal",
+        "--history-causal",
+        "--material-history",
+        "--material-blocks",
+        "2"
+      ],
+      "elapsed_s": 197.808,
+      "exit_code": 1,
+      "failed": 2,
+      "index": 1,
+      "log_path": "04_TESTS_AND_LOGS/CANONICAL_RELEASE_RUNS/canonical_1793296659196172389/01_complete_machine.log",
+      "log_sha256": "c200e5d3e4a18c6b2c9380314a904adbefc6ebb0c26b9633de98c6e966f5dcde",
+      "passed": 21,
+      "physical_nonbinary_cpu_substrate_verified": false,
+      "stages": 23
+    },
+    {
+      "acceptance_path": "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793296859746393954.json",
+      "acceptance_sha256": "083fa206690b67246363c9717cd98461c82db9ba913d5505fb45ff25e90c15b9",
+      "classification": "NATIVE_FULL_STACK_PASS_PHYSICAL_GATE_UNVERIFIED",
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "-S",
+        "/mnt/data/VOID_HX89_SINGLE_TREE_CANONICAL_20261029/workplace/00_CONTROL/run_whole_machine.py",
+        "--cycles",
+        "4",
+        "--cache-causal",
+        "--history-causal",
+        "--material-history",
+        "--material-blocks",
+        "2"
+      ],
+      "elapsed_s": 89.443,
+      "exit_code": 0,
+      "failed": 0,
+      "index": 2,
+      "log_path": "04_TESTS_AND_LOGS/CANONICAL_RELEASE_RUNS/canonical_1793296659196172389/02_complete_machine.log",
+      "log_sha256": "afbc8733e0a8c4702c668e03c34af6da53d02b7688c5cfe226da9534abebd1e4",
+      "passed": 24,
+      "physical_nonbinary_cpu_substrate_verified": false,
+      "stages": 24
+    }
+  ],
+  "independently_verified_physical_nonbinary_material_machine": false,
+  "material_blocks": 2,
+  "original_hashes_unchanged": true,
+  "original_source_archive_hashes": {
+    "AC_DC_Passive_AI_Proof(2)(1).zip": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+    "EntropyAVXEngine-source-trace-and-bootstrap(3).zip": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+    "VOID_COMPLETE_VOLUME_PART_01_OF_02.zip.001": "9fac288a28d626c6da8e459fa88aae45d5a5ef5ee62bee95f13c75154b546c98",
+    "VOID_COMPLETE_VOLUME_PART_02_OF_02.zip.002": "886062734193bbda1afa7668bc250bbb7bc1ff7a1c3335866afc9836865900f0",
+    "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad"
+  },
+  "physical_measurement_bitwise_determinism_claimed": false,
+  "repeat": 2,
+  "schema": "VOID_HX89_CANONICAL_REPEATED_FULL_NATIVE_V1",
+  "suite_session": "canonical_1793296659196172389"
+}

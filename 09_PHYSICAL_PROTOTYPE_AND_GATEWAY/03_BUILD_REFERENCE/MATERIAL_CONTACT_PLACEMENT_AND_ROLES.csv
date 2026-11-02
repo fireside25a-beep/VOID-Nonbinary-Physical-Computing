@@ -1,0 +1,9 @@
+grid_position,external_pad,internal_sheet_node,replaceable_contact_ref,nominal_released_value,fixed_series_ref,series_ohms,node_to_return_ref,return_ohms,installation_rule
+11,PAD_11,F_11,R_ACT_11,10meg,R_ACT_GUARD_11,1k,R_NODE_RET_11,220k,separate swappable contact and fixed series resistor
+12,PAD_12,F_12,R_ACT_12,10meg,R_ACT_GUARD_12,1k,R_NODE_RET_12,220k,separate swappable contact and fixed series resistor
+13,PAD_13,F_13,R_ACT_13,10meg,R_ACT_GUARD_13,1k,R_NODE_RET_13,220k,separate swappable contact and fixed series resistor
+14,PAD_14,F_14,R_ACT_14,10meg,R_ACT_GUARD_14,1k,R_NODE_RET_14,220k,separate swappable contact and fixed series resistor
+21,PAD_21,F_21,R_ACT_21,10meg,R_ACT_GUARD_21,1k,R_NODE_RET_21,220k,separate swappable contact and fixed series resistor
+22,PAD_22,F_22,R_ACT_22,10meg,R_ACT_GUARD_22,1k,R_NODE_RET_22,220k,separate swappable contact and fixed series resistor
+23,PAD_23,F_23,R_ACT_23,10meg,R_ACT_GUARD_23,1k,R_NODE_RET_23,220k,separate swappable contact and fixed series resistor
+24,PAD_24,F_24,R_ACT_24,10meg,R_ACT_GUARD_24,1k,R_NODE_RET_24,220k,separate swappable contact and fixed series resistor

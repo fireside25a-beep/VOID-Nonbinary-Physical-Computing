@@ -1,0 +1,9 @@
+{
+  "schema": "VOID_WORKPLACE_RELEASE_CANDIDATE_V1",
+  "paths_in_manifest": 1437,
+  "manifest_sha256": "bf2c73967ce20e6ad3432c523443611d248a68c83a4bbb47a981f039db428f04",
+  "original_archive_sources_preserved": true,
+  "physical_nonbinary_machine_verified": false,
+  "proof_level": "NATIVE_EXECUTED_AND_MATERIAL_UNVERIFIED",
+  "watchdog_summary_sha256": "0b848116ec776b5bb6a9c87bb9adef10f94c041dc9461da74a44710b06476f67"
+}

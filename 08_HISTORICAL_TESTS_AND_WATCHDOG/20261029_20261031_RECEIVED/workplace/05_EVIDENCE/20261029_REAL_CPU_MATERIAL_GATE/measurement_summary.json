@@ -1,0 +1,50 @@
+{
+  "host_cpu": "INTEL XEON PLATINUM 8573C under virtualization",
+  "available_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "arch": "x86-64",
+  "temp_sensor_paths": 0,
+  "power_sensor_paths": 0,
+  "freq_sensor_paths": 0,
+  "counts_by_hold": [
+    {
+      "hold_ms": 5,
+      "trials": 144,
+      "read_ns_median_by_level": [
+        88325411.0,
+        91124783.0,
+        90072650.5
+      ],
+      "high_minus_idle_median_ns": 1747239.5,
+      "triplet_positive": 23,
+      "triplet_negative": 25,
+      "triplet_zero": 0,
+      "two_sided_sign_test_p": 0.8854334972865132
+    },
+    {
+      "hold_ms": 50,
+      "trials": 144,
+      "read_ns_median_by_level": [
+        118204754.0,
+        115985984.5,
+        120633616.5
+      ],
+      "high_minus_idle_median_ns": 2428862.5,
+      "triplet_positive": 26,
+      "triplet_negative": 22,
+      "triplet_zero": 0,
+      "two_sided_sign_test_p": 0.6654658120766186
+    }
+  ],
+  "gate": "PHYSICAL_THERMODYNAMIC_MULTILEVEL_MEMORY_NOT_ESTABLISHED",
+  "hx89_real_execution": true,
+  "native_cpu_intervention": true,
+  "original_K06_assembled_and_connected": false,
+  "weak_inversion_biased_and_measured": false,
+  "fraud_prevention": "native physical probe outputs are not calibrated analog/charge measurements"
+}

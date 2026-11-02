@@ -1,0 +1,287 @@
+{
+  "schema": "VOID_PHYSICAL_PREFLIGHT_V1",
+  "passed": 33,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "recapture_original_nine_spice_sources",
+      "pass": true,
+      "details": {
+        "stdout": "{\"status\": \"PASS\", \"files\": 9, \"elements\": 216, \"pin_connections\": 459}\n",
+        "stderr": "",
+        "exit": 0
+      }
+    },
+    {
+      "name": "flatten_K06_175_real_source_primitives",
+      "pass": true,
+      "details": {
+        "stdout": "{\"status\": \"PASS\", \"flat_primitive_count\": 175, \"nodes\": 74, \"primitive_by_type\": {\"V\": 8, \"R\": 130, \"D\": 15, \"C\": 17, \"L\": 1, \"Q\": 4}}\n",
+        "stderr": "",
+        "exit": 0
+      }
+    },
+    {
+      "name": "spice_216_elements_459_pin_labels",
+      "pass": true,
+      "details": {
+        "mapped": 459
+      }
+    },
+    {
+      "name": "k06_175_expanded_devices",
+      "pass": true,
+      "details": {
+        "parts": 175
+      }
+    },
+    {
+      "name": "source_exact_2x4_contacts_and_series_resistors",
+      "pass": true,
+      "details": {
+        "stdout": "MATERIAL_CARRIER_SOURCE_PASS {\"contact_count\": 8, \"fixed_1k_series_resistor_count\": 8, \"sheet_horizontal_links\": 6, \"sheet_vertical_links\": 4, \"physical_wiring_references\": 34}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "no_false_ground_guard_and_real_sheet_connectivity",
+      "pass": true,
+      "details": {
+        "contact_count": 8,
+        "fixed_1k_series_resistor_count": 8,
+        "sheet_horizontal_links": 6,
+        "sheet_vertical_links": 4
+      }
+    },
+    {
+      "name": "render_actual_source_material_sheets",
+      "pass": true,
+      "details": {
+        "stdout": "MATERIAL_CARRIER_VECTOR_PASS {\"status\": \"PASS\", \"source\": \"VOID_PRIMITIVE_MATERIAL_INTERFACE.lib\", \"sha256\": \"ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839\", \"svg_files\": [\"MATERIAL_CARRIER_CONTACT_AND_SHEET.svg\", \"MATERIAL_CARRIER_NODE_RETURNS.svg\"], \"source_cards_shown\": 34, \"sheet_A_cards\": 26, \"sheet_B_cards\": 8, \"interpretation\": \"exact source resistor connectivity; edit source for schematic edits, not production KiCad ERC/PCB\"}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "rendered_source_refs_26_plus_8",
+      "pass": true,
+      "details": {
+        "page_A": 26,
+        "page_B": 8,
+        "source_sha256": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839"
+      }
+    },
+    {
+      "name": "independent_kicad_ast_pin_net_check_459",
+      "pass": true,
+      "details": {
+        "stderr": "",
+        "result": "PASS"
+      }
+    },
+    {
+      "name": "k06_source_backed_board_connector_and_bom_contract",
+      "pass": true,
+      "details": {
+        "connectors": 15,
+        "pins": 78,
+        "stdout": "{\"PASS\": \"K06 net-backed prototype interface\", \"connectors\": 15, \"pins\": 78, \"primitives\": 175}\n"
+      }
+    },
+    {
+      "name": "generate_four_source_exact_external_interconnect_schematics",
+      "pass": true,
+      "details": {
+        "stdout": "MODULE_SHEETS_PASS 4 modules 15 connectors 78 exact pins\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "independent_board_pin_net_connections_and_corruption_refusal",
+      "pass": true,
+      "details": {
+        "stdout": "INDEPENDENT_FOUR_MODULE_PASS 78 pins 15 connectors 3 corruption refusals\n",
+        "stderr": "",
+        "result": "PASS"
+      }
+    },
+    {
+      "name": "source_accurate_charge_probe_loading_and_power_budget",
+      "pass": true,
+      "details": {
+        "stdout": "SOURCE_LOAD_CALCULATIONS_PASS 32 actual source cards 9 scenarios worst_case_W= 0.174545\n",
+        "stderr": "",
+        "source_cards": 32
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir",
+      "pass": true,
+      "details": {
+        "source_hash": "3e5a5fbb9979b6a43166e115eaad90b363bdea947b36377eb78602efdd207c7d",
+        "devices": 10,
+        "pins": 21
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir",
+      "pass": true,
+      "details": {
+        "source_hash": "ce872411e6e58cb305901ba73e26627a7effb996cd433c418a62577be41b7b58",
+        "devices": 10,
+        "pins": 21
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir",
+      "pass": true,
+      "details": {
+        "source_hash": "9fc1729dc309c7afb0c4c9900724153675f73938f22d97623c9a8d9e93d4385a",
+        "devices": 5,
+        "pins": 11
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir",
+      "pass": true,
+      "details": {
+        "source_hash": "b2763f162d159c25bae244e51293ca33583ce86a73462d3473836f6dc9e1584d",
+        "devices": 5,
+        "pins": 11
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K05_DC_ADMITTANCE_WITNESS.cir",
+      "pass": true,
+      "details": {
+        "source_hash": "71ef06bded569e22836c9bf669b25c076feb80249b53be215f50868405729e7b",
+        "devices": 8,
+        "pins": 21
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K05_WEIGHTED_NETWORK.lib",
+      "pass": true,
+      "details": {
+        "source_hash": "9a39456a494cef446610149d88faad6e62bcf772094587ad523a37dc30d01ef6",
+        "devices": 12,
+        "pins": 24
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir",
+      "pass": true,
+      "details": {
+        "source_hash": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+        "devices": 106,
+        "pins": 230
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_K_MESH_V1.lib",
+      "pass": true,
+      "details": {
+        "source_hash": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+        "devices": 12,
+        "pins": 24
+      }
+    },
+    {
+      "name": "exact_source_capture_VOID_PRIMITIVE_MATERIAL_INTERFACE.lib",
+      "pass": true,
+      "details": {
+        "source_hash": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839",
+        "devices": 48,
+        "pins": 96
+      }
+    },
+    {
+      "name": "compile_real_native_bench_ingestion",
+      "pass": true,
+      "details": {
+        "stdout": "make: Entering directory '/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/09_PHYSICAL_PROTOTYPE_AND_GATEWAY/native_bench_ingestion'\ncc -std=c11 -O2 -Wall -Wextra -Werror -pedantic -fstack-protector-strong -D_FORTIFY_SOURCE=2 void_bench_ingest.c -o void_bench_ingest -lcrypto -lm\nmake: Leaving directory '/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/09_PHYSICAL_PROTOTYPE_AND_GATEWAY/native_bench_ingestion'\n",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "fail_closed_header_only",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=0)"
+      }
+    },
+    {
+      "name": "fail_closed_nonfinite",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=0)"
+      }
+    },
+    {
+      "name": "fail_closed_duplicate_timestamp",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=1)"
+      }
+    },
+    {
+      "name": "fail_closed_overvoltage_write",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=0)"
+      }
+    },
+    {
+      "name": "fail_closed_changed_calibration",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=1)"
+      }
+    },
+    {
+      "name": "fail_closed_index_gap",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=1)"
+      }
+    },
+    {
+      "name": "fail_closed_empty_field",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=0)"
+      }
+    },
+    {
+      "name": "fail_closed_out_of_bounds_probe",
+      "pass": true,
+      "details": {
+        "returncode": 4,
+        "diagnostic": "REFUSE invalid or insufficient physical acquisition rows (validated=0)"
+      }
+    },
+    {
+      "name": "fail_closed_missing_instrument_data",
+      "pass": true,
+      "details": {
+        "returncode": 3
+      }
+    },
+    {
+      "name": "exact_eight_uploaded_originals_reconstruct_bytewise",
+      "pass": true,
+      "details": {
+        "archive_count": 8,
+        "fragment_count": 11,
+        "failures": []
+      }
+    }
+  ],
+  "status": "SOURCE_AND_SOFTWARE_QUALITY_ONLY_NO_PHYSICAL_BENCH_SESSION"
+}

@@ -1,0 +1,6 @@
+graph G {
+graph [rankdir=LR,fontname="DejaVu Sans",bgcolor="white",pad="0.3",ranksep="0.6",nodesep="0.35",label="VOID / R08  P3_PROTECTED_STIMULUS_PORTS\nSOURCE-MAPPED INTERCONNECT ONLY",labelloc=t,fontsize=22];
+node [fontname="DejaVu Sans",fontsize=10,shape=record,style="filled",fillcolor="#f2f7f9",color="#355065"];
+edge [color="#7a8c9c",penwidth=1];
+j0 [label="{IO_STIM_01|1: WRITE_A | 2: 0 | 3: WRITE_B | 4: 0 | 5: BOUNDARY_A | 6: 0 | 7: BOUNDARY_B | 8: 0}"];
+}

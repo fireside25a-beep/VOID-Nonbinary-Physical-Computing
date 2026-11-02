@@ -1,0 +1,18 @@
+VOID K05 R06: original five physical voltages and single shared physical resistor module
+* R05/R04 unmodified originals retained in sealed release archives.
+* This R06 refactor has the SAME twelve resistor branches and meter input loads.
+* Physical assembly: measure each voltage source and selected resistor.
+* R_METER elements represent attached INSTRUMENT impedance; do not double-shunt.
+.INCLUDE "VOID_K05_WEIGHTED_NETWORK.lib"
+Vxp1 xp1 0 DC 0.8
+Vxm1 xm1 0 DC -0.8
+Vxp2 xp2 0 DC -0.4
+Vxm2 xm2 0 DC 0.4
+Vxp3 xp3 0 DC 0.2
+X_WEIGHTED xp1 xm1 xp2 xm2 xp3 y0 y1 VOID_WEIGHTED_5X2
+R_METER_Y0 y0 0 10meg
+R_METER_Y1 y1 0 10meg
+* NO external 10 MOhm shunt is soldered when actual instruments provide these.
+* .OP is design-only and does not signify a measured output.
+.OP
+.END

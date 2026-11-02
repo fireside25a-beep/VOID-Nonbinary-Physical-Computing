@@ -1,0 +1,28 @@
+In file included from /usr/lib/gcc/x86_64-linux-gnu/14/include/x86intrin.h:27,
+                 from cpu_batch.c:14:
+/usr/lib/gcc/x86_64-linux-gnu/14/include/x86gprintrin.h: In function ‘main’:
+/usr/lib/gcc/x86_64-linux-gnu/14/include/x86gprintrin.h:233:1: error: inlining failed in call to ‘always_inline’ ‘_rdrand64_step’: target specific option mismatch
+  233 | _rdrand64_step (unsigned long long *__P)
+      | ^~~~~~~~~~~~~~
+cpu_batch.c:116:44: note: called from here
+  116 |    if(__builtin_cpu_supports("rdrnd"))rdro=_rdrand64_step(&randword);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/gcc/x86_64-linux-gnu/14/include/x86gprintrin.h:81:
+/usr/lib/gcc/x86_64-linux-gnu/14/include/rdseedintrin.h:55:1: error: inlining failed in call to ‘always_inline’ ‘_rdseed64_step’: target specific option mismatch
+   55 | _rdseed64_step (unsigned long long *__p)
+      | ^~~~~~~~~~~~~~
+cpu_batch.c:117:45: note: called from here
+  117 |    if(__builtin_cpu_supports("rdseed"))rdse=_rdseed64_step(&seedword);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/14/include/x86gprintrin.h:233:1: error: inlining failed in call to ‘always_inline’ ‘_rdrand64_step’: target specific option mismatch
+  233 | _rdrand64_step (unsigned long long *__P)
+      | ^~~~~~~~~~~~~~
+cpu_batch.c:116:44: note: called from here
+  116 |    if(__builtin_cpu_supports("rdrnd"))rdro=_rdrand64_step(&randword);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/14/include/rdseedintrin.h:55:1: error: inlining failed in call to ‘always_inline’ ‘_rdseed64_step’: target specific option mismatch
+   55 | _rdseed64_step (unsigned long long *__p)
+      | ^~~~~~~~~~~~~~
+cpu_batch.c:117:45: note: called from here
+  117 |    if(__builtin_cpu_supports("rdseed"))rdse=_rdseed64_step(&seedword);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~

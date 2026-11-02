@@ -1,0 +1,464 @@
+VOID R08 DETERMINISTIC DESIGN AND NEGATIVE VERIFICATION
+No SPICE-derived synthetic waveform, physical instrument readings, CPU-to-analogue claims or software computation core generated.
+PASS sealed R07 ZIP all CRC
+PASS sealed R07 has 100 file members
+PASS immutable R07 preserved as exact bytes
+PASS protected source byte-identical R07: VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir
+PASS protected source byte-identical R07: VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir
+PASS protected source byte-identical R07: VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir
+PASS protected source byte-identical R07: VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir
+PASS protected source byte-identical R07: VOID_K05_DC_ADMITTANCE_WITNESS.cir
+PASS protected source byte-identical R07: VOID_K05_WEIGHTED_NETWORK.lib
+PASS protected source byte-identical R07: VOID_K_MESH_V1.lib
+PASS protected source byte-identical R07: VOID_PRIMITIVE_MATERIAL_INTERFACE.lib
+PASS roadmap/history unchanged: 05_MILESTONES/MASTER_M00_M115_READBACK_UNCHANGED.md
+PASS roadmap/history unchanged: 01_PRESERVED_INPUTS/DACB-2.0.0-HARDENED-REVERSE-VERIFIED-20261029.zip
+PASS unused ideal write switch fully absent
+PASS hardcoded write/contact voltage source removed
+PASS include has quoted path
+PASS include exists: VOID_K_MESH_V1.lib
+PASS include has quoted path
+PASS include exists: VOID_K05_WEIGHTED_NETWORK.lib
+PASS include has quoted path
+PASS include exists: VOID_PRIMITIVE_MATERIAL_INTERFACE.lib
+PASS original three reusable module includes only
+PASS unique subcircuit VOID_MESH_V1
+PASS matching .ENDS VOID_MESH_V1
+PASS lib subcircuit closed VOID_K_MESH_V1.lib
+PASS unique subcircuit VOID_WEIGHTED_5X2
+PASS matching .ENDS VOID_WEIGHTED_5X2
+PASS lib subcircuit closed VOID_K05_WEIGHTED_NETWORK.lib
+PASS unique subcircuit VOID_MATERIAL_INPUT
+PASS matching .ENDS VOID_MATERIAL_INPUT
+PASS lib subcircuit closed VOID_PRIMITIVE_MATERIAL_INTERFACE.lib
+PASS no duplicate material implementations
+PASS valid physical passive/semiconductor/source card: V_ISO
+PASS complete component card: V_ISO
+PASS valid physical passive/semiconductor/source card: R_CURRENT_LIMIT
+PASS complete component card: R_CURRENT_LIMIT
+PASS valid physical passive/semiconductor/source card: R_KELVIN
+PASS complete component card: R_KELVIN
+PASS valid physical passive/semiconductor/source card: D_REAL
+PASS complete component card: D_REAL
+PASS valid physical passive/semiconductor/source card: R_DCMON
+PASS complete component card: R_DCMON
+PASS valid physical passive/semiconductor/source card: R_DMM
+PASS complete component card: R_DMM
+PASS valid physical passive/semiconductor/source card: C_ACBLOCK
+PASS complete component card: C_ACBLOCK
+PASS valid physical passive/semiconductor/source card: R_ACSER
+PASS complete component card: R_ACSER
+PASS valid physical passive/semiconductor/source card: R_ACREF
+PASS complete component card: R_ACREF
+PASS known module VOID_MESH_V1
+PASS valid physical passive/semiconductor/source card: R_M01
+PASS complete component card: R_M01
+PASS valid physical passive/semiconductor/source card: C_M01
+PASS complete component card: C_M01
+PASS valid physical passive/semiconductor/source card: R_M12
+PASS complete component card: R_M12
+PASS valid physical passive/semiconductor/source card: C_M12
+PASS complete component card: C_M12
+PASS valid physical passive/semiconductor/source card: R_MA
+PASS complete component card: R_MA
+PASS valid physical passive/semiconductor/source card: C_MA
+PASS complete component card: C_MA
+PASS valid physical passive/semiconductor/source card: R_MB
+PASS complete component card: R_MB
+PASS valid physical passive/semiconductor/source card: C_MB
+PASS complete component card: C_MB
+PASS valid physical passive/semiconductor/source card: R_PA
+PASS complete component card: R_PA
+PASS valid physical passive/semiconductor/source card: C_PA
+PASS complete component card: C_PA
+PASS valid physical passive/semiconductor/source card: R_PB
+PASS complete component card: R_PB
+PASS valid physical passive/semiconductor/source card: C_PB
+PASS complete component card: C_PB
+PASS valid physical passive/semiconductor/source card: Vxp1
+PASS complete component card: Vxp1
+PASS valid physical passive/semiconductor/source card: Vxm1
+PASS complete component card: Vxm1
+PASS valid physical passive/semiconductor/source card: Vxp2
+PASS complete component card: Vxp2
+PASS valid physical passive/semiconductor/source card: Vxm2
+PASS complete component card: Vxm2
+PASS valid physical passive/semiconductor/source card: Vxp3
+PASS complete component card: Vxp3
+PASS known module VOID_WEIGHTED_5X2
+PASS valid physical passive/semiconductor/source card: R01
+PASS complete component card: R01
+PASS valid physical passive/semiconductor/source card: R02
+PASS complete component card: R02
+PASS valid physical passive/semiconductor/source card: R03A
+PASS complete component card: R03A
+PASS valid physical passive/semiconductor/source card: R03B
+PASS complete component card: R03B
+PASS valid physical passive/semiconductor/source card: RG0
+PASS complete component card: RG0
+PASS valid physical passive/semiconductor/source card: R11A
+PASS complete component card: R11A
+PASS valid physical passive/semiconductor/source card: R11B
+PASS complete component card: R11B
+PASS valid physical passive/semiconductor/source card: R12A
+PASS complete component card: R12A
+PASS valid physical passive/semiconductor/source card: R12B
+PASS complete component card: R12B
+PASS valid physical passive/semiconductor/source card: R13
+PASS complete component card: R13
+PASS valid physical passive/semiconductor/source card: RG1A
+PASS complete component card: RG1A
+PASS valid physical passive/semiconductor/source card: RG1B
+PASS complete component card: RG1B
+PASS valid physical passive/semiconductor/source card: R_METER_Y0
+PASS complete component card: R_METER_Y0
+PASS valid physical passive/semiconductor/source card: R_METER_Y1
+PASS complete component card: R_METER_Y1
+PASS valid physical passive/semiconductor/source card: C_WEIGHT_A
+PASS complete component card: C_WEIGHT_A
+PASS valid physical passive/semiconductor/source card: R_WEIGHT_A
+PASS complete component card: R_WEIGHT_A
+PASS valid physical passive/semiconductor/source card: C_WEIGHT_B
+PASS complete component card: C_WEIGHT_B
+PASS valid physical passive/semiconductor/source card: R_WEIGHT_B
+PASS complete component card: R_WEIGHT_B
+PASS valid physical passive/semiconductor/source card: C_SERIES_L
+PASS complete component card: C_SERIES_L
+PASS valid physical passive/semiconductor/source card: L_TANK
+PASS complete component card: L_TANK
+PASS valid physical passive/semiconductor/source card: R_TANK
+PASS complete component card: R_TANK
+PASS valid physical passive/semiconductor/source card: R_INTEG_A
+PASS complete component card: R_INTEG_A
+PASS valid physical passive/semiconductor/source card: C_CHARGE_A
+PASS complete component card: C_CHARGE_A
+PASS valid physical passive/semiconductor/source card: R_LEAK_A
+PASS complete component card: R_LEAK_A
+PASS valid physical passive/semiconductor/source card: R_INTEG_B
+PASS complete component card: R_INTEG_B
+PASS valid physical passive/semiconductor/source card: C_CHARGE_B
+PASS complete component card: C_CHARGE_B
+PASS valid physical passive/semiconductor/source card: R_LEAK_B
+PASS complete component card: R_LEAK_B
+PASS valid physical passive/semiconductor/source card: R_CHARGE_COUPLE
+PASS complete component card: R_CHARGE_COUPLE
+PASS valid physical passive/semiconductor/source card: R_FEEDBACK_A
+PASS complete component card: R_FEEDBACK_A
+PASS valid physical passive/semiconductor/source card: R_FEEDBACK_B
+PASS complete component card: R_FEEDBACK_B
+PASS valid physical passive/semiconductor/source card: R_INTEG_C
+PASS complete component card: R_INTEG_C
+PASS valid physical passive/semiconductor/source card: C_CHARGE_C
+PASS complete component card: C_CHARGE_C
+PASS valid physical passive/semiconductor/source card: R_LEAK_C
+PASS complete component card: R_LEAK_C
+PASS valid physical passive/semiconductor/source card: R_COUPLE_AC
+PASS complete component card: R_COUPLE_AC
+PASS valid physical passive/semiconductor/source card: R_COUPLE_BC
+PASS complete component card: R_COUPLE_BC
+PASS valid physical passive/semiconductor/source card: R_FEEDBACK_C
+PASS complete component card: R_FEEDBACK_C
+PASS valid physical passive/semiconductor/source card: R_MEM_METER_C
+PASS complete component card: R_MEM_METER_C
+PASS valid physical passive/semiconductor/source card: R_NONLINEAR_SERIES
+PASS complete component card: R_NONLINEAR_SERIES
+PASS valid physical passive/semiconductor/source card: D_NONLINEAR_AB
+PASS complete component card: D_NONLINEAR_AB
+PASS valid physical passive/semiconductor/source card: D_NONLINEAR_BA
+PASS complete component card: D_NONLINEAR_BA
+PASS valid physical passive/semiconductor/source card: R_WRITE_A_BLEED
+PASS complete component card: R_WRITE_A_BLEED
+PASS valid physical passive/semiconductor/source card: C_WRITE_A_COUPLING
+PASS complete component card: C_WRITE_A_COUPLING
+PASS valid physical passive/semiconductor/source card: R_WRITE_A_LIMIT
+PASS complete component card: R_WRITE_A_LIMIT
+PASS valid physical passive/semiconductor/source card: D_WRITE_A_HIGH
+PASS complete component card: D_WRITE_A_HIGH
+PASS valid physical passive/semiconductor/source card: D_WRITE_A_LOW
+PASS complete component card: D_WRITE_A_LOW
+PASS valid physical passive/semiconductor/source card: R_WRITE_B_BLEED
+PASS complete component card: R_WRITE_B_BLEED
+PASS valid physical passive/semiconductor/source card: C_WRITE_B_COUPLING
+PASS complete component card: C_WRITE_B_COUPLING
+PASS valid physical passive/semiconductor/source card: R_WRITE_B_LIMIT
+PASS complete component card: R_WRITE_B_LIMIT
+PASS valid physical passive/semiconductor/source card: D_WRITE_B_HIGH
+PASS complete component card: D_WRITE_B_HIGH
+PASS valid physical passive/semiconductor/source card: D_WRITE_B_LOW
+PASS complete component card: D_WRITE_B_LOW
+PASS valid physical passive/semiconductor/source card: R_MEM_METER_A
+PASS complete component card: R_MEM_METER_A
+PASS valid physical passive/semiconductor/source card: R_MEM_METER_B
+PASS complete component card: R_MEM_METER_B
+PASS valid physical passive/semiconductor/source card: V_UI_RAIL
+PASS complete component card: V_UI_RAIL
+PASS valid physical passive/semiconductor/source card: R_UI_CURRENT
+PASS complete component card: R_UI_CURRENT
+PASS known module VOID_MATERIAL_INPUT
+PASS valid physical passive/semiconductor/source card: R_ACT_11
+PASS complete component card: R_ACT_11
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_11
+PASS complete component card: R_ACT_GUARD_11
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_11
+PASS complete component card: R_NODE_RET_11
+PASS valid physical passive/semiconductor/source card: R_SHEET_H_11
+PASS complete component card: R_SHEET_H_11
+PASS valid physical passive/semiconductor/source card: R_SHEET_V_11
+PASS complete component card: R_SHEET_V_11
+PASS valid physical passive/semiconductor/source card: R_ACT_12
+PASS complete component card: R_ACT_12
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_12
+PASS complete component card: R_ACT_GUARD_12
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_12
+PASS complete component card: R_NODE_RET_12
+PASS valid physical passive/semiconductor/source card: R_SHEET_H_12
+PASS complete component card: R_SHEET_H_12
+PASS valid physical passive/semiconductor/source card: R_SHEET_V_12
+PASS complete component card: R_SHEET_V_12
+PASS valid physical passive/semiconductor/source card: R_ACT_13
+PASS complete component card: R_ACT_13
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_13
+PASS complete component card: R_ACT_GUARD_13
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_13
+PASS complete component card: R_NODE_RET_13
+PASS valid physical passive/semiconductor/source card: R_SHEET_H_13
+PASS complete component card: R_SHEET_H_13
+PASS valid physical passive/semiconductor/source card: R_SHEET_V_13
+PASS complete component card: R_SHEET_V_13
+PASS valid physical passive/semiconductor/source card: R_ACT_14
+PASS complete component card: R_ACT_14
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_14
+PASS complete component card: R_ACT_GUARD_14
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_14
+PASS complete component card: R_NODE_RET_14
+PASS valid physical passive/semiconductor/source card: R_SHEET_V_14
+PASS complete component card: R_SHEET_V_14
+PASS valid physical passive/semiconductor/source card: R_ACT_21
+PASS complete component card: R_ACT_21
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_21
+PASS complete component card: R_ACT_GUARD_21
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_21
+PASS complete component card: R_NODE_RET_21
+PASS valid physical passive/semiconductor/source card: R_SHEET_H_21
+PASS complete component card: R_SHEET_H_21
+PASS valid physical passive/semiconductor/source card: R_ACT_22
+PASS complete component card: R_ACT_22
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_22
+PASS complete component card: R_ACT_GUARD_22
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_22
+PASS complete component card: R_NODE_RET_22
+PASS valid physical passive/semiconductor/source card: R_SHEET_H_22
+PASS complete component card: R_SHEET_H_22
+PASS valid physical passive/semiconductor/source card: R_ACT_23
+PASS complete component card: R_ACT_23
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_23
+PASS complete component card: R_ACT_GUARD_23
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_23
+PASS complete component card: R_NODE_RET_23
+PASS valid physical passive/semiconductor/source card: R_SHEET_H_23
+PASS complete component card: R_SHEET_H_23
+PASS valid physical passive/semiconductor/source card: R_ACT_24
+PASS complete component card: R_ACT_24
+PASS valid physical passive/semiconductor/source card: R_ACT_GUARD_24
+PASS complete component card: R_ACT_GUARD_24
+PASS valid physical passive/semiconductor/source card: R_NODE_RET_24
+PASS complete component card: R_NODE_RET_24
+PASS valid physical passive/semiconductor/source card: R_FIELD_A
+PASS complete component card: R_FIELD_A
+PASS valid physical passive/semiconductor/source card: R_FIELD_B
+PASS complete component card: R_FIELD_B
+PASS valid physical passive/semiconductor/source card: R_AXIS_A_UP
+PASS complete component card: R_AXIS_A_UP
+PASS valid physical passive/semiconductor/source card: R_AXIS_A_DOWN
+PASS complete component card: R_AXIS_A_DOWN
+PASS valid physical passive/semiconductor/source card: R_AXIS_B_UP
+PASS complete component card: R_AXIS_B_UP
+PASS valid physical passive/semiconductor/source card: R_AXIS_B_DOWN
+PASS complete component card: R_AXIS_B_DOWN
+PASS valid physical passive/semiconductor/source card: R_FIELD_TO_MESH_A
+PASS complete component card: R_FIELD_TO_MESH_A
+PASS valid physical passive/semiconductor/source card: R_FIELD_TO_MESH_B
+PASS complete component card: R_FIELD_TO_MESH_B
+PASS valid physical passive/semiconductor/source card: R_FIELD_TO_CHARGE_A
+PASS complete component card: R_FIELD_TO_CHARGE_A
+PASS valid physical passive/semiconductor/source card: R_FIELD_TO_CHARGE_B
+PASS complete component card: R_FIELD_TO_CHARGE_B
+PASS valid physical passive/semiconductor/source card: R_AXIS_TO_MESH_A
+PASS complete component card: R_AXIS_TO_MESH_A
+PASS valid physical passive/semiconductor/source card: R_AXIS_TO_MESH_B
+PASS complete component card: R_AXIS_TO_MESH_B
+PASS valid physical passive/semiconductor/source card: R_AXIS_TO_CHARGE_A
+PASS complete component card: R_AXIS_TO_CHARGE_A
+PASS valid physical passive/semiconductor/source card: R_AXIS_TO_CHARGE_B
+PASS complete component card: R_AXIS_TO_CHARGE_B
+PASS valid physical passive/semiconductor/source card: R_BOUNDARY_BLEED_A
+PASS complete component card: R_BOUNDARY_BLEED_A
+PASS valid physical passive/semiconductor/source card: R_BOUNDARY_BLEED_B
+PASS complete component card: R_BOUNDARY_BLEED_B
+PASS valid physical passive/semiconductor/source card: D_BOUNDARY_A_HIGH
+PASS complete component card: D_BOUNDARY_A_HIGH
+PASS valid physical passive/semiconductor/source card: D_BOUNDARY_B_HIGH
+PASS complete component card: D_BOUNDARY_B_HIGH
+PASS valid physical passive/semiconductor/source card: D_BOUNDARY_A_LOW
+PASS complete component card: D_BOUNDARY_A_LOW
+PASS valid physical passive/semiconductor/source card: D_BOUNDARY_B_LOW
+PASS complete component card: D_BOUNDARY_B_LOW
+PASS valid physical passive/semiconductor/source card: R_BOUNDARY_A
+PASS complete component card: R_BOUNDARY_A
+PASS valid physical passive/semiconductor/source card: R_BOUNDARY_B
+PASS complete component card: R_BOUNDARY_B
+PASS valid physical passive/semiconductor/source card: R_XY_BUFFER_A
+PASS complete component card: R_XY_BUFFER_A
+PASS valid physical passive/semiconductor/source card: R_XY_BUFFER_B
+PASS complete component card: R_XY_BUFFER_B
+PASS valid physical passive/semiconductor/source card: R_XY_INSTR_A
+PASS complete component card: R_XY_INSTR_A
+PASS valid physical passive/semiconductor/source card: R_XY_INSTR_B
+PASS complete component card: R_XY_INSTR_B
+PASS valid physical passive/semiconductor/source card: R_XY_BUFFER_C
+PASS complete component card: R_XY_BUFFER_C
+PASS valid physical passive/semiconductor/source card: R_XY_INSTR_C
+PASS complete component card: R_XY_INSTR_C
+PASS valid physical passive/semiconductor/source card: V_DISPLAY_RAIL
+PASS complete component card: V_DISPLAY_RAIL
+PASS valid physical passive/semiconductor/source card: R_LED_A
+PASS complete component card: R_LED_A
+PASS valid physical passive/semiconductor/source card: D_LED_A
+PASS complete component card: D_LED_A
+PASS valid physical passive/semiconductor/source card: Q_LIGHT_A
+PASS complete component card: Q_LIGHT_A
+PASS valid physical passive/semiconductor/source card: R_LED_A_EMITTER
+PASS complete component card: R_LED_A_EMITTER
+PASS valid physical passive/semiconductor/source card: R_BIAS_A
+PASS complete component card: R_BIAS_A
+PASS valid physical passive/semiconductor/source card: R_PULL_A
+PASS complete component card: R_PULL_A
+PASS valid physical passive/semiconductor/source card: R_SENSE_A
+PASS complete component card: R_SENSE_A
+PASS valid physical passive/semiconductor/source card: R_LED_B
+PASS complete component card: R_LED_B
+PASS valid physical passive/semiconductor/source card: D_LED_B
+PASS complete component card: D_LED_B
+PASS valid physical passive/semiconductor/source card: Q_LIGHT_B
+PASS complete component card: Q_LIGHT_B
+PASS valid physical passive/semiconductor/source card: R_LED_B_EMITTER
+PASS complete component card: R_LED_B_EMITTER
+PASS valid physical passive/semiconductor/source card: R_BIAS_B
+PASS complete component card: R_BIAS_B
+PASS valid physical passive/semiconductor/source card: R_PULL_B
+PASS complete component card: R_PULL_B
+PASS valid physical passive/semiconductor/source card: R_SENSE_B
+PASS complete component card: R_SENSE_B
+PASS valid physical passive/semiconductor/source card: R_LED_C
+PASS complete component card: R_LED_C
+PASS valid physical passive/semiconductor/source card: D_LED_C
+PASS complete component card: D_LED_C
+PASS valid physical passive/semiconductor/source card: Q_LIGHT_C
+PASS complete component card: Q_LIGHT_C
+PASS valid physical passive/semiconductor/source card: R_LED_C_EMITTER
+PASS complete component card: R_LED_C_EMITTER
+PASS valid physical passive/semiconductor/source card: R_BIAS_C
+PASS complete component card: R_BIAS_C
+PASS valid physical passive/semiconductor/source card: R_PULL_C
+PASS complete component card: R_PULL_C
+PASS valid physical passive/semiconductor/source card: R_SENSE_C
+PASS complete component card: R_SENSE_C
+PASS valid physical passive/semiconductor/source card: R_LED_D
+PASS complete component card: R_LED_D
+PASS valid physical passive/semiconductor/source card: D_LED_D
+PASS complete component card: D_LED_D
+PASS valid physical passive/semiconductor/source card: Q_LIGHT_D
+PASS complete component card: Q_LIGHT_D
+PASS valid physical passive/semiconductor/source card: R_LED_D_EMITTER
+PASS complete component card: R_LED_D_EMITTER
+PASS valid physical passive/semiconductor/source card: R_BIAS_D
+PASS complete component card: R_BIAS_D
+PASS valid physical passive/semiconductor/source card: R_PULL_D
+PASS complete component card: R_PULL_D
+PASS valid physical passive/semiconductor/source card: R_SENSE_D
+PASS complete component card: R_SENSE_D
+PASS valid physical passive/semiconductor/source card: R_MECH_ISO_A
+PASS complete component card: R_MECH_ISO_A
+PASS valid physical passive/semiconductor/source card: C_MECH_PIEZO_A
+PASS complete component card: C_MECH_PIEZO_A
+PASS valid physical passive/semiconductor/source card: R_MECH_ISO_B
+PASS complete component card: R_MECH_ISO_B
+PASS valid physical passive/semiconductor/source card: C_MECH_PIEZO_B
+PASS complete component card: C_MECH_PIEZO_B
+PASS flattened element identifiers unique
+PASS no ideal switches and 8 explicit voltage rails
+PASS 175 flattened electrical elements after R08 write repair
+PASS diode model exists: D_REAL
+PASS diode model exists: D_NONLINEAR_AB
+PASS diode model exists: D_NONLINEAR_BA
+PASS diode model exists: D_WRITE_A_HIGH
+PASS diode model exists: D_WRITE_A_LOW
+PASS diode model exists: D_WRITE_B_HIGH
+PASS diode model exists: D_WRITE_B_LOW
+PASS diode model exists: D_BOUNDARY_A_HIGH
+PASS diode model exists: D_BOUNDARY_B_HIGH
+PASS diode model exists: D_BOUNDARY_A_LOW
+PASS diode model exists: D_BOUNDARY_B_LOW
+PASS diode model exists: D_LED_A
+PASS transistor model exists: Q_LIGHT_A
+PASS diode model exists: D_LED_B
+PASS transistor model exists: Q_LIGHT_B
+PASS diode model exists: D_LED_C
+PASS transistor model exists: Q_LIGHT_C
+PASS diode model exists: D_LED_D
+PASS transistor model exists: Q_LIGHT_D
+PASS capacitive physical write A
+PASS limited physical write to charge A
+PASS passive input bleed A
+PASS physical upper clamp A
+PASS physical lower clamp A
+PASS write current limiter present A
+PASS capacitive physical write B
+PASS limited physical write to charge B
+PASS passive input bleed B
+PASS physical upper clamp B
+PASS physical lower clamp B
+PASS write current limiter present B
+PASS all electrical nodes connected to reference circuit graph; dangling set()
+PASS eight uniform material source contacts
+PASS 10 physical neighboring sheet branches
+PASS 4 simultaneous LED-BJT outputs
+PASS one inherited L branch
+PASS physical observable node present CHARGE_A
+PASS physical observable node present CHARGE_B
+PASS physical observable node present CHARGE_C
+PASS physical observable node present FIELD_A
+PASS physical observable node present FIELD_B
+PASS physical observable node present DISPLAY_X
+PASS physical observable node present DISPLAY_Y
+PASS physical observable node present DISPLAY_Z
+PASS physical observable node present PIEZO_NODE_A
+PASS physical observable node present PIEZO_NODE_B
+PASS physical observable node present WRITE_A
+PASS physical observable node present WRITE_B
+PASS K05 exact loaded y0 nominal KCL preserved
+PASS K05 exact loaded y1 nominal KCL preserved
+PASS old/new milestone tables exactly 116
+PASS milestone IDs canonical 00 through 115
+PASS all original titles dependencies provenance statuses unchanged
+PASS only 11 directly relevant milestone status records updated
+PASS physical data ledger remains header only: VOID_R06_PRIMITIVE_PHYSICAL_ACQUISITIONS.tsv
+PASS physical data ledger remains header only: VOID_R07_NATIVE_OUTPUT_PHYSICAL_CAPTURE.tsv
+PASS physical data ledger remains header only: VOID_K05_PHYSICAL_ACQUISITIONS.tsv
+PASS physical data ledger remains header only: VOID_GATE_K_PHYSICAL_TRANSIENTS.tsv
+PASS physical data ledger remains header only: VOID_R08_PHYSICAL_WRITE_AND_MACHINE_READOUT.tsv
+PASS controlled-negative rejected: missing A capacitor
+PASS controlled-negative rejected: wrong B capacitor node
+PASS controlled-negative rejected: A limiter short
+PASS controlled-negative rejected: B limiter wrong destination
+PASS controlled-negative rejected: A high clamp reversed
+PASS controlled-negative rejected: B low clamp reversed
+PASS controlled-negative rejected: duplicate A source
+PASS controlled-negative rejected: ideal switch reintroduced
+PASS intact release passes independent negative checker
+PHYSICAL_CARD_COUNTS {"C": 17, "D": 15, "L": 1, "Q": 4, "R": 130, "V": 8}
+FLATTENED_ELEMENTS 175
+K05_NOMINAL_Y0_V 6500/20001 = 0.32498375081246
+K05_NOMINAL_Y1_V -4000/20001 = -0.19999000049998
+ORIGINAL_R07_ARCHIVE_SHA256 ce3e58f7acac7277d5393a97e47a749acadb68ca0e7e0cd2e4ab777efd252ab9
+MEASURED_PHYSICAL_SAMPLES 0

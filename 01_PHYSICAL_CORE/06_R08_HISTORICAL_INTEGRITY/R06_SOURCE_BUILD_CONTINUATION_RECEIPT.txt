@@ -1,0 +1,11 @@
+VOID R06 exact continuation, source-side implementation receipt
+- Recovered and continued the same 1-core unsealed R06 worktree.
+- Preserved older R06 physical keyboard concepts under 01_PRESERVED_INPUTS/R06_SUPERSEDED_UNSEALED_HUMAN_IO/.
+- Retained unchanged active K01, K02, K03, K04, shared original RC mesh and K05 weighted subcircuit.
+- Reused the actual existing eight-contact material primitive input; removed alphabet and unused 44-sensor input branch from the active core.
+- Added directly wired third charge capacitor and two further optical BJT/LED channels.
+- Corrected arbitrary 0-volt sensor-source shunts to exposed guarded physical sensor connectors.
+- Regenerated active component, connection, probe, manufacturing and 116-milestone maps.
+- Recorded complete check output separately in R06_PRIMITIVE_CHECKS.log.
+- No generated SPICE waveforms, physical voltage data or CPU digital noise substitute inserted.
+- R05 archives and original research sources remain archived byte-for-byte.

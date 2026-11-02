@@ -1,0 +1,7 @@
+{
+  "record": "/mnt/data/VOID_HX89_SINGLE_TREE_CANONICAL_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/POWER_HX89_CYCLE_1793297283801507383/POWER_HX89_EXECUTION.json",
+  "power_crossover_trials_verified": 80,
+  "median_busy_minus_idle_tsc": -9.0,
+  "HX89_feedback_to_next_CPU": "VERIFIED_NATIVE_DIGITAL_FEEDBACK",
+  "thermal_computation": "NOT_VERIFIED"
+}

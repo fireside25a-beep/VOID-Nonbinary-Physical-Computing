@@ -1,0 +1,471 @@
+{
+  "schema": "VOID_NATIVE_CAUSAL_RELEASE_VALIDATION_V1",
+  "passed": 36,
+  "failed": 0,
+  "results": [
+    {
+      "name": "hx89_archived_binary_sha256",
+      "pass": true,
+      "details": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451"
+    },
+    {
+      "name": "build_bridge",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "make",
+          "-B",
+          "all"
+        ]
+      }
+    },
+    {
+      "name": "compile_acdc_test",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/02_ANALOG_MATH/01_ACDC_LINEAR_NETWORK/analog_core.c",
+          "-lm",
+          "-o",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/analog_core"
+        ]
+      }
+    },
+    {
+      "name": "acdc_4099_vectors",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": "4099 deterministic input vectors",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/analog_core",
+          "--test"
+        ]
+      }
+    },
+    {
+      "name": "compile_cpu_batch",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/06_CPU_BATCH_TARGETED_INTRINSICS/cpu_batch.c",
+          "-o",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/cpu_batch"
+        ]
+      }
+    },
+    {
+      "name": "cpu_batch_real_native_instruction_trials",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": "\"type\":\"trial\"",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/cpu_batch",
+          "--rounds",
+          "2",
+          "--work",
+          "1"
+        ]
+      }
+    },
+    {
+      "name": "cpu_batch_bounds_negative",
+      "pass": true,
+      "details": {
+        "exit_code": 2,
+        "expected": -1,
+        "needle": "bounded argument violation",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/cpu_batch",
+          "--rounds",
+          "0"
+        ]
+      }
+    },
+    {
+      "name": "hx89_original_source_make_check",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "make",
+          "check"
+        ]
+      }
+    },
+    {
+      "name": "source_derived_R08_netlist_validator",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "/opt/pyvenv/bin/python3",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/06_ENGINEERING_VALIDATORS/validate_r08_source.py"
+        ]
+      }
+    },
+    {
+      "name": "native_driver_contract_build",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "make",
+          "build/native_driver_contract"
+        ]
+      }
+    },
+    {
+      "name": "native_driver_contract",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION/build/native_driver_contract",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89"
+        ]
+      }
+    },
+    {
+      "name": "native_cpu_state_contract_build",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "make",
+          "build/native_cpu_state_contract"
+        ]
+      }
+    },
+    {
+      "name": "native_cpu_state_contract",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION/build/native_cpu_state_contract"
+        ]
+      }
+    },
+    {
+      "name": "compile_BVH_extended",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "g++",
+          "-std=c++17",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/bvh_spatial.cpp",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/test_bvh_extended.cpp",
+          "-o",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/bvh_test"
+        ]
+      }
+    },
+    {
+      "name": "BVH_real_3003_build_refits",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": "3003 builds and refits",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/bvh_test"
+        ]
+      }
+    },
+    {
+      "name": "compile_BVH_ownership",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "g++",
+          "-std=c++17",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/bvh_spatial.cpp",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/test_bvh_ownership.cpp",
+          "-o",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/bvh_ownership"
+        ]
+      }
+    },
+    {
+      "name": "BVH_ownership",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/bvh_ownership"
+        ]
+      }
+    },
+    {
+      "name": "compile_entropy_avx_trajectory_renderer",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": null,
+        "command": [
+          "g++",
+          "-std=c++17",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-mavx2",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/void_trajectory_renderer.cpp",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/bvh_spatial.cpp",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/engine_core.cpp",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/03_CPU_NATIVE/05_ENTROPY_AVX_HARDENED/shader_pipeline.cpp",
+          "-o",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/void_trajectory_renderer"
+        ]
+      }
+    },
+    {
+      "name": "closed_loop_7_scenarios_672_native_hx89",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": "NATIVE_PASS closed_loop",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION/build/void_loop",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/causal"
+        ]
+      }
+    },
+    {
+      "name": "ablation_7_scenarios_672_native_hx89",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": "NATIVE_PASS closed_loop",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION/build/void_loop",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/ablated",
+          "--ablate-cpu-feedback"
+        ]
+      }
+    },
+    {
+      "name": "length_closed_loop",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "length_closed_loop_repeat",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "length_open_write_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "length_no_excitation",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "length_forced_a",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "length_inverted_action",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "length_open_write_b",
+      "pass": true,
+      "details": {
+        "native": 96,
+        "trajectory": 1152
+      }
+    },
+    {
+      "name": "closed_loop_native_oracle_672",
+      "pass": true,
+      "details": {
+        "native_decisions": 672
+      }
+    },
+    {
+      "name": "cpu_digest_to_next_hx89_causal_ablation",
+      "pass": true,
+      "details": {
+        "different_ADC_inputs": 225,
+        "different_charge_samples": 5508,
+        "maximum_feedback_v": 0.064,
+        "maximum_kcl_error_a": 1.3552527156068805e-20
+      }
+    },
+    {
+      "name": "hardware_is_not_claimed",
+      "pass": true,
+      "details": {
+        "model": "native HX89 + R/C K06 subgraph + AC/DC ideal nodal conditioning; no bench measurements"
+      }
+    },
+    {
+      "name": "EntropyAVX_real_K06_charge_trajectory",
+      "pass": true,
+      "details": {
+        "exit_code": 0,
+        "expected": 0,
+        "needle": "VOID_K06_REAL_TRACE_SAMPLES=1152",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/void_trajectory_renderer",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/causal/closed_loop_trajectory.csv"
+        ]
+      }
+    },
+    {
+      "name": "reject_tampered_R08_K06",
+      "pass": true,
+      "details": {
+        "exit_code": 3,
+        "expected": -1,
+        "needle": "K06 sha256 mismatch",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION/build/void_loop",
+          "/tmp/void_faults_7cdydlr8/source",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/tmp/void_faults_7cdydlr8/badsrc"
+        ]
+      }
+    },
+    {
+      "name": "reject_tampered_native_hx89",
+      "pass": true,
+      "details": {
+        "exit_code": 3,
+        "expected": -1,
+        "needle": "native HX89 execution failed",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION/build/void_loop",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/tmp/void_faults_7cdydlr8/hx89",
+          "/tmp/void_faults_7cdydlr8/badbin"
+        ]
+      }
+    },
+    {
+      "name": "reject_unknown_runtime_mode",
+      "pass": true,
+      "details": {
+        "exit_code": 1,
+        "expected": -1,
+        "needle": "invalid experiment mode",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION/build/void_loop",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE",
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/01_ORIGINAL_BRIDGE_BOUNDED_RC_COSIM/03_HX89_BINARY_ONLY/hx89",
+          "/tmp/void_faults_7cdydlr8/badbin",
+          "--unsupported"
+        ]
+      }
+    },
+    {
+      "name": "reject_malformed_analog_trajectory",
+      "pass": true,
+      "details": {
+        "exit_code": 1,
+        "expected": -1,
+        "needle": "unexpected source trajectory schema",
+        "command": [
+          "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/07_FRESH_TEST_EVIDENCE/INTEGRATED_RELEASE_GATE/void_trajectory_renderer",
+          "/tmp/void_faults_7cdydlr8/invalid.csv"
+        ]
+      }
+    },
+    {
+      "name": "release_tests_complete",
+      "pass": true,
+      "details": {
+        "count": 35,
+        "pass": 35
+      }
+    }
+  ],
+  "source_root": "VOID",
+  "evidence_type": "native_and_source_tests_not_hardware_bench"
+}

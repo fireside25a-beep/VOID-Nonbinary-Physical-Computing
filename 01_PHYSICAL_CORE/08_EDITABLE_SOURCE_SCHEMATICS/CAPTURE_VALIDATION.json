@@ -1,0 +1,97 @@
+{
+  "source_reproduction_only": true,
+  "project": "VOID R08",
+  "file_count": 9,
+  "element_count": 216,
+  "captured_spice_pins": 459,
+  "decks": [
+    {
+      "deck": "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir",
+      "sha256": "3e5a5fbb9979b6a43166e115eaad90b363bdea947b36377eb78602efdd207c7d",
+      "element_count": 10,
+      "ports": [],
+      "schematic": "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.kicad_sch"
+    },
+    {
+      "deck": "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir",
+      "sha256": "ce872411e6e58cb305901ba73e26627a7effb996cd433c418a62577be41b7b58",
+      "element_count": 10,
+      "ports": [],
+      "schematic": "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.kicad_sch"
+    },
+    {
+      "deck": "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir",
+      "sha256": "9fc1729dc309c7afb0c4c9900724153675f73938f22d97623c9a8d9e93d4385a",
+      "element_count": 5,
+      "ports": [],
+      "schematic": "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.kicad_sch"
+    },
+    {
+      "deck": "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir",
+      "sha256": "b2763f162d159c25bae244e51293ca33583ce86a73462d3473836f6dc9e1584d",
+      "element_count": 5,
+      "ports": [],
+      "schematic": "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.kicad_sch"
+    },
+    {
+      "deck": "VOID_K05_DC_ADMITTANCE_WITNESS.cir",
+      "sha256": "71ef06bded569e22836c9bf669b25c076feb80249b53be215f50868405729e7b",
+      "element_count": 8,
+      "ports": [],
+      "schematic": "VOID_K05_DC_ADMITTANCE_WITNESS.kicad_sch"
+    },
+    {
+      "deck": "VOID_K05_WEIGHTED_NETWORK.lib",
+      "sha256": "9a39456a494cef446610149d88faad6e62bcf772094587ad523a37dc30d01ef6",
+      "element_count": 12,
+      "ports": [
+        "xp1",
+        "xm1",
+        "xp2",
+        "xm2",
+        "xp3",
+        "y0",
+        "y1"
+      ],
+      "schematic": "VOID_K05_WEIGHTED_NETWORK.kicad_sch"
+    },
+    {
+      "deck": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir",
+      "sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+      "element_count": 106,
+      "ports": [],
+      "schematic": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.kicad_sch"
+    },
+    {
+      "deck": "VOID_K_MESH_V1.lib",
+      "sha256": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+      "element_count": 12,
+      "ports": [
+        "INPUT",
+        "PROBE_A",
+        "PROBE_B"
+      ],
+      "schematic": "VOID_K_MESH_V1.kicad_sch"
+    },
+    {
+      "deck": "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib",
+      "sha256": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839",
+      "element_count": 48,
+      "ports": [
+        "VREF",
+        "RET",
+        "CORE_A",
+        "CORE_B",
+        "STATE_A",
+        "STATE_B",
+        "FIELD_A",
+        "FIELD_B",
+        "AXIS_A",
+        "AXIS_B"
+      ],
+      "schematic": "VOID_PRIMITIVE_MATERIAL_INTERFACE.kicad_sch"
+    }
+  ],
+  "connection_contract": "SPICE device pin tokens represented by wired global net labels on source sheets",
+  "scope": "Electronic source capture, not KiCad ERC/DRC, footprint selection, SPICE simulation, PCB fabrication or physical bench verification"
+}

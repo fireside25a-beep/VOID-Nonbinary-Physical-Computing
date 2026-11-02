@@ -1,0 +1,22 @@
+/mnt/data/workplace/03_NATIVE_TOOLCHAIN/CPU_VOID_BATCH_CYCLE/material_causal.py:32: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/void_actual_cpu_cache_j6idzlmb/real.cache.csv' mode='r' encoding='utf-8'>
+  rows=list(csv.DictReader(path.open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_actual_cpu_cache_causal_effect (test_material_causal.RealMaterialCacheEvidenceTests.test_actual_cpu_cache_causal_effect) ... ok
+test_adversarial_cpu_migration_is_refused (test_material_causal.RealMaterialCacheEvidenceTests.test_adversarial_cpu_migration_is_refused) ... /mnt/data/workplace/03_NATIVE_TOOLCHAIN/CPU_VOID_BATCH_CYCLE/material_causal.py:32: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/void_actual_cpu_cache_j6idzlmb/test_adversarial_cpu_migration_is_refused.csv' mode='r' encoding='utf-8'>
+  rows=list(csv.DictReader(path.open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_adversarial_missing_real_row_is_refused (test_material_causal.RealMaterialCacheEvidenceTests.test_adversarial_missing_real_row_is_refused) ... /mnt/data/workplace/03_NATIVE_TOOLCHAIN/CPU_VOID_BATCH_CYCLE/material_causal.py:32: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/void_actual_cpu_cache_j6idzlmb/test_adversarial_missing_real_row_is_refused.csv' mode='r' encoding='utf-8'>
+  rows=list(csv.DictReader(path.open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_adversarial_order_rewriting_is_refused (test_material_causal.RealMaterialCacheEvidenceTests.test_adversarial_order_rewriting_is_refused) ... /mnt/data/workplace/03_NATIVE_TOOLCHAIN/CPU_VOID_BATCH_CYCLE/material_causal.py:32: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/void_actual_cpu_cache_j6idzlmb/test_adversarial_order_rewriting_is_refused.csv' mode='r' encoding='utf-8'>
+  rows=list(csv.DictReader(path.open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_digital_transport_cannot_be_called_analog_sample (test_material_causal.RealMaterialCacheEvidenceTests.test_digital_transport_cannot_be_called_analog_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.387s
+
+OK

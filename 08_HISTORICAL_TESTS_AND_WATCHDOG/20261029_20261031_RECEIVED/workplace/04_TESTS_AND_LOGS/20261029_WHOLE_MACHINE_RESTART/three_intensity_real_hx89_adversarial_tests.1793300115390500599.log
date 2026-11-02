@@ -1,0 +1,12 @@
+test_hx89_whole_cycle_and_native_history (test_history_causal.NativeThreeIntensityHistory.test_hx89_whole_cycle_and_native_history) ... ok
+test_real_native_all_intensities_observed (test_history_causal.NativeThreeIntensityHistory.test_real_native_all_intensities_observed) ... ok
+test_reject_cpu_migration (test_history_causal.NativeThreeIntensityHistory.test_reject_cpu_migration) ... ok
+test_reject_missing_real_measurement (test_history_causal.NativeThreeIntensityHistory.test_reject_missing_real_measurement) ... ok
+test_reject_predetermined_hardware_claim (test_history_causal.NativeThreeIntensityHistory.test_reject_predetermined_hardware_claim) ... ok
+test_reject_reordered_real_measurement (test_history_causal.NativeThreeIntensityHistory.test_reject_reordered_real_measurement) ... ok
+test_reject_tampered_physical_timestamp (test_history_causal.NativeThreeIntensityHistory.test_reject_tampered_physical_timestamp) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.654s
+
+OK

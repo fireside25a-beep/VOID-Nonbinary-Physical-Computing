@@ -1,0 +1,1 @@
+run_id	datetime_local	board_id	verified_instrument_id	physical_input_port	source_origin	initial_node_v	peak_node_v	final_node_v	elapsed_s	temperature_C	supply_rail_v	rail_current_A	host_physical_connection	raw_trace_path	raw_sha256	operator_notes

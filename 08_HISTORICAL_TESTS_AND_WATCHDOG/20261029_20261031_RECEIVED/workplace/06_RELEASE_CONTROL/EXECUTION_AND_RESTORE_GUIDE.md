@@ -1,0 +1,9 @@
+# VOID/HX89 — execution, preservation and restore contracts
+
+The authoritative project start page is `../WORKPLACE_START_HERE.md`. The main implementation and evidence ledger is `../00_CONTROL/CANONICAL_MASTER_PLAN.md` and `../00_CONTROL/CANONICAL_IMPLEMENTATION_LEDGER.tsv` (M00–M115). Do not change the historical columns. The active K01–K06 source dependency inventory is `../00_CONTROL/ACTIVE_NETLIST_INVENTORY.tsv` and the actual netlists are in `../02_ACTIVE_R08/02_PHYSICAL_CIRCUITS/`.
+
+**Native execution entry point:** `python3 00_CONTROL/run_whole_machine.py --cycles 12 --cache-causal --history-causal` from the `workplace/` root. Tests are not merely declared: the runner spawns the native builds/binaries and stores dated accepted/failed JSON, raw CPU timing traces and other logs under `04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/`. Historical test failures are retained. Use a fresh output location for individual native runs.
+
+**Result classification:** Native HX89, EntropyAVX, scalar/SIMD/cache and the reversible lattice gas software model are executable components. Cache timing is a genuine host CPU observation, but **neither sub-threshold analog arithmetic nor physically coupled K06/CPU charge memory is demonstrated**. A release can be source-complete and reproducibly tested without claiming that the research objective is physically completed. Header-only physical acquisition registers must not be filled with synthetic values.
+
+**Transport:** The separately shipped module ZIPs 01–09 are each <200,000,000 bytes. Original full research master is reassembled byte-for-byte from the two uploaded split parts by the included stdlib `RESTORE_VERIFY.py`. `--verify-only` verifies all module ZIP SHA-256s and CRCs; extraction additionally compares all paths, sizes and SHA-256s against an independent manifest. This is an immutable snapshot for recipient handoff; no source-file removals or Git pushes are implied.

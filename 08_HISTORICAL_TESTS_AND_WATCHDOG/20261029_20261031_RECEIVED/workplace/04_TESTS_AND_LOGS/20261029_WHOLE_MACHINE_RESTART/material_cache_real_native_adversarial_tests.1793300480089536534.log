@@ -1,0 +1,10 @@
+test_actual_cpu_cache_causal_effect (test_material_causal.RealMaterialCacheEvidenceTests.test_actual_cpu_cache_causal_effect) ... ok
+test_adversarial_cpu_migration_is_refused (test_material_causal.RealMaterialCacheEvidenceTests.test_adversarial_cpu_migration_is_refused) ... ok
+test_adversarial_missing_real_row_is_refused (test_material_causal.RealMaterialCacheEvidenceTests.test_adversarial_missing_real_row_is_refused) ... ok
+test_adversarial_order_rewriting_is_refused (test_material_causal.RealMaterialCacheEvidenceTests.test_adversarial_order_rewriting_is_refused) ... ok
+test_digital_transport_cannot_be_called_analog_sample (test_material_causal.RealMaterialCacheEvidenceTests.test_digital_transport_cannot_be_called_analog_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.519s
+
+OK

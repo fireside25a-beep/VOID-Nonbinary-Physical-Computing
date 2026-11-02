@@ -1,0 +1,7 @@
+NATIVE_PASS_integrated-no-acdc closed_loop 44  -2.277383E-02  -1.760014E-02  -1.598540E-04
+NATIVE_PASS_integrated-no-acdc closed_loop_repeat 44  -2.277383E-02  -1.760014E-02  -1.598540E-04
+NATIVE_PASS_integrated-no-acdc open_write_a 55  -4.423760E-03  -2.290836E-02  -2.238345E-03
+NATIVE_PASS_integrated-no-acdc no_excitation 40   0.000000E+00   0.000000E+00   0.000000E+00
+NATIVE_PASS_integrated-no-acdc forced_a 52  -3.987289E-02  -1.754022E-04  -4.041524E-05
+NATIVE_PASS_integrated-no-acdc inverted_action 53  -1.234396E-02  -2.793108E-02  -1.051297E-04
+NATIVE_PASS_integrated-no-acdc open_write_b 53  -1.084858E-02  -2.993933E-03  -1.797606E-03

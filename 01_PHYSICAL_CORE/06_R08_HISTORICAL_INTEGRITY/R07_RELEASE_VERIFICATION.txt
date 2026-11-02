@@ -1,0 +1,10 @@
+Release file: VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R07_20261029.zip
+ZIP_CRC: PASS
+FILES: 100
+ARCHIVE_SHA256: ce3e58f7acac7277d5393a97e47a749acadb68ca0e7e0cd2e4ab777efd252ab9
+MANIFEST_CHECK: PASS (99 members)
+SOURCE_BYTES_COMPARISON: PASS
+M00_M115_PRESERVED: PASS
+MILESTONE_IDS: 116 / 116
+PHYSICAL_INSTRUMENT_DATA: not present; untouched headers only
+NO software-generated thermal noise or numeric state-step calculation added to the source.

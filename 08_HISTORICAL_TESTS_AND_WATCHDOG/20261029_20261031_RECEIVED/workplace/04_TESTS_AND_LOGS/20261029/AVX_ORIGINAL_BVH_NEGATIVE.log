@@ -1,0 +1,3 @@
+expected bounds [0,7]; built [0,3] => FAIL
+after refit: [0,3] => FAIL
+ORIGINAL_BVH_EXIT=1

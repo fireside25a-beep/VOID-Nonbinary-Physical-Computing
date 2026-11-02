@@ -1,0 +1,7 @@
+ERROR STOP invalid integration mode
+
+Error termination. Backtrace:
+#0  0x7fd4f744b2ba in ???
+#1  0x7fd4f744bdb9 in ???
+#2  0x55bc58b0131b in MAIN__
+#3  0x55bc58afa7be in main

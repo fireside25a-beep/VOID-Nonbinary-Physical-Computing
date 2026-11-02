@@ -1,0 +1,7 @@
+ERROR STOP invalid experiment mode
+
+Error termination. Backtrace:
+#0  0x7f210e5412ba in ???
+#1  0x7f210e541db9 in ???
+#2  0x55e15f232c0b in MAIN__
+#3  0x55e15f22c49e in main

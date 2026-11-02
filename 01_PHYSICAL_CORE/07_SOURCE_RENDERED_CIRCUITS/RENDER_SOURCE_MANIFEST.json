@@ -1,0 +1,225 @@
+{
+  "schema": "VOID_R08_SOURCE_RENDER_V1",
+  "files": [
+    {
+      "source": "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir",
+      "sha256": "3e5a5fbb9979b6a43166e115eaad90b363bdea947b36377eb78602efdd207c7d",
+      "element_count": 10,
+      "include_files": [
+        "VOID_K_MESH_V1.lib"
+      ],
+      "subcircuits": [],
+      "sheets": 1,
+      "types": {
+        "C": 1,
+        "D": 1,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 6,
+        "V": 1,
+        "X": 1
+      }
+    },
+    {
+      "source": "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir",
+      "sha256": "ce872411e6e58cb305901ba73e26627a7effb996cd433c418a62577be41b7b58",
+      "element_count": 10,
+      "include_files": [
+        "VOID_K_MESH_V1.lib"
+      ],
+      "subcircuits": [],
+      "sheets": 1,
+      "types": {
+        "C": 1,
+        "D": 1,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 6,
+        "V": 1,
+        "X": 1
+      }
+    },
+    {
+      "source": "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir",
+      "sha256": "9fc1729dc309c7afb0c4c9900724153675f73938f22d97623c9a8d9e93d4385a",
+      "element_count": 5,
+      "include_files": [
+        "VOID_K_MESH_V1.lib"
+      ],
+      "subcircuits": [],
+      "sheets": 1,
+      "types": {
+        "C": 1,
+        "D": 0,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 3,
+        "V": 0,
+        "X": 1
+      }
+    },
+    {
+      "source": "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir",
+      "sha256": "b2763f162d159c25bae244e51293ca33583ce86a73462d3473836f6dc9e1584d",
+      "element_count": 5,
+      "include_files": [
+        "VOID_K_MESH_V1.lib"
+      ],
+      "subcircuits": [],
+      "sheets": 1,
+      "types": {
+        "C": 1,
+        "D": 0,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 3,
+        "V": 0,
+        "X": 1
+      }
+    },
+    {
+      "source": "VOID_K05_DC_ADMITTANCE_WITNESS.cir",
+      "sha256": "71ef06bded569e22836c9bf669b25c076feb80249b53be215f50868405729e7b",
+      "element_count": 8,
+      "include_files": [
+        "VOID_K05_WEIGHTED_NETWORK.lib"
+      ],
+      "subcircuits": [],
+      "sheets": 1,
+      "types": {
+        "C": 0,
+        "D": 0,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 2,
+        "V": 5,
+        "X": 1
+      }
+    },
+    {
+      "source": "VOID_K05_WEIGHTED_NETWORK.lib",
+      "sha256": "9a39456a494cef446610149d88faad6e62bcf772094587ad523a37dc30d01ef6",
+      "element_count": 12,
+      "include_files": [],
+      "subcircuits": [
+        {
+          "name": "VOID_WEIGHTED_5X2",
+          "pins": [
+            "xp1",
+            "xm1",
+            "xp2",
+            "xm2",
+            "xp3",
+            "y0",
+            "y1"
+          ],
+          "line": 6
+        }
+      ],
+      "sheets": 1,
+      "types": {
+        "C": 0,
+        "D": 0,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 12,
+        "V": 0,
+        "X": 0
+      }
+    },
+    {
+      "source": "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir",
+      "sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+      "element_count": 106,
+      "include_files": [
+        "VOID_K_MESH_V1.lib",
+        "VOID_K05_WEIGHTED_NETWORK.lib",
+        "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib"
+      ],
+      "subcircuits": [],
+      "sheets": 6,
+      "types": {
+        "C": 11,
+        "D": 15,
+        "I": 0,
+        "L": 1,
+        "Q": 4,
+        "R": 64,
+        "V": 8,
+        "X": 3
+      }
+    },
+    {
+      "source": "VOID_K_MESH_V1.lib",
+      "sha256": "67cb648471f27c4338ceac014f8569753342fd7b59e4aa0f26cccd7de7db3d15",
+      "element_count": 12,
+      "include_files": [],
+      "subcircuits": [
+        {
+          "name": "VOID_MESH_V1",
+          "pins": [
+            "INPUT",
+            "PROBE_A",
+            "PROBE_B"
+          ],
+          "line": 5
+        }
+      ],
+      "sheets": 1,
+      "types": {
+        "C": 6,
+        "D": 0,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 6,
+        "V": 0,
+        "X": 0
+      }
+    },
+    {
+      "source": "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib",
+      "sha256": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839",
+      "element_count": 48,
+      "include_files": [],
+      "subcircuits": [
+        {
+          "name": "VOID_MATERIAL_INPUT",
+          "pins": [
+            "VREF",
+            "RET",
+            "CORE_A",
+            "CORE_B",
+            "STATE_A",
+            "STATE_B",
+            "FIELD_A",
+            "FIELD_B",
+            "AXIS_A",
+            "AXIS_B"
+          ],
+          "line": 7
+        }
+      ],
+      "sheets": 3,
+      "types": {
+        "C": 0,
+        "D": 0,
+        "I": 0,
+        "L": 0,
+        "Q": 0,
+        "R": 48,
+        "V": 0,
+        "X": 0
+      }
+    }
+  ],
+  "validated_elements": 216,
+  "X_subckt_ports": "VERIFIED",
+  "source_path_immutable": "/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/01_PHYSICAL_CORE/01_R08_ACTIVE_SPICE"
+}

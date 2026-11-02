@@ -1,0 +1,25 @@
+{
+  "schema": "VOID_HX89_FINAL_COHERENT_20261029",
+  "canonical_workplace_root": "workplace/",
+  "validated_116_milestones": 116,
+  "verified_physical_nonbinary_milestones": 0,
+  "repeat_accepted": 2,
+  "native_gates_per_run": [
+    24,
+    24
+  ],
+  "native_failures_per_run": [
+    0,
+    0
+  ],
+  "recorded_repeated_run": "04_TESTS_AND_LOGS/CANONICAL_RELEASE_RUNS/canonical_1793297149910189732/REPEATED_MACHINE_RESULT.json",
+  "original_archives_unchanged": true,
+  "physical_nonbinary_material_computation_verified": false,
+  "README_graphs": [
+    "09_RESULTS_VISUALS/whole_machine_execution_architecture.png",
+    "09_RESULTS_VISUALS/cpu_three_intensity_hold_5ms.png",
+    "09_RESULTS_VISUALS/cpu_three_intensity_hold_50ms.png",
+    "09_RESULTS_VISUALS/canonical_116_milestones.png"
+  ],
+  "source_of_truth": "00_CONTROL/CANONICAL_IMPLEMENTATION_LEDGER.tsv"
+}

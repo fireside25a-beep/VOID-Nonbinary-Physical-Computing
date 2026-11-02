@@ -1,0 +1,20 @@
+{
+  "scenario": "no_excitation",
+  "step_count": 96,
+  "native_executions": 96,
+  "native_ones": 0,
+  "native_zeros": 96,
+  "max_abs_charge_a_v": 0.0,
+  "max_abs_charge_b_v": 0.0,
+  "max_abs_charge_c_v": 0.0,
+  "end_state_v": {
+    "CHARGE_A": 0.0,
+    "CHARGE_B": 0.0,
+    "CHARGE_C": 0.0
+  },
+  "analog_samples": 1152,
+  "all_native_oracle_correct": true,
+  "waveforms_sha256": "d0f8deb13a47e5b8dd07f99d07e49ed8fded2caf18ce5e75629c61de9a61f22d",
+  "native_steps_sha256": "7b5c88aca62bcb3f74525e407e3e4f6c14a87ffe77dfcd4467a57e73fd06661a",
+  "completed_utc": "2026-10-31T00:58:42.678233+00:00"
+}

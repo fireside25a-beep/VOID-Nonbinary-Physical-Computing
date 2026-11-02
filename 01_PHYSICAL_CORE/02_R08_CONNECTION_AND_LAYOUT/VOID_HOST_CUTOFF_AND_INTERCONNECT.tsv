@@ -1,0 +1,10 @@
+port_or_test	physical_end_A	physical_end_B	electrical_function	acceptance_condition
+BIAS_POS	independent isolated 24V current-limited bench rail	R_CURRENT_LIMIT input	physical energy injection, no digital computation inside mesh	current-limiting supply and polarity independently checked unpowered
+BIAS_RETURN	isolated bench return	analogue reference 0	controlled single return with no undocumented host ground link	measure DC and AC return currents, no unintended bypass
+SENSE_SHUNT	differential high-Z isolated DC meter	SHUNT_TOP,JCT	physical rail current determination across 100ohm	verified probe common-mode rating and calibration
+SENSE_JCT	isolated high-Z meter input	JCT,0	physical diode voltage and dissipation	probe not overloaded, receiver self-noise independently recorded
+AC_OBSERVABLE_A	high-Z analog scope probe	PROBE_A,0	physical node A waveform	input impedance and capacitance logged
+AC_OBSERVABLE_B	high-Z analog scope probe	PROBE_B,0	physical node B waveform	input impedance and capacitance logged
+HOST_DISCONNECT	remove all host or converter signal/control wiring	retain isolated physical supply and direct analogue instruments	tests physical state evolution independent of host arithmetic	physical response continues with host physically absent; supply/instruments accounted
+SOURCE_SELECT	mechanically keyed manual power-off reconfiguration	K01,K02,K03,K04 junction source terminals	one physical source per test, mesh common	no simultaneous source connections or live swapping
+K05_READOUT	calibrated 10Mohm external DC voltmeters	y0,0 and y1,0	physical weighted-sum observation with loaded readout	connect actual voltmeters; do not add double load

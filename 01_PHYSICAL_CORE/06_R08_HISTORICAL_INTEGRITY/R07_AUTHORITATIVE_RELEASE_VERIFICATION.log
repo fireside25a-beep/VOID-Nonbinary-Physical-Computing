@@ -1,0 +1,10 @@
+VOID R07 SAME WORKTREE — AUTHORITATIVE INTEGRITY AND SOURCE CHECK
+PASS: 171 distinct flattened physical component cards agree in two separately generated connection lists
+PASS: all 116 M00–M115 unique original milestone IDs retained and updated with evidence-scoped R07 records
+PASS: M00–M115 readback is byte-identical to R05
+PASS: all 12 preserved root research/release archives passed CRC
+PASS: five laboratory / as-built registers have ZERO added measurement rows
+PASS: former 6/44-key input modules archived and not included by active K06 circuit
+PASS: one material resistive sheet, one RC mesh, one K05 weighted module
+PASS: no fabricated quantum/RBit/SNN/text-decoding functionality or simulated waveform substituted
+SCOPE: this is topology/static and provenance verification, not powered-board physics testing

@@ -1,0 +1,7 @@
+NATIVE_PASS_integrated-no-cpu closed_loop 50  -4.385937E-02   3.962299E-03  -6.375425E-05
+NATIVE_PASS_integrated-no-cpu closed_loop_repeat 50  -4.385937E-02   3.962299E-03  -6.375425E-05
+NATIVE_PASS_integrated-no-cpu open_write_a 48   1.652442E-03  -1.211173E-02   1.028789E-03
+NATIVE_PASS_integrated-no-cpu no_excitation 39   0.000000E+00   0.000000E+00   0.000000E+00
+NATIVE_PASS_integrated-no-cpu forced_a 43  -3.987289E-02  -1.754022E-04  -4.041524E-05
+NATIVE_PASS_integrated-no-cpu inverted_action 46  -4.117915E-02   1.297074E-03  -2.987790E-05
+NATIVE_PASS_integrated-no-cpu open_write_b 46  -4.288434E-02  -3.250183E-03  -8.598532E-04

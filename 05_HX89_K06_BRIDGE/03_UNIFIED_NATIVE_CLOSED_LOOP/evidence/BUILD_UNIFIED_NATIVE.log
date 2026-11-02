@@ -1,0 +1,1 @@
+f77 -std=f2008 -O2 -Wall -Wextra -Werror -fcheck=all -fbacktrace -ffree-line-length-none -J build src/void_native.f90 build/hx89_exec.o build/cpu_feedback.o build/cpu_cycle.o build/acdc_link.o build/cpu_batch_link.o build/entropy_bvh_link.o build/bvh_spatial.o build/procedural.o -o build/void_unified -llapack -lblas -lcrypto -lstdc++ -lm

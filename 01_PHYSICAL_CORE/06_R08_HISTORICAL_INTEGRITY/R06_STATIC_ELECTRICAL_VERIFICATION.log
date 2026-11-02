@@ -1,0 +1,10 @@
+VOID R06 consolidated authoritative physical-primitive static verification (NO SPICE physics simulation)
+K06 hierarchical physical components: 171; topological connected nodes to local reference: 74
+Only ONE active instance of each inherited RC mesh, K05 weighted module and material input module: PASS
+Eight equal-material spatially coupled actuation sites, two mechanical axes, two external analog boundary sources: PASS
+Two charge capacitor state nodes, anti-parallel nonlinear coupling, RLC path: PASS
+Four powered BJT LED optical-output primitives, two piezoelectric capacitive output sites, and two analog X-Y display terminals: PASS
+No active reference to either historical conflicting alpha-key module: PASS
+K01-K04 and RC mesh byte-equal to R05; K05 intentionally refactored, original source preserved in R05 ZIP; twelve physical branches validated: PASS
+M00-M115 canonical source roadmap byte-equal to R05: PASS
+No measured noise, mechanical keyboard, charge-state, light output, SNN learning or RBit physical result produced by static checks.

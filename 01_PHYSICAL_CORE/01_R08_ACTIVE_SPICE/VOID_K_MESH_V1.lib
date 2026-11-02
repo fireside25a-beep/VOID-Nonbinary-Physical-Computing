@@ -1,0 +1,18 @@
+VOID K passive analogue admittance mesh: two physical observation nodes
+* Physical parts only; no behavioral source, no numerical noise generator.
+* Output terminal PROBE_A and PROBE_B: calibrated high-impedance analog probes.
+* Effective probes shown as 1Meg + 30p; revise values to actual instrument.
+.SUBCKT VOID_MESH_V1 INPUT PROBE_A PROBE_B
+R_M01 INPUT PROBE_A 10k
+C_M01 INPUT PROBE_A 1n
+R_M12 PROBE_A PROBE_B 22k
+C_M12 PROBE_A PROBE_B 2.2n
+R_MA PROBE_A 0 33k
+C_MA PROBE_A 0 4.7n
+R_MB PROBE_B 0 47k
+C_MB PROBE_B 0 3.3n
+R_PA PROBE_A 0 1meg
+C_PA PROBE_A 0 30p
+R_PB PROBE_B 0 1meg
+C_PB PROBE_B 0 30p
+.ENDS VOID_MESH_V1

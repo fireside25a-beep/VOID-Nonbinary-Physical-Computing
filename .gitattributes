@@ -1,0 +1,12 @@
+# Preserve exact original bytes even if the Mac has core.autocrlf enabled.
+* -text
+*.zip -diff
+*.wav -diff
+*.glb -diff
+*.pdf -diff
+*.png -diff
+*.pgm -diff
+*.o -diff
+*.so -diff
+*.a -diff
+*.pyc -diff

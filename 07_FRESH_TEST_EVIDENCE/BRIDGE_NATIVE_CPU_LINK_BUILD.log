@@ -1,0 +1,7 @@
+make: Entering directory '/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION'
+mkdir -p build
+gcc -std=c11 -O2 -Wall -Wextra -Werror -fstack-protector-strong -D_FORTIFY_SOURCE=2 -c src/hx89_exec.c -o build/hx89_exec.o
+gcc -std=c11 -O2 -Wall -Wextra -Werror -fstack-protector-strong -D_FORTIFY_SOURCE=2 -c src/cpu_feedback.c -o build/cpu_feedback.o
+gcc -std=c11 -O2 -Wall -Wextra -Werror -fstack-protector-strong -D_FORTIFY_SOURCE=2 -c src/cpu_cycle.c -o build/cpu_cycle.o
+gfortran -std=f2008 -O2 -Wall -Wextra -Werror -fcheck=all -fbacktrace -ffree-line-length-none -J build src/void_native.f90 build/hx89_exec.o build/cpu_feedback.o build/cpu_cycle.o -o build/void_loop -llapack -lblas -lcrypto
+make: Leaving directory '/mnt/data/VOID_RELEASE_CANDIDATE_20261102/VOID/05_HX89_K06_BRIDGE/02_NATIVE_FORTRAN_C_INTEGRATION'

@@ -1,0 +1,15 @@
+VOID R05 independent archival verification
+Full crosswalk: 116 unique and ordered M00–M115 entries PASS
+Original R04 39 members: 36 byte-identical, 3 documented changes PASS
+Documented changes: 00_CHECKPOINT/VOID_START_HERE.md, 05_MILESTONES/VOID_CONTINUATION_M00_M115.md, 06_INTEGRITY/RELEASE_MANIFEST.sha256
+Nine preserved nested ZIP CRC and any externally available exact byte-comparison: PASS
+BCSE_GATE_K_PHYSICAL_FIRST_CONTINUATION_20261029(1).zip: 44 members, CRC PASS
+BCSE_SEQUENTIAL_PHYSICAL_GATES_20261029(1).zip: 18 members, CRC PASS
+VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R02_20261029.zip: 25 members, CRC PASS
+BCSE_THERMODYNAMIC_POLYFORM_MASTER_20261029.zip: 29 members, CRC PASS
+VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R03_20261029.zip: 32 members, CRC PASS
+DACB-2.0.0-HARDENED-REVERSE-VERIFIED-20261029.zip: 59 members, CRC PASS
+VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_20261029.zip: 22 members, CRC PASS
+DACB-2.0.0-AUDIT-AND-REPRODUCERS-20261029.zip: 20 members, CRC PASS
+AC_DC_Passive_AI_Proof(2).zip: 11 members, CRC PASS
+Physical instrument trace count: 0; no fabricated measurements

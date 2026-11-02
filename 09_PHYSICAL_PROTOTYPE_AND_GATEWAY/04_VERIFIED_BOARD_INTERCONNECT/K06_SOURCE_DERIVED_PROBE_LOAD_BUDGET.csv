@@ -1,0 +1,10 @@
+source_node,scenario,native_reference_shunt_ohms,effective_local_parallel_shunt_ohms,capacitance_F,illustrative_local_shunt_RC_seconds,note
+CHARGE_A,source-only load,5000000,5000000,1e-07,0.5,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_A,extra 10M DMM accidentally paralleled,5000000,3333333.33,1e-07,0.333333333,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_A,ADC 1M directly paralleled,5000000,833333.333,1e-07,0.0833333333,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_B,source-only load,5000000,5000000,1e-07,0.5,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_B,extra 10M DMM accidentally paralleled,5000000,3333333.33,1e-07,0.333333333,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_B,ADC 1M directly paralleled,5000000,833333.333,1e-07,0.0833333333,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_C,source-only load,5000000,5000000,2.2e-07,1.1,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_C,extra 10M DMM accidentally paralleled,5000000,3333333.33,2.2e-07,0.733333333,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic
+CHARGE_C,ADC 1M directly paralleled,5000000,833333.333,2.2e-07,0.183333333,Only node-to-ground branches; reciprocal K06 couplings excluded from this local-only diagnostic

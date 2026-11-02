@@ -1,0 +1,17 @@
+{
+  "acceptance_sha256": "dab7f48a2a5acffa96d5e0d929202109bbc1b675ec6d6401dc1802b265840947",
+  "cycles_in_full_runner": 16,
+  "failed": 0,
+  "final_whole_machine_acceptance": "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/WHOLE_MACHINE_ACCEPTANCE_1793285859996322383.json",
+  "fresh_extended_64_cycles": 64,
+  "fresh_extended_changed_cpu_commands": 57,
+  "fresh_extended_native_cpu_trials": 256,
+  "fresh_extended_real_executed_hx89_gas_cycles": 64,
+  "fresh_extended_report": "04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/FULL_STACK_FIXED_64_1793285661/FULL_STACK_EXECUTION.json",
+  "original_116_milestones_preserved": true,
+  "original_inputs_preserved": true,
+  "passed": 12,
+  "physical_nonbinary_cpu_material_operator_verified": false,
+  "relative_path_regression_11_tests_passed": true,
+  "schema": "VOID_HX89_EXECUTED_CONTINUATION_V1"
+}

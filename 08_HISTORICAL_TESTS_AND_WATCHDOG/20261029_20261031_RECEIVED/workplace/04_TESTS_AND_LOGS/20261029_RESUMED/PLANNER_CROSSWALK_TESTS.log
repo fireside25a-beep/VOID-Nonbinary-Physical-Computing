@@ -1,0 +1,14 @@
+test_fake_zero_observation_rejected (__main__.Tests.test_fake_zero_observation_rejected) ... ok
+test_migration_rejected (__main__.Tests.test_migration_rejected) ... ok
+test_missing_mode_rejected (__main__.Tests.test_missing_mode_rejected) ... ok
+test_missing_trial_rejected (__main__.Tests.test_missing_trial_rejected) ... ok
+test_native_bounds_rejected (__main__.Tests.test_native_bounds_rejected) ... ok
+test_netlist_integrity (__main__.Tests.test_netlist_integrity) ... ok
+test_original_milestone_fields (__main__.Tests.test_original_milestone_fields) ... ok
+test_real_hx89_native (__main__.Tests.test_real_hx89_native) ... ok
+test_valid_actual_native_traces (__main__.Tests.test_valid_actual_native_traces) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.011s
+
+OK

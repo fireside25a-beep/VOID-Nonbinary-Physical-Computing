@@ -1,0 +1,137 @@
+{
+  "actual_hx89_stdout_sha256": "54ee8dcaae60130b0b0e5ac54fef2f06c42222ae67cbaf68b65033b9b18c6bac",
+  "actual_initial_cpu_sha256": "a012692cda8d096d973a16815bf766b3f80906647a70d9387c848e4f9fe20f17",
+  "actual_next_cpu_command": {
+    "rotate": 0,
+    "work": 5
+  },
+  "actual_next_cpu_sha256": "80f471890732c3cc9ae2c407619d8e9d70cd0c5106acbb54131e1d71b16e3f82",
+  "binary_sha256": "7f3132ffdcd426dc007aa5e3f46052d1db6c82d44b1c8a9f26a5f68a5442f3cb",
+  "blocks": 2,
+  "complete_original_machine_run_sha256": "ac7b7fe509809e1f8e1a7dd448cfbff7321b765c4efb3eb451e7ba3d07d43aeb",
+  "complete_original_machine_verification": {
+    "command_changed_cycles": 3,
+    "native_three_intensity_trials": 72,
+    "physical_nonbinary_material_computation_verified": false,
+    "verified_cpu_interventions": 16,
+    "verified_cycles": 4,
+    "verified_hx89_gas_reversals": 4
+  },
+  "executed_hx89_state": {
+    "fitness": 1,
+    "head": 0,
+    "q": 9,
+    "step": 1,
+    "target": 14
+  },
+  "executed_hx89_target": 14,
+  "experiments": [
+    {
+      "analog_current_or_temperature_measured": false,
+      "csv": "hold_5ms.csv",
+      "csv_sha256": "885ab5b84f20772e99622775c31589a867c2a8893b451abf60af371eb123df29",
+      "heat_ms": 20,
+      "heater_cpu": 0,
+      "high_minus_idle_median_ns": 647089.0,
+      "hold_ms": 5,
+      "intensities": {
+        "0": 12,
+        "1": 12,
+        "2": 12
+      },
+      "interpretation": "REAL_CROSS_CPU_TIMING_NOT_DIRECT_ANALOG_STATE",
+      "physical_multilevel_memory_verified": false,
+      "read_ns_median_by_level": [
+        81202082.5,
+        86360017.5,
+        81849171.5
+      ],
+      "reader_cpu": 4,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8a0290d7eefb0d33662f05cbe3dfbba69215bba72cfd87c483d43c2a4f7c1b44",
+      "trials": 36,
+      "triplet_negative": 7,
+      "triplet_positive": 5,
+      "triplet_zero": 0,
+      "within_triplet_high_minus_idle_ns": [
+        -9161944,
+        12396418,
+        -16418995,
+        4984273,
+        -3327889,
+        -5971029,
+        3915966,
+        2838465,
+        8151336,
+        -19822301,
+        -3913831,
+        -4273054
+      ]
+    },
+    {
+      "analog_current_or_temperature_measured": false,
+      "csv": "hold_50ms.csv",
+      "csv_sha256": "f1816ad23567cf9941e4cf152a783e65fb7fd103d8bb0e347b996283c930e474",
+      "heat_ms": 20,
+      "heater_cpu": 0,
+      "high_minus_idle_median_ns": 3836824.5,
+      "hold_ms": 50,
+      "intensities": {
+        "0": 12,
+        "1": 12,
+        "2": 12
+      },
+      "interpretation": "REAL_CROSS_CPU_TIMING_NOT_DIRECT_ANALOG_STATE",
+      "physical_multilevel_memory_verified": false,
+      "read_ns_median_by_level": [
+        79223138.5,
+        79959874.0,
+        83059963.0
+      ],
+      "reader_cpu": 4,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ef5e3695b5cf67153bb1b22778e96eea205cb93b8c65e60ec5cf4a1461bc1598",
+      "trials": 36,
+      "triplet_negative": 3,
+      "triplet_positive": 9,
+      "triplet_zero": 0,
+      "within_triplet_high_minus_idle_ns": [
+        5098569,
+        -9223678,
+        9435004,
+        1572250,
+        -4647414,
+        -3605713,
+        4335137,
+        5117189,
+        11208012,
+        4536726,
+        34988670,
+        10396125
+      ]
+    }
+  ],
+  "heat_ms": 20,
+  "heater": 0,
+  "independently_measured_cpu_thermodynamic_calculation": false,
+  "inherited_actual_hx89_command": {
+    "rotate": 1,
+    "work": 5
+  },
+  "original_cpu_binary_sha256": "d5fa8b355fd8d905094440af12efee545073643cbf069f80ecb02d741d4228cc",
+  "original_hx89_binary_sha256": "50f0bae4d7ae0536b191cd5710b43a82e5350d4be84aff9d3f30649c8f3bd451",
+  "original_master_integrity": {
+    "canonical_ledger_sha256": "407ca9c039720891560abe384c453b898d35edbaef49c45cfa1c4ab27e661ba2",
+    "master_sha256": "1751f34c05919d90025bb1d4525245bc0f55605bc9e0de93c2a77286645643c1",
+    "milestone_ids": 116,
+    "original_crosswalk_sha256": "64ca8c80e91d7c5aeef11f8ef2ae4331bd3b1ae612b20a09d98c0ad5768616cd"
+  },
+  "q2_program_sha256": "f90c9d092138b23d3bb3502f9e4820031daf53746f09d77ed9412ee46b383b11",
+  "reader": 4,
+  "schema": "VOID_CPU_CROSS_CORE_HISTORY_HX89_FEEDBACK_V1",
+  "seed": 12428668220736324081,
+  "source_script_sha256": "6e01e6ede46f03b68cea8129ac3a6a991ffec3b63c22489a808ee61e850e92e2",
+  "source_sha256": "3481d71835c1a20e70ce2d85d6f2d0ae190ab6d8132cdc936e55bb932eb32a39",
+  "verified_cpu_subthreshold_gate_control": false,
+  "verified_material_multilevel_memory": false
+}

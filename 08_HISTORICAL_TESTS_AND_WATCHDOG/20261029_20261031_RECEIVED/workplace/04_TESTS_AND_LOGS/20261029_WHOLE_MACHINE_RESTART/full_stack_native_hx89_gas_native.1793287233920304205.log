@@ -1,0 +1,8 @@
+{
+  "status": "EXECUTED",
+  "cycles": 16,
+  "native_trials": 64,
+  "changed_cpu_commands": 13,
+  "physical_nonbinary_material_computation_verified": false,
+  "record": "/mnt/data/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/FULL_STACK_CYCLE_1793287233920304205/FULL_STACK_EXECUTION.json"
+}

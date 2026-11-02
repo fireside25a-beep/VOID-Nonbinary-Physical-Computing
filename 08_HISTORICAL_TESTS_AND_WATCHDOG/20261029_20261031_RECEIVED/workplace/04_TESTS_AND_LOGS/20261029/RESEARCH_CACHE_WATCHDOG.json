@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "scope": "READ_ONLY_RESEARCH_TOOL_VALIDATION",
+  "checks": [
+    {
+      "check": "provenance_R08_manifest",
+      "pass": true,
+      "detail": "R08 manifest SHA-256 present"
+    },
+    {
+      "check": "provenance_R08_current_bytes",
+      "pass": true,
+      "detail": "Original immutable archive available and matches readback"
+    },
+    {
+      "check": "provenance_R08_zip_crc",
+      "pass": true,
+      "detail": "All archived members pass ZIP CRC"
+    },
+    {
+      "check": "database_integrity",
+      "pass": true,
+      "detail": "SQLite integrity_check"
+    },
+    {
+      "check": "roadmap_IDs",
+      "pass": true,
+      "detail": "116 distinct M00\u2013M115 IDs"
+    },
+    {
+      "check": "sources_unique",
+      "pass": true,
+      "detail": "(31, 31)"
+    },
+    {
+      "check": "links_integrity",
+      "pass": true,
+      "detail": "dangling=0"
+    },
+    {
+      "check": "claims_caution",
+      "pass": true,
+      "detail": "All research claims record an explicit inferential boundary"
+    },
+    {
+      "check": "HX89_no_claim",
+      "pass": true,
+      "detail": "Latest HX89 source absent; no promoted HX89 hardware claim"
+    },
+    {
+      "check": "unlinked_to_VOID",
+      "pass": true,
+      "detail": "Tools are review-only and not compiled into material core"
+    }
+  ],
+  "all_pass": true
+}

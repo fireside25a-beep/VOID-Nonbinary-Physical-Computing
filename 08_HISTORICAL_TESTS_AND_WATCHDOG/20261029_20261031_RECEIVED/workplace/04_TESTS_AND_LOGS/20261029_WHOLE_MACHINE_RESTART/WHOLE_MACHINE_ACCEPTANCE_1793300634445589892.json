@@ -1,0 +1,347 @@
+{
+  "K06_physical_injection_measurement_verified": false,
+  "actual_hardware_weak_inversion_control_verified": false,
+  "actual_physical_collective_charge_network_verified": false,
+  "cache_causality_live_integration_attempted": true,
+  "cross_core_material_candidate_inside_machine": true,
+  "failed": 0,
+  "material_crossover_blocks": 2,
+  "native_architecture_execution_verified": true,
+  "original_upload_sha256": {
+    "AC_DC_Passive_AI_Proof(2)(1).zip": "4372eaf5629908da322c7031d437ddbc20295f061ae48e63ee78a4c1ed28a7c4",
+    "EntropyAVXEngine-source-trace-and-bootstrap(3).zip": "94310df038c8f5024bba59420fe104a8748b0044a538f9799ce8a84570c8a176",
+    "VOID_COMPLETE_VOLUME_PART_01_OF_02.zip.001": "9fac288a28d626c6da8e459fa88aae45d5a5ef5ee62bee95f13c75154b546c98",
+    "VOID_COMPLETE_VOLUME_PART_02_OF_02.zip.002": "886062734193bbda1afa7668bc250bbb7bc1ff7a1c3335866afc9836865900f0",
+    "VOID_OPERATES_INDEPENDENT_OF_DIGITAL_GATE_K_R08_20261029.zip": "d5e1a2ef956d5c6fefda727e294a0d25f3aaa15882543779181f072c901b97ad"
+  },
+  "passed": 27,
+  "physical_nonbinary_cpu_substrate_verified": false,
+  "run_id": "1793300634445589892",
+  "schema": "VOID_HX89_CUMULATIVE_WHOLE_MACHINE_ACCEPTANCE_V1",
+  "scope": "REAL CPU instruction execution, real HX89, real EntropyAVX; physical analog substrate NOT demonstrated",
+  "simultaneous_two_input_cpu_candidate_inside_machine": true,
+  "stages": [
+    {
+      "detail": {
+        "canonical_ledger_sha256": "407ca9c039720891560abe384c453b898d35edbaef49c45cfa1c4ab27e661ba2",
+        "master_sha256": "1751f34c05919d90025bb1d4525245bc0f55605bc9e0de93c2a77286645643c1",
+        "milestone_ids": 116,
+        "original_crosswalk_sha256": "64ca8c80e91d7c5aeef11f8ef2ae4331bd3b1ae612b20a09d98c0ad5768616cd"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 0,
+      "stage": "historical_116_and_current_physical_claims",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "archive_count": 3,
+        "crc": "PASS",
+        "split_parts": 2
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 1,
+      "stage": "original_archive_crc_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "K06_sha256": "ccfd7ab640ecc54fee5a2414eaca56c920f6c3dd4d1299f1e7f3b61f9c80d161",
+        "active_sources": 9,
+        "includes": {
+          "VOID_K01_BIASED_BREAKDOWN_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K02_DIODE_ZERO_VOLT_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K03_PASSIVE_JOHNSON_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K04_TERMINATED_RECEIVER_WITH_MESH.cir": [
+            "VOID_K_MESH_V1.lib"
+          ],
+          "VOID_K05_DC_ADMITTANCE_WITNESS.cir": [
+            "VOID_K05_WEIGHTED_NETWORK.lib"
+          ],
+          "VOID_K05_WEIGHTED_NETWORK.lib": [],
+          "VOID_K06_INTEGRATED_PHYSICAL_CONTINUUM.cir": [
+            "VOID_K_MESH_V1.lib",
+            "VOID_K05_WEIGHTED_NETWORK.lib",
+            "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib"
+          ],
+          "VOID_K_MESH_V1.lib": [],
+          "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib": []
+        }
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 2,
+      "stage": "K01_K06_real_netlist_source_integrity",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/existing_full_watchdog_11_gates.1793300634445589892.log",
+        "sha256": "3f87ae747aa15df9a95611b1e69f04f0f12e7b43ea0e79df227794c9b4ea89fa"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 3,
+      "stage": "existing_full_watchdog_11_gates",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/native_negative_and_real_tests.1793300634445589892.log",
+        "sha256": "de6ec77a444d28a3352cda2788d1473efbe502ea95827353de8f81a4da217e52"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 4,
+      "stage": "native_negative_and_real_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/native_cpu_hx89_cpu_closed_cycle.1793300634445589892.log",
+        "sha256": "e7a6dd7c4653e87f9a94d7b968ea96b833ee7f3e2e1930836de718739b4c0212"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 5,
+      "stage": "native_cpu_hx89_cpu_closed_cycle",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "changing_cpu_commands": 3,
+        "cycles": 4,
+        "feedback_sha256": "f67cf6d1ad125dcd9a0ff1717c32c7c962829e48b02816fe40ebf7d66a4fcec3",
+        "hx89_search_transitions": 4,
+        "real_native_interventions": 16
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 6,
+      "stage": "closed_cycle_bytewise_trace_and_causality",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/new_full_stack_adversarial_tests.1793300634445589892.log",
+        "sha256": "d3a7b0b7692084af63e060269717c16eda2950f545e27031d6d57a5c17065426"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 7,
+      "stage": "new_full_stack_adversarial_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/full_stack_native_hx89_gas_native.1793300634445589892.log",
+        "sha256": "549adcea0dd8edd745e3a322e552dfc5068b7e24ce900db24a44d31c637ff94a"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 8,
+      "stage": "full_stack_native_hx89_gas_native",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "command_changed_cycles": 3,
+        "native_three_intensity_trials": 0,
+        "physical_nonbinary_material_computation_verified": false,
+        "verified_cpu_interventions": 16,
+        "verified_cycles": 4,
+        "verified_hx89_gas_reversals": 4
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 9,
+      "stage": "full_stack_trace_validation",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/material_cache_real_native_adversarial_tests.1793300634445589892.log",
+        "sha256": "3ba7d66925f0f05fd5820100c3f6be2fc271facf460ddf7ac3653b52ec4eebe0"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 10,
+      "stage": "material_cache_real_native_adversarial_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/material_cache_inside_full_hx89_cycle.1793300634445589892.log",
+        "sha256": "3d3a3dd7550f6716d8a6c9937a600c3348f0e8b9107e3f55f79313e8bc142e12"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 11,
+      "stage": "material_cache_inside_full_hx89_cycle",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "command_changed_cycles": 2,
+        "native_three_intensity_trials": 0,
+        "physical_nonbinary_material_computation_verified": false,
+        "verified_cpu_interventions": 16,
+        "verified_cycles": 4,
+        "verified_hx89_gas_reversals": 4
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 12,
+      "stage": "material_cache_independent_causal_trace_validation",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/power_timing_adversarial_real_HX89_tests.1793300634445589892.log",
+        "sha256": "d3857caf43b34a4a41ac9c3da9de5c448a5608d13c913737122b53d3e9436779"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 13,
+      "stage": "power_timing_adversarial_real_HX89_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/real_CPU_power_candidate_into_HX89_into_CPU.1793300634445589892.log",
+        "sha256": "2160bfb1ef2bd8872eb64e56e265f56794665761cfca36284a9e8d7c741a3444"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 14,
+      "stage": "real_CPU_power_candidate_into_HX89_into_CPU",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "HX89_feedback_to_next_CPU": "VERIFIED_NATIVE_DIGITAL_FEEDBACK",
+        "median_busy_minus_idle_tsc": -11.0,
+        "power_crossover_trials_verified": 80,
+        "thermal_computation": "NOT_VERIFIED"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 15,
+      "stage": "independent_real_power_timing_chain_verification",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/three_intensity_real_hx89_adversarial_tests.1793300634445589892.log",
+        "sha256": "d2a4dde01705aeff059b72aabf171b544abd323cfd001021fb61fc966236506f"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 16,
+      "stage": "three_intensity_real_hx89_adversarial_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/real_three_intensity_inside_full_hx89_machine.1793300634445589892.log",
+        "sha256": "64619e1319e77c142c2d5aad5cf1d300b7de8d7b8efdba5da3d29ec584903033"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 17,
+      "stage": "real_three_intensity_inside_full_hx89_machine",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "command_changed_cycles": 4,
+        "native_three_intensity_trials": 72,
+        "physical_nonbinary_material_computation_verified": false,
+        "verified_cpu_interventions": 16,
+        "verified_cycles": 4,
+        "verified_hx89_gas_reversals": 4
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 18,
+      "stage": "independent_three_intensity_live_feedback_verification",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/real_cross_core_inside_full_hx89_machine.1793300634445589892.log",
+        "sha256": "e6709aa8b75a73239f65e0bde175afe4b38ac4e43eff5ac21cc227d419bb1ddf"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 19,
+      "stage": "real_cross_core_inside_full_hx89_machine",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "HX89_native_feedback": "PASS",
+        "material_nonbinary_gate": "NOT_ESTABLISHED",
+        "observations_verified": 72
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 20,
+      "stage": "independent_cross_core_hx89_material_evidence",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/cross_core_adversarial_tests.1793300634445589892.log",
+        "sha256": "3c7499362e8c55146459f33e8caf5fbb9c0801f8ef05749b2140c37472a2ad96",
+        "test_cases": 7
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 21,
+      "stage": "adversarial_cross_core_real_trace_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/entropyavx_real_native_frames.1793300634445589892.log",
+        "sha256": "ce9f9bf76b9b06c4ac3109fda3cf549824147bef3cac79a775cc2043c6a84684"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 22,
+      "stage": "entropyavx_real_native_frames",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/real_two_input_cpu_hx89_full_machine.1793300634445589892.log",
+        "sha256": "7aefd5842885bc70a13078448f4d018660a48f3c8626842a8af5ce5e1d82b25d"
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 23,
+      "stage": "real_two_input_cpu_hx89_full_machine",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual_next_native_cpu_command_verified": true,
+        "direct_analog_nonbinary_computation_proven": false,
+        "original_full_hx89_cycles": 4,
+        "verified_real_physical_observations": 128
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 24,
+      "stage": "independent_real_two_input_hx89_trace_verification",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "log": "/mnt/data/VOID_HX89_ONESHOT_PHYSICAL_RESERVOIR_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/dual_physical_real_trace_negative_tests.1793300634445589892.log",
+        "sha256": "ccb6aaa38f4af48fe83bf216305721d28eddaedeb53b8744d1fb39d9a0fc453e",
+        "test_cases": 8
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 25,
+      "stage": "real_two_input_cpu_adversarial_integrity_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "five_original_hashes_unchanged": true
+      },
+      "run_id": "1793300634445589892",
+      "sequence": 26,
+      "stage": "all_original_uploads_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "tested_stages": 27,
+  "three_intensity_real_history_inside_full_machine": true,
+  "two_input_factorial_blocks": 16
+}

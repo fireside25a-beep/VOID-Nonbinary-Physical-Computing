@@ -1,0 +1,68 @@
+{
+  "pass": true,
+  "verified_native_runs": 672,
+  "verified_waveform_samples": 8064,
+  "native_replay_exact_stdout_and_stderr": true,
+  "cases": {
+    "closed_loop": {
+      "native_steps": 96,
+      "analog_samples": 1152,
+      "native_ones": 3,
+      "programs": 96,
+      "stdout_files": 96,
+      "stderr_files": 96
+    },
+    "closed_loop_repeat": {
+      "native_steps": 96,
+      "analog_samples": 1152,
+      "native_ones": 3,
+      "programs": 96,
+      "stdout_files": 96,
+      "stderr_files": 96
+    },
+    "open_write_a": {
+      "native_steps": 96,
+      "analog_samples": 1152,
+      "native_ones": 0,
+      "programs": 96,
+      "stdout_files": 96,
+      "stderr_files": 96
+    },
+    "no_excitation": {
+      "native_steps": 96,
+      "analog_samples": 1152,
+      "native_ones": 0,
+      "programs": 96,
+      "stdout_files": 96,
+      "stderr_files": 96
+    },
+    "forced_a": {
+      "native_steps": 96,
+      "analog_samples": 1152,
+      "native_ones": 4,
+      "programs": 96,
+      "stdout_files": 96,
+      "stderr_files": 96
+    },
+    "inverted_action": {
+      "native_steps": 96,
+      "analog_samples": 1152,
+      "native_ones": 3,
+      "programs": 96,
+      "stdout_files": 96,
+      "stderr_files": 96
+    },
+    "open_write_b": {
+      "native_steps": 96,
+      "analog_samples": 1152,
+      "native_ones": 2,
+      "programs": 96,
+      "stdout_files": 96,
+      "stderr_files": 96
+    }
+  },
+  "errors": [],
+  "physical_device_test": false,
+  "whole_nonlinear_K06_spice_simulation": false,
+  "scientific_scope": "native HX89 feedback interacting with independently solved source-derived passive K06 R/C subnetwork only"
+}

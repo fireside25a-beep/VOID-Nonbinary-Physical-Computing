@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File [35m"<frozen runpy>"[0m, line [35m198[0m, in [35m_run_module_as_main[0m
+  File [35m"<frozen runpy>"[0m, line [35m88[0m, in [35m_run_code[0m
+  File [35m"/usr/lib/python3.13/unittest/__main__.py"[0m, line [35m18[0m, in [35m<module>[0m
+    [31mmain[0m[1;31m(module=None)[0m
+    [31m~~~~[0m[1;31m^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/main.py"[0m, line [35m104[0m, in [35m__init__[0m
+    [31mself.runTests[0m[1;31m()[0m
+    [31m~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"/usr/lib/python3.13/unittest/main.py"[0m, line [35m270[0m, in [35mrunTests[0m
+    self.result = [31mtestRunner.run[0m[1;31m(self.test)[0m
+                  [31m~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/runner.py"[0m, line [35m240[0m, in [35mrun[0m
+    [31mtest[0m[1;31m(result)[0m
+    [31m~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/suite.py"[0m, line [35m84[0m, in [35m__call__[0m
+    return [31mself.run[0m[1;31m(*args, **kwds)[0m
+           [31m~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/suite.py"[0m, line [35m122[0m, in [35mrun[0m
+    [31mtest[0m[1;31m(result)[0m
+    [31m~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/suite.py"[0m, line [35m84[0m, in [35m__call__[0m
+    return [31mself.run[0m[1;31m(*args, **kwds)[0m
+           [31m~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/suite.py"[0m, line [35m122[0m, in [35mrun[0m
+    [31mtest[0m[1;31m(result)[0m
+    [31m~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/suite.py"[0m, line [35m84[0m, in [35m__call__[0m
+    return [31mself.run[0m[1;31m(*args, **kwds)[0m
+           [31m~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/suite.py"[0m, line [35m122[0m, in [35mrun[0m
+    [31mtest[0m[1;31m(result)[0m
+    [31m~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"/usr/lib/python3.13/unittest/case.py"[0m, line [35m707[0m, in [35m__call__[0m
+    return [31mself.run[0m[1;31m(*args, **kwds)[0m
+           [31m~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^[0m
+[1;35mTypeError[0m: [35m'PosixPath' object is not callable[0m

@@ -1,0 +1,35 @@
+test_fake_zero_observation_rejected (test_bridge.Tests.test_fake_zero_observation_rejected) ... ok
+test_migration_rejected (test_bridge.Tests.test_migration_rejected) ... ok
+test_missing_mode_rejected (test_bridge.Tests.test_missing_mode_rejected) ... ok
+test_missing_trial_rejected (test_bridge.Tests.test_missing_trial_rejected) ... ok
+test_native_bounds_rejected (test_bridge.Tests.test_native_bounds_rejected) ... ok
+test_netlist_integrity (test_bridge.Tests.test_netlist_integrity) ... ok
+test_original_milestone_fields (test_bridge.Tests.test_original_milestone_fields) ... ok
+test_real_hx89_native (test_bridge.Tests.test_real_hx89_native) ... ok
+test_valid_actual_native_traces (test_bridge.Tests.test_valid_actual_native_traces) ... ok
+test_feedback_chain_consistency_negative (test_closed_native_cycle.RealExecutionContractTests.test_feedback_chain_consistency_negative) ... ok
+test_hx_search_deleted_rejected (test_closed_native_cycle.RealExecutionContractTests.test_hx_search_deleted_rejected) ... ok
+test_hx_target_tamper_rejected (test_closed_native_cycle.RealExecutionContractTests.test_hx_target_tamper_rejected) ... ok
+test_native_executed_valid (test_closed_native_cycle.RealExecutionContractTests.test_native_executed_valid) ... ok
+test_native_missing_or_corrupted_trial_rejected (test_closed_native_cycle.RealExecutionContractTests.test_native_missing_or_corrupted_trial_rejected) ... ok
+test_no_missing_hx_fields_allowed (test_closed_native_cycle.RealExecutionContractTests.test_no_missing_hx_fields_allowed) ... ok
+test_observed_hx_changes_next_real_command (test_closed_native_cycle.RealExecutionContractTests.test_observed_hx_changes_next_real_command) ... ok
+test_real_hx_executed_valid (test_closed_native_cycle.RealExecutionContractTests.test_real_hx_executed_valid) ... ok
+test_reordered_cpu_modes_rejected (test_closed_native_cycle.RealExecutionContractTests.test_reordered_cpu_modes_rejected) ... ok
+test_strict_execution_bounds (test_closed_native_cycle.RealExecutionContractTests.test_strict_execution_bounds) ... ok
+test_wrong_native_command_rejected (test_closed_native_cycle.RealExecutionContractTests.test_wrong_native_command_rejected) ... ok
+test_actual_full_stack_passes (test_full_stack.RealFullStackChecks.test_actual_full_stack_passes) ... ok
+test_actual_lattice_reverse_and_emitted_output (test_full_stack.RealFullStackChecks.test_actual_lattice_reverse_and_emitted_output) ... ok
+test_corrupted_hx89_output_rejected (test_full_stack.RealFullStackChecks.test_corrupted_hx89_output_rejected) ... ok
+test_corrupted_lattice_image_rejected (test_full_stack.RealFullStackChecks.test_corrupted_lattice_image_rejected) ... ok
+test_incorrect_next_cpu_control_rejected (test_full_stack.RealFullStackChecks.test_incorrect_next_cpu_control_rejected) ... ok
+test_invalid_analog_claim_rejected (test_full_stack.RealFullStackChecks.test_invalid_analog_claim_rejected) ... ok
+test_real_crosscycle_causality (test_full_stack.RealFullStackChecks.test_real_crosscycle_causality) ... ok
+test_real_hx89_native_plus_5d_phase_and_persistence (test_full_stack.RealFullStackChecks.test_real_hx89_native_plus_5d_phase_and_persistence) ... ok
+test_refuse_unbounded_process (test_full_stack.RealFullStackChecks.test_refuse_unbounded_process) ... ok
+test_truncated_real_cpu_trace_rejected (test_full_stack.RealFullStackChecks.test_truncated_real_cpu_trace_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 2.028s
+
+OK

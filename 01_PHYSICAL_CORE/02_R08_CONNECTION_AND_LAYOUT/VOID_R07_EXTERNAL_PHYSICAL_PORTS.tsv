@@ -1,0 +1,17 @@
+connector_id	linked_electrical_node	physical_interface	isolated_supply_domain	device_and_measurement_status
+PWR24	SUPPLY	power input current-limited breakdown source	isolated 24V	port specified
+PWR1V8	UI_SRC	tactile sheet and pot rail	isolated 1.8V	port specified
+PWR3V3	DISPLAY_3V3	analog light rail	isolated 3.3V	port specified
+SENSE_A	PROBE_A	mesh high impedance observation	analog isolated	port specified
+SENSE_B	PROBE_B	mesh high impedance observation	analog isolated	port specified
+LOC_A	FIELD_A	physical spatial field	analog isolated	port specified
+LOC_B	FIELD_B	physical spatial field	analog isolated	port specified
+POSITION_A	AXIS_A	continuous mechanical position	analog isolated	port specified
+POSITION_B	AXIS_B	continuous mechanical position	analog isolated	port specified
+ANALOG_IN_A	BOUNDARY_A	current-limited raw analog input electrode	analog isolated	port specified
+ANALOG_IN_B	BOUNDARY_B	current-limited raw analog input electrode	analog isolated	port specified
+ANALOG_X	DISPLAY_X	charge A display/measurement	measurement domain	port specified
+ANALOG_Y	DISPLAY_Y	charge B display/measurement	measurement domain	port specified
+ANALOG_Z	DISPLAY_Z	charge C display/measurement	measurement domain	port specified
+ACTUATOR_A	PIEZO_NODE_A	piezo mechanical element	analog isolated	port specified
+ACTUATOR_B	PIEZO_NODE_B	piezo mechanical element	analog isolated	port specified

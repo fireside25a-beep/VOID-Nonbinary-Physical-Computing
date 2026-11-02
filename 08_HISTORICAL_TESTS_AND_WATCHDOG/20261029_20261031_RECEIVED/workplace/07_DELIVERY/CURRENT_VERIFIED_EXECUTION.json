@@ -1,0 +1,15 @@
+{
+  "best_closed_loop": {
+    "changing_cpu_commands": 54,
+    "cycles": 64,
+    "feedback_sha256": "fa0155ac168691cbc595457bc0f8c3586576463123f67ac87fe13a316d601cd3",
+    "hx89_search_transitions": 64,
+    "real_native_interventions": 256
+  },
+  "historical_milestones": 116,
+  "physical_nonbinary_verified": false,
+  "source_acceptance_runs": [
+    "WHOLE_MACHINE_ACCEPTANCE_1793285251315765506.json",
+    "WHOLE_MACHINE_ACCEPTANCE_1793285275455087426.json"
+  ]
+}

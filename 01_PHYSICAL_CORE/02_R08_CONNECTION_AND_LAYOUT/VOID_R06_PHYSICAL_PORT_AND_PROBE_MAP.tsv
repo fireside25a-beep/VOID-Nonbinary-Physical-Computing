@@ -1,0 +1,33 @@
+physical_node	schematic_connections	physical_role	validation_type
+SUPPLY	V_ISO; R_CURRENT_LIMIT	physical electrical terminal	as_built_electrical_and_instrument_proof
+SHUNT_TOP	R_CURRENT_LIMIT; R_KELVIN	physical electrical terminal	as_built_electrical_and_instrument_proof
+JCT	R_KELVIN; D_REAL; R_DCMON; C_ACBLOCK	biased reverse breakdown electrode	as_built_electrical_and_instrument_proof
+INPUT	R_ACSER; R_ACREF; X_MESH/R_M01; X_MESH/C_M01	physical electrical terminal	as_built_electrical_and_instrument_proof
+xp1	Vxp1; X_WEIGHTED/R01	physical electrical terminal	as_built_electrical_and_instrument_proof
+xm1	Vxm1; X_WEIGHTED/R11A; X_WEIGHTED/R11B	physical electrical terminal	as_built_electrical_and_instrument_proof
+xp2	Vxp2; X_WEIGHTED/R12A; X_WEIGHTED/R12B	physical electrical terminal	as_built_electrical_and_instrument_proof
+xm2	Vxm2; X_WEIGHTED/R02	physical electrical terminal	as_built_electrical_and_instrument_proof
+xp3	Vxp3; X_WEIGHTED/R03A; X_WEIGHTED/R03B; X_WEIGHTED/R13	physical electrical terminal	as_built_electrical_and_instrument_proof
+y0	X_WEIGHTED/R01; X_WEIGHTED/R02; X_WEIGHTED/R03A; X_WEIGHTED/R03B; X_WEIGHTED/RG0; R_METER_Y0; C_WEIGHT_A	original K05 loaded output A	as_built_electrical_and_instrument_proof
+y1	X_WEIGHTED/R11A; X_WEIGHTED/R11B; X_WEIGHTED/R12A; X_WEIGHTED/R12B; X_WEIGHTED/R13; X_WEIGHTED/RG1A; X_WEIGHTED/RG1B; R_METER_Y1; C_WEIGHT_B	original K05 loaded output B	as_built_electrical_and_instrument_proof
+PROBE_A	X_MESH/R_M01; X_MESH/C_M01; X_MESH/R_M12; X_MESH/C_M12; X_MESH/R_MA; X_MESH/C_MA; X_MESH/R_PA; X_MESH/C_PA; R_WEIGHT_A; C_SERIES_L; R_INTEG_A; R_FEEDBACK_B; R_FEEDBACK_C; X_MATERIAL/R_FIELD_TO_MESH_A; X_MATERIAL/R_AXIS_TO_MESH_A; R_BOUNDARY_A; R_MECH_ISO_A	shared material observable A	as_built_electrical_and_instrument_proof
+PROBE_B	X_MESH/R_M12; X_MESH/C_M12; X_MESH/R_MB; X_MESH/C_MB; X_MESH/R_PB; X_MESH/C_PB; R_WEIGHT_B; R_TANK; R_INTEG_B; R_FEEDBACK_A; R_INTEG_C; X_MATERIAL/R_FIELD_TO_MESH_B; X_MATERIAL/R_AXIS_TO_MESH_B; R_BOUNDARY_B; R_MECH_ISO_B	shared material observable B	as_built_electrical_and_instrument_proof
+CHARGE_A	R_INTEG_A; C_CHARGE_A; R_LEAK_A; R_CHARGE_COUPLE; R_FEEDBACK_A; R_COUPLE_AC; R_NONLINEAR_SERIES; S_WRITE_A; R_MEM_METER_A; X_MATERIAL/R_FIELD_TO_CHARGE_A; X_MATERIAL/R_AXIS_TO_CHARGE_A; R_XY_BUFFER_A; R_SENSE_A	volatile material charge state A	as_built_electrical_and_instrument_proof
+CHARGE_B	R_INTEG_B; C_CHARGE_B; R_LEAK_B; R_CHARGE_COUPLE; R_FEEDBACK_B; R_COUPLE_BC; D_NONLINEAR_AB; D_NONLINEAR_BA; S_WRITE_B; R_MEM_METER_B; X_MATERIAL/R_FIELD_TO_CHARGE_B; X_MATERIAL/R_AXIS_TO_CHARGE_B; R_XY_BUFFER_B; R_SENSE_B	volatile material charge state B	as_built_electrical_and_instrument_proof
+UI_1V8	R_UI_CURRENT; X_MATERIAL/R_ACT_11; X_MATERIAL/R_ACT_12; X_MATERIAL/R_ACT_13; X_MATERIAL/R_ACT_14; X_MATERIAL/R_ACT_21; X_MATERIAL/R_ACT_22; X_MATERIAL/R_ACT_23; X_MATERIAL/R_ACT_24; X_MATERIAL/R_AXIS_A_UP; X_MATERIAL/R_AXIS_B_UP; D_BOUNDARY_A_HIGH; D_BOUNDARY_B_HIGH	current-sensed material actuation rail	as_built_electrical_and_instrument_proof
+FIELD_A	X_MATERIAL/R_FIELD_A; X_MATERIAL/R_FIELD_TO_MESH_A; X_MATERIAL/R_FIELD_TO_CHARGE_A; R_SENSE_C	concurrent material conductance field A	as_built_electrical_and_instrument_proof
+FIELD_B	X_MATERIAL/R_FIELD_B; X_MATERIAL/R_FIELD_TO_MESH_B; X_MATERIAL/R_FIELD_TO_CHARGE_B; R_SENSE_D	concurrent material conductance field B	as_built_electrical_and_instrument_proof
+AXIS_A	X_MATERIAL/R_AXIS_A_UP; X_MATERIAL/R_AXIS_A_DOWN; X_MATERIAL/R_AXIS_TO_MESH_A; X_MATERIAL/R_AXIS_TO_CHARGE_A	mechanical position analog electrode A	as_built_electrical_and_instrument_proof
+AXIS_B	X_MATERIAL/R_AXIS_B_UP; X_MATERIAL/R_AXIS_B_DOWN; X_MATERIAL/R_AXIS_TO_MESH_B; X_MATERIAL/R_AXIS_TO_CHARGE_B	mechanical position analog electrode B	as_built_electrical_and_instrument_proof
+BOUNDARY_A	R_BOUNDARY_BLEED_A; D_BOUNDARY_A_HIGH; D_BOUNDARY_A_LOW; R_BOUNDARY_A	external physical analog stimulus A	as_built_electrical_and_instrument_proof
+BOUNDARY_B	R_BOUNDARY_BLEED_B; D_BOUNDARY_B_HIGH; D_BOUNDARY_B_LOW; R_BOUNDARY_B	external physical analog stimulus B	as_built_electrical_and_instrument_proof
+DISPLAY_X	R_XY_BUFFER_A; R_XY_INSTR_A	actual high-impedance X analog visual output	as_built_electrical_and_instrument_proof
+DISPLAY_Y	R_XY_BUFFER_B; R_XY_INSTR_B	actual high-impedance Y analog visual output	as_built_electrical_and_instrument_proof
+DISPLAY_3V3	V_DISPLAY_RAIL; R_LED_A; R_BIAS_A; R_LED_B; R_BIAS_B; R_LED_C; R_BIAS_C; R_LED_D; R_BIAS_D	independently powered analog optical output rail	as_built_electrical_and_instrument_proof
+LED_A_AN	R_LED_A; D_LED_A	physical electrical terminal	as_built_electrical_and_instrument_proof
+LED_B_AN	R_LED_B; D_LED_B	physical electrical terminal	as_built_electrical_and_instrument_proof
+WRITE_A	V_WRITE_A; S_WRITE_A	physical electrical terminal	as_built_electrical_and_instrument_proof
+WRITE_B	V_WRITE_B; S_WRITE_B	physical electrical terminal	as_built_electrical_and_instrument_proof
+CONTACT_A	V_CONTACT_A; S_WRITE_A	physical electrical terminal	as_built_electrical_and_instrument_proof
+CONTACT_B	V_CONTACT_B; S_WRITE_B	physical electrical terminal	as_built_electrical_and_instrument_proof
+0	V_ISO; D_REAL; R_DMM; R_ACREF; X_MESH/R_MA; X_MESH/C_MA; X_MESH/R_MB; X_MESH/C_MB; X_MESH/R_PA; X_MESH/C_PA; X_MESH/R_PB; X_MESH/C_PB; Vxp1; Vxm1; Vxp2; Vxm2; Vxp3; X_WEIGHTED/RG0; X_WEIGHTED/RG1A; X_WEIGHTED/RG1B; R_METER_Y0; R_METER_Y1; C_CHARGE_A; R_LEAK_A; C_CHARGE_B; R_LEAK_B; C_CHARGE_C; R_LEAK_C; R_MEM_METER_C; V_WRITE_A; V_WRITE_B; V_CONTACT_A; V_CONTACT_B; S_WRITE_A; S_WRITE_B; R_MEM_METER_A; R_MEM_METER_B; V_UI_RAIL; X_MATERIAL/R_NODE_RET_11; X_MATERIAL/R_NODE_RET_12; X_MATERIAL/R_NODE_RET_13; X_MATERIAL/R_NODE_RET_14; X_MATERIAL/R_NODE_RET_21; X_MATERIAL/R_NODE_RET_22; X_MATERIAL/R_NODE_RET_23; X_MATERIAL/R_NODE_RET_24; X_MATERIAL/R_AXIS_A_DOWN; X_MATERIAL/R_AXIS_B_DOWN; R_BOUNDARY_BLEED_A; R_BOUNDARY_BLEED_B; D_BOUNDARY_A_LOW; D_BOUNDARY_B_LOW; R_XY_INSTR_A; R_XY_INSTR_B; R_XY_INSTR_C; V_DISPLAY_RAIL; R_LED_A_EMITTER; R_PULL_A; R_LED_B_EMITTER; R_PULL_B; R_LED_C_EMITTER; R_PULL_C; R_LED_D_EMITTER; R_PULL_D; C_MECH_PIEZO_A; C_MECH_PIEZO_B	physical electrical terminal	as_built_electrical_and_instrument_proof

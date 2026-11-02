@@ -1,0 +1,142 @@
+{
+  "closed_loop": {
+    "scenario": "closed_loop",
+    "step_count": 96,
+    "native_executions": 96,
+    "native_ones": 3,
+    "native_zeros": 93,
+    "max_abs_charge_a_v": 0.0789726520185,
+    "max_abs_charge_b_v": 0.082639241734,
+    "max_abs_charge_c_v": 0.00518308911787,
+    "end_state_v": {
+      "CHARGE_A": -0.039872895057874135,
+      "CHARGE_B": -0.00017540254011905022,
+      "CHARGE_C": -4.041613138298591e-05
+    },
+    "analog_samples": 1152,
+    "all_native_oracle_correct": true,
+    "waveforms_sha256": "7617cd058d2ba0ca48664adc1bfda3cbb645f5fcfd67e5e49173531466d57f1b",
+    "native_steps_sha256": "21e6b8f81f2d17fd3a9f7901d678a28344bb809d672ae0dda80addbdfa2fe7ae",
+    "completed_utc": "2026-10-31T00:58:42.160413+00:00"
+  },
+  "closed_loop_repeat": {
+    "scenario": "closed_loop_repeat",
+    "step_count": 96,
+    "native_executions": 96,
+    "native_ones": 3,
+    "native_zeros": 93,
+    "max_abs_charge_a_v": 0.0789726520185,
+    "max_abs_charge_b_v": 0.082639241734,
+    "max_abs_charge_c_v": 0.00518308911787,
+    "end_state_v": {
+      "CHARGE_A": -0.039872895057874135,
+      "CHARGE_B": -0.00017540254011905022,
+      "CHARGE_C": -4.041613138298591e-05
+    },
+    "analog_samples": 1152,
+    "all_native_oracle_correct": true,
+    "waveforms_sha256": "7617cd058d2ba0ca48664adc1bfda3cbb645f5fcfd67e5e49173531466d57f1b",
+    "native_steps_sha256": "5806830a79ac2b6e1750242588c38af906aba4d5af00911a6dab8dbfe5d4ecae",
+    "completed_utc": "2026-10-31T00:58:42.351913+00:00"
+  },
+  "open_write_a": {
+    "scenario": "open_write_a",
+    "step_count": 96,
+    "native_executions": 96,
+    "native_ones": 0,
+    "native_zeros": 96,
+    "max_abs_charge_a_v": 0.0,
+    "max_abs_charge_b_v": 0.0,
+    "max_abs_charge_c_v": 0.0,
+    "end_state_v": {
+      "CHARGE_A": 0.0,
+      "CHARGE_B": 0.0,
+      "CHARGE_C": 0.0
+    },
+    "analog_samples": 1152,
+    "all_native_oracle_correct": true,
+    "waveforms_sha256": "4ad5ebcf7ac89fcca5e689bc204df677dcdbdd5ef162c8f984c5baae651560b5",
+    "native_steps_sha256": "91fe220dec4525e3f45d21fda98cd4806325bffad55e6668e0fdf7aca3389be8",
+    "completed_utc": "2026-10-31T00:58:42.522741+00:00"
+  },
+  "no_excitation": {
+    "scenario": "no_excitation",
+    "step_count": 96,
+    "native_executions": 96,
+    "native_ones": 0,
+    "native_zeros": 96,
+    "max_abs_charge_a_v": 0.0,
+    "max_abs_charge_b_v": 0.0,
+    "max_abs_charge_c_v": 0.0,
+    "end_state_v": {
+      "CHARGE_A": 0.0,
+      "CHARGE_B": 0.0,
+      "CHARGE_C": 0.0
+    },
+    "analog_samples": 1152,
+    "all_native_oracle_correct": true,
+    "waveforms_sha256": "d0f8deb13a47e5b8dd07f99d07e49ed8fded2caf18ce5e75629c61de9a61f22d",
+    "native_steps_sha256": "7b5c88aca62bcb3f74525e407e3e4f6c14a87ffe77dfcd4467a57e73fd06661a",
+    "completed_utc": "2026-10-31T00:58:42.678233+00:00"
+  },
+  "forced_a": {
+    "scenario": "forced_a",
+    "step_count": 96,
+    "native_executions": 96,
+    "native_ones": 4,
+    "native_zeros": 92,
+    "max_abs_charge_a_v": 0.0789726520185,
+    "max_abs_charge_b_v": 0.0083513438811,
+    "max_abs_charge_c_v": 0.00496399015152,
+    "end_state_v": {
+      "CHARGE_A": -0.03987289471380676,
+      "CHARGE_B": -0.00017540217472666024,
+      "CHARGE_C": -4.041523901817787e-05
+    },
+    "analog_samples": 1152,
+    "all_native_oracle_correct": true,
+    "waveforms_sha256": "bd6f1c709c1a619be62775064ca46a102acbbf55d5e7ed3395be9ff862675049",
+    "native_steps_sha256": "1c2f4d67847cfc8ecc74cde42637a3f039621a438c28de31996c0dbb157ea801",
+    "completed_utc": "2026-10-31T00:58:42.844396+00:00"
+  },
+  "inverted_action": {
+    "scenario": "inverted_action",
+    "step_count": 96,
+    "native_executions": 96,
+    "native_ones": 3,
+    "native_zeros": 93,
+    "max_abs_charge_a_v": 0.0822595296303,
+    "max_abs_charge_b_v": 0.0794107747778,
+    "max_abs_charge_c_v": 0.00510687627038,
+    "end_state_v": {
+      "CHARGE_A": -0.0001754018306593652,
+      "CHARGE_B": -0.03989805868848892,
+      "CHARGE_C": -4.124131980262225e-05
+    },
+    "analog_samples": 1152,
+    "all_native_oracle_correct": true,
+    "waveforms_sha256": "182da37c4bf5cb203744cf9ec4cc962692b4b7bc3b19742534924f14b506e4a2",
+    "native_steps_sha256": "e2c91f864137a4f0798c573298170ae3374e6d816c370d36940dbcc61149fdb0",
+    "completed_utc": "2026-10-31T00:58:43.029929+00:00"
+  },
+  "open_write_b": {
+    "scenario": "open_write_b",
+    "step_count": 96,
+    "native_executions": 96,
+    "native_ones": 2,
+    "native_zeros": 94,
+    "max_abs_charge_a_v": 0.0789805970847,
+    "max_abs_charge_b_v": 0.00759142119016,
+    "max_abs_charge_c_v": 0.00411805096638,
+    "end_state_v": {
+      "CHARGE_A": -0.03987243778996334,
+      "CHARGE_B": -0.00016278777485922326,
+      "CHARGE_C": -4.0252604701862375e-05
+    },
+    "analog_samples": 1152,
+    "all_native_oracle_correct": true,
+    "waveforms_sha256": "d04fe438659512b6c21db18fd08a431ca3f776e57e830fded434e9aed92ff22a",
+    "native_steps_sha256": "3cab1402ee36501f7951138df8c76ae15a741df2dc0ff527a9ead9eee275cc55",
+    "completed_utc": "2026-10-31T00:58:43.220250+00:00"
+  }
+}

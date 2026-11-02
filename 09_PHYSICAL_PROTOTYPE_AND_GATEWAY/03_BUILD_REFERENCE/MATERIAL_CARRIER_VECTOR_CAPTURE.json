@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source": "VOID_PRIMITIVE_MATERIAL_INTERFACE.lib",
+  "sha256": "ae7f5d7ac9e1255d77d58d779150470e433d71925f4191f46b7ecc2f83558839",
+  "svg_files": [
+    "MATERIAL_CARRIER_CONTACT_AND_SHEET.svg",
+    "MATERIAL_CARRIER_NODE_RETURNS.svg"
+  ],
+  "source_cards_shown": 34,
+  "sheet_A_cards": 26,
+  "sheet_B_cards": 8,
+  "interpretation": "exact source resistor connectivity; edit source for schematic edits, not production KiCad ERC/PCB"
+}

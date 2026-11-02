@@ -1,0 +1,44 @@
+mkdir -p bin
+ld -o bin/hx0-x86_64 build/hx0-x86_64.o
+mkdir -p bin
+cc -std=c11 -O2 -Wall -Wextra -Werror -o bin/pulse-pcm src/pulse_pcm.c
+mkdir -p build
+as -o build/hx0_bitstream.o boot/hx0_bitstream.S
+objcopy -O binary -j .rodata build/hx0_bitstream.o build/hx0_bitstream.hx0
+cmp build/hx0_bitstream.hx0 seeds/hx0_bitstream.hx0
+mkdir -p build
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < seeds/hx89_seed.bits > build/hx87_seed.stageA
+cmp build/hx87_seed.stageA seeds/hx87_seed.hx
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < seeds/hx89_semantics.bits > build/hx87_semantics.seed
+cmp build/hx87_semantics.seed seeds/hx87_semantics.seed
+./bin/hx0-x86_64 seeds/hx0_etch.hx0 < seeds/hx87_seed.etch > build/hx87_seed.etchdecoded
+cmp build/hx87_seed.etchdecoded build/hx87_seed.stageA
+./bin/hx0-x86_64 seeds/hx0_etch.hx0 < seeds/hx87_semantics.etch > build/hx87_semantics.etchdecoded
+cmp build/hx87_semantics.etchdecoded build/hx87_semantics.seed
+./bin/pulse-pcm encode-fsk seeds/hx89_seed.bits build/hx89_seed.fsk.wav
+./bin/pulse-pcm decode-fsk build/hx89_seed.fsk.wav build/hx89_seed.fsk.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_seed.fsk.bits > build/hx87_seed.fskdecoded
+cmp build/hx87_seed.fskdecoded build/hx87_seed.stageA
+./bin/pulse-pcm encode-fsk seeds/hx89_semantics.bits build/hx89_semantics.fsk.wav
+./bin/pulse-pcm decode-fsk build/hx89_semantics.fsk.wav build/hx89_semantics.fsk.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_semantics.fsk.bits > build/hx87_semantics.fskdecoded
+cmp build/hx87_semantics.fskdecoded build/hx87_semantics.seed
+./bin/pulse-pcm encode-bell202 seeds/hx89_seed.bits build/hx89_seed.bell.wav
+./bin/pulse-pcm decode-bell202 build/hx89_seed.bell.wav build/hx89_seed.bell.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_seed.bell.bits > build/hx87_seed.belldecoded
+cmp build/hx87_seed.belldecoded build/hx87_seed.stageA
+./bin/pulse-pcm encode-bell202 seeds/hx89_semantics.bits build/hx89_semantics.bell.wav
+./bin/pulse-pcm decode-bell202 build/hx89_semantics.bell.wav build/hx89_semantics.bell.bits
+./bin/hx0-x86_64 build/hx0_bitstream.hx0 < build/hx89_semantics.bell.bits > build/hx87_semantics.belldecoded
+cmp build/hx87_semantics.belldecoded build/hx87_semantics.seed
+printf 'HX89_BOOTSTRAP_VERIFIED\n' > build/bootstrap.stamp
+mkdir -p build
+cc -c -o build/hx89_x86_64.o src/hx89_x86_64.S
+mkdir -p bin
+cc -O2 -Wall -Wextra -Wl,-z,relro,-z,now,-z,noexecstack -no-pie -o bin/hx89 build/hx89_x86_64.o
+mkdir -p bin
+cc -std=c11 -O2 -Wall -Wextra -Werror -o bin/hx89-gas src/hex_gas.c
+mkdir -p bin
+cc -std=c11 -O2 -Wall -Wextra -Werror -o bin/byte-polyform src/byte_polyform.c
+mkdir -p bin
+cc -std=c11 -O3 -Wall -Wextra -Werror -o bin/hx89-chiral-proof src/chiral_law.c

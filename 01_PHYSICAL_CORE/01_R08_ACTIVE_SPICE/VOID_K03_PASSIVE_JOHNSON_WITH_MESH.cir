@@ -1,0 +1,17 @@
+VOID PASSIVE_JOHNSON_WITH_MESH: real-device Gate K electrical connectivity, NOT a measurement
+* All excitation and passive parts represent PHYSICAL external electrical terminals.
+* 24 V isolated CURRENT-LIMITED bench supply required only for biased-junction variant.
+* Real diode BZX55C7V5 (Vishay selected example): verify maker, lot, orientation, actual I-V.
+* Junction model is a nominal DC fit ONLY; does not model avalanche excess noise.
+* The bench and analog instrument are outside the substrate and must be power-accounted.
+.INCLUDE "VOID_K_MESH_V1.lib"
+R_THERMAL JCT 0 100k
+* Unpowered physical precision resistor, record temperature and manufacturer.
+
+C_ACBLOCK JCT  AC_IN 10n
+R_ACSER AC_IN INPUT 1k
+R_ACREF INPUT 0 1meg
+X_MESH INPUT PROBE_A PROBE_B VOID_MESH_V1
+* All output ports analogue, high impedance. No direct loudspeaker or unprotected mic.
+.OP
+.END

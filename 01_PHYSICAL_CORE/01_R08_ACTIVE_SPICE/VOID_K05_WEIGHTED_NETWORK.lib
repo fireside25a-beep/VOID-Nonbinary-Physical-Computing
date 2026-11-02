@@ -1,0 +1,19 @@
+VOID K05 shared five-input / two-output physical resistor network, R06
+* Exactly the physical resistive network from R04 K05, extracted only once.
+* xp1 xm1 xp2 xm2 xp3: five separate analogue electrode connections.
+* y0 and y1: open analogue sum ports. Meter loads are EXTERNAL connections.
+* All R values are physically selectable discrete parts, nominal ohms.
+.SUBCKT VOID_WEIGHTED_5X2 xp1 xm1 xp2 xm2 xp3 y0 y1
+R01 xp1 y0 2000
+R02 xm2 y0 4000
+R03A xp3 y0 2000
+R03B xp3 y0 4000
+RG0 y0 0 2000
+R11A xm1 y1 5000
+R11B xm1 y1 10000
+R12A xp2 y1 2500
+R12B xp2 y1 5000
+R13 xp3 y1 2500
+RG1A y1 0 2000
+RG1B y1 0 5000
+.ENDS VOID_WEIGHTED_5X2

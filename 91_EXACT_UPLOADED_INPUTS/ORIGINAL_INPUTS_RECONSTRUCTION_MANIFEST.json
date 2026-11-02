@@ -1,0 +1,125 @@
+{
+  "format": "VOID_ORIGINALS_V1",
+  "fragment_directory": "91_EXACT_UPLOADED_INPUTS",
+  "files": [
+    {
+      "original_name": "04_R08_VERIFIED_TREE_AND_MASTER_R08.zip",
+      "size": 125226614,
+      "sha256": "b5c61dc6395f81ca07c16e8bd2f2da638c4a50af586c6207c18cba653b9c3303",
+      "fragments": [
+        {
+          "path": "FRAGMENTS/04_R08_VERIFIED_TREE_AND_MASTER_R08.zip/04_R08_VERIFIED_TREE_AND_MASTER_R08.zip.part001",
+          "size": 45000000,
+          "sha256": "d66f51a3806ca18cb482d32054f3ff119c4b90dd5f92b80b8f8e8facf97c8bfc"
+        },
+        {
+          "path": "FRAGMENTS/04_R08_VERIFIED_TREE_AND_MASTER_R08.zip/04_R08_VERIFIED_TREE_AND_MASTER_R08.zip.part002",
+          "size": 45000000,
+          "sha256": "7a14621e0bfed1e7376f634dea750e59e3d905b8b919306a7879cd84b5fd04cd"
+        },
+        {
+          "path": "FRAGMENTS/04_R08_VERIFIED_TREE_AND_MASTER_R08.zip/04_R08_VERIFIED_TREE_AND_MASTER_R08.zip.part003",
+          "size": 35226614,
+          "sha256": "693017a4b453a53e2e9efed3be0411aaa53d840571068e8a329eb92e67f46626"
+        }
+      ],
+      "stored_as_parts": true
+    },
+    {
+      "original_name": "06_MASTER_HX89_RESEARCH_AND_HANDOFF.zip",
+      "size": 89132840,
+      "sha256": "847dae62dacc25c2a19486ad235bace0d7271fbf9194666f0a1283c0c462c6bb",
+      "fragments": [
+        {
+          "path": "FRAGMENTS/06_MASTER_HX89_RESEARCH_AND_HANDOFF.zip/06_MASTER_HX89_RESEARCH_AND_HANDOFF.zip.part001",
+          "size": 45000000,
+          "sha256": "e379eec45a932bf1bcc0fc388adc1f599d4284b9e821e9d8f6dd277c908e1d8e"
+        },
+        {
+          "path": "FRAGMENTS/06_MASTER_HX89_RESEARCH_AND_HANDOFF.zip/06_MASTER_HX89_RESEARCH_AND_HANDOFF.zip.part002",
+          "size": 44132840,
+          "sha256": "58ebe537508604af93e3c17fb171644919f5fa0c1d7767025b40e9e8ca2d1a92"
+        }
+      ],
+      "stored_as_parts": true
+    },
+    {
+      "original_name": "07_HX89_AVX_CPU_NATIVE_EXECUTABLES.zip",
+      "size": 39239713,
+      "sha256": "69dcdb889518f2e38d059151bff8a8b94d69ab537a66245753d79cadff5264cd",
+      "fragments": [
+        {
+          "path": "07_HX89_AVX_CPU_NATIVE_EXECUTABLES.zip",
+          "size": 39239713,
+          "sha256": "69dcdb889518f2e38d059151bff8a8b94d69ab537a66245753d79cadff5264cd"
+        }
+      ],
+      "stored_as_parts": false
+    },
+    {
+      "original_name": "08_ALL_TESTS_LOGS_PLANNER_WATCHDOG.zip",
+      "size": 8680926,
+      "sha256": "cd000fb4da8750e795b6767159afaf7e55feee49e661dd16e822264fb5d0798a",
+      "fragments": [
+        {
+          "path": "08_ALL_TESTS_LOGS_PLANNER_WATCHDOG.zip",
+          "size": 8680926,
+          "sha256": "cd000fb4da8750e795b6767159afaf7e55feee49e661dd16e822264fb5d0798a"
+        }
+      ],
+      "stored_as_parts": false
+    },
+    {
+      "original_name": "09_ACDC_AVX_SEPARATE_SOURCE_SNAPSHOTS.zip",
+      "size": 338004,
+      "sha256": "e4d668a6b48c8d9e18d1bdbe12e1321511aeb0014e7e7096dca63717701e98e5",
+      "fragments": [
+        {
+          "path": "09_ACDC_AVX_SEPARATE_SOURCE_SNAPSHOTS.zip",
+          "size": 338004,
+          "sha256": "e4d668a6b48c8d9e18d1bdbe12e1321511aeb0014e7e7096dca63717701e98e5"
+        }
+      ],
+      "stored_as_parts": false
+    },
+    {
+      "original_name": "VOID_HX89_K06_BRIDGE_20261031_PART_01_01_RUNTIME_BINARY_ORIGINAL_K06_AND_CODE.zip",
+      "size": 70069,
+      "sha256": "15746833fe999552e5c7e2fe360a8145701a73b6992f3e63cbafc61da5f967f8",
+      "fragments": [
+        {
+          "path": "VOID_HX89_K06_BRIDGE_20261031_PART_01_01_RUNTIME_BINARY_ORIGINAL_K06_AND_CODE.zip",
+          "size": 70069,
+          "sha256": "15746833fe999552e5c7e2fe360a8145701a73b6992f3e63cbafc61da5f967f8"
+        }
+      ],
+      "stored_as_parts": false
+    },
+    {
+      "original_name": "VOID_HX89_K06_BRIDGE_20261031_PART_02_02_NATIVE_EXECUTIONS_AND_ANALOG_TRAJECTORIES.zip",
+      "size": 1098902,
+      "sha256": "16d63d61388a58517bb69e16cd33949e6fe193ec8907c6e89397936d745e943d",
+      "fragments": [
+        {
+          "path": "VOID_HX89_K06_BRIDGE_20261031_PART_02_02_NATIVE_EXECUTIONS_AND_ANALOG_TRAJECTORIES.zip",
+          "size": 1098902,
+          "sha256": "16d63d61388a58517bb69e16cd33949e6fe193ec8907c6e89397936d745e943d"
+        }
+      ],
+      "stored_as_parts": false
+    },
+    {
+      "original_name": "VOID_HX89_K06_BRIDGE_20261031_PART_03_03_NEGATIVE_TESTS_AUDITS_AND_SUPERSEDED_DIAGNOSTIC.zip",
+      "size": 1492512,
+      "sha256": "d6f0093eae379ff47bff87fcccd03e1e7b1e2c960af20f69af61ca86b2129c75",
+      "fragments": [
+        {
+          "path": "VOID_HX89_K06_BRIDGE_20261031_PART_03_03_NEGATIVE_TESTS_AUDITS_AND_SUPERSEDED_DIAGNOSTIC.zip",
+          "size": 1492512,
+          "sha256": "d6f0093eae379ff47bff87fcccd03e1e7b1e2c960af20f69af61ca86b2129c75"
+        }
+      ],
+      "stored_as_parts": false
+    }
+  ]
+}

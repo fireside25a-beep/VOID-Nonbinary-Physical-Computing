@@ -1,0 +1,12 @@
+test_full_native_hx89_roundtrip (test_cross_core_material_gate.CrossCoreEvidenceTest.test_full_native_hx89_roundtrip) ... ok
+test_genuine_native_sample_schedule (test_cross_core_material_gate.CrossCoreEvidenceTest.test_genuine_native_sample_schedule) ... ok
+test_missing_positive_observation_rejected (test_cross_core_material_gate.CrossCoreEvidenceTest.test_missing_positive_observation_rejected) ... ok
+test_modified_cpu_readback_rejected (test_cross_core_material_gate.CrossCoreEvidenceTest.test_modified_cpu_readback_rejected) ... ok
+test_no_analog_promotion_allowed (test_cross_core_material_gate.CrossCoreEvidenceTest.test_no_analog_promotion_allowed) ... ok
+test_removed_native_trial_rejected (test_cross_core_material_gate.CrossCoreEvidenceTest.test_removed_native_trial_rejected) ... ok
+test_swapped_intensity_rejected (test_cross_core_material_gate.CrossCoreEvidenceTest.test_swapped_intensity_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.014s
+
+OK

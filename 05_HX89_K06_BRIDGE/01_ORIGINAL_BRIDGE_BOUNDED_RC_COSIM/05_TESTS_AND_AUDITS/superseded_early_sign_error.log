@@ -1,0 +1,20 @@
+closed_loop          run=96 ones=93 A_max=0.0789727 B_max=0.0827861
+closed_loop_repeat   run=96 ones=93 A_max=0.0789727 B_max=0.0827861
+open_write_a         run=96 ones=0 A_max=0 B_max=0
+no_excitation        run=96 ones=0 A_max=0 B_max=0
+forced_a             run=96 ones=93 A_max=0.0789727 B_max=0.00835134
+inverted_action      run=96 ones=93 A_max=0.0824063 B_max=0.0794108
+open_write_b         run=96 ones=67 A_max=0.0789806 B_max=0.00870586
+CAUSAL_COMPARISON {
+  "closed_vs_repeat_analog_byte_equal": true,
+  "closed_vs_repeat_native_stdout_stderr_byte_equal": true,
+  "closed_vs_no_excitation_max_delta_v": 0.1208412132824,
+  "closed_vs_open_write_a_max_delta_v": 0.1208412132824,
+  "closed_vs_forced_a_max_delta_v": 0.15026304539871,
+  "closed_vs_inverted_action_max_delta_v": 0.2409562822952,
+  "closed_vs_open_write_b_max_delta_v": 0.09604589715832001,
+  "source_scope": "Strict K06 R/C SUBNETWORK only; not full circuit SPICE or hardware",
+  "hardware_physical_capture": "NONE",
+  "full_k06_non_linear_SPICE_pass": "NOT_RUN; no ngspice installed",
+  "pass": true
+}

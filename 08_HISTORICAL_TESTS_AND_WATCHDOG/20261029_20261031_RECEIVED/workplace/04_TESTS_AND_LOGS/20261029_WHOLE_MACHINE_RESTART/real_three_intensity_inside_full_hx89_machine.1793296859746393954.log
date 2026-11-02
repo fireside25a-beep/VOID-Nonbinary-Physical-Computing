@@ -1,0 +1,8 @@
+{
+  "status": "EXECUTED",
+  "cycles": 4,
+  "native_trials": 16,
+  "changed_cpu_commands": 4,
+  "physical_nonbinary_material_computation_verified": false,
+  "record": "/mnt/data/VOID_HX89_SINGLE_TREE_CANONICAL_20261029/workplace/04_TESTS_AND_LOGS/20261029_WHOLE_MACHINE_RESTART/HX89_THREE_INTENSITY_HISTORY_1793296859746393954/FULL_STACK_EXECUTION.json"
+}
